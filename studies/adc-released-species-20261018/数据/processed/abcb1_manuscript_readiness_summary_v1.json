@@ -1,0 +1,72 @@
+{
+  "package_version": "ABCB1_SELECTIVE_MANUSCRIPT_PACKAGE_V1",
+  "build_date": "2026-08-05",
+  "recommended_article_type": "methods_and_data_resource_article_with_large_external_evaluation",
+  "recommended_primary_title": "An uncertainty-aware selective screening framework for ABCB1 efflux risk: large-scale external evaluation and implications for ADC-released small molecules",
+  "central_thesis": "weak-label full-coverage binary classification has reproducible but low discrimination; an uncertainty-aware abstention policy identifies a smaller, more reliable subset and exposes where evidence is insufficient or conflicting",
+  "main_method": "v0.4 selective high-risk/low-risk/abstain screening",
+  "baseline": "v0.5 weak-label forced binary interface at frozen 0.5 threshold",
+  "gates": {
+    "large_external_continuous_direction": "pass",
+    "identity_clean_analysis": "pass",
+    "scaffold_clean_sensitivity": "pass",
+    "selective_reliability_improvement": "pass",
+    "posthoc_external_risk_experiments": "pass",
+    "posthoc_evidence_channel_ablation": "pass",
+    "posthoc_deep_calibration_error_analysis": "pass",
+    "binary_full_coverage_high_discrimination": "fail",
+    "future_strict_matched_parental_or_inhibitor_validation": "pending",
+    "adc_specific_external_validation": "fail"
+  },
+  "manuscript_readiness": "go_for_draft_under_bounded_methods_claim",
+  "not_ready_for": [
+    "universal ABCB1 substrate classifier claim",
+    "ADC-specific predictive accuracy claim",
+    "intact-ADC transport, intracellular exposure, resistance, efficacy, or clinical DDI claim"
+  ],
+  "primary_numeric_anchors": {
+    "biogen_identity_clean_n": 2624,
+    "continuous_spearman": 0.24718176,
+    "continuous_spearman_ci95": [
+      0.20746734,
+      0.28434392
+    ],
+    "binary_baseline_bacc": 0.58169541,
+    "binary_baseline_mcc": 0.16768795,
+    "selective_coverage": 0.1726372,
+    "selective_bacc": 0.73510345,
+    "selective_mcc": 0.49857011,
+    "forced_rejected_bacc": 0.54746152,
+    "forced_rejected_mcc": 0.09621794,
+    "accepted_minus_rejected_bacc": 0.18764193,
+    "accepted_minus_rejected_bacc_ci95": [
+      0.13663565,
+      0.23748035
+    ],
+    "external_calibration_slope": 0.58367794,
+    "external_ece_10bin": 0.12074011,
+    "without_local_posthoc_bacc": 0.76329591,
+    "full_minus_primary_channel_bacc": 0.05702906,
+    "full_minus_primary_channel_bacc_ci95": [
+      0.01863849,
+      0.09267134
+    ],
+    "direct_channel_complete_bacc": 0.75043892,
+    "direct_support_no_local_bacc": 0.77457304,
+    "raw_external_calibration_slope": 0.58381812,
+    "raw_external_calibration_slope_ci95": [
+      0.47579358,
+      0.69320624
+    ],
+    "crossfitted_platt_brier": 0.23478098,
+    "false_positive_n": 824,
+    "score_0_50_to_0_70_error_rate": 0.53619048,
+    "quantity_gate": "pass"
+  },
+  "outputs": {
+    "数据/processed/abcb1_manuscript_primary_results_v1.csv": "9e06c68344592b8f44a96c6fb4ef2ef96ebc83bb8a81bc40d30cf4276e286414",
+    "数据/processed/abcb1_manuscript_claim_ledger_v1.csv": "b410b4980b943fa0db4cf4678d5b8cf9da119a01f1ea846c7bca128be119fdfb",
+    "数据/processed/abcb1_manuscript_figure_manifest_v1.csv": "82e0c6f1f855207cbc3d81fb156bcc3c47d6b6f7dc7413904738e820b7092ab8",
+    "数据/processed/abcb1_manuscript_table_manifest_v1.csv": "69c845338fbb06398141396e9025b291865cc91f292dd4582e5270fb0c907079"
+  }
+}

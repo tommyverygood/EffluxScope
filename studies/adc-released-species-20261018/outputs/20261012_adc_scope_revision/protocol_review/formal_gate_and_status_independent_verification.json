@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "root_protocol_sha256": "15d8f0b6d565a38bd449bbc608ed136ec9a011d80666c9b97d4ef187f97e1bdd",
+  "gate_status_sha256": "65a7f38938f8e2c821db74081bd8e0f9ca97169ba1befbd917164a023e597415",
+  "independent_count_sha256": "f70b560cbc86a1e1efea3abfc72ea303963e282ba3ac9e78fe64aec7bd50054f",
+  "source_region_rows": 6,
+  "verified_numeric_fields": 48,
+  "verified_coverage_fields": 6,
+  "null_metric_fields": 24,
+  "bootstrap_executed_regions": 0,
+  "qualifying_regions": 0,
+  "checks": [
+    {
+      "source": "Biogen2624",
+      "region": "MW_ge600",
+      "count_fields": 8,
+      "gate_failure_fields": 8,
+      "all_null": true,
+      "no_bootstrap": true,
+      "status": "PASS"
+    },
+    {
+      "source": "Biogen2624",
+      "region": "TPSA_ge140",
+      "count_fields": 8,
+      "gate_failure_fields": 4,
+      "all_null": true,
+      "no_bootstrap": true,
+      "status": "PASS"
+    },
+    {
+      "source": "Biogen2624",
+      "region": "amide_ge4_MW_ge500",
+      "count_fields": 8,
+      "gate_failure_fields": 8,
+      "all_null": true,
+      "no_bootstrap": true,
+      "status": "PASS"
+    },
+    {
+      "source": "ASAP56",
+      "region": "MW_ge600",
+      "count_fields": 8,
+      "gate_failure_fields": 8,
+      "all_null": true,
+      "no_bootstrap": true,
+      "status": "PASS"
+    },
+    {
+      "source": "ASAP56",
+      "region": "TPSA_ge140",
+      "count_fields": 8,
+      "gate_failure_fields": 8,
+      "all_null": true,
+      "no_bootstrap": true,
+      "status": "PASS"
+    },
+    {
+      "source": "ASAP56",
+      "region": "amide_ge4_MW_ge500",
+      "count_fields": 8,
+      "gate_failure_fields": 8,
+      "all_null": true,
+      "no_bootstrap": true,
+      "status": "PASS"
+    }
+  ],
+  "scope": "posthoc chemical support feasibility, not ADC performance validation"
+}

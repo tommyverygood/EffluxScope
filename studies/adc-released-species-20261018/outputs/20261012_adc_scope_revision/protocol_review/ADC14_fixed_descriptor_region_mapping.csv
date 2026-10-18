@@ -1,0 +1,15 @@
+﻿entity_id,entity_name,family,role,molecular_weight,tpsa,amide_count_frozen,amide_count_source,amide_count_frozen_alternative_fr_amide,amide_count_source_alternative_fr_amide,accepted_prediction,MW_ge_600,TPSA_ge_140,amide_ge_4_and_MW_ge_500
+ADC_PAYLOAD_018,MMAF,auristatin,free_payload,731.976,166.61,4,4,4,4,no,True,True,True
+ADC_REL_006,cys-mcMMAF,auristatin,release_species,1046.339,283.6,5,7,5,7,no,True,True,True
+ADC_PAYLOAD_008,DM1,maytansinoid,free_payload,738.3,156.47,3,3,3,3,no,True,True,False
+ADC_REL_001,Lys-MCC-DM1,maytansinoid,release_species,1103.73,294.28,4,6,4,6,no,True,True,True
+ADC_PAYLOAD_009,DM4,maytansinoid,free_payload,780.381,156.47,3,3,3,3,no,True,True,False
+ADC_REL_004,S-methyl-DM4,maytansinoid,release_species,794.408,156.47,3,3,3,3,no,True,True,False
+ADC_REL_003,Lys-SPDB-DM4,maytansinoid,release_species,1026.713,248.89,4,4,4,4,no,True,True,True
+ADC_PAYLOAD_017,MMAE,auristatin,free_payload,717.993,149.54,4,4,4,4,yes,True,True,True
+ADC_REL_008,cys-VC-MMAE,auristatin,release_species,1437.811,410.17,12,12,12,12,no,True,True,True
+ADC_REL_010,DXd,camptothecin_TOP1,release_species,493.491,130.75,1,1,1,1,yes,False,False,False
+ADC_PAYLOAD_024,SN-38,camptothecin_TOP1,free_payload,392.411,101.65,0,0,0,0,yes,False,False,False
+ADC_PAYLOAD_028,Exatecan,camptothecin_TOP1,free_payload,435.455,107.44,0,0,0,0,yes,False,False,False
+ADC_PAYLOAD_032,SG3199,PBD_dimer,free_payload,584.673,102.26,2,2,2,2,yes,False,False,False
+NEWF_CALICH_DMH,N-acetyl-gamma-calicheamicin dimethylhydrazide,enediyne_calicheamicin,released_or_free_small_molecule,1478.46,372.17,2,3,3,3,no,True,True,False

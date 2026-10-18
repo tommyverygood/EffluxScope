@@ -1,0 +1,13 @@
+{
+  "pool_path": "数据/processed/abcb1_regulatory_strict_external_pool_v4.csv",
+  "historical_prediction_files_scanned": 34,
+  "strict_pool_entities": 33,
+  "match_rows": 0,
+  "confirmed_prior_score_exposure_entities": 0,
+  "confirmed_prior_score_exposure_ids": [],
+  "name_only_alert_entities": 0,
+  "name_only_alert_ids": [],
+  "primary_blind_eligible_entities": 33,
+  "adjudication_counts": {},
+  "model_scoring_performed_by_this_audit": false
+}

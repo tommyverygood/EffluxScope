@@ -1,0 +1,23 @@
+{
+  "entity_id": "ADC_REL_004",
+  "name": "S-methyl-DM4 (terminal methyl thioether)",
+  "status": "accepted_independent_registry_identity_source_consistent_for_frozen_computational_scoring",
+  "exact_isomeric_smiles": "C[C@@H]1[C@@H]2C[C@]([C@@H](/C=C/C=C(/CC3=CC(=C(C(=C3)OC)Cl)N(C(=O)C[C@@H]([C@]4([C@H]1O4)C)OC(=O)[C@H](C)N(C)C(=O)CCC(C)(C)SC)C)\\C)OC)(NC(=O)O2)O",
+  "exact_inchikey": "AYWIIXDQRUFQGH-SIDGEOBYSA-N",
+  "inchi": "InChI=1S/C39H56ClN3O10S/c1-22-13-12-14-29(50-10)39(48)21-28(51-36(47)41-39)23(2)34-38(6,53-34)30(52-35(46)24(3)42(7)31(44)15-16-37(4,5)54-11)20-32(45)43(8)26-18-25(17-22)19-27(49-9)33(26)40/h12-14,18-19,23-24,28-30,34,48H,15-17,20-21H2,1-11H3,(H,41,47)/b14-12+,22-13+/t23-,24+,28+,29-,30+,34+,38+,39+/m1/s1",
+  "formula": "C39H56ClN3O10S",
+  "registry_average_mw": "794.4",
+  "registry_exact_mass": "793.3374939",
+  "pubchem_cid": 89493732,
+  "cas_crossreference": "890654-03-2",
+  "cas_status": "ambiguous_registry_stereo_mapping_do_not_select_by_first_CAS_hit",
+  "cas_not_present_in_accepted_cid_synonyms": true,
+  "primary_structure_source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2954514/#F1",
+  "primary_structure_locator": "Lopus et al 2010, Fig.1 right panel; Materials and Methods, Synthesis and Chemistry",
+  "registry_structure_source_url": "https://pubchem.ncbi.nlm.nih.gov/compound/89493732",
+  "raw_machine_source": "raw/correct_cid_properties.json",
+  "approved_for_frozen_scoring": "yes",
+  "independently_reviewed": "yes",
+  "review_scope": "Research-agent primary-figure/registry graph audit independent of pair-score builder; no new chemical sample or experimental identity validation.",
+  "legacy_record_preserved": true
+}

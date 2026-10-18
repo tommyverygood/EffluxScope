@@ -1,0 +1,127 @@
+{
+  "protocol_version": "ABCB1_Q1_EXTERNAL_BENCHMARK_LOCK_V1",
+  "locked_at": "2026-08-03",
+  "benchmark_status": "historical_development_external_benchmark_pre_prediction_lock",
+  "prospective_claim_allowed": false,
+  "reason_not_prospective": "Several external collections and earlier aggregate model diagnostics were already visible before this lock. This run is source-held-out development evidence, not a pristine prospective validation.",
+  "frozen_model": {
+    "path": "模型/ABCB1_screener_v0_1/ABCB1_screener_v0_1.joblib",
+    "sha256": "fbc92dfa99583386ba124141fed5e77c6ecf8a59850301a6533db3883b298ac3",
+    "binary_threshold": 0.5,
+    "threshold_tuning_allowed": false,
+    "refit_allowed": false
+  },
+  "direct_human_abcb1_sources": [
+    {
+      "path": "数据/processed/human_abcb1_external_source_manifest_v1.csv",
+      "sha256": "deaf7b8370a1d5be713de0401dbe665c3c98fa013226ae87a858847b2bb30bf0"
+    },
+    {
+      "path": "数据/processed/human_abcb1_external_entity_overlay_v1.csv",
+      "sha256": "f3efccd398190b28ffb763cc51a2874f4251ed23ddc17247b44b396928437249"
+    },
+    {
+      "path": "数据/processed/langthaler_2024_human_abcb1_reference_panel_observations_v1.csv",
+      "sha256": "19dc2ed5ef8a257dbbd5e49d16b2dca9c63d0401294eeeda50b6514148847ef1"
+    },
+    {
+      "path": "数据/processed/pmda_regulatory_human_transporter_contrast_panel_observations_v1.csv",
+      "sha256": "383d1eaba7a9d7b85ccaca72c9fbf826b8824092eb1ad6499f38496a0c0a4278"
+    },
+    {
+      "path": "数据/processed/independent_human_transporter_validation_panel_observations_v1.csv",
+      "sha256": "e5cace6d030c5f68617f91bb15f4f4aa1216559664e0e57623d1244eb29d2868"
+    },
+    {
+      "path": "数据/processed/wegler_2021_human_abcb1_crispr_panel_observations_v1.csv",
+      "sha256": "3071882d12cefd91ef65812fb9396938c2afe6a60547997f5d37a594f6a6d957"
+    },
+    {
+      "path": "数据/processed/independent_human_transporter_negative_contrast_panel_observations_v1.csv",
+      "sha256": "9d177562ba12a53865a490826dc4164ba1e118c1aae50fb6310629d4c5c13f50"
+    }
+  ],
+  "legacy_binary_source": {
+    "path": "数据/processed/public_independent_strict_binary_candidate_view_v1.csv",
+    "sha256": "45b20b6c43df46ddd1bc87ac0ed99dfdcc71af7e5f1f415c9c5a17363c5e8e7e",
+    "role": "secondary single-source heavily imbalanced literature benchmark"
+  },
+  "direct_entity_eligibility": {
+    "transporter_gene": "ABCB1",
+    "human_direct_rows_minimum": 1,
+    "structure_required": true,
+    "exclude_exact_training_inchikey": true,
+    "exclude_training_connectivity_block": true,
+    "near_duplicate_policy": "retain and stratify; report maximum Morgan Tanimoto",
+    "duplicate_policy": "one row per standardized entity and source; repeated concentrations or experiments are aggregated within source"
+  },
+  "source_call_mapping_for_directional_diagnostic_only": {
+    "positive_like": [
+      "source_assigned_call contains human_ABCB1_positive_reference",
+      "source_assigned_call contains human_ABCB1_positive_low_affinity_context",
+      "source_assigned_call equals likely"
+    ],
+    "negative_like": [
+      "source_assigned_call contains human_ABCB1_negative_boundary",
+      "source_assigned_call contains human_ABCB1_weak_or_not_supported",
+      "source_assigned_call equals unlikely"
+    ],
+    "context_only_excluded_from_binary_direction_metric": [
+      "possible",
+      "NA",
+      "inhibitor-only context without a positive or negative source call",
+      "parental-control-only context"
+    ],
+    "claim_boundary": "These are direct-source directional calls and are not transferred into the frozen training label or described as universal substrate truth."
+  },
+  "continuous_endpoint_policy": {
+    "within_source_only": true,
+    "cross_source_raw_value_pooling_forbidden": true,
+    "baseline_no_inhibitor_preferred": true,
+    "source_priority": [
+      "transporter_specific_efflux_ratio",
+      "corrected_efflux_ratio_mean",
+      "net_flux_ratio",
+      "efflux_ratio_mean",
+      "efflux_ratio"
+    ],
+    "aggregation": "median within standardized entity and source",
+    "minimum_entities_for_source_spearman": 3
+  },
+  "models_compared": [
+    "frozen_ABCB1_v0_1_calibrated_probability",
+    "training_class_prior",
+    "one_nearest_neighbor_Morgan_Tanimoto",
+    "five_nearest_neighbor_similarity_weighted"
+  ],
+  "metrics": [
+    "MCC_at_fixed_0_5",
+    "balanced_accuracy_at_fixed_0_5",
+    "sensitivity",
+    "specificity",
+    "ROC_AUC",
+    "average_precision",
+    "Brier_score",
+    "applicability_coverage",
+    "within_source_Spearman",
+    "leave_one_source_out_range"
+  ],
+  "uncertainty": {
+    "bootstrap_unit": "standardized entity",
+    "bootstrap_stratified_by_directional_call": true,
+    "iterations": 2000,
+    "seed": 20260803,
+    "interval": "percentile_95pct"
+  },
+  "go_no_go": {
+    "q1_predictor_claim_requires": [
+      "independent direct-source call benchmark lower 95% CI for MCC > 0",
+      "independent direct-source call benchmark lower 95% CI for balanced accuracy > 0.5",
+      "positive within-source continuous direction in at least two independent sources with at least three entities each",
+      "no collapse under leave-one-source-out analysis",
+      "predefined applicability rejection improves reliability without hiding most external entities",
+      "a later untouched prospective or temporal external set remains unused until final validation"
+    ],
+    "failure_action": "retain v0.1 as bounded screening and boundary-audit tool; do not tune threshold on these external labels"
+  }
+}

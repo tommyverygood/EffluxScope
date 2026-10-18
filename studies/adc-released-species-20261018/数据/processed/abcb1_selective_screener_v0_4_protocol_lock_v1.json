@@ -1,0 +1,105 @@
+{
+  "protocol_version": "ABCB1_SELECTIVE_SCREENER_V0_4_DEV_LOCK_V1",
+  "lock_date": "2026-08-03",
+  "status": "locked_before_selective_screener_build",
+  "objective": "Develop an applicability-aware ABCB1 efflux-risk screener for explicit free/released small-molecule structures with exactly three operational outputs: high_risk, low_risk, or abstain.",
+  "prediction_object": "standardized free payload or explicitly defined released small-molecule structure",
+  "biological_scope": "ABCB1-mediated efflux-risk triage in transporter assay space",
+  "excluded_claims": [
+    "intact ADC transport",
+    "intracellular unbound exposure",
+    "resistance or efficacy",
+    "clinical DDI",
+    "universal assay-independent substrate truth"
+  ],
+  "frozen_dependencies": {
+    "v0_1_model": {
+      "path": "模型/ABCB1_screener_v0_1/ABCB1_screener_v0_1.joblib",
+      "sha256": "fbc92dfa99583386ba124141fed5e77c6ecf8a59850301a6533db3883b298ac3",
+      "role": "primary ordinary-drug structural prior and calibrated probability"
+    },
+    "v0_3_model": {
+      "path": "模型/ABCB1_assay_aware_candidate_v0_3_dev/ABCB1_assay_aware_candidate_v0_3_dev.joblib",
+      "sha256": "ebe6d1a8d5f06afc5c2d0b306dfd5266af56fd28fefd130147d20c5e015b907a",
+      "role": "matched-parental direct-panel secondary direction channel"
+    },
+    "v0_1_training_audit": {
+      "path": "数据/processed/abcb1_screener_v0_1_training_audit.csv",
+      "sha256": "54979f1037817d6a218d31301c59a1056b0123747f1aacbbf2e12ddc85c8d747"
+    },
+    "v0_1_oof_predictions": {
+      "path": "数据/processed/abcb1_screener_v0_1_oof_predictions.csv",
+      "sha256": "330d1124886229e4f6cd22988e1e438a3250a208339a3336b49357edbef5e7b4"
+    },
+    "soskuti_direct_panel": {
+      "path": "数据/processed/soskuti_2024_mdr1_species_panel_v1.csv",
+      "sha256": "9892cd2bb4be3ff0c834113c5ec7b8d9b7752bc69667782cd5980f19f2ac3bf7"
+    }
+  },
+  "three_output_semantics": {
+    "high_risk": "accepted high ABCB1 efflux-risk structural signal; not a definitive universal substrate call",
+    "low_risk": "accepted low ABCB1 efflux-risk structural signal; not proof of absence of transport",
+    "abstain": "insufficient, conflicting, unstable, identity-leaked, or out-of-scope evidence"
+  },
+  "frozen_decision_rule": {
+    "primary_high_probability_threshold": 0.70,
+    "primary_low_probability_threshold": 0.35,
+    "threshold_source": "v0.1 repeated exact-Murcko-grouped OOF predictions only",
+    "threshold_source_internal_summary": {
+      "n": 443,
+      "accepted_n_probability_margin_only": 271,
+      "coverage_probability_margin_only": 0.61173815,
+      "high_n": 217,
+      "high_precision_on_author_curated_internal_labels": 0.85714286,
+      "low_n": 54,
+      "low_negative_predictive_value_on_author_curated_internal_labels": 0.83333333,
+      "accepted_accuracy_on_author_curated_internal_labels": 0.85239852
+    },
+    "bootstrap_ensemble": {
+      "n_estimators": 64,
+      "resampling_unit": "exact Murcko scaffold group",
+      "random_seed": 20260803,
+      "interval": "10th to 90th percentile of calibrated ensemble probabilities",
+      "acceptance_rule": "the interval must remain on the same side of 0.5 as the primary call"
+    },
+    "physicochemical_envelope": {
+      "descriptors": [
+        "molecular_weight",
+        "xlogp",
+        "tpsa",
+        "hbond_donors",
+        "hbond_acceptors",
+        "rotatable_bonds",
+        "formal_charge",
+        "heavy_atoms"
+      ],
+      "score": "maximum absolute robust z score using combined 443-row and 63-row reference medians and interquartile ranges",
+      "threshold": "99th percentile of the combined-reference score distribution"
+    },
+    "applicability_rule": "abstain only when both frozen reference panels are below their already-frozen q10 nearest-neighbor support boundaries, or when the query is outside the frozen robust physicochemical envelope",
+    "model_disagreement_rule": "when the direct-panel similarity is at or above its frozen q10 support boundary, v0.3 direction must agree with the primary direction",
+    "local_conflict_rule": "a supported five-nearest-neighbor weighted vote strongly opposite to the primary direction triggers abstention",
+    "identity_rule": "exact identity to either development panel is returned as abstain_reference_identity, not counted as a prospective model call",
+    "structure_rule": "blank, unparsable, or failed-standardization structures abstain"
+  },
+  "evaluation_plan": {
+    "primary_internal": "selective coverage, accepted accuracy, high-risk precision, and low-risk negative predictive value on frozen grouped OOF probabilities",
+    "historical_posthoc_diagnostics": [
+      "regulatory strict pool v4: already scored before this lock; diagnostic only",
+      "ASAP 2025 source-heldout set: outcome already observed before this lock; diagnostic only"
+    ],
+    "future_confirmation_required": "a newly locked, outcome-unseen matched-parental or inhibitor-rescue source with both positive and negative calls",
+    "ranking_context": "ASAP 2025 supports continuous direction but cannot validate a matched-parental binary substrate call"
+  },
+  "prohibitions": [
+    "do not tune thresholds or rejector rules on ASAP 2025 or regulatory v4 outcomes",
+    "do not call historical posthoc diagnostics external validation of v0.4",
+    "do not convert abstain into a biological third class",
+    "do not use whole-ADC structures as if they were released payload structures",
+    "do not hide coverage or class-specific accepted counts"
+  ],
+  "go_no_go": {
+    "operational_build_gate": "all dependency hashes match, all three outputs are reachable in smoke tests, deterministic batch scoring passes, and every abstention has machine-readable reasons",
+    "claim_gate": "remain a development research triage tool until future outcome-unseen source-grouped confirmation is passed"
+  }
+}

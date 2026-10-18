@@ -1,0 +1,157 @@
+{
+  "validation_status": "pass",
+  "checks_passed": 29,
+  "checks_total": 29,
+  "checks": [
+    {
+      "check": "primary_model_hash",
+      "status": "pass",
+      "detail": "fbc92dfa99583386ba124141fed5e77c6ecf8a59850301a6533db3883b298ac3"
+    },
+    {
+      "check": "direct_model_hash",
+      "status": "pass",
+      "detail": "ebe6d1a8d5f06afc5c2d0b306dfd5266af56fd28fefd130147d20c5e015b907a"
+    },
+    {
+      "check": "protocol_hash",
+      "status": "pass",
+      "detail": "716d5285bed29d7caaca192b2fd76ea4dc645fe973ee3ec64d889187ac51a641"
+    },
+    {
+      "check": "selective_package_hash",
+      "status": "pass",
+      "detail": "c56fb6b8f6f8bf13472a1a2d433b05d4c6a35eb2490ba84ce9371395b8bbff8b"
+    },
+    {
+      "check": "model_version",
+      "status": "pass",
+      "detail": "ABCB1_selective_screener_v0.4_dev"
+    },
+    {
+      "check": "bootstrap_estimators",
+      "status": "pass",
+      "detail": "64"
+    },
+    {
+      "check": "thresholds_frozen",
+      "status": "pass",
+      "detail": "low=0.35 high=0.70"
+    },
+    {
+      "check": "protocol_reject_not_biological_class",
+      "status": "pass",
+      "detail": "insufficient, conflicting, unstable, identity-leaked, or out-of-scope evidence"
+    },
+    {
+      "check": "no_historical_external_rule_tuning",
+      "status": "pass",
+      "detail": "historical_posthoc_diagnostic_not_external_validation"
+    },
+    {
+      "check": "future_confirmation_required",
+      "status": "pass",
+      "detail": "development_selective_risk_screener_not_future_source_validated"
+    },
+    {
+      "check": "internal_n",
+      "status": "pass",
+      "detail": "443"
+    },
+    {
+      "check": "internal_probability_margin_coverage",
+      "status": "pass",
+      "detail": "0.6117381489841986"
+    },
+    {
+      "check": "internal_probability_margin_accuracy",
+      "status": "pass",
+      "detail": "0.8523985239852399"
+    },
+    {
+      "check": "high_output_reachable",
+      "status": "pass",
+      "detail": "high_ABCB1_efflux_risk"
+    },
+    {
+      "check": "low_output_reachable",
+      "status": "pass",
+      "detail": "low_ABCB1_efflux_risk"
+    },
+    {
+      "check": "abstain_output_reachable",
+      "status": "pass",
+      "detail": "[\"probability_gray_zone\"]"
+    },
+    {
+      "check": "invalid_structure_abstains",
+      "status": "pass",
+      "detail": "[\"unresolved_structure\"]"
+    },
+    {
+      "check": "intact_adc_context_abstains",
+      "status": "pass",
+      "detail": "[\"object_scope_incompatible\"]"
+    },
+    {
+      "check": "clinical_ddi_context_abstains",
+      "status": "pass",
+      "detail": "[\"requested_context_incompatible\"]"
+    },
+    {
+      "check": "deterministic_single_prediction",
+      "status": "pass",
+      "detail": "identical repeated JSON"
+    },
+    {
+      "check": "regulatory_posthoc_counts",
+      "status": "pass",
+      "detail": "{\"n\": 33, \"accepted_n\": 13, \"abstain_n\": 20, \"coverage\": 0.3939393939393939, \"accepted_accuracy\": 0.8461538461538461, \"high_n\": 11, \"high_precision\": 0.8181818181818182, \"low_n\": 2, \"low_negative_predictive_value\": 1.0}"
+    },
+    {
+      "check": "asap_posthoc_counts",
+      "status": "pass",
+      "detail": "{\"n\": 62, \"accepted_n\": 5, \"abstain_n\": 57, \"coverage\": 0.08064516129032258, \"accepted_accuracy\": 1.0, \"high_n\": 5, \"high_precision\": 1.0, \"low_n\": 0, \"low_negative_predictive_value\": null}"
+    },
+    {
+      "check": "conrad_negative_result_preserved",
+      "status": "pass",
+      "detail": "{\"identity_clean_pair_n\": 11, \"pair_direction_correct_n\": 6, \"pair_direction_accuracy\": 0.5454545454545454}"
+    },
+    {
+      "check": "adc_registry_rows",
+      "status": "pass",
+      "detail": "rows=10 explicit=9"
+    },
+    {
+      "check": "adc_calls_allowed",
+      "status": "pass",
+      "detail": "['abstain', 'high_ABCB1_efflux_risk']"
+    },
+    {
+      "check": "accepted_rows_have_no_reasons",
+      "status": "pass",
+      "detail": "all accepted rows clean"
+    },
+    {
+      "check": "abstain_rows_have_reasons",
+      "status": "pass",
+      "detail": "all abstain rows explained"
+    },
+    {
+      "check": "adc_call_counts",
+      "status": "pass",
+      "detail": "{\"abstain\": 7, \"high_ABCB1_efflux_risk\": 3}"
+    },
+    {
+      "check": "required_artifacts_present",
+      "status": "pass",
+      "detail": "n=25"
+    }
+  ],
+  "model_version": "ABCB1_selective_screener_v0.4_dev",
+  "model_package_sha256": "c56fb6b8f6f8bf13472a1a2d433b05d4c6a35eb2490ba84ce9371395b8bbff8b",
+  "operational_status": "three_output_development_screener_operational",
+  "external_validation_status": "not_future_source_validated",
+  "claim_boundary": "ABCB1 efflux-risk triage for a standardized free/released small-molecule structure; not intact-ADC transport, intracellular unbound exposure, resistance, efficacy, clinical DDI, or universal assay-independent substrate truth"
+}

@@ -1,0 +1,9 @@
+population,error_outcome,n,fraction_of_population,median_raw_probability,median_log10_efflux_ratio,v0_4_accepted_n,v0_4_accepted_fraction
+identity_clean,true_positive,825,0.31440549,0.6705899,1.05550858,221,0.26787879
+identity_clean,true_negative,655,0.2496189,0.37747003,-0.15654972,119,0.18167939
+identity_clean,false_negative,320,0.12195122,0.40789644,0.91721588,29,0.090625
+identity_clean,false_positive,824,0.31402439,0.63039412,-0.12671371,84,0.10194175
+scaffold_clean,true_positive,816,0.31850117,0.67064379,1.05717634,221,0.27083333
+scaffold_clean,true_negative,621,0.24238876,0.38015017,-0.15746141,106,0.17069243
+scaffold_clean,false_negative,311,0.12138954,0.4079988,0.91710706,28,0.09003215
+scaffold_clean,false_positive,814,0.31772053,0.63123196,-0.12735151,84,0.1031941

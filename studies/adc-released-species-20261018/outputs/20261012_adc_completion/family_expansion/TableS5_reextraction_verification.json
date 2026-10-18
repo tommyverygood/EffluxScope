@@ -1,0 +1,55 @@
+{
+  "rows_checked": 12,
+  "all_match": true,
+  "checks": [
+    {
+      "record_id": "B7_OBI_S5_05",
+      "numeric_and_entity_match": true
+    },
+    {
+      "record_id": "B7_OBI_S5_06",
+      "numeric_and_entity_match": true
+    },
+    {
+      "record_id": "B7_OBI_S5_07",
+      "numeric_and_entity_match": true
+    },
+    {
+      "record_id": "B7_OBI_S5_08",
+      "numeric_and_entity_match": true
+    },
+    {
+      "record_id": "B7_OBI_S5_09",
+      "numeric_and_entity_match": true
+    },
+    {
+      "record_id": "B7_OBI_S5_10",
+      "numeric_and_entity_match": true
+    },
+    {
+      "record_id": "B7_OBI_S5_11",
+      "numeric_and_entity_match": true
+    },
+    {
+      "record_id": "B7_OBI_S5_12",
+      "numeric_and_entity_match": true
+    },
+    {
+      "record_id": "B7_OBI_S5_13",
+      "numeric_and_entity_match": true
+    },
+    {
+      "record_id": "B7_OBI_S5_14",
+      "numeric_and_entity_match": true
+    },
+    {
+      "record_id": "B7_OBI_S5_15",
+      "numeric_and_entity_match": true
+    },
+    {
+      "record_id": "B7_OBI_S5_16",
+      "numeric_and_entity_match": true
+    }
+  ],
+  "no_blinded_human_signoff": true
+}

@@ -1,0 +1,59 @@
+{
+  "protocol_version": "ABCB1_ASAP2025_SOURCEHELDOUT_V1",
+  "lock_date": "2026-08-03",
+  "status": "locked_before_model_scoring",
+  "source_document": {
+    "document_chembl_id": "CHEMBL5674852",
+    "doi": "10.6019/CHEMBL5674852",
+    "chembl_release": "CHEMBL_36",
+    "assay_chembl_id": "CHEMBL5674853",
+    "activity_rows": 392,
+    "source_molecule_ids": 125,
+    "bidirectional_observation_rows": 64,
+    "estimable_efflux_ratio_rows": 62,
+    "document_raw_sha256": "9b5bf214ed2a185f069c29f0ee409435e258f137bdf26824e7e28ead0bcc9b89",
+    "assay_raw_sha256": "c2c0b76b3bb4181ce15819f83fe095509500606b06d1ba7f4e8330ae71824884",
+    "activity_raw_sha256": "f022cfa0e45cb843b34ae75ffe04d9029ca0a087b4bb14a102139a0b169d8878"
+  },
+  "processed_interface": {
+    "path": "数据/processed/abcb1_asap_mdck_mdr1_observations_v1.csv",
+    "sha256": "130f4e6daffea2f8a4337ac2e31a67f992af64cc4d10c5ad351207a387c4f8f5",
+    "eligible_filter": "document_chembl_id == CHEMBL5674852 and assay_chembl_id == CHEMBL5674853 and papp_ab nonmissing and papp_ba nonmissing",
+    "continuous_primary_filter": "eligible_filter and efflux_ratio estimable",
+    "weak_binary_sensitivity_rule": "efflux_ratio >= 2 is high-efflux-like; efflux_ratio < 2 is low-efflux-like; nonestimable rows excluded",
+    "identity_audit": "all 132 reconstructed observations are exact- and connectivity-new to the frozen 443, Soskuti development, prior Q1 external, regulatory v4, batch5 reserved, and NPMMP weak-pair sets"
+  },
+  "frozen_models_allowed_for_first_scoring": [
+    {
+      "model": "ABCB1_screener_v0.1",
+      "sha256": "fbc92dfa99583386ba124141fed5e77c6ecf8a59850301a6533db3883b298ac3",
+      "role": "legacy ordinary-drug comparator"
+    },
+    {
+      "model": "ABCB1_assay_aware_candidate_v0.3_dev",
+      "sha256": "ebe6d1a8d5f06afc5c2d0b306dfd5266af56fd28fefd130147d20c5e015b907a",
+      "role": "frozen assay-aware development candidate"
+    }
+  ],
+  "primary_endpoint": "Spearman correlation between frozen model probability and log2(efflux_ratio) on the 62 estimable rows",
+  "secondary_endpoints": [
+    "ROC-AUC for the weak ER >= 2 sensitivity label",
+    "balanced accuracy at each model's already-frozen threshold",
+    "Brier score for the weak ER >= 2 sensitivity label",
+    "coverage and metrics by frozen applicability band",
+    "Murcko-scaffold bootstrap confidence intervals"
+  ],
+  "predeclared_directional_gate": {
+    "rule": "Spearman point estimate > 0 and 95% Murcko-scaffold bootstrap lower bound > 0",
+    "interpretation_if_pass": "source-heldout continuous direction is supported in one MDCK-MDR1 vendor dataset",
+    "interpretation_if_fail": "do not tune on this source; retain only bounded screening and assay-boundary claims"
+  },
+  "prohibitions": [
+    "no refit, recalibration, feature selection, threshold selection, or model choice using CHEMBL5674852 outcomes",
+    "no matched-parent, inhibitor-rescue, universal substrate, intact-ADC, or ADC release-species claim",
+    "no conversion of the 61 unidirectional-only source molecules into ABCB1 labels",
+    "no treating repeated observations or same-scaffold rows as independent bootstrap units"
+  ],
+  "model_scoring_performed_at_lock": false,
+  "claim_boundary": "retrospective but model-frozen source-heldout continuous evaluation; one vendor protocol without matched parental or inhibitor control"
+}

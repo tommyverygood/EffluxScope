@@ -1,0 +1,77 @@
+{
+  "protocol_version": "ABCB1_ASAP2025_SOURCEHELDOUT_V1",
+  "scoring_date": "2026-08-03",
+  "status": "scored_once_no_tuning",
+  "script": "数据/scripts/score_abcb1_asap2025_sourceheldout_v1.py",
+  "random_seed": 20260803,
+  "bootstrap_iterations": 2000,
+  "precheck": {
+    "observations_sha256": "130f4e6daffea2f8a4337ac2e31a67f992af64cc4d10c5ad351207a387c4f8f5",
+    "observations_sha256_matches_lock": true,
+    "model_v0_1_sha256": "fbc92dfa99583386ba124141fed5e77c6ecf8a59850301a6533db3883b298ac3",
+    "model_v0_1_sha256_matches_lock": true,
+    "model_v0_3_dev_sha256": "ebe6d1a8d5f06afc5c2d0b306dfd5266af56fd28fefd130147d20c5e015b907a",
+    "model_v0_3_dev_sha256_matches_lock": true,
+    "observation_rows_total": 274,
+    "scoped_rows": 132,
+    "eligible_bidirectional_rows": 64,
+    "eligible_matches_lock": true,
+    "estimable_efflux_ratio_rows": 62,
+    "estimable_matches_lock": true,
+    "identity_status_counts": {
+      "no_exact_or_connectivity_prior_overlap": 62
+    },
+    "overlap_exact_prior_sets_nonblank": 0,
+    "overlap_connectivity_prior_sets_nonblank": 0,
+    "model_scoring_performed_flags": {
+      "no": 62
+    },
+    "unique_molecules_estimable": 56,
+    "weak_binary_label_counts": {
+      "1": 49,
+      "0": 13
+    },
+    "all_blocking_checks_passed": true,
+    "identity_audit_clean": true
+  },
+  "primary_endpoint": "Spearman correlation between frozen model probability and log2(efflux_ratio) on the 62 estimable rows",
+  "predeclared_directional_gate": {
+    "rule": "Spearman point estimate > 0 and 95% Murcko-scaffold bootstrap lower bound > 0",
+    "interpretation_if_pass": "source-heldout continuous direction is supported in one MDCK-MDR1 vendor dataset",
+    "interpretation_if_fail": "do not tune on this source; retain only bounded screening and assay-boundary claims"
+  },
+  "gate_results": {
+    "frozen_ABCB1_v0_1": {
+      "spearman_rho": 0.55015301,
+      "ci95_lower": 0.20837074,
+      "ci95_upper": 0.74409192,
+      "n": 62,
+      "n_scaffold_clusters": 29,
+      "status": "pass",
+      "rule": "Spearman point estimate > 0 and 95% Murcko-scaffold bootstrap lower bound > 0",
+      "interpretation": "source-heldout continuous direction is supported in one MDCK-MDR1 vendor dataset"
+    },
+    "frozen_ABCB1_assay_aware_v0_3_dev": {
+      "spearman_rho": 0.56861486,
+      "ci95_lower": 0.13629651,
+      "ci95_upper": 0.75519321,
+      "n": 62,
+      "n_scaffold_clusters": 29,
+      "status": "pass",
+      "rule": "Spearman point estimate > 0 and 95% Murcko-scaffold bootstrap lower bound > 0",
+      "interpretation": "source-heldout continuous direction is supported in one MDCK-MDR1 vendor dataset"
+    }
+  },
+  "cumulative_stopping_rule": "连续端点方向此前已有两次不支持：Roth 2026 面板 ABCB1 Morgan Spearman = -0.520；Langthaler 2024 n=11 rho = +0.2096 (p = 0.536)。本次 ASAP 2025 为第三次独立检验。若第三次仍不通过方向门，宣布『普通二分类训练知识不能迁移到连续外排端点』，停止继续堆积弱标签，转向针对 ADC 化学空间的少量实验数据或证据分层/拒判系统，不再对该命题复测。",
+  "prohibitions_observed": [
+    "no refit, recalibration, feature selection, threshold selection, or model choice using CHEMBL5674852 outcomes",
+    "no matched-parent, inhibitor-rescue, universal substrate, intact-ADC, or ADC release-species claim",
+    "no conversion of the 61 unidirectional-only source molecules into ABCB1 labels",
+    "no treating repeated observations or same-scaffold rows as independent bootstrap units"
+  ],
+  "outputs": {
+    "predictions": "数据/processed/abcb1_asap2025_sourceheldout_predictions_v1.csv",
+    "metrics": "数据/processed/abcb1_asap2025_sourceheldout_metrics_v1.csv"
+  },
+  "claim_boundary": "retrospective but model-frozen source-heldout continuous evaluation; one vendor protocol without matched parental or inhibitor control"
+}

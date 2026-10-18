@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "feature_rows_checked": 2694,
+  "MW_TPSA_recomputed_match_count": 2694,
+  "literal_graph_formal_SMARTS_match_count": 2694,
+  "Fragments_definition_differences": [
+    {
+      "source": "Biogen2624",
+      "uid": "BIOGEN_MDR1_0126",
+      "formal_SMARTS_count": 0,
+      "Fragments_fr_amide_count": 1,
+      "affects_amide4_MW500_membership": false
+    },
+    {
+      "source": "Biogen2624",
+      "uid": "BIOGEN_MDR1_1009",
+      "formal_SMARTS_count": 0,
+      "Fragments_fr_amide_count": 1,
+      "affects_amide4_MW500_membership": false
+    },
+    {
+      "source": "Biogen2624",
+      "uid": "BIOGEN_MDR1_1160",
+      "formal_SMARTS_count": 0,
+      "Fragments_fr_amide_count": 1,
+      "affects_amide4_MW500_membership": false
+    },
+    {
+      "source": "Biogen2624",
+      "uid": "BIOGEN_MDR1_2099",
+      "formal_SMARTS_count": 1,
+      "Fragments_fr_amide_count": 2,
+      "affects_amide4_MW500_membership": false
+    },
+    {
+      "source": "Biogen2624",
+      "uid": "BIOGEN_MDR1_3122",
+      "formal_SMARTS_count": 0,
+      "Fragments_fr_amide_count": 1,
+      "affects_amide4_MW500_membership": false
+    },
+    {
+      "source": "Biogen2624",
+      "uid": "BIOGEN_MDR1_3123",
+      "formal_SMARTS_count": 0,
+      "Fragments_fr_amide_count": 1,
+      "affects_amide4_MW500_membership": false
+    },
+    {
+      "source": "ADC14",
+      "uid": "NEWF_CALICH_DMH",
+      "formal_SMARTS_count": 2,
+      "Fragments_fr_amide_count": 3,
+      "affects_amide4_MW500_membership": false
+    }
+  ],
+  "no_difference_changes_region_membership": true,
+  "all_frozen_source_hashes_reverified": true,
+  "model_predictions_not_recomputed": true,
+  "model_performance_not_computed": true
+}

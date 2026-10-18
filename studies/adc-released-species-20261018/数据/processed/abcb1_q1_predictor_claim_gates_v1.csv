@@ -1,0 +1,6 @@
+﻿gate,value,rule,status,interpretation
+direct_MCC_lower_95CI_gt_0,-0.30550505,> 0,fail,directional source-call discrimination beyond chance correlation
+direct_BAcc_lower_95CI_gt_0_5,0.37142857,> 0.5,fail,balanced accuracy lower bound exceeds chance
+positive_continuous_direction_in_two_sources,1,>= 2 independent sources with n>=3,fail,continuous endpoint direction is not carried by one study
+leave_one_source_out_min_BAcc_gt_0_5,0.375,> 0.5,fail,no single source determines the result
+nonabstain_coverage_at_least_50pct,0.70833333,>= 0.5,pass,applicability rejection does not hide most explicit calls

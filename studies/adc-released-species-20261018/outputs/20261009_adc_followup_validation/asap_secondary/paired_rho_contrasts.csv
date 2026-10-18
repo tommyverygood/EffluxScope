@@ -1,0 +1,3 @@
+﻿cohort,metric,lhs,rhs,point_delta,ci95_low,ci95_high,valid_draws,bootstrap_unit,shared_draws
+unique_compound_56,paired_delta_Spearman,v03,v01,-0.029426843039846662,-0.2644269487476406,0.1656322862451926,2000,whole_Murcko_scaffold,True
+measurement_rows_62,paired_delta_Spearman,v03,v01,0.018461848628786415,-0.23292438104195423,0.26544779049971345,2000,whole_Murcko_scaffold,True

@@ -1,0 +1,14 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 86567977,
+        "MolecularFormula": "C61H84IN5O23S3",
+        "MolecularWeight": "1478.4",
+        "SMILES": "CCN([C@H]1CO[C@H](C[C@@H]1OC)O[C@@H]2[C@H]([C@@H]([C@H](O[C@H]2O[C@H]3C#C/C=C\\C#C[C@@]\\4(CC(=O)C(=C3/C4=C\\CSSC(C)(C)CC(=O)NN)NC(=O)OC)O)C)NO[C@H]5C[C@@H]([C@@H]([C@H](O5)C)SC(=O)C6=C(C(=C(C(=C6OC)OC)O[C@H]7[C@@H]([C@@H]([C@H]([C@@H](O7)C)O)OC)O)I)C)O)O)C(=O)C",
+        "InChIKey": "URAOPNXILLDXAL-KJEDTADQSA-N",
+        "Title": "3FJ2Dce5R2"
+      }
+    ]
+  }
+}

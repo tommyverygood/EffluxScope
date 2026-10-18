@@ -1,0 +1,81 @@
+{
+  "analysis_version": "ABCB1_EXTERNAL_CALIBRATION_ERROR_V2",
+  "lock_date": "2026-08-05",
+  "status": "locked_posthoc_deep_diagnostic_after_primary_risk_rule_and_channel_ablation_results_observed",
+  "purpose": "Quantify uncertainty around external calibration, test within-source assay-specific recalibration feasibility without changing the frozen model, and localize false-positive and false-negative error patterns.",
+  "frozen_inputs": {
+    "external_analysis_rows": {
+      "path": "数据/processed/abcb1_quantity_biogen_analysis_rows_v1.csv",
+      "sha256": "9346b705e83a8606c00aabbe77b63f125ad1ef3aefc4e6899be17cf4cba61457"
+    },
+    "selective_model": {
+      "path": "模型/ABCB1_selective_screener_v0_4_dev/ABCB1_selective_uncertainty_v0_4_dev.joblib",
+      "sha256": "c56fb6b8f6f8bf13472a1a2d433b05d4c6a35eb2490ba84ce9371395b8bbff8b"
+    },
+    "prior_channel_ablation_protocol": {
+      "path": "数据/processed/abcb1_external_evidence_channel_ablation_protocol_v1.json",
+      "sha256": "1231d8ef2825a4b09a7530cf9e984b564995bb0659a2ebf049d5fe88fe9766c6"
+    }
+  },
+  "analysis_populations": ["identity_clean", "scaffold_clean"],
+  "frozen_label": "MDR1-MDCK efflux ratio >=2",
+  "raw_score": "primary_calibrated_probability",
+  "calibration_diagnostics": {
+    "methods": ["raw_frozen_score", "cross_fitted_platt_on_logit_score", "cross_fitted_isotonic_on_score"],
+    "cross_fitting": {
+      "folds": 5,
+      "splitter": "GroupKFold with bootstrap_cluster groups, shuffle and seed 20260805",
+      "population_specific": true,
+      "note": "Calibrators are fitted only on four folds and scored on the held-out fold, but all folds come from the same outcome-observed Biogen source."
+    },
+    "metrics": ["brier_score", "log_loss", "ece_equal_width_10", "ece_adaptive_10", "calibration_intercept", "calibration_slope", "roc_auc", "average_precision"],
+    "brier_decomposition": "10 adaptive bins; reliability, resolution, uncertainty, and binning residual",
+    "cluster_bootstrap": {
+      "unit": "bootstrap_cluster",
+      "replicates": 2000,
+      "seed": 20260805,
+      "confidence_interval": "percentile_95"
+    }
+  },
+  "error_taxonomy": {
+    "forced_binary_threshold": 0.5,
+    "outcomes": ["true_positive", "true_negative", "false_positive", "false_negative"],
+    "numeric_feature_comparisons": [
+      "all_error_vs_correct",
+      "false_positive_vs_true_positive_within_predicted_high",
+      "false_negative_vs_true_negative_within_predicted_low"
+    ],
+    "feature_families": [
+      "score_and_bootstrap",
+      "direct_channel_score",
+      "primary_and_direct_similarity",
+      "primary_and_direct_local_evidence",
+      "physicochemical_envelope_score",
+      "molecular_weight_logp_tpsa_hbond_rotatable_charge_heavy_atoms",
+      "continuous_log10_efflux_ratio"
+    ],
+    "tests": "Mann-Whitney U, Cliff delta, standardized mean difference, and Benjamini-Hochberg FDR within each comparison; exploratory only",
+    "categorical_strata": [
+      "selection_layer",
+      "risk_call",
+      "applicability_status",
+      "uncertainty_status",
+      "primary_direct_support_combination",
+      "frozen_probability_band"
+    ],
+    "support_thresholds": {
+      "primary_max_tanimoto": 0.23015384615384615,
+      "direct_max_tanimoto": 0.17399660825325045
+    },
+    "probability_band_edges": [0.0, 0.2, 0.35, 0.5, 0.7, 0.85, 1.0],
+    "scaffold_hotspots": {
+      "minimum_cluster_n": 4,
+      "shrinkage": "Beta-binomial posterior mean with prior strength 10 centered on the population error rate",
+      "role": "descriptive concentration audit only"
+    }
+  },
+  "interpretation_rules": {
+    "allowed": "External calibration uncertainty, within-source assay-specific recalibration feasibility, and descriptive error localization.",
+    "not_allowed": "Calling cross-fitted Biogen recalibration an independent external validation, replacing the frozen model, selecting a new threshold, or claiming an absolute universal ABCB1 substrate probability."
+  }
+}

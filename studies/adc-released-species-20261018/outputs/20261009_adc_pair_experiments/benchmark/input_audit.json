@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "no_score_join_across_versions": true,
+  "v1_v2_common_operational_UID_n": 2641,
+  "v1_v2_changed_row_counts": {
+    "connectivity_block": 0,
+    "standardized_inchikey": 0,
+    "frozen_er2_binary_label": 0,
+    "bootstrap_cluster": 0,
+    "identity_clean": 0,
+    "model_usable": 0,
+    "primary_calibrated_probability": 0,
+    "direct_panel_probability": 0,
+    "accepted_prediction": 0,
+    "risk_call": 0,
+    "abstention_reasons_json": 0
+  },
+  "all_checked_columns_identical": true,
+  "v1_v2_strategy_point_metrics_identical": true,
+  "populations": [
+    {
+      "version": "identity_audited_v2",
+      "operational_n": 2641,
+      "identity_clean_n": 2624,
+      "n_positive": 1145,
+      "n_negative": 1479,
+      "clusters": 2312,
+      "full_selected_n": 453,
+      "no_local_selected_n": 551,
+      "primary_margin_pool_n": 935,
+      "model_version_values": [
+        "ABCB1_selective_screener_v0.4_identity_audited_v2"
+      ],
+      "selected_scores_and_labels_from_same_input_table": true,
+      "old_full_point_reproduced": true
+    },
+    {
+      "version": "historical_v1_sensitivity",
+      "operational_n": 2641,
+      "identity_clean_n": 2624,
+      "n_positive": 1145,
+      "n_negative": 1479,
+      "clusters": 2312,
+      "full_selected_n": 453,
+      "no_local_selected_n": 551,
+      "primary_margin_pool_n": 935,
+      "model_version_values": [
+        "ABCB1_selective_screener_v0.4_dev"
+      ],
+      "selected_scores_and_labels_from_same_input_table": true,
+      "old_full_point_reproduced": true
+    }
+  ],
+  "checks": [
+    "UID and connectivity uniqueness",
+    "excluded all documented weak443/direct84 connectivity overlaps",
+    "full mask reconstructs no remaining reasons",
+    "accepted risk calls agree with same 0.5 class threshold",
+    "full 453 point TP221 TN119 FP84 FN29 and BAcc0.735103 exactly reproduced",
+    "whole cluster shared resampling across policies",
+    "all matched contrasts selected_n equal",
+    "larger-than-full coverage unavailable rather than filling abstentions"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "created_by": "collect_abcb1_asap_mdck_mdr1_v1.py",
+  "source_documents": 2,
+  "activity_rows": 916,
+  "observation_rows": 274,
+  "unique_molecules": 209,
+  "source_molecule_chembl_ids": 210,
+  "document_source_molecule_chembl_ids": {
+    "CHEMBL5442303": 85,
+    "CHEMBL5674852": 125
+  },
+  "document_unique_molecules": {
+    "CHEMBL5442303": 84,
+    "CHEMBL5674852": 125
+  },
+  "bidirectional_measured_observation_rows": 94,
+  "estimable_efflux_ratio_observation_rows": 92,
+  "bidirectional_nonestimable_ER_rows": 2,
+  "paired_inhibitor_observation_rows": 30,
+  "paired_inhibitor_unique_molecules": 20,
+  "identity_status_counts": {
+    "no_exact_or_connectivity_prior_overlap": 274
+  },
+  "identity_clean_unique_molecules": 209,
+  "standardization_collision_groups": 1,
+  "standardization_collision_source_molecule_ids": 2,
+  "reconstructed_class_counts": {
+    "unidirectional_permeability_only_no_substrate_call": 180,
+    "positive_like_ER_ge_2_and_rescue_ge_50pct": 16,
+    "negative_like_ER_lt_2_in_MDR1_MDCK": 9,
+    "high_ER_not_rescued_ge_50pct_or_ambiguous": 5,
+    "high_efflux_ER_ge_2_no_inhibitor_confirmation": 49,
+    "low_efflux_ER_lt_2_no_inhibitor_confirmation": 13,
+    "bidirectional_ER_nonestimable_zero_or_censored_papp_ab": 2
+  },
+  "evidence_tier_counts": {
+    "C1_MDR1_MDCK_unidirectional_Papp_and_recovery_only": 180,
+    "B1_direct_MDR1_MDCK_bidirectional_paired_inhibitor_no_parent": 30,
+    "B2_direct_MDR1_MDCK_bidirectional_no_parent_no_inhibitor": 64
+  },
+  "development_role_counts": {
+    "permeability_only_or_prior_overlap": 180,
+    "yes_weak_or_continuous_only": 30,
+    "reserved_source_heldout_continuous_only": 64
+  },
+  "strict_binary_truth_rows_created": 0,
+  "model_scoring_performed": false,
+  "formal_status": "open ASAP MDCK-MDR1 endpoints collected and evidence-tiered; 2025 source remains unscored",
+  "output_hashes": {
+    "数据/processed/abcb1_asap_mdck_mdr1_activity_rows_v1.csv": "30cea714f7e1313415db2ec3eaef083297d9382fab44bf9d663e32f5d09b7824",
+    "数据/processed/abcb1_asap_mdck_mdr1_observations_v1.csv": "130f4e6daffea2f8a4337ac2e31a67f992af64cc4d10c5ad351207a387c4f8f5",
+    "数据/processed/abcb1_asap_mdck_mdr1_source_registry_v1.csv": "e383fdde435908c39f8f4f0a2c0ee2b23830ae75e8cf010772ba04aaa88a2149"
+  }
+}

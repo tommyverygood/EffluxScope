@@ -1,0 +1,536 @@
+{
+  "status": "PASS_independent_DMH_pipeline_and_ledger_audit",
+  "checks_n": 25,
+  "checks": [
+    {
+      "check": "RDKit independently confirms exact source key",
+      "passed": true,
+      "details": "URAOPNXILLDXAL-KJEDTADQSA-N"
+    },
+    {
+      "check": "Source molecular formula",
+      "passed": true,
+      "details": "C61H84IN5O23S3"
+    },
+    {
+      "check": "Independent frozen pipeline standardized key",
+      "passed": true,
+      "details": "GHSKFHGBTRMLPK-LWAOKILFSA-N"
+    },
+    {
+      "check": "Independent frozen canonical SMILES",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Independent enumeration Completed",
+      "passed": true,
+      "details": "Completed"
+    },
+    {
+      "check": "Independent v01 calibrated score",
+      "passed": true,
+      "details": 0.9853394430082162
+    },
+    {
+      "check": "Independent v03 direct score",
+      "passed": true,
+      "details": 0.9741064173331929
+    },
+    {
+      "check": "Source plus frozen primary_exact_identity",
+      "passed": true,
+      "details": false
+    },
+    {
+      "check": "Source plus frozen direct_exact_identity",
+      "passed": true,
+      "details": false
+    },
+    {
+      "check": "Source plus frozen primary_connectivity_overlap",
+      "passed": true,
+      "details": false
+    },
+    {
+      "check": "Source plus frozen direct_connectivity_overlap",
+      "passed": true,
+      "details": false
+    },
+    {
+      "check": "Primary max similarity",
+      "passed": true,
+      "details": 0.1722488038277512
+    },
+    {
+      "check": "Direct max similarity",
+      "passed": true,
+      "details": 0.16216216216216217
+    },
+    {
+      "check": "Physicochemical robust z",
+      "passed": true,
+      "details": 11.5
+    },
+    {
+      "check": "Independent bootstrap p10",
+      "passed": true,
+      "details": 0.9721196469220962
+    },
+    {
+      "check": "Both reference support gates fail",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Physicochemical gate fails",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "High-score bootstrap direction stable",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "DMH abstention two applicable gate reasons",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "13 prior structures and 52 historical comparisons verified from raw files",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Root input hashes current and immutable",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Root completion counts agree",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Two pools preserve null performance metrics",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "Strict pool equal-coverage still k0",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "All audit inputs unchanged",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "source_key": "URAOPNXILLDXAL-KJEDTADQSA-N",
+  "source_formula": "C61H84IN5O23S3",
+  "frozen_standardized_key": "GHSKFHGBTRMLPK-LWAOKILFSA-N",
+  "source_connectivity_block": "URAOPNXILLDXAL",
+  "model_connectivity_block": "GHSKFHGBTRMLPK",
+  "source_or_model_development_overlap": {
+    "primary_exact_identity": false,
+    "direct_exact_identity": false,
+    "primary_connectivity_overlap": false,
+    "direct_connectivity_overlap": false
+  },
+  "independent_v01_score": 0.98533944,
+  "independent_v03_score": 0.97410642,
+  "independent_abstention_reasons": [
+    "outside_both_reference_panels",
+    "outside_physicochemical_envelope"
+  ],
+  "historical_ledger_checks": [
+    {
+      "entity_id": "ADC_PAYLOAD_017",
+      "field": "primary_calibrated_probability",
+      "old": "0.84183654",
+      "new": "0.84183654",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_PAYLOAD_017",
+      "field": "direct_panel_probability",
+      "old": "0.82219302",
+      "new": "0.82219302",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_PAYLOAD_017",
+      "field": "risk_call",
+      "old": "high_ABCB1_efflux_risk",
+      "new": "high_ABCB1_efflux_risk",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_PAYLOAD_017",
+      "field": "standardized_inchikey",
+      "old": "DASWEROEPLKSEI-DBJMJIIBSA-N",
+      "new": "DASWEROEPLKSEI-DBJMJIIBSA-N",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_REL_010",
+      "field": "primary_calibrated_probability",
+      "old": "0.82798237",
+      "new": "0.82798237",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_REL_010",
+      "field": "direct_panel_probability",
+      "old": "0.63007071",
+      "new": "0.63007071",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_REL_010",
+      "field": "risk_call",
+      "old": "high_ABCB1_efflux_risk",
+      "new": "high_ABCB1_efflux_risk",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_REL_010",
+      "field": "standardized_inchikey",
+      "old": "PLXLYXLUCNZSAA-QLXKLKPCSA-N",
+      "new": "PLXLYXLUCNZSAA-QLXKLKPCSA-N",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_REL_004",
+      "field": "primary_calibrated_probability",
+      "old": "0.94406737",
+      "new": "0.94406737",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_REL_004",
+      "field": "direct_panel_probability",
+      "old": "0.79583093",
+      "new": "0.79583093",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_REL_004",
+      "field": "risk_call",
+      "old": "abstain",
+      "new": "abstain",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_REL_004",
+      "field": "standardized_inchikey",
+      "old": "AYWIIXDQRUFQGH-PANPCQOCSA-N",
+      "new": "AYWIIXDQRUFQGH-PANPCQOCSA-N",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_REL_001",
+      "field": "primary_calibrated_probability",
+      "old": "0.97493187",
+      "new": "0.97493187",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_REL_001",
+      "field": "direct_panel_probability",
+      "old": "0.92902831",
+      "new": "0.92902831",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_REL_001",
+      "field": "risk_call",
+      "old": "abstain",
+      "new": "abstain",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_REL_001",
+      "field": "standardized_inchikey",
+      "old": "UBARCGYHIPVZLH-JVVNUMQSSA-N",
+      "new": "UBARCGYHIPVZLH-JVVNUMQSSA-N",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_PAYLOAD_018",
+      "field": "primary_calibrated_probability",
+      "old": "0.66353626",
+      "new": "0.66353626",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_PAYLOAD_018",
+      "field": "direct_panel_probability",
+      "old": "0.83541007",
+      "new": "0.83541007",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_PAYLOAD_018",
+      "field": "risk_call",
+      "old": "abstain",
+      "new": "abstain",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_PAYLOAD_018",
+      "field": "standardized_inchikey",
+      "old": "MFRNYXJJRJQHNW-XPQXPFNPSA-N",
+      "new": "MFRNYXJJRJQHNW-XPQXPFNPSA-N",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_REL_006",
+      "field": "primary_calibrated_probability",
+      "old": "0.8863831",
+      "new": "0.8863831",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_REL_006",
+      "field": "direct_panel_probability",
+      "old": "0.94315078",
+      "new": "0.94315078",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_REL_006",
+      "field": "risk_call",
+      "old": "abstain",
+      "new": "abstain",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_REL_006",
+      "field": "standardized_inchikey",
+      "old": "HJAVUDHEQKSJDI-KQKSWZEISA-N",
+      "new": "HJAVUDHEQKSJDI-KQKSWZEISA-N",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_REL_008",
+      "field": "primary_calibrated_probability",
+      "old": "0.96199154",
+      "new": "0.96199154",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_REL_008",
+      "field": "direct_panel_probability",
+      "old": "0.98425298",
+      "new": "0.98425298",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_REL_008",
+      "field": "risk_call",
+      "old": "abstain",
+      "new": "abstain",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_REL_008",
+      "field": "standardized_inchikey",
+      "old": "ZTRDRWJUUWOHKG-HWFUDFRTSA-N",
+      "new": "ZTRDRWJUUWOHKG-HWFUDFRTSA-N",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_PAYLOAD_009",
+      "field": "primary_calibrated_probability",
+      "old": "0.93987251",
+      "new": "0.93987251",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_PAYLOAD_009",
+      "field": "direct_panel_probability",
+      "old": "0.78808628",
+      "new": "0.78808628",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_PAYLOAD_009",
+      "field": "risk_call",
+      "old": "abstain",
+      "new": "abstain",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_PAYLOAD_009",
+      "field": "standardized_inchikey",
+      "old": "JFCFGYGEYRIEBE-XWGIPOFVSA-N",
+      "new": "JFCFGYGEYRIEBE-XWGIPOFVSA-N",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_PAYLOAD_032",
+      "field": "primary_calibrated_probability",
+      "old": "0.79329676",
+      "new": "0.79329676",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_PAYLOAD_032",
+      "field": "direct_panel_probability",
+      "old": "0.69571261",
+      "new": "0.69571261",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_PAYLOAD_032",
+      "field": "risk_call",
+      "old": "high_ABCB1_efflux_risk",
+      "new": "high_ABCB1_efflux_risk",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_PAYLOAD_032",
+      "field": "standardized_inchikey",
+      "old": "YMTZZJOPSATRTO-UHFFFAOYSA-N",
+      "new": "YMTZZJOPSATRTO-UHFFFAOYSA-N",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_PAYLOAD_028",
+      "field": "primary_calibrated_probability",
+      "old": "0.78437219",
+      "new": "0.78437219",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_PAYLOAD_028",
+      "field": "direct_panel_probability",
+      "old": "0.56161609",
+      "new": "0.56161609",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_PAYLOAD_028",
+      "field": "risk_call",
+      "old": "high_ABCB1_efflux_risk",
+      "new": "high_ABCB1_efflux_risk",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_PAYLOAD_028",
+      "field": "standardized_inchikey",
+      "old": "ZVYVPGLRVWUPMP-FYSMJZIKSA-N",
+      "new": "ZVYVPGLRVWUPMP-FYSMJZIKSA-N",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_PAYLOAD_024",
+      "field": "primary_calibrated_probability",
+      "old": "0.85405089",
+      "new": "0.85405089",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_PAYLOAD_024",
+      "field": "direct_panel_probability",
+      "old": "0.52876615",
+      "new": "0.52876615",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_PAYLOAD_024",
+      "field": "risk_call",
+      "old": "high_ABCB1_efflux_risk",
+      "new": "high_ABCB1_efflux_risk",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_PAYLOAD_024",
+      "field": "standardized_inchikey",
+      "old": "FJHBVJOVLFPMQE-QFIPXVFZSA-N",
+      "new": "FJHBVJOVLFPMQE-QFIPXVFZSA-N",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_PAYLOAD_008",
+      "field": "primary_calibrated_probability",
+      "old": "0.91272913",
+      "new": "0.91272913",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_PAYLOAD_008",
+      "field": "direct_panel_probability",
+      "old": "0.76323753",
+      "new": "0.76323753",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_PAYLOAD_008",
+      "field": "risk_call",
+      "old": "abstain",
+      "new": "abstain",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_PAYLOAD_008",
+      "field": "standardized_inchikey",
+      "old": "ANZJBCHSOXCCRQ-JIBWCDQOSA-N",
+      "new": "ANZJBCHSOXCCRQ-JIBWCDQOSA-N",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_REL_003",
+      "field": "primary_calibrated_probability",
+      "old": "0.95134713",
+      "new": "0.95134713",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_REL_003",
+      "field": "direct_panel_probability",
+      "old": "0.91781727",
+      "new": "0.91781727",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_REL_003",
+      "field": "risk_call",
+      "old": "abstain",
+      "new": "abstain",
+      "passed": true
+    },
+    {
+      "entity_id": "ADC_REL_003",
+      "field": "standardized_inchikey",
+      "old": "VUAUZOXSQKWNNO-IURIJBBPSA-N",
+      "new": "VUAUZOXSQKWNNO-IURIJBBPSA-N",
+      "passed": true
+    }
+  ],
+  "input_sha256": {
+    "outputs/20261012_adc_completion/scoring/species_predictions.csv": "9c62f876b0e0549220d2bb5ddcdcbdda1c6b5f4eb56c3922eba1d33eb8ed5c4d",
+    "outputs/20261012_adc_completion/scoring/historical_reproduction.csv": "239cbe1f242e378f23c93942fdd43d4c98631192fcb72f2c75337aca7ad36b40",
+    "outputs/20261012_adc_completion/scoring/completion.json": "aeb9a31c6a19d8637d618aac3d12b8d0643f8cb461a0677793d5d99d8c70778c",
+    "outputs/20261009_adc_pair_experiments/pairs/results_curated_v2/entities_scored_or_hold.csv": "abb7062752273ba8382752d45103d6e808adbe8b44b9e09667c0add4d07ec59b",
+    "模型/ABCB1_screener_v0_1/ABCB1_screener_v0_1.joblib": "fbc92dfa99583386ba124141fed5e77c6ecf8a59850301a6533db3883b298ac3",
+    "模型/ABCB1_assay_aware_candidate_v0_3_dev/ABCB1_assay_aware_candidate_v0_3_dev.joblib": "ebe6d1a8d5f06afc5c2d0b306dfd5266af56fd28fefd130147d20c5e015b907a",
+    "模型/ABCB1_selective_screener_v0_4_dev/ABCB1_selective_uncertainty_v0_4_dev.joblib": "c56fb6b8f6f8bf13472a1a2d433b05d4c6a35eb2490ba84ce9371395b8bbff8b"
+  },
+  "protected_inputs_unchanged": true,
+  "runtime": {
+    "executable": "/tmp/effluxscope_20261012_env/bin/python",
+    "python": "3.12.14",
+    "numpy": "2.5.1",
+    "rdkit": "2026.03.4",
+    "sklearn": "1.9.0",
+    "joblib": "1.5.3"
+  },
+  "warnings": [
+    "DeprecationWarning: Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed)."
+  ],
+  "review_scope": "No root runner or project preprocessing/feature/scoring helpers imported. Independent API pipeline on DMH only; 52 prior ledger comparisons verified without rerunning prior models. Numerical reproducibility is not new biological transport evidence."
+}

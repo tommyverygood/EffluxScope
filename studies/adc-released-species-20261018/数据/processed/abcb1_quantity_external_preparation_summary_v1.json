@@ -1,0 +1,29 @@
+{
+  "status": "prepared_after_protocol_lock_before_model_scoring",
+  "protocol_path": "数据/processed/abcb1_quantity_external_validation_protocol_lock_v1.json",
+  "biogen": {
+    "source_rows": 3521,
+    "eligible_endpoint_rows": 2642,
+    "frozen_er2_label_counts": {
+      "1": 1156,
+      "0": 1486
+    }
+  },
+  "daood": {
+    "source_rows": 607,
+    "eligible_binary_rows": 607,
+    "author_label_counts": {
+      "0": 310,
+      "1": 297
+    },
+    "source_database_counts": {
+      "ChEMBL": 450,
+      "Metrabase": 157
+    }
+  },
+  "outputs": {
+    "biogen_model_input": "数据/processed/abcb1_quantity_biogen_model_input_v1.csv",
+    "daood_model_input": "数据/processed/abcb1_quantity_daood_model_input_v1.csv",
+    "source_registry": "数据/processed/abcb1_quantity_external_source_registry_v1.csv"
+  }
+}

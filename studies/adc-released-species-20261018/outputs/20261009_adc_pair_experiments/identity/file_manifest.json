@@ -1,0 +1,142 @@
+{
+  "manifested_utc": "2026-10-09T05:57:45.504668+00:00",
+  "files": [
+    {
+      "path": "raw/cas_890654_03_2.json",
+      "bytes": 1204,
+      "sha256": "e09969aab427b5322be683aba6b097570755b2fac85be41b9f3487733f574ef5"
+    },
+    {
+      "path": "raw/correct_candidate_key.error.txt",
+      "bytes": 32,
+      "sha256": "5695d71fa2039b300f1bc600a25efb5b6ea204f30d0aa801859210b8cfb47e82"
+    },
+    {
+      "path": "raw/correct_cid_properties.json",
+      "bytes": 1197,
+      "sha256": "328b02d747369d136cfa510d36c24a42003764e0a972d1608b8e154e6241e6e8"
+    },
+    {
+      "path": "raw/correct_cid_pugview.json",
+      "bytes": 50194,
+      "sha256": "77e0a7562bc4f1a305210f1dfdec3e97bb5a8983253a3a37e1a2f05527f16814"
+    },
+    {
+      "path": "raw/correct_cid_sdf.sdf",
+      "bytes": 14005,
+      "sha256": "3036c86c3e4232e3e22a9bc6ac3492e45b869ee167eab9f695d3f9b59d585974"
+    },
+    {
+      "path": "raw/correct_cid_synonyms.json",
+      "bytes": 558,
+      "sha256": "322c2b8a2d6d10a18fb512cc4fdff361120f2ed60233c4ccadc5065ed82e6210"
+    },
+    {
+      "path": "raw/correct_key_properties.json",
+      "bytes": 807,
+      "sha256": "d74d9b66d5da4c150a43f904be6d3c0f3957671a728653fe4475b15d97c4eafe"
+    },
+    {
+      "path": "raw/dm4_parent_properties.json",
+      "bytes": 1193,
+      "sha256": "62dc38dba333b97b2454fa23820696b1dd7afb4c4034dd76631fe2507161649a"
+    },
+    {
+      "path": "raw/fetch_receipts_fifth.json",
+      "bytes": 2033,
+      "sha256": "2c6c970e1a9679a33d9a822ff88be8cfc44d5cabb79ade284927fd6efddce3e3"
+    },
+    {
+      "path": "raw/fetch_receipts_fourth.json",
+      "bytes": 816,
+      "sha256": "cff5abead8a56465de166e0f4d0aaaefcb7671f7ee4f2a324bf3af0f24cd7c25"
+    },
+    {
+      "path": "raw/fetch_receipts_initial.json",
+      "bytes": 1728,
+      "sha256": "a38e96c01a01593fb76c36e25cf48f151b5899ecfbc87d4db14d50f7c200bdce"
+    },
+    {
+      "path": "raw/fetch_receipts_second.json",
+      "bytes": 1741,
+      "sha256": "8d8b6ecbf07befea229476cae3dad002220a20b16d994bc5666b5dc8d07cef59"
+    },
+    {
+      "path": "raw/fetch_receipts_third.json",
+      "bytes": 1922,
+      "sha256": "f6d4c47a0e9bf062062f37352df6a9779ffc27e90673410a1c98d3c2d7a3280d"
+    },
+    {
+      "path": "raw/gsrs_exact_sme_query.json",
+      "bytes": 2275,
+      "sha256": "93fbd307fc792e2fa9fd992058d5e4209cfd906f9e0c0c93ef74a2cd1890a504"
+    },
+    {
+      "path": "raw/gsrs_exact_smethyl_query.json",
+      "bytes": 2297,
+      "sha256": "f3d14ab3d5dafd5b314b415a8543128c6096426d9400515c67251930be378652"
+    },
+    {
+      "path": "raw/gsrs_search_methyl_dm4.json",
+      "bytes": 95287,
+      "sha256": "c83c3d6d703cabb014e3415759c2e74c356c87b60c2b152a6fb668a8293c4105"
+    },
+    {
+      "path": "raw/gsrs_search_s_me_dm4.json",
+      "bytes": 235175,
+      "sha256": "c7c6b1d7b3e3be1339f3334f23b468c69f10300ddf688e0dd40ba8f5cfebe188"
+    },
+    {
+      "path": "raw/gsrs_sme_inchikey_query.json",
+      "bytes": 2370,
+      "sha256": "eb72e97250185488310a9f84eca1acc5d91c1f5e737e917c2e0d8004bddc25c5"
+    },
+    {
+      "path": "raw/old_cid_properties.json",
+      "bytes": 1210,
+      "sha256": "19fce0bb7574f941d1aec467efec70d1fcedaa3b849e764a9f5ac9a40fce791d"
+    },
+    {
+      "path": "raw/old_cid_synonyms.json",
+      "bytes": 875,
+      "sha256": "f17530c0ba6c9a896799bec7130050f41e0866c21e32caaa748b2a5f8b057397"
+    },
+    {
+      "path": "raw/primary2010_author.pdf",
+      "bytes": 1816,
+      "sha256": "c927299bfe14c23524f5c36b035291dc5a2c6f581910d963f4cb46ce639bf6ce",
+      "valid_pdf": false,
+      "actual_kind": "HTML browser check page; never used as primary PDF"
+    },
+    {
+      "path": "raw/primary2010_figure1.jpg",
+      "bytes": 26758,
+      "sha256": "6cc4afa6eb5223a875ca0f13a6639e0e8894daf6e24e63cc138cf614a87a1544"
+    },
+    {
+      "path": "raw/primary2010_fulltext.xml.error.txt",
+      "bytes": 16,
+      "sha256": "e1faa17639b6dcfaac5b507b7775fe497809a62addef5942fc17b75c6e86bbb7"
+    },
+    {
+      "path": "raw/primary2010_pmc.html",
+      "bytes": 191687,
+      "sha256": "06baf927a04f5a8fd61bca1200d26836c40155b6a1672a02e9e2d685086b2676"
+    },
+    {
+      "path": "raw/pubchem_sme_substance.json",
+      "bytes": 11605,
+      "sha256": "d0477eab3b9931d7d8262946fc48237e138c52534c30cff171d5b6194721c664"
+    },
+    {
+      "path": "raw/s_me_dm4.json",
+      "bytes": 4660,
+      "sha256": "d077251476893667c8c1ef7e907b85a2ce69a07494db997ebe6a33b2b846c848"
+    },
+    {
+      "path": "raw/s_methyl_dm4.error.txt",
+      "bytes": 32,
+      "sha256": "5695d71fa2039b300f1bc600a25efb5b6ea204f30d0aa801859210b8cfb47e82"
+    }
+  ]
+}

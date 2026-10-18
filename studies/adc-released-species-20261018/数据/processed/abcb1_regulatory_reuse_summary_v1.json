@@ -1,0 +1,12 @@
+{
+  "source_documents": 11,
+  "entity_rows": 16,
+  "standardization_ok": 16,
+  "strict_nonoverlap_candidates": 14,
+  "strict_candidate_class_counts": {
+    "1": 10,
+    "0": 4
+  },
+  "secondary_context_rows": 2,
+  "formal_status": "candidate_collection_complete_no_model_scoring_in_this_script"
+}

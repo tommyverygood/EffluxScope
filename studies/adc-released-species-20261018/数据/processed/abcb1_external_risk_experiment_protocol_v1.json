@@ -1,0 +1,69 @@
+{
+  "analysis_version": "ABCB1_EXTERNAL_RISK_EXPERIMENT_V1",
+  "lock_date": "2026-08-05",
+  "status": "locked_posthoc_secondary_analysis_after_primary_external_outcome_observation_before_new_risk_experiments",
+  "purpose": "Complete descriptive external risk experiments for the frozen v0.4 selective screener without model fitting, threshold tuning, or claim expansion.",
+  "frozen_inputs": {
+    "external_analysis_rows": {
+      "path": "数据/processed/abcb1_quantity_biogen_analysis_rows_v1.csv",
+      "sha256": "9346b705e83a8606c00aabbe77b63f125ad1ef3aefc4e6899be17cf4cba61457"
+    },
+    "selective_model": {
+      "path": "模型/ABCB1_selective_screener_v0_4_dev/ABCB1_selective_uncertainty_v0_4_dev.joblib",
+      "sha256": "c56fb6b8f6f8bf13472a1a2d433b05d4c6a35eb2490ba84ce9371395b8bbff8b"
+    },
+    "upstream_external_protocol": {
+      "path": "数据/processed/abcb1_quantity_external_validation_protocol_lock_v1.json",
+      "sha256": "9026b19f5ea3e4a288bc52ec96db1cbc8deccf6821ed08c2e85e76d5f3be9a4d"
+    }
+  },
+  "primary_analysis_population": "Biogen_Fang_2023 identity-clean unique-connectivity rows with usable probability and frozen ER>=2 label",
+  "sensitivity_population": "Biogen_Fang_2023 scaffold-clean unique-connectivity rows with usable probability and frozen ER>=2 label",
+  "frozen_label": "MDR1-MDCK efflux ratio >= 2; a weak external efflux-risk label rather than universal ABCB1 substrate truth",
+  "frozen_predictions": {
+    "forced_binary_threshold": 0.5,
+    "selective_low_threshold": 0.35,
+    "selective_high_threshold": 0.7,
+    "local_low_boundary": 0.35,
+    "local_high_boundary": 0.65
+  },
+  "experiments": {
+    "probability_margin_coverage_reliability": {
+      "description": "Descriptive confidence-ranked retention curve based only on absolute distance from 0.5; no operating point will be selected from the external outcome.",
+      "target_coverages": [1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.25, 0.2, 0.175, 0.15, 0.125, 0.1, 0.075, 0.05],
+      "metrics": ["coverage", "accuracy", "balanced_accuracy", "mcc", "sensitivity", "specificity", "high_risk_precision", "low_risk_npv"],
+      "comparators": ["forced_binary_all", "frozen_probability_margin_only", "frozen_full_v0_4", "forced_binary_on_v0_4_rejected_layer"]
+    },
+    "rejector_rule_ablation": {
+      "cumulative_order": [
+        "probability_margin",
+        "bootstrap_direction_stability",
+        "applicability_domain",
+        "supported_model_direction_agreement",
+        "local_neighborhood_agreement",
+        "stereo_collision_guard"
+      ],
+      "leave_one_out_scope": "Remove one downstream rule family from the otherwise full rule set; the probability-margin rule remains mandatory.",
+      "required_validation": "The reconstructed full rule set must exactly reproduce the frozen v0.4 accepted rows and directions in the identity-clean population."
+    },
+    "calibration": {
+      "equal_width_bins": 10,
+      "adaptive_bins": 10,
+      "metrics": ["brier_score", "log_loss", "ece_equal_width", "ece_adaptive", "calibration_intercept", "calibration_slope", "roc_auc", "average_precision"]
+    },
+    "error_stratification": {
+      "strata": ["selection_layer", "risk_call", "applicability_status", "uncertainty_status", "abstention_reason"],
+      "note": "Abstention reasons can overlap; their rows are descriptive and are not summed as mutually exclusive counts."
+    },
+    "cluster_bootstrap": {
+      "unit": "Murcko scaffold, with acyclic connectivity fallback inherited from bootstrap_cluster",
+      "replicates": 2000,
+      "seed": 20260805,
+      "confidence_interval": "percentile_95"
+    }
+  },
+  "interpretation_rules": {
+    "allowed": "External weak-label risk ranking, coverage-reliability trade-off, and enrichment of reliable calls under selective rejection.",
+    "not_allowed": "Calling this analysis preregistered, choosing thresholds from these outcomes, claiming universal ABCB1 substrate classification, intact-ADC transport, intracellular unbound exposure, resistance, efficacy, or clinical DDI."
+  }
+}

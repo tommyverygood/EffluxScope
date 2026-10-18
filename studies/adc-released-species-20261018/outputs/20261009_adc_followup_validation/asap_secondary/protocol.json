@@ -1,0 +1,16 @@
+{
+  "source": "数据/processed/abcb1_selective_v0_4_asap2025_posthoc_predictions_v1.csv",
+  "sha256": "ad881d5c403eccb16a5f1ec9089d400ff7f24574c64a20c134ca6f723fa1afd0",
+  "role": "retrospective_secondary_replication_not_ADC_validation",
+  "already_observed_outcomes": true,
+  "no_refit_or_recalibration": true,
+  "primary_cohort": "unique exact standardized compound, median log2ER across existing observations; scores must agree",
+  "secondary_cohort": "historical62 measurement rows, whole scaffold resampling retains all repeats together",
+  "primary_test": "paired delta Spearman(v03 vs v01) using same2000 Murcko scaffold draws",
+  "binary_ER2": "secondary assay-specific sensitivity endpoint without parental/inhibitor confirmation",
+  "matched_count": "full native accepted count, own-margin deterministic UID ties; BAcc unavailable if selected class absent",
+  "seed": 20261009,
+  "bootstrap_draws": 2000,
+  "no_new_source_collection": true,
+  "scope": "One vendor MDR1-MDCK dataset; not completeADC, matched parent-release, or universal substrate status"
+}

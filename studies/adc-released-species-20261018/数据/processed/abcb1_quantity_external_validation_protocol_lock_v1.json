@@ -1,0 +1,84 @@
+{
+  "protocol_version": "ABCB1_QUANTITY_EXTERNAL_VALIDATION_V1",
+  "lock_date": "2026-08-05",
+  "status": "locked_before_new_external_outcome_scoring",
+  "objective": "Evaluate the frozen ABCB1 v0.4-dev selective risk screener on the largest accessible structure-linked external evidence while preserving endpoint and source distinctions.",
+  "frozen_model": {
+    "path": "模型/ABCB1_selective_screener_v0_4_dev/ABCB1_selective_uncertainty_v0_4_dev.joblib",
+    "sha256": "c56fb6b8f6f8bf13472a1a2d433b05d4c6a35eb2490ba84ce9371395b8bbff8b"
+  },
+  "reference_panels": {
+    "primary_443": {
+      "path": "数据/processed/abcb1_screener_v0_1_training_audit.csv",
+      "sha256": "54979f1037817d6a218d31301c59a1056b0123747f1aacbbf2e12ddc85c8d747"
+    },
+    "direct_panel": {
+      "path": "数据/processed/soskuti_2024_mdr1_species_panel_v1.csv",
+      "sha256": "9892cd2bb4be3ff0c834113c5ec7b8d9b7752bc69667782cd5980f19f2ac3bf7"
+    }
+  },
+  "new_external_sources": [
+    {
+      "source_id": "biogen_fang_2023_mdr1_mdck",
+      "role": "primary_large_continuous_external_risk_benchmark",
+      "endpoint": "log10 MDR1-MDCK efflux ratio, B-to-A divided by A-to-B",
+      "expected_endpoint_rows": 2642,
+      "source_url": "https://github.com/molecularinformatics/Computational-ADME/blob/main/ADME_public_set_3521.csv",
+      "doi": "10.1021/acs.jcim.3c00160",
+      "claim_limit": "continuous MDR1-MDCK efflux-risk validation only; not matched-parental or inhibitor-rescue substrate truth"
+    },
+    {
+      "source_id": "daood_2025_curated_pgp_substrate",
+      "role": "secondary_large_heterogeneous_binary_corroboration",
+      "endpoint": "author-curated P-gp substrate or nonsubstrate class",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12587445/",
+      "doi": "10.1021/acs.molpharmaceut.5c01065",
+      "claim_limit": "retrospective heterogeneous-source corroboration; exact/source overlap and majority-vote labels prevent pristine external-validation claims"
+    }
+  ],
+  "historical_diagnostic_sources": [
+    "regulatory strict pool v4",
+    "ASAP 2025 MDCK-MDR1",
+    "Wegler 2021 source/scaffold stress panel",
+    "Kelly 2022 Table 7 stress panel",
+    "Conrad 2024 matched molecular pairs"
+  ],
+  "identity_policy": {
+    "primary_analysis": "exclude exact connectivity overlap with either frozen reference panel",
+    "secondary_analysis": "also report exact-Murcko-scaffold-clean subset",
+    "model_reference_identity_outputs": "retain as abstentions in full-set operational coverage but exclude from external accepted-performance denominators",
+    "duplicate_policy": "collapse repeated standardized connectivity within each source before performance analysis"
+  },
+  "predeclared_endpoint_rules": {
+    "biogen_binary_sensitivity_cut": "high efflux if log10(ER) >= log10(2); low efflux otherwise",
+    "biogen_primary_continuous_test": "Spearman correlation between frozen primary calibrated probability and log10(ER)",
+    "biogen_selective_test": "compare log10(ER) distributions for accepted high-risk versus accepted low-risk calls",
+    "daood_binary_rule": "use only author final binary P-gp substrate classes; exclude inconclusive, inhibitor-only, and missing-structure rows"
+  },
+  "metrics": [
+    "total and identity-clean row counts",
+    "three-output coverage and abstention reasons",
+    "Spearman rho with scaffold-cluster bootstrap confidence interval",
+    "accepted balanced accuracy, MCC, high-risk precision, and low-risk negative predictive value",
+    "accepted high-versus-low endpoint median difference and Cliff's delta",
+    "per-source metrics without naive pooling of source-dependent rows",
+    "scaffold-clean sensitivity analysis"
+  ],
+  "bootstrap": {
+    "unit": "exact Murcko scaffold group",
+    "replicates": 2000,
+    "seed": 20260805,
+    "interval": "percentile 95 percent confidence interval"
+  },
+  "prohibitions": [
+    "do not modify the frozen v0.4 model, thresholds, rejector, or applicability rules after seeing these outcomes",
+    "do not pool assay endpoints as if they were one biological truth label",
+    "do not describe retrospective heterogeneous data as prospective validation",
+    "do not infer intact-ADC transport, intracellular unbound exposure, resistance, efficacy, or clinical DDI",
+    "do not hide coverage, class-specific accepted counts, or source overlap"
+  ],
+  "decision_rule": {
+    "quantity_support": "may support an external ABCB1 efflux-risk ranking/screening claim if the primary Biogen continuous direction is positive with a scaffold-bootstrap 95 percent confidence interval excluding zero and accepted high-risk rows show higher ER than accepted low-risk rows",
+    "strict_predictor_upgrade": "not permitted without a new outcome-unseen matched-parental or inhibitor-rescue source containing both positive and negative calls"
+  }
+}

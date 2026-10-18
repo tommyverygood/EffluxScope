@@ -1,0 +1,31 @@
+{
+  "created_utc": "2026-10-12T06:09:27.055285+00:00",
+  "client_date": "2026-10-12",
+  "status": "locked_before_new_computation_not_preregistered",
+  "prior_results_and_sources_already_known": true,
+  "authorized_scope": "public_data_and_computation",
+  "models": "frozen v0.1, v0.3, v0.4; no fitting or threshold tuning",
+  "analysis_unit": "unique molecular entity within one endpoint/source layer; inhibitor/concentration arms are not independent test compounds",
+  "strict_ADC_transport": "source-specific human ABCB1 direct bidirectional transport plus matched inhibitor/parental evidence and resolved chemical identity; low ER alone with poor permeability/mixture is exploratory",
+  "no_endpoint_pooling": [
+    "cytotoxicity/GI50 rescue",
+    "regulatory author call",
+    "mixed-transporter Caco2 ER",
+    "conference abstract"
+  ],
+  "parent_release_comparison": "Only exact chemically changed parents and actual released species measured in same source/system/concentration with controls can supply a measured paired transport change; otherwise delta truth null. Identical free/released chemistry is control, not changed pair.",
+  "matched_coverage": "simple primary/direct absolute distance from 0.5, stable entity_id tie break; compare accepted counts equal to full selector k. If absent positive or negative in selected population BAcc and NPV null.",
+  "secondary_top1": "Three known TOP1 species in same published Table S5, separately analyze reported P-gp-arm ER, directional Papp, inhibitor response, and descriptive pair ordering of frozen scores; n=3 purposive source not accuracy or inferential CI. ABCG2 arms separate.",
+  "dual_payload": "separate components and completeness/identity only, no combined risk probability, synergy or ratio optimization",
+  "new_sources": "primary sources with documented access and material mapping; new abstract-only evidence remains separate exploratory level",
+  "missing_truth": "retain explicit not_evaluable and stopping/continuation reason; no synthetic biological outcomes",
+  "protected_file_count": 686,
+  "protocol_citation": {
+    "authors": "Kassis, T.; Agarwal, V.; He, Y.; Patel, D.; Brueckner, A. M.",
+    "year": 2026,
+    "title": "Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents",
+    "url": "https://arxiv.org/abs/2609.00065",
+    "doi": "10.48550/arXiv.2609.00065",
+    "metadata_live_verified": "2026-10-12; latest v2; no journal DOI shown"
+  }
+}

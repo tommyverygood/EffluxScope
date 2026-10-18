@@ -1,0 +1,143 @@
+{
+  "protocol_id": "ABCB1_OOD_STRUCTURAL_SHIFT_AUDIT_V1",
+  "created_at": "2026-08-07T00:00:00+10:00",
+  "status": "locked_before_structure_only_assignment_and_metric_generation",
+  "analysis_timing": "retrospective_post_Biogen_outcome_observed_structure_only_rules_frozen_before_new_OOD_metrics",
+  "scientific_role": "post-hoc structural-shift audit of a frozen selective screener; not prospective OOD validation and not model redevelopment",
+  "primary_questions": [
+    "Does ECFP4 distance from the frozen ABCB1 reference chemistry identify higher forced-binary error or performance loss?",
+    "As structural distance increases, does frozen v0.4 reduce coverage and retain a more reliable accepted subset than forcing its abstentions?"
+  ],
+  "frozen_model": {
+    "model_version": "ABCB1_selective_screener_v0.4_dev",
+    "binary_threshold": 0.5,
+    "selective_low_threshold": 0.35,
+    "selective_high_threshold": 0.7,
+    "no_refit": true,
+    "no_recalibration": true,
+    "no_rule_or_threshold_change": true
+  },
+  "input_hashes_sha256": {
+    "数据/processed/abcb1_screener_v0_1_training_audit.csv": "54979f1037817d6a218d31301c59a1056b0123747f1aacbbf2e12ddc85c8d747",
+    "数据/processed/soskuti_2024_mdr1_species_panel_v1.csv": "9892cd2bb4be3ff0c834113c5ec7b8d9b7752bc69667782cd5980f19f2ac3bf7",
+    "模型/ABCB1_assay_aware_candidate_v0_3_dev/ABCB1_assay_aware_candidate_v0_3_dev.joblib": "ebe6d1a8d5f06afc5c2d0b306dfd5266af56fd28fefd130147d20c5e015b907a",
+    "数据/processed/abcb1_quantity_biogen_analysis_rows_v1.csv": "9346b705e83a8606c00aabbe77b63f125ad1ef3aefc4e6899be17cf4cba61457",
+    "模型/ABCB1_selective_screener_v0_4_dev/ABCB1_selective_uncertainty_v0_4_dev.joblib": "c56fb6b8f6f8bf13472a1a2d433b05d4c6a35eb2490ba84ce9371395b8bbff8b",
+    "论文参考/ci5c00475.pdf": "2c991ec5af67a3a769ff17075d29599b7a93cfbfeb1bdb07f594950211507963"
+  },
+  "reference_spaces": {
+    "primary_model_reference": {
+      "expected_rows": 443,
+      "structure_field": "derived_isomeric_smiles",
+      "role": "actual weak-label primary-model training chemistry"
+    },
+    "direct_model_reference": {
+      "expected_rows": 63,
+      "source": "training_rows in the frozen v0.3 direct-model package",
+      "role": "actual conservative direct-model training chemistry"
+    },
+    "direct_evidence_panel": {
+      "expected_rows": 84,
+      "structure_field": "standardized_isomeric_smiles",
+      "role": "full matched-parental evidence chemistry, including rows excluded from model training"
+    },
+    "joint_model_reference": {
+      "construction": "connectivity-deduplicated union of the 443 primary and 63 direct-model structures",
+      "role": "primary structural-shift reference for OOD metrics"
+    },
+    "joint_evidence_reference": {
+      "construction": "connectivity-deduplicated union of the 443 primary and all 84 direct-evidence structures",
+      "role": "secondary evidence-space proximity sensitivity analysis"
+    }
+  },
+  "evaluation_sets": {
+    "primary": "Biogen/Fang 2023 identity-clean connectivity-collapsed MDR1-MDCK rows; expected n=2624",
+    "sensitivity": "same rows after reference-Murcko-scaffold exclusion; expected n=2562",
+    "endpoint": "continuous log10 MDR1-MDCK efflux ratio and frozen ER>=2 weak binary sensitivity label"
+  },
+  "fingerprint": {
+    "type": "Morgan_ECFP4",
+    "radius": 2,
+    "n_bits": 2048,
+    "include_chirality": false,
+    "similarity": "Tanimoto"
+  },
+  "distance_definitions": {
+    "S1": "maximum Tanimoto similarity to a reference space",
+    "S5": "mean of the five largest Tanimoto similarities to a reference space",
+    "D1": "1-S1",
+    "D5": "1-S5",
+    "primary_distance": "D5 to the 443-row primary-model reference",
+    "direct_model_distance": "D5 to the 63-row direct-model reference",
+    "joint_model_distance": "D5 to the connectivity-deduplicated 443+63 model-reference union",
+    "joint_evidence_distance": "D5 to the connectivity-deduplicated 443+84 evidence-reference union"
+  },
+  "structure_only_strata": {
+    "reference_adaptive": {
+      "threshold_source": "leave-one-connectivity-out D5 distribution within each frozen reference space",
+      "ID_like": "D5_joint_model <= reference Q50",
+      "transition": "reference Q50 < D5_joint_model <= reference Q80",
+      "OOD": "reference Q80 < D5_joint_model <= reference Q95",
+      "extreme_OOD": "D5_joint_model > reference Q95"
+    },
+    "strict_LoHi": "S1_joint_model <= 0.40",
+    "dual_OOD": "D5_primary > primary-reference Q80 and D5_direct_model > direct-model-reference Q80",
+    "external_quintiles": "five equal-frequency groups of Biogen D5_joint_model, formed without using outcomes",
+    "kmeans_OOD20": {
+      "algorithm": "MiniBatchKMeans on Biogen ECFP4 binary vectors",
+      "n_clusters": 20,
+      "random_seed": 20260807,
+      "n_init": 20,
+      "selection": "rank clusters by median D5_joint_model and include whole clusters until at least 20% of external rows are selected",
+      "role": "label-free cluster-based structural-shift pressure set"
+    }
+  },
+  "structural_dependency": {
+    "primary_bootstrap_cluster": "existing Murcko scaffold; acyclic compounds separated by connectivity",
+    "sensitivity_bootstrap_cluster": "Butina clusters on Biogen ECFP4 with distance cutoff 0.60 (similarity 0.40)",
+    "butina_distance_cutoff": 0.6
+  },
+  "reported_layers": [
+    "frozen full-coverage p>=0.5 weak binary interface",
+    "frozen v0.4 accepted high/low decisions",
+    "v0.4-abstained rows forced through the p>=0.5 interface"
+  ],
+  "metrics": {
+    "continuous": ["Spearman probability versus log10 ER"],
+    "binary": ["balanced_accuracy", "MCC", "sensitivity", "specificity", "PPV", "NPV", "ROC_AUC"],
+    "selective": ["coverage", "positive_coverage", "negative_coverage", "accepted_n", "abstained_n"],
+    "calibration": ["Brier_score", "ECE_10_equal_width"],
+    "distance_error": ["Spearman D5_joint_model versus per-row Brier loss"],
+    "contrasts": [
+      "full BAcc extreme_OOD minus ID_like",
+      "v0.4 coverage extreme_OOD minus ID_like",
+      "accepted minus forced-rejected BAcc and MCC within OOD pressure sets"
+    ]
+  },
+  "uncertainty_intervals": {
+    "replicates": 2000,
+    "method": "paired percentile cluster bootstrap",
+    "primary_cluster": "Murcko/connectivity cluster",
+    "sensitivity_cluster": "Butina ECFP4 cluster",
+    "confidence_level": 0.95
+  },
+  "minimum_inference_counts": {
+    "subset_total": 50,
+    "each_true_class": 20,
+    "accepted_each_true_class": 15,
+    "minimum_selective_coverage_for_OOD_claim": 0.05
+  },
+  "go_no_go": {
+    "gate_distance_marks_failure": "95% CI lower bound for Spearman(D5, Brier loss)>0 and 95% CI upper bound for full-BAcc(extreme minus ID-like)<0",
+    "gate_rejector_responds_to_shift": "95% CI upper bound for coverage(extreme minus ID-like)<0",
+    "gate_OOD_accepted_reliability": "in at least one predeclared OOD pressure set with adequate counts, accepted-minus-forced-rejected BAcc CI lower>0, accepted BAcc CI lower>0.5, accepted MCC CI lower>0, and coverage>=0.05"
+  },
+  "interpretation_boundaries": [
+    "Murcko-scaffold cleaning is a sensitivity analysis, not proof of strict OOD generalization.",
+    "This retrospective analysis cannot be called prospective or outcome-unseen OOD validation.",
+    "Structural distance is not a mechanistic ABCB1 distance.",
+    "No result may be used to retune v0.4 or promote a post-hoc variant without a new outcome-unseen source.",
+    "No claim of ADC-release-species or intact-ADC OOD accuracy is permitted.",
+    "Coverage must always be reported with accepted-set performance."
+  ]
+}

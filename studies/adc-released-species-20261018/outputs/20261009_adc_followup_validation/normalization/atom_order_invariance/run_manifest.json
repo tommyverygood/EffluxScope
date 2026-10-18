@@ -1,0 +1,119 @@
+{
+  "status": "completed",
+  "completed_utc": "2026-10-09T07:56:05.300766+00:00",
+  "runtime": {
+    "executable": "${PROJECT_ROOT}/.venv-experiments/bin/python",
+    "python": "3.12.14",
+    "rdkit": "2026.03.4",
+    "numpy": "2.5.1",
+    "sklearn": "1.9.0",
+    "joblib": "1.5.3"
+  },
+  "seed": 20261009,
+  "random_representations_per_structure": 16,
+  "source_structure_count": 13,
+  "input_rows": 221,
+  "default_max_tautomers": 1000,
+  "default_max_transforms": 1000,
+  "input_sha256": {
+    "outputs/20261009_adc_pair_experiments/pairs/results_curated_v2/entities_scored_or_hold.csv": "abb7062752273ba8382752d45103d6e808adbe8b44b9e09667c0add4d07ec59b",
+    "outputs/20261009_adc_pair_experiments/pairs/results_curated_v2/unique_structure_predictions.csv": "6fcdb11416895317ed0f593c3c8264ade6a52b0e9714c2418a7abfbd81976347",
+    "outputs/20261009_adc_pair_experiments/pairs/results_curated_v2/parent_release_score_contrasts.csv": "ee6a302d8e687ea32991a00ae3ae5858121600c4d4ea7ed3d28fb9fcc34c8553",
+    "outputs/20261009_adc_pair_experiments/pairs/results_curated_v2/pair_release_stage_classification.csv": "f2ad3087121bb0ba7c38943c4460ca34ac776fac19a47dec9e5e4c09959fe49e",
+    "模型/ABCB1_screener_v0_1/ABCB1_screener_v0_1.joblib": "fbc92dfa99583386ba124141fed5e77c6ecf8a59850301a6533db3883b298ac3",
+    "模型/ABCB1_assay_aware_candidate_v0_3_dev/ABCB1_assay_aware_candidate_v0_3_dev.joblib": "ebe6d1a8d5f06afc5c2d0b306dfd5266af56fd28fefd130147d20c5e015b907a",
+    "数据/scripts/abcb1_screener_core_v0_1.py": "d97c1ee11973ea729ea4dcd62932560e4d60e1ac1cfdfa86ac08798c4bcf2267",
+    "outputs/20261009_adc_followup_validation/normalization/run_normalization_validation.py": "e4c59b55e4ed80a1bcea5632215cb9c8e17aea0822653795d06d8af98bf4f9fc",
+    "outputs/20261009_adc_followup_validation/normalization/atom_order_invariance/run_atom_order_invariance.py": "f3415f996433426332f681bdc4188cc0b1fee4628a4734507cd40d68e4cfb81d",
+    "outputs/20261009_adc_followup_validation/normalization/atom_order_invariance/PROTOCOL.md": "edb470225a07be68a03e0ee10ccef55a735796835c9f0036a86c9fc99565629e"
+  },
+  "checks": {
+    "input_hashes_unchanged": true,
+    "all_raw_identities_unchanged": true,
+    "all_221_rows_retained": true,
+    "all_original_scores_reproduced_1e_8": true,
+    "same_identity_controls_range_contains_zero": true
+  },
+  "python_warnings": [
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed)."
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed)."
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed)."
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed)."
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed)."
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed)."
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed)."
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed)."
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed)."
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed)."
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed)."
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed)."
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed)."
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed)."
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed)."
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed)."
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed)."
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed)."
+    }
+  ],
+  "cap_hit_structure_count": 3,
+  "key_variable_structure_count": 0,
+  "score_variable_structure_count_rounded8": 0,
+  "threshold_direction_variable_structure_count": 0,
+  "primary_margin_category_variable_structure_count": 0,
+  "finite_test_proves_tautomer_completeness": false,
+  "variant_hold_policy_unchanged": true,
+  "no_refit": true
+}

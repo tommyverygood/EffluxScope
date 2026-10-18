@@ -1,0 +1,9 @@
+population,metric,contrast,accepted_value,rejected_forced_value,favorable_difference,ci95_low,ci95_high,bootstrap_probability_favorable_gt_0,valid_bootstrap_replicates,n_bootstrap_clusters
+identity_clean,accuracy,accepted_minus_rejected,0.75055188,0.52510364,0.22544824,0.17739986,0.27328863,1.0,2000,2312
+identity_clean,balanced_accuracy,accepted_minus_rejected,0.73510345,0.54746152,0.18764193,0.13663565,0.23748035,1.0,2000,2312
+identity_clean,mcc,accepted_minus_rejected,0.49857011,0.09621794,0.40235217,0.30404292,0.5002423,1.0,2000,2312
+identity_clean,error_rate,rejected_minus_accepted,0.24944812,0.47489636,0.22544824,0.17739986,0.27328863,1.0,2000,2312
+scaffold_clean,accuracy,accepted_minus_rejected,0.74487472,0.52284503,0.22202968,0.17392061,0.27000144,1.0,2000,2298
+scaffold_clean,balanced_accuracy,accepted_minus_rejected,0.72272247,0.54566558,0.17705689,0.12917036,0.22652651,1.0,2000,2298
+scaffold_clean,mcc,accepted_minus_rejected,0.47925669,0.09286274,0.38639395,0.28725045,0.48303451,1.0,2000,2298
+scaffold_clean,error_rate,rejected_minus_accepted,0.25512528,0.47715497,0.22202968,0.17392061,0.27000144,1.0,2000,2298

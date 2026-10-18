@@ -1,0 +1,182 @@
+{
+ "astrazeneca_gnn_mtl_mdck_er_2025|row1|All (100%)": {
+  "n": 2624,
+  "bacc": 0.7432627380119342,
+  "lo": 0.7260095971135835,
+  "hi": 0.7593786607039691
+ },
+ "astrazeneca_gnn_mtl_mdck_er_2025|row1|Scaffold-clean": {
+  "n": 2562,
+  "bacc": 0.7453264656870171,
+  "lo": 0.7288608434805729,
+  "hi": 0.7619555627626187
+ },
+ "astrazeneca_gnn_mtl_mdck_er_2025|row1|Scaffold-removed": {
+  "n": 62,
+  "bacc": 0.6792929292929293,
+  "lo": 0.54874941643324,
+  "hi": 0.7964830293819654
+ },
+ "astrazeneca_gnn_mtl_mdck_er_2025|row2|All (100%)": {
+  "n": 2624,
+  "bacc": 0.7432627380119342,
+  "lo": 0.7262406524878297,
+  "hi": 0.7606617839279668
+ },
+ "astrazeneca_gnn_mtl_mdck_er_2025|row2|KMeans in-domain": {
+  "n": 2080,
+  "bacc": 0.7430467571644042,
+  "lo": 0.7231078760390575,
+  "hi": 0.7616043978889303
+ },
+ "astrazeneca_gnn_mtl_mdck_er_2025|row2|KMeans-OOD20": {
+  "n": 544,
+  "bacc": 0.7433155080213905,
+  "lo": 0.7011623755413151,
+  "hi": 0.7835763868217908
+ },
+ "astrazeneca_gnn_mtl_nih_mdck_er_2025|row1|All (100%)": {
+  "n": 2624,
+  "bacc": 0.6985987227295676,
+  "lo": 0.6835048315495404,
+  "hi": 0.7134879058479403
+ },
+ "astrazeneca_gnn_mtl_nih_mdck_er_2025|row1|Scaffold-clean": {
+  "n": 2562,
+  "bacc": 0.6995390308827667,
+  "lo": 0.6857033903585722,
+  "hi": 0.7141303148615745
+ },
+ "astrazeneca_gnn_mtl_nih_mdck_er_2025|row1|Scaffold-removed": {
+  "n": 62,
+  "bacc": 0.6603535353535354,
+  "lo": 0.5547545462493443,
+  "hi": 0.7613229525981974
+ },
+ "astrazeneca_gnn_mtl_nih_mdck_er_2025|row2|All (100%)": {
+  "n": 2624,
+  "bacc": 0.6985987227295676,
+  "lo": 0.6829462363684455,
+  "hi": 0.7134930908573076
+ },
+ "astrazeneca_gnn_mtl_nih_mdck_er_2025|row2|KMeans in-domain": {
+  "n": 2080,
+  "bacc": 0.7045248868778281,
+  "lo": 0.6875058108696512,
+  "hi": 0.7225123886902717
+ },
+ "astrazeneca_gnn_mtl_nih_mdck_er_2025|row2|KMeans-OOD20": {
+  "n": 544,
+  "bacc": 0.6775401069518716,
+  "lo": 0.6446270584629165,
+  "hi": 0.7100742572293247
+ },
+ "internal_v0_4_primary_score|row1|All (100%)": {
+  "n": 2624,
+  "bacc": 0.58169540968021,
+  "lo": 0.5642441203555055,
+  "hi": 0.59957123781188
+ },
+ "internal_v0_4_primary_score|row1|Scaffold-clean": {
+  "n": 2562,
+  "bacc": 0.5783993767178133,
+  "lo": 0.5592548596938341,
+  "hi": 0.5970380392434499
+ },
+ "internal_v0_4_primary_score|row1|Scaffold-removed": {
+  "n": 62,
+  "bacc": 0.6363636363636364,
+  "lo": 0.5014793019480519,
+  "hi": 0.7724064625850338
+ },
+ "internal_v0_4_primary_score|row2|All (100%)": {
+  "n": 2624,
+  "bacc": 0.58169540968021,
+  "lo": 0.5632764499566861,
+  "hi": 0.5995910685413183
+ },
+ "internal_v0_4_primary_score|row2|KMeans in-domain": {
+  "n": 2080,
+  "bacc": 0.600211161387632,
+  "lo": 0.5796119676103689,
+  "hi": 0.6201587317279197
+ },
+ "internal_v0_4_primary_score|row2|KMeans-OOD20": {
+  "n": 544,
+  "bacc": 0.5077540106951872,
+  "lo": 0.4647238392782865,
+  "hi": 0.5510532300853469
+ },
+ "deeppk_pgp_substrate_2026_08_05|row1|All (100%)": {
+  "n": 2624,
+  "bacc": 0.5775609626473688,
+  "lo": 0.5652171397538149,
+  "hi": 0.5906964950271044
+ },
+ "deeppk_pgp_substrate_2026_08_05|row1|Scaffold-clean": {
+  "n": 2562,
+  "bacc": 0.576194083147575,
+  "lo": 0.5629000763161138,
+  "hi": 0.5898087559339779
+ },
+ "deeppk_pgp_substrate_2026_08_05|row1|Scaffold-removed": {
+  "n": 62,
+  "bacc": 0.6388888888888888,
+  "lo": 0.5415865384615385,
+  "hi": 0.75
+ },
+ "deeppk_pgp_substrate_2026_08_05|row2|All (100%)": {
+  "n": 2624,
+  "bacc": 0.5775609626473688,
+  "lo": 0.5647209121591665,
+  "hi": 0.5908729908198772
+ },
+ "deeppk_pgp_substrate_2026_08_05|row2|KMeans in-domain": {
+  "n": 2080,
+  "bacc": 0.5870286576168929,
+  "lo": 0.5722561094764429,
+  "hi": 0.600963903740526
+ },
+ "deeppk_pgp_substrate_2026_08_05|row2|KMeans-OOD20": {
+  "n": 544,
+  "bacc": 0.5248663101604278,
+  "lo": 0.49873251073646346,
+  "hi": 0.5529265717003986
+ },
+ "admet_ai_v2_pgp_broccatelli_inhibition|row1|All (100%)": {
+  "n": 2624,
+  "bacc": 0.5439955593741789,
+  "lo": 0.526455478477248,
+  "hi": 0.5614310869092743
+ },
+ "admet_ai_v2_pgp_broccatelli_inhibition|row1|Scaffold-clean": {
+  "n": 2562,
+  "bacc": 0.5419178912286018,
+  "lo": 0.5244498846512029,
+  "hi": 0.5598306357379081
+ },
+ "admet_ai_v2_pgp_broccatelli_inhibition|row1|Scaffold-removed": {
+  "n": 62,
+  "bacc": 0.571969696969697,
+  "lo": 0.4895833333333333,
+  "hi": 0.6666666666666666
+ },
+ "admet_ai_v2_pgp_broccatelli_inhibition|row2|All (100%)": {
+  "n": 2624,
+  "bacc": 0.5439955593741789,
+  "lo": 0.5269651756335249,
+  "hi": 0.5614502426609334
+ },
+ "admet_ai_v2_pgp_broccatelli_inhibition|row2|KMeans in-domain": {
+  "n": 2080,
+  "bacc": 0.5337858220211161,
+  "lo": 0.5135206710578605,
+  "hi": 0.5539486414796337
+ },
+ "admet_ai_v2_pgp_broccatelli_inhibition|row2|KMeans-OOD20": {
+  "n": 544,
+  "bacc": 0.5377005347593583,
+  "lo": 0.5048138381855252,
+  "hi": 0.5716001609685203
+ }
+}

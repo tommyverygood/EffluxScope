@@ -1,0 +1,30 @@
+{
+  "created_at": "2026-10-09T05:51:45.534222+00:00",
+  "study_type": "retrospective_computational_diagnostics_with_frozen_models",
+  "not_blind_validation": true,
+  "model_refitting": false,
+  "wet_lab_execution": false,
+  "experiments": {
+    "E1": "Biogen identity-clean matched-coverage v0.1, v0.3, full v0.4 and no-local diagnostic; same 0.5 class threshold; whole-cluster paired bootstrap 2000 draws",
+    "E2": "Unique parent/released structures scored with existing frozen entrypoint; structure and decision contrasts; identity-preserving controls",
+    "E3": "S-methyl-DM4 identity resolution using explicit PubChem identity plus primary release evidence; old wrong disulfide isolated as diagnostic",
+    "E4": "True dual-payload examples represented by their independently scored released species; no arithmetic combination or synergy claim"
+  },
+  "primary_benchmark": "identity-audited v2, with v1 independently reproduced as sensitivity",
+  "benchmark_coverage": "full fixed mask 453/2624; lower coverage from within accepted pool; unattainable higher coverage marked missing",
+  "pair_outcome": "score/abstention changes only; no same-system paired transport gold standard exists in current bundle",
+  "interpretation_boundary": "No new claim of ADC efficacy, ABCB1 causality, combination ER, cytosolic exposure, or release-species prediction accuracy",
+  "structure_holds": [
+    "unresolved Lys-PEG4Mal-DM1",
+    "ambiguous Roth deruxtecan identity",
+    "S-methyl-DM4 until independently resolved"
+  ],
+  "processing_intermediates": "analyzed separately from terminal release species",
+  "protected_directories": [
+    "模型",
+    "数据/processed",
+    "数据/scripts",
+    "论文主稿/旧稿_外排预测与选择性拒判/latex_jcim"
+  ],
+  "protocol_timing": "Coordination protocol recorded during execution; worker rules recorded in their own protocols/scripts; historical external outcomes already known. This is not preregistration."
+}

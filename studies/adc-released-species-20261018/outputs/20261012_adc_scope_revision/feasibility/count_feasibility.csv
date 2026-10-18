@@ -1,0 +1,9 @@
+﻿source,region,unique_compound_n,positive_n,negative_n,scaffold_n,full_accepted_n,full_accepted_positive_n,full_accepted_negative_n,full_accepted_scaffold_n,adc14_region_n,adc14_region_fraction,missing_full_selected_class,no_full_accepted,minimum_practical_count_gate_pass
+Biogen2624,all_identity_clean,2624,1145,1479,2312,453,250,203,419,14,1.0,False,False,True
+Biogen2624,MW_ge600,6,4,2,6,2,1,1,2,10,0.7142857142857143,False,False,False
+Biogen2624,TPSA_ge140,18,14,4,17,12,10,2,11,10,0.7142857142857143,False,False,False
+Biogen2624,amide_ge4_MW_ge500,1,1,0,1,1,1,0,1,6,0.42857142857142855,True,False,False
+ASAP56,all_identity_clean,56,44,12,29,5,5,0,4,14,1.0,True,False,False
+ASAP56,MW_ge600,0,0,0,0,0,0,0,0,10,0.7142857142857143,True,True,False
+ASAP56,TPSA_ge140,0,0,0,0,0,0,0,0,10,0.7142857142857143,True,True,False
+ASAP56,amide_ge4_MW_ge500,0,0,0,0,0,0,0,0,6,0.42857142857142855,True,True,False

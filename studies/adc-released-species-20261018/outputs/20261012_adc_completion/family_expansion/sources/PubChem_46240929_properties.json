@@ -1,0 +1,14 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 46240929,
+        "MolecularFormula": "C29H23ClN4O4",
+        "MolecularWeight": "527.0",
+        "SMILES": "CC1=C2C(=CC=C1)C(=CC3=C2[C@@H](CN3C(=O)C4=CN5C=C(C=CC5=N4)NC(=O)C6=CC=C(C=C6)O)CCl)O",
+        "InChIKey": "VQAFBYLFRCCWNB-GOSISDBHSA-N",
+        "Title": "Seco-DUBA"
+      }
+    ]
+  }
+}

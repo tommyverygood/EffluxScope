@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-12",
+  "new_source": "Weng2023_S1E",
+  "entities": 3,
+  "numeric_conditions": 12,
+  "source_unseen_in_previous_20261009_external_transport_report": true,
+  "already_scored_entity": true,
+  "right_arm_uninhibited_baseline_missing": true,
+  "strict_ABCB1_negative_added": 0,
+  "changed_parent_release_pairs_added": 0,
+  "no_new_model_fit": true,
+  "source_values_reported_not_recomputed_from_rounded_Papp": true
+}

@@ -119,3 +119,7 @@ this project's own v0.4 output, as stated in section 4.
 hand-picked structures (bictegravir, paracetamol) with the shipped screener's
 output, included as an operational smoke example. Neither molecule belongs to
 the external set or to the reference pool.
+
+## ADC study extension
+
+The study under `studies/adc-released-species-20261018/` has additional source-attributed ADC evidence and author-owned analysis code. Its local `THIRD_PARTY_NOTICES.md` explains file/source-specific terms and export transformations. The extension excludes third-party full texts, external model weights and individual predictions from compared external services.

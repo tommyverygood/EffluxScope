@@ -1,0 +1,79 @@
+{
+  "protocol_id": "ABCB1_ASSAY_AWARE_DEV_SOSKUTI2024_V1",
+  "lock_date": "2026-08-03",
+  "status": "locked_modeling_rules_with_posthoc_audit_only_identity_correction_2026-08-03",
+  "objective": "Develop and internally evaluate a human MDR1 matched-parental structural screening candidate using direct numeric net-efflux evidence.",
+  "development_dataset": {
+    "path": "数据/processed/soskuti_2024_mdr1_species_panel_v1.csv",
+    "sha256": "9892cd2bb4be3ff0c834113c5ec7b8d9b7752bc69667782cd5980f19f2ac3bf7",
+    "source": "Soskuti et al. 2024, Supplementary Table S1",
+    "source_role": "development_only_not_independent_validation",
+    "primary_rows": "low_recovery=no; permeability_control=no; conservative_human_mdr1_screen_binary present",
+    "primary_endpoint": "conservative binary class derived from hMDR1 ER / Mock ER with approximate 95% interval entirely above or below net ER=2",
+    "sensitivity_endpoint": "point class derived from hMDR1 ER / Mock ER at net ER=2 after source QC exclusions",
+    "continuous_endpoint": "log2(hMDR1 ER / Mock ER) after source QC exclusions"
+  },
+  "posthoc_audit_correction": {
+    "correction_date": "2026-08-03",
+    "reason": "Blank PU/unlabeled target_label values from the broad interface were incorrectly treated as comparable weak labels in overlap metadata.",
+    "pre_correction_panel_sha256": "4c76a6e906006847e96ccf150b5f58e45e29e22ae8a4d6704d0cc012a75f3ff0",
+    "post_correction_panel_sha256": "9892cd2bb4be3ff0c834113c5ec7b8d9b7752bc69667782cd5980f19f2ac3bf7",
+    "pre_and_post_model_input_signature": "964d50bb2502fda8adb32baa9050f7af2d1fdc4eb34c819eea61fa8dfd4ccfe6",
+    "model_input_signature_fields": [
+      "panel_entity_id",
+      "standardized_isomeric_smiles",
+      "conservative_human_mdr1_screen_binary",
+      "derived_human_mdr1_screen_binary",
+      "human_mdr1_net_efflux_ratio_vs_mock"
+    ],
+    "changed_fields_only": [
+      "overlap_with_frozen_training",
+      "weak_training_labels_at_identity",
+      "weak_vs_direct_screen_label_status"
+    ],
+    "modeling_rule_change": "none",
+    "endpoint_or_structure_change": "none",
+    "performance_result_effect": "none; deterministic replay required and recorded"
+  },
+  "identity_and_leakage_rules": {
+    "structure_standardization": "ABCB1 screener v0.1 project standardizer; non-chiral Morgan fingerprints",
+    "grouping": "Bemis-Murcko scaffold; acyclic structures get identity-specific groups",
+    "frozen_443_weak_label_data": "may be scored diagnostically but may not be mixed into primary direct-evidence cross-validation",
+    "existing_20260803_external_benchmark": "never used for tuning, model selection, applicability threshold revision, or performance claims",
+    "soskuti_2024_panel": "permanent development material after this lock; never a future untouched validation set"
+  },
+  "outer_evaluation": {
+    "method": "Repeated StratifiedGroupKFold",
+    "n_splits": 5,
+    "n_repeats": 10,
+    "random_seeds": [1101, 1102, 1103, 1104, 1105, 1106, 1107, 1108, 1109, 1110],
+    "prediction_aggregation": "mean probability per entity across outer repeats",
+    "classification_threshold": 0.5,
+    "primary_metrics": ["MCC", "balanced_accuracy", "ROC_AUC", "Brier"],
+    "secondary_metrics": ["sensitivity", "specificity", "F1"],
+    "uncertainty": "2000 scaffold-cluster bootstrap replicates on entity-level aggregated outer predictions"
+  },
+  "inner_selection": {
+    "method": "StratifiedGroupKFold when feasible",
+    "n_splits": 4,
+    "selection_metric": "MCC then balanced_accuracy then lower complexity",
+    "ridge_selection_metric": "MAE then higher Spearman correlation then stronger regularization",
+    "logistic_C_grid": [0.01, 0.1, 1.0, 10.0],
+    "ridge_alpha_grid": [0.1, 1.0, 10.0, 100.0]
+  },
+  "fixed_candidates": [
+    "dummy_prior",
+    "one_nearest_neighbor_morgan_tanimoto",
+    "physchem_logistic",
+    "morgan_logistic",
+    "morgan_plus_physchem_logistic"
+  ],
+  "continuous_candidates": [
+    "physchem_ridge",
+    "morgan_ridge",
+    "morgan_plus_physchem_ridge"
+  ],
+  "model_selection_rule": "Among learned classifiers, maximize scaffold-cluster-bootstrap median MCC, then balanced accuracy, then Brier; selection remains an internal-development choice.",
+  "claim_boundary": "Internal single-source assay-aware development only. No validated universal ABCB1 substrate, intact-ADC, intracellular exposure, resistance, efficacy, or clinical claim.",
+  "future_go_gate": "A new untouched source/temporal/prospective human ABCB1 matched-parental dataset must pass prelocked external gates before upgrading the candidate to a validated predictor."
+}

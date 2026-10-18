@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "python": "3.12.14",
+  "no_training": true,
+  "no_network": true,
+  "no_bootstrap_recomputed": true,
+  "pairs_and_asap_aggregation": {
+    "status": "PASS",
+    "candidate_inventory_rows": 14,
+    "changed_computational_pairs": 5,
+    "changed_pair_families": [
+      "auristatin",
+      "maytansinoid"
+    ],
+    "identity_preserving_controls": 5,
+    "changed_pairs_with_at_least_one_abstention": 5,
+    "matched_M0_transport_truth_pairs": 0,
+    "pair_delta_definition": "release_score_minus_parent_score; not delta_ER",
+    "ASAP_observation_rows": 62,
+    "ASAP_aggregated_unique_compounds": 56,
+    "ASAP_aggregation_counts_and_observation_ids_match": true,
+    "ASAP_replicate_independence_established": false
+  },
+  "matched_count": {
+    "status": "PASS",
+    "comparison_rows": 8,
+    "selected_per_policy": 453,
+    "point_estimates_checked": true,
+    "bootstrap_and_CI_recomputed": false
+  },
+  "features_and_gates": {
+    "status": "PASS",
+    "individual_feature_rows": 2694,
+    "count_rows": 8,
+    "regional_rows": 6,
+    "explicit_null_values_checked": 24,
+    "performance_or_bootstrap_computed": false
+  },
+  "adc14": {
+    "status": "PASS",
+    "species_n": 14,
+    "numeric_fields_per_species": 8,
+    "categorical_fields_per_species": 7,
+    "numeric_tolerance_absolute": 5e-07,
+    "model_sha256": {
+      "模型/ABCB1_selective_screener_v0_4_dev/ABCB1_selective_uncertainty_v0_4_dev.joblib": "c56fb6b8f6f8bf13472a1a2d433b05d4c6a35eb2490ba84ce9371395b8bbff8b",
+      "模型/ABCB1_screener_v0_1/ABCB1_screener_v0_1.joblib": "fbc92dfa99583386ba124141fed5e77c6ecf8a59850301a6533db3883b298ac3",
+      "模型/ABCB1_assay_aware_candidate_v0_3_dev/ABCB1_assay_aware_candidate_v0_3_dev.joblib": "ebe6d1a8d5f06afc5c2d0b306dfd5266af56fd28fefd130147d20c5e015b907a"
+    }
+  },
+  "original_bundle_files_unchanged": true,
+  "protected_file_n": 503,
+  "checked_client_date": "2026-10-18",
+  "fresh_environment_installed_from_requirements": true,
+  "complete_environment_lock": "requirements-public-lock.txt",
+  "final_scientific_files_identical_to_verified_extraction": true,
+  "scientific_export_file_n": 490,
+  "validation_scope": "Computational reproduction only; does not supply missing ADC transport truth, recompute bootstrap CIs, or validate complete-ADC outcomes"
+}

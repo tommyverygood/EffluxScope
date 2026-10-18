@@ -1,0 +1,46 @@
+{
+  "status": "completed_frozen_representation_sensitivity_not_biological_experiment",
+  "old_wrong_input_only_diagnostic_not_counted_as_pair": true,
+  "legacy_wrong_structure_reproduction_checks": [
+    {
+      "field": "primary_calibrated_probability",
+      "fresh_wrong_structure_value": 0.95414539,
+      "legacy_value": "0.95414539",
+      "pass": true
+    },
+    {
+      "field": "direct_panel_probability",
+      "fresh_wrong_structure_value": 0.81347798,
+      "legacy_value": "0.81347798",
+      "pass": true
+    },
+    {
+      "field": "risk_call",
+      "fresh_wrong_structure_value": "abstain",
+      "legacy_value": "abstain",
+      "pass": true
+    },
+    {
+      "field": "abstention_reasons_json",
+      "fresh_wrong_structure_value": "[\"outside_both_reference_panels\"]",
+      "legacy_value": "[\"outside_both_reference_panels\"]",
+      "pass": true
+    }
+  ],
+  "legacy_wrong_structure_reproduction_all_pass": true,
+  "corrected_minus_wrong_v0_1_score": -0.01007802,
+  "corrected_minus_wrong_v0_3_score": -0.01764705,
+  "wrong_full_decision": "abstain",
+  "corrected_full_decision": "abstain",
+  "old_inputs_unchanged": true,
+  "input_hashes": {
+    "/Users/hongyanliu/Desktop/论文/adc药物项目/预测器2/outputs/20261009_adc_pair_experiments/identity/approved_structures_v2.csv": "0196c183f57ea71704ec05128a4d39c3bd3c41a6f7bf5d12de29912a05945c1c",
+    "/Users/hongyanliu/Desktop/论文/adc药物项目/预测器2/outputs/20260810_adc_demo_reconstruction_v2/adc_application_demo_registry_reconstructed_v2.csv": "d0c8b3cdcb6b34a482ccf33c86c873431de9cf207ca9cdd5724f7b172122910b",
+    "/Users/hongyanliu/Desktop/论文/adc药物项目/预测器2/outputs/20260810_adc_demo_reconstruction_v2/abcb1_adc_application_demo_predictions_v2.csv": "21491ba04278c667fac6ce0b50e923463f39df4c7bbf2343e032050da3d8d229",
+    "/Users/hongyanliu/Desktop/论文/adc药物项目/预测器2/模型/ABCB1_selective_screener_v0_4_dev/ABCB1_selective_uncertainty_v0_4_dev.joblib": "c56fb6b8f6f8bf13472a1a2d433b05d4c6a35eb2490ba84ce9371395b8bbff8b",
+    "/Users/hongyanliu/Desktop/论文/adc药物项目/预测器2/模型/ABCB1_screener_v0_1/ABCB1_screener_v0_1.joblib": "fbc92dfa99583386ba124141fed5e77c6ecf8a59850301a6533db3883b298ac3",
+    "/Users/hongyanliu/Desktop/论文/adc药物项目/预测器2/模型/ABCB1_assay_aware_candidate_v0_3_dev/ABCB1_assay_aware_candidate_v0_3_dev.joblib": "ebe6d1a8d5f06afc5c2d0b306dfd5266af56fd28fefd130147d20c5e015b907a",
+    "/Users/hongyanliu/Desktop/论文/adc药物项目/预测器2/outputs/20261009_adc_pair_experiments/pairs/run_identity_sensitivity.py": "996109599cb42d575487ce62ceac22141a52fccb06b2648cfbb15c38eb491a0c"
+  },
+  "claim_boundary": "The effect measured is a representation correction on frozen scores, not a chemistry intervention, transporter effect, or model accuracy estimate."
+}

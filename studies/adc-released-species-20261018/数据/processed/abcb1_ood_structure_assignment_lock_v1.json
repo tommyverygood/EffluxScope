@@ -1,0 +1,79 @@
+{
+  "lock_id": "ABCB1_OOD_STRUCTURE_ASSIGNMENT_LOCK_V1",
+  "created_at": "2026-08-07T04:02:42.465072+00:00",
+  "status": "structure_only_assignments_frozen_before_new_metric_generation",
+  "protocol_path": "数据/processed/abcb1_ood_structural_shift_protocol_v1.json",
+  "protocol_sha256": "a20cede774bf47597ab73bdd08a0ec7d305b6a22698b2d647443023227db7547",
+  "outcomes_or_correctness_used_for_assignment": false,
+  "runtime": {
+    "rdkit": "2026.03.4",
+    "scikit_learn": "1.9.0",
+    "fingerprint": {
+      "radius": 2,
+      "n_bits": 2048,
+      "include_chirality": false
+    }
+  },
+  "reference_counts": {
+    "primary_model_rows": 443,
+    "direct_model_rows": 63,
+    "direct_evidence_rows": 84,
+    "joint_model_connectivity_unique": 477,
+    "joint_evidence_connectivity_unique": 493
+  },
+  "reference_d5_thresholds": {
+    "primary_model_443": {
+      "q50": 0.6038606676342526,
+      "q80": 0.770192886987612,
+      "q95": 0.822381389087906,
+      "min": 0.11167849590687351,
+      "max": 0.9173242630385487
+    },
+    "direct_model_63": {
+      "q50": 0.8104261629965983,
+      "q80": 0.8345806087903009,
+      "q95": 0.8578390902110179,
+      "min": 0.6962443970872717,
+      "max": 0.9276096967719449
+    },
+    "joint_model_connectivity_unique": {
+      "q50": 0.6308282488253033,
+      "q80": 0.7683328034632384,
+      "q95": 0.8198980397729709,
+      "min": 0.11167849590687351,
+      "max": 0.9173242630385487
+    },
+    "joint_evidence_connectivity_unique": {
+      "q50": 0.6343954343954344,
+      "q80": 0.762709269744264,
+      "q95": 0.8173933921698971,
+      "min": 0.11167849590687351,
+      "max": 0.9173242630385487
+    }
+  },
+  "external_counts": {
+    "identity_clean": 2624,
+    "scaffold_clean": 2562,
+    "reference_adaptive_strata": {
+      "ID_like": 7,
+      "OOD": 1249,
+      "extreme_OOD": 195,
+      "transition": 1173
+    },
+    "strict_lohi_ood": 2581,
+    "dual_ood": 609,
+    "kmeans_ood20": 544,
+    "kmeans_ood20_clusters": [
+      3,
+      15
+    ],
+    "kmeans_total_clusters": 20,
+    "butina_total_clusters": 1686,
+    "butina_singletons": 1173
+  },
+  "outputs": {
+    "数据/processed/abcb1_ood_structural_assignments_v1.csv": "3f6096aa89ecdf2db7e37a80204d5c630aa1cad695ecfc76adc1b649ea1ba0fe",
+    "数据/processed/abcb1_ood_reference_loo_distances_v1.csv": "53346e1d6379ad2dadcb3caf3f8cd17e83fef6b9a889c0480667e997d58cef65"
+  },
+  "interpretation_boundary": "Label-free structural assignments for a retrospective post-outcome audit; not a prospective OOD validation and not permission to retune v0.4."
+}

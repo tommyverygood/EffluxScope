@@ -1,0 +1,22 @@
+{
+  "scored_unique_structures": 14,
+  "families": {
+    "auristatin": 4,
+    "maytansinoid": 5,
+    "camptothecin_TOP1": 3,
+    "PBD_dimer": 1,
+    "enediyne_calicheamicin": 1
+  },
+  "family_count": 5,
+  "frozen_full_decisions": {
+    "abstain": 9,
+    "high_ABCB1_efflux_risk": 5
+  },
+  "changed_pairs_scored": 5,
+  "changed_pair_families": 2,
+  "new_changed_pairs_with_transport_truth": 0,
+  "strict_negative_ADC_transport_entities_added": 0,
+  "newly_scored_structures": 1,
+  "new_wet_lab_experiments": 0,
+  "model_training_or_threshold_changes": 0
+}

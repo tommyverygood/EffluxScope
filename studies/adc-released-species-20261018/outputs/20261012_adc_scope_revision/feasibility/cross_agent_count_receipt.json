@@ -1,0 +1,1306 @@
+{
+  "status": "PASS",
+  "independent_review_sha256": "f70b560cbc86a1e1efea3abfc72ea303963e282ba3ac9e78fe64aec7bd50054f",
+  "cross_agent_rows_checked": 24,
+  "numeric_field_checks": 144,
+  "all_checks_pass": true,
+  "checks": [
+    {
+      "source": "Biogen2624",
+      "region": "MW_ge_600",
+      "policy": "population",
+      "field": "population_n",
+      "this_run": 6,
+      "independent_review": 6.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "MW_ge_600",
+      "policy": "population",
+      "field": "selected_n",
+      "this_run": 6,
+      "independent_review": 6.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "MW_ge_600",
+      "policy": "population",
+      "field": "positive_n",
+      "this_run": 4,
+      "independent_review": 4.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "MW_ge_600",
+      "policy": "population",
+      "field": "negative_n",
+      "this_run": 2,
+      "independent_review": 2.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "MW_ge_600",
+      "policy": "population",
+      "field": "cluster_n",
+      "this_run": 6,
+      "independent_review": 6.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "MW_ge_600",
+      "policy": "population",
+      "field": "coverage",
+      "this_run": 1.0,
+      "independent_review": 1.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "MW_ge_600",
+      "policy": "full",
+      "field": "population_n",
+      "this_run": 6,
+      "independent_review": 6.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "MW_ge_600",
+      "policy": "full",
+      "field": "selected_n",
+      "this_run": 2,
+      "independent_review": 2.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "MW_ge_600",
+      "policy": "full",
+      "field": "positive_n",
+      "this_run": 1,
+      "independent_review": 1.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "MW_ge_600",
+      "policy": "full",
+      "field": "negative_n",
+      "this_run": 1,
+      "independent_review": 1.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "MW_ge_600",
+      "policy": "full",
+      "field": "cluster_n",
+      "this_run": 2,
+      "independent_review": 2.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "MW_ge_600",
+      "policy": "full",
+      "field": "coverage",
+      "this_run": 0.3333333333333333,
+      "independent_review": 0.3333333333333333,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "MW_ge_600",
+      "policy": "primary_margin",
+      "field": "population_n",
+      "this_run": 6,
+      "independent_review": 6.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "MW_ge_600",
+      "policy": "primary_margin",
+      "field": "selected_n",
+      "this_run": 2,
+      "independent_review": 2.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "MW_ge_600",
+      "policy": "primary_margin",
+      "field": "positive_n",
+      "this_run": 1,
+      "independent_review": 1.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "MW_ge_600",
+      "policy": "primary_margin",
+      "field": "negative_n",
+      "this_run": 1,
+      "independent_review": 1.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "MW_ge_600",
+      "policy": "primary_margin",
+      "field": "cluster_n",
+      "this_run": 2,
+      "independent_review": 2.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "MW_ge_600",
+      "policy": "primary_margin",
+      "field": "coverage",
+      "this_run": 0.3333333333333333,
+      "independent_review": 0.3333333333333333,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "MW_ge_600",
+      "policy": "direct_margin",
+      "field": "population_n",
+      "this_run": 6,
+      "independent_review": 6.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "MW_ge_600",
+      "policy": "direct_margin",
+      "field": "selected_n",
+      "this_run": 2,
+      "independent_review": 2.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "MW_ge_600",
+      "policy": "direct_margin",
+      "field": "positive_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "MW_ge_600",
+      "policy": "direct_margin",
+      "field": "negative_n",
+      "this_run": 2,
+      "independent_review": 2.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "MW_ge_600",
+      "policy": "direct_margin",
+      "field": "cluster_n",
+      "this_run": 2,
+      "independent_review": 2.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "MW_ge_600",
+      "policy": "direct_margin",
+      "field": "coverage",
+      "this_run": 0.3333333333333333,
+      "independent_review": 0.3333333333333333,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "TPSA_ge_140",
+      "policy": "population",
+      "field": "population_n",
+      "this_run": 18,
+      "independent_review": 18.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "TPSA_ge_140",
+      "policy": "population",
+      "field": "selected_n",
+      "this_run": 18,
+      "independent_review": 18.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "TPSA_ge_140",
+      "policy": "population",
+      "field": "positive_n",
+      "this_run": 14,
+      "independent_review": 14.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "TPSA_ge_140",
+      "policy": "population",
+      "field": "negative_n",
+      "this_run": 4,
+      "independent_review": 4.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "TPSA_ge_140",
+      "policy": "population",
+      "field": "cluster_n",
+      "this_run": 17,
+      "independent_review": 17.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "TPSA_ge_140",
+      "policy": "population",
+      "field": "coverage",
+      "this_run": 1.0,
+      "independent_review": 1.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "TPSA_ge_140",
+      "policy": "full",
+      "field": "population_n",
+      "this_run": 18,
+      "independent_review": 18.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "TPSA_ge_140",
+      "policy": "full",
+      "field": "selected_n",
+      "this_run": 12,
+      "independent_review": 12.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "TPSA_ge_140",
+      "policy": "full",
+      "field": "positive_n",
+      "this_run": 10,
+      "independent_review": 10.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "TPSA_ge_140",
+      "policy": "full",
+      "field": "negative_n",
+      "this_run": 2,
+      "independent_review": 2.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "TPSA_ge_140",
+      "policy": "full",
+      "field": "cluster_n",
+      "this_run": 11,
+      "independent_review": 11.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "TPSA_ge_140",
+      "policy": "full",
+      "field": "coverage",
+      "this_run": 0.6666666666666666,
+      "independent_review": 0.6666666666666666,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "TPSA_ge_140",
+      "policy": "primary_margin",
+      "field": "population_n",
+      "this_run": 18,
+      "independent_review": 18.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "TPSA_ge_140",
+      "policy": "primary_margin",
+      "field": "selected_n",
+      "this_run": 12,
+      "independent_review": 12.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "TPSA_ge_140",
+      "policy": "primary_margin",
+      "field": "positive_n",
+      "this_run": 11,
+      "independent_review": 11.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "TPSA_ge_140",
+      "policy": "primary_margin",
+      "field": "negative_n",
+      "this_run": 1,
+      "independent_review": 1.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "TPSA_ge_140",
+      "policy": "primary_margin",
+      "field": "cluster_n",
+      "this_run": 11,
+      "independent_review": 11.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "TPSA_ge_140",
+      "policy": "primary_margin",
+      "field": "coverage",
+      "this_run": 0.6666666666666666,
+      "independent_review": 0.6666666666666666,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "TPSA_ge_140",
+      "policy": "direct_margin",
+      "field": "population_n",
+      "this_run": 18,
+      "independent_review": 18.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "TPSA_ge_140",
+      "policy": "direct_margin",
+      "field": "selected_n",
+      "this_run": 12,
+      "independent_review": 12.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "TPSA_ge_140",
+      "policy": "direct_margin",
+      "field": "positive_n",
+      "this_run": 10,
+      "independent_review": 10.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "TPSA_ge_140",
+      "policy": "direct_margin",
+      "field": "negative_n",
+      "this_run": 2,
+      "independent_review": 2.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "TPSA_ge_140",
+      "policy": "direct_margin",
+      "field": "cluster_n",
+      "this_run": 11,
+      "independent_review": 11.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "TPSA_ge_140",
+      "policy": "direct_margin",
+      "field": "coverage",
+      "this_run": 0.6666666666666666,
+      "independent_review": 0.6666666666666666,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "population",
+      "field": "population_n",
+      "this_run": 1,
+      "independent_review": 1.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "population",
+      "field": "selected_n",
+      "this_run": 1,
+      "independent_review": 1.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "population",
+      "field": "positive_n",
+      "this_run": 1,
+      "independent_review": 1.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "population",
+      "field": "negative_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "population",
+      "field": "cluster_n",
+      "this_run": 1,
+      "independent_review": 1.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "population",
+      "field": "coverage",
+      "this_run": 1.0,
+      "independent_review": 1.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "full",
+      "field": "population_n",
+      "this_run": 1,
+      "independent_review": 1.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "full",
+      "field": "selected_n",
+      "this_run": 1,
+      "independent_review": 1.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "full",
+      "field": "positive_n",
+      "this_run": 1,
+      "independent_review": 1.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "full",
+      "field": "negative_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "full",
+      "field": "cluster_n",
+      "this_run": 1,
+      "independent_review": 1.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "full",
+      "field": "coverage",
+      "this_run": 1.0,
+      "independent_review": 1.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "primary_margin",
+      "field": "population_n",
+      "this_run": 1,
+      "independent_review": 1.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "primary_margin",
+      "field": "selected_n",
+      "this_run": 1,
+      "independent_review": 1.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "primary_margin",
+      "field": "positive_n",
+      "this_run": 1,
+      "independent_review": 1.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "primary_margin",
+      "field": "negative_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "primary_margin",
+      "field": "cluster_n",
+      "this_run": 1,
+      "independent_review": 1.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "primary_margin",
+      "field": "coverage",
+      "this_run": 1.0,
+      "independent_review": 1.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "direct_margin",
+      "field": "population_n",
+      "this_run": 1,
+      "independent_review": 1.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "direct_margin",
+      "field": "selected_n",
+      "this_run": 1,
+      "independent_review": 1.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "direct_margin",
+      "field": "positive_n",
+      "this_run": 1,
+      "independent_review": 1.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "direct_margin",
+      "field": "negative_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "direct_margin",
+      "field": "cluster_n",
+      "this_run": 1,
+      "independent_review": 1.0,
+      "passed": true
+    },
+    {
+      "source": "Biogen2624",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "direct_margin",
+      "field": "coverage",
+      "this_run": 1.0,
+      "independent_review": 1.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "MW_ge_600",
+      "policy": "population",
+      "field": "population_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "MW_ge_600",
+      "policy": "population",
+      "field": "selected_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "MW_ge_600",
+      "policy": "population",
+      "field": "positive_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "MW_ge_600",
+      "policy": "population",
+      "field": "negative_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "MW_ge_600",
+      "policy": "population",
+      "field": "cluster_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "MW_ge_600",
+      "policy": "population",
+      "field": "coverage",
+      "this_run": null,
+      "independent_review": null,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "MW_ge_600",
+      "policy": "full",
+      "field": "population_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "MW_ge_600",
+      "policy": "full",
+      "field": "selected_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "MW_ge_600",
+      "policy": "full",
+      "field": "positive_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "MW_ge_600",
+      "policy": "full",
+      "field": "negative_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "MW_ge_600",
+      "policy": "full",
+      "field": "cluster_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "MW_ge_600",
+      "policy": "full",
+      "field": "coverage",
+      "this_run": null,
+      "independent_review": null,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "MW_ge_600",
+      "policy": "primary_margin",
+      "field": "population_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "MW_ge_600",
+      "policy": "primary_margin",
+      "field": "selected_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "MW_ge_600",
+      "policy": "primary_margin",
+      "field": "positive_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "MW_ge_600",
+      "policy": "primary_margin",
+      "field": "negative_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "MW_ge_600",
+      "policy": "primary_margin",
+      "field": "cluster_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "MW_ge_600",
+      "policy": "primary_margin",
+      "field": "coverage",
+      "this_run": null,
+      "independent_review": null,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "MW_ge_600",
+      "policy": "direct_margin",
+      "field": "population_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "MW_ge_600",
+      "policy": "direct_margin",
+      "field": "selected_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "MW_ge_600",
+      "policy": "direct_margin",
+      "field": "positive_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "MW_ge_600",
+      "policy": "direct_margin",
+      "field": "negative_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "MW_ge_600",
+      "policy": "direct_margin",
+      "field": "cluster_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "MW_ge_600",
+      "policy": "direct_margin",
+      "field": "coverage",
+      "this_run": null,
+      "independent_review": null,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "TPSA_ge_140",
+      "policy": "population",
+      "field": "population_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "TPSA_ge_140",
+      "policy": "population",
+      "field": "selected_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "TPSA_ge_140",
+      "policy": "population",
+      "field": "positive_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "TPSA_ge_140",
+      "policy": "population",
+      "field": "negative_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "TPSA_ge_140",
+      "policy": "population",
+      "field": "cluster_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "TPSA_ge_140",
+      "policy": "population",
+      "field": "coverage",
+      "this_run": null,
+      "independent_review": null,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "TPSA_ge_140",
+      "policy": "full",
+      "field": "population_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "TPSA_ge_140",
+      "policy": "full",
+      "field": "selected_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "TPSA_ge_140",
+      "policy": "full",
+      "field": "positive_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "TPSA_ge_140",
+      "policy": "full",
+      "field": "negative_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "TPSA_ge_140",
+      "policy": "full",
+      "field": "cluster_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "TPSA_ge_140",
+      "policy": "full",
+      "field": "coverage",
+      "this_run": null,
+      "independent_review": null,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "TPSA_ge_140",
+      "policy": "primary_margin",
+      "field": "population_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "TPSA_ge_140",
+      "policy": "primary_margin",
+      "field": "selected_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "TPSA_ge_140",
+      "policy": "primary_margin",
+      "field": "positive_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "TPSA_ge_140",
+      "policy": "primary_margin",
+      "field": "negative_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "TPSA_ge_140",
+      "policy": "primary_margin",
+      "field": "cluster_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "TPSA_ge_140",
+      "policy": "primary_margin",
+      "field": "coverage",
+      "this_run": null,
+      "independent_review": null,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "TPSA_ge_140",
+      "policy": "direct_margin",
+      "field": "population_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "TPSA_ge_140",
+      "policy": "direct_margin",
+      "field": "selected_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "TPSA_ge_140",
+      "policy": "direct_margin",
+      "field": "positive_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "TPSA_ge_140",
+      "policy": "direct_margin",
+      "field": "negative_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "TPSA_ge_140",
+      "policy": "direct_margin",
+      "field": "cluster_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "TPSA_ge_140",
+      "policy": "direct_margin",
+      "field": "coverage",
+      "this_run": null,
+      "independent_review": null,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "population",
+      "field": "population_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "population",
+      "field": "selected_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "population",
+      "field": "positive_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "population",
+      "field": "negative_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "population",
+      "field": "cluster_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "population",
+      "field": "coverage",
+      "this_run": null,
+      "independent_review": null,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "full",
+      "field": "population_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "full",
+      "field": "selected_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "full",
+      "field": "positive_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "full",
+      "field": "negative_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "full",
+      "field": "cluster_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "full",
+      "field": "coverage",
+      "this_run": null,
+      "independent_review": null,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "primary_margin",
+      "field": "population_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "primary_margin",
+      "field": "selected_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "primary_margin",
+      "field": "positive_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "primary_margin",
+      "field": "negative_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "primary_margin",
+      "field": "cluster_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "primary_margin",
+      "field": "coverage",
+      "this_run": null,
+      "independent_review": null,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "direct_margin",
+      "field": "population_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "direct_margin",
+      "field": "selected_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "direct_margin",
+      "field": "positive_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "direct_margin",
+      "field": "negative_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "direct_margin",
+      "field": "cluster_n",
+      "this_run": 0,
+      "independent_review": 0.0,
+      "passed": true
+    },
+    {
+      "source": "ASAP56",
+      "region": "amide_ge_4_and_MW_ge_500",
+      "policy": "direct_margin",
+      "field": "coverage",
+      "this_run": null,
+      "independent_review": null,
+      "passed": true
+    }
+  ],
+  "amide_definition_note": "Independent review uses Fragments.fr_amide, formal protocol uses [CX3](=[OX1])[NX3]; seven per-entity counts differ but no region membership differs"
+}

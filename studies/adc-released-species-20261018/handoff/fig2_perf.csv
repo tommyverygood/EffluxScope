@@ -1,0 +1,37 @@
+row,split,cid,disp,n,bacc,auc
+row1,All (100%),internal_v0_4_primary_score,"This work
+(weak label)",2624,0.58169540968021,0.624684446885214
+row1,All (100%),astrazeneca_gnn_mtl_mdck_er_2025,MDCK-ER,2624,0.7432627380119342,0.8279647230071068
+row1,All (100%),astrazeneca_gnn_mtl_nih_mdck_er_2025,NIH-MDCK-ER,2624,0.6985987227295676,0.8151985142799779
+row1,All (100%),deeppk_pgp_substrate_2026_08_05,Deep-PK,2624,0.5775609626473688,0.7195219241137202
+row1,All (100%),admet_ai_v2_pgp_broccatelli_inhibition,ADMET-AI*,2624,0.5439955593741789,0.5615826815592975
+row1,Scaffold-clean,internal_v0_4_primary_score,"This work
+(weak label)",2562,0.5783993767178133,0.620419293304354
+row1,Scaffold-clean,astrazeneca_gnn_mtl_mdck_er_2025,MDCK-ER,2562,0.7453264656870171,0.82928065939298
+row1,Scaffold-clean,astrazeneca_gnn_mtl_nih_mdck_er_2025,NIH-MDCK-ER,2562,0.6995390308827667,0.8188920046127829
+row1,Scaffold-clean,deeppk_pgp_substrate_2026_08_05,Deep-PK,2562,0.576194083147575,0.7149111606466553
+row1,Scaffold-clean,admet_ai_v2_pgp_broccatelli_inhibition,ADMET-AI*,2562,0.5419178912286018,0.5571635713821963
+row1,Scaffold-removed,internal_v0_4_primary_score,"This work
+(weak label)",62,0.6363636363636364,0.7424242424242424
+row1,Scaffold-removed,astrazeneca_gnn_mtl_mdck_er_2025,MDCK-ER,62,0.6792929292929293,0.7714646464646465
+row1,Scaffold-removed,astrazeneca_gnn_mtl_nih_mdck_er_2025,NIH-MDCK-ER,62,0.6603535353535354,0.6742424242424243
+row1,Scaffold-removed,deeppk_pgp_substrate_2026_08_05,Deep-PK,62,0.6388888888888888,0.8655303030303031
+row1,Scaffold-removed,admet_ai_v2_pgp_broccatelli_inhibition,ADMET-AI*,62,0.571969696969697,0.6515151515151515
+row2,All (100%),internal_v0_4_primary_score,"This work
+(weak label)",2624,0.58169540968021,0.624684446885214
+row2,All (100%),astrazeneca_gnn_mtl_mdck_er_2025,MDCK-ER,2624,0.7432627380119342,0.8279647230071068
+row2,All (100%),astrazeneca_gnn_mtl_nih_mdck_er_2025,NIH-MDCK-ER,2624,0.6985987227295676,0.8151985142799779
+row2,All (100%),deeppk_pgp_substrate_2026_08_05,Deep-PK,2624,0.5775609626473688,0.7195219241137202
+row2,All (100%),admet_ai_v2_pgp_broccatelli_inhibition,ADMET-AI*,2624,0.5439955593741789,0.5615826815592975
+row2,KMeans in-domain,internal_v0_4_primary_score,"This work
+(weak label)",2080,0.600211161387632,0.642757628495185
+row2,KMeans in-domain,astrazeneca_gnn_mtl_mdck_er_2025,MDCK-ER,2080,0.7430467571644042,0.8294716324399581
+row2,KMeans in-domain,astrazeneca_gnn_mtl_nih_mdck_er_2025,NIH-MDCK-ER,2080,0.7045248868778281,0.8192634876435781
+row2,KMeans in-domain,deeppk_pgp_substrate_2026_08_05,Deep-PK,2080,0.5870286576168929,0.7339385079475578
+row2,KMeans in-domain,admet_ai_v2_pgp_broccatelli_inhibition,ADMET-AI*,2080,0.5337858220211161,0.5457691147464903
+row2,KMeans-OOD20,internal_v0_4_primary_score,"This work
+(weak label)",544,0.5077540106951872,0.5388329663416168
+row2,KMeans-OOD20,astrazeneca_gnn_mtl_mdck_er_2025,MDCK-ER,544,0.7433155080213905,0.8136992765020448
+row2,KMeans-OOD20,astrazeneca_gnn_mtl_nih_mdck_er_2025,NIH-MDCK-ER,544,0.6775401069518716,0.8015885498584461
+row2,KMeans-OOD20,deeppk_pgp_substrate_2026_08_05,Deep-PK,544,0.5248663101604278,0.6294353570305127
+row2,KMeans-OOD20,admet_ai_v2_pgp_broccatelli_inhibition,ADMET-AI*,544,0.5377005347593583,0.5522805913809374

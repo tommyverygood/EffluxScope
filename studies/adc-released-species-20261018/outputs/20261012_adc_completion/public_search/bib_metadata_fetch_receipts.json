@@ -1,0 +1,31 @@
+[
+  {
+    "id": "OBI992_PMC_metadata",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11791482/",
+    "status": 200,
+    "path": "${PROJECT_ROOT}/outputs/20261012_adc_completion/public_search/source_extracts/OBI992_PMC_metadata.html"
+  },
+  {
+    "id": "Weng2023_PubMed_metadata",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/36693125/?format=pubmed",
+    "status": 203,
+    "path": "${PROJECT_ROOT}/outputs/20261012_adc_completion/public_search/source_extracts/Weng2023_PubMed_metadata.html"
+  },
+  {
+    "id": "OBI992_Crossref_metadata",
+    "url": "https://api.crossref.org/works/10.1158/1535-7163.MCT-24-0588",
+    "status": 200,
+    "path": "${PROJECT_ROOT}/outputs/20261012_adc_completion/public_search/source_extracts/OBI992_Crossref_metadata.json"
+  },
+  {
+    "id": "Weng2023_Crossref_metadata",
+    "url": "https://api.crossref.org/works/10.1158/2159-8290.CD-22-1368",
+    "status": 200,
+    "path": "${PROJECT_ROOT}/outputs/20261012_adc_completion/public_search/source_extracts/Weng2023_Crossref_metadata.json"
+  },
+  {
+    "id": "Maji2025_Crossref_metadata",
+    "url": "https://api.crossref.org/works/10.1038/s41598-025-86919-7",
+    "error": "<HTTPError 429: 'Too Many Requests'>"
+  }
+]

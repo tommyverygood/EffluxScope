@@ -1,0 +1,625 @@
+{
+  "validation_version": "ABCB1_EXTERNAL_RISK_EXPERIMENT_VALIDATION_V1",
+  "validation_date": "2026-08-05",
+  "overall_status": "pass",
+  "checks_passed": 85,
+  "checks_total": 85,
+  "checks": [
+    {
+      "check": "protocol_status_truthful_posthoc",
+      "pass": true,
+      "evidence": "locked_posthoc_secondary_analysis_after_primary_external_outcome_observation_before_new_risk_experiments"
+    },
+    {
+      "check": "summary_completed",
+      "pass": true,
+      "evidence": "completed_frozen_model_posthoc_secondary_external_risk_experiments"
+    },
+    {
+      "check": "protocol_hash_recorded",
+      "pass": true,
+      "evidence": "cef22ff8f7a0da5555235848e2362e214988f6f0e6b45c2ee130c6a9875999d8"
+    },
+    {
+      "check": "frozen_input_exists_external_analysis_rows",
+      "pass": true,
+      "evidence": "数据/processed/abcb1_quantity_biogen_analysis_rows_v1.csv"
+    },
+    {
+      "check": "frozen_input_hash_external_analysis_rows",
+      "pass": true,
+      "evidence": "9346b705e83a8606c00aabbe77b63f125ad1ef3aefc4e6899be17cf4cba61457"
+    },
+    {
+      "check": "frozen_input_exists_selective_model",
+      "pass": true,
+      "evidence": "模型/ABCB1_selective_screener_v0_4_dev/ABCB1_selective_uncertainty_v0_4_dev.joblib"
+    },
+    {
+      "check": "frozen_input_hash_selective_model",
+      "pass": true,
+      "evidence": "c56fb6b8f6f8bf13472a1a2d433b05d4c6a35eb2490ba84ce9371395b8bbff8b"
+    },
+    {
+      "check": "frozen_input_exists_upstream_external_protocol",
+      "pass": true,
+      "evidence": "数据/processed/abcb1_quantity_external_validation_protocol_lock_v1.json"
+    },
+    {
+      "check": "frozen_input_hash_upstream_external_protocol",
+      "pass": true,
+      "evidence": "9026b19f5ea3e4a288bc52ec96db1cbc8deccf6821ed08c2e85e76d5f3be9a4d"
+    },
+    {
+      "check": "output_exists_abcb1_external_risk_coverage_curve_v1.csv",
+      "pass": true,
+      "evidence": "数据/processed/abcb1_external_risk_coverage_curve_v1.csv"
+    },
+    {
+      "check": "output_hash_abcb1_external_risk_coverage_curve_v1.csv",
+      "pass": true,
+      "evidence": "46e9aecf06ce1cbf4b54f5f273b893c8e9731e0ced81b0888fc40a7517cd5e12"
+    },
+    {
+      "check": "output_exists_abcb1_external_risk_operating_points_v1.csv",
+      "pass": true,
+      "evidence": "数据/processed/abcb1_external_risk_operating_points_v1.csv"
+    },
+    {
+      "check": "output_hash_abcb1_external_risk_operating_points_v1.csv",
+      "pass": true,
+      "evidence": "05ba54a1aad20152815ecbfa938033c0a9c078f64fa2335961024c499ba2b492"
+    },
+    {
+      "check": "output_exists_abcb1_external_rejector_cumulative_ablation_v1.csv",
+      "pass": true,
+      "evidence": "数据/processed/abcb1_external_rejector_cumulative_ablation_v1.csv"
+    },
+    {
+      "check": "output_hash_abcb1_external_rejector_cumulative_ablation_v1.csv",
+      "pass": true,
+      "evidence": "a4b5773acafb91de075fd6d0b17bc980ee50ac7c5f259a716974764a205ab57e"
+    },
+    {
+      "check": "output_exists_abcb1_external_rejector_leave_one_out_v1.csv",
+      "pass": true,
+      "evidence": "数据/processed/abcb1_external_rejector_leave_one_out_v1.csv"
+    },
+    {
+      "check": "output_hash_abcb1_external_rejector_leave_one_out_v1.csv",
+      "pass": true,
+      "evidence": "b8f212442a6a6941bca60b903094cfd790a179e79bcc8536630ad60abce11962"
+    },
+    {
+      "check": "output_exists_abcb1_external_rejector_rule_burden_v1.csv",
+      "pass": true,
+      "evidence": "数据/processed/abcb1_external_rejector_rule_burden_v1.csv"
+    },
+    {
+      "check": "output_hash_abcb1_external_rejector_rule_burden_v1.csv",
+      "pass": true,
+      "evidence": "fa43011de67283a2d1efd2add2d7cb38b0ed0eedcbd41729134e8b65d65a0680"
+    },
+    {
+      "check": "output_exists_abcb1_external_calibration_bins_v1.csv",
+      "pass": true,
+      "evidence": "数据/processed/abcb1_external_calibration_bins_v1.csv"
+    },
+    {
+      "check": "output_hash_abcb1_external_calibration_bins_v1.csv",
+      "pass": true,
+      "evidence": "7a159b03dccceb4289ebe78b15674460b4ac339fdaa5cd53656bfd3f3a2c4b09"
+    },
+    {
+      "check": "output_exists_abcb1_external_calibration_summary_v1.csv",
+      "pass": true,
+      "evidence": "数据/processed/abcb1_external_calibration_summary_v1.csv"
+    },
+    {
+      "check": "output_hash_abcb1_external_calibration_summary_v1.csv",
+      "pass": true,
+      "evidence": "4e8a44f972891d9ef21c23710b3768f18212a4ca0b987c2807c36d7d9e162099"
+    },
+    {
+      "check": "output_exists_abcb1_external_error_strata_v1.csv",
+      "pass": true,
+      "evidence": "数据/processed/abcb1_external_error_strata_v1.csv"
+    },
+    {
+      "check": "output_hash_abcb1_external_error_strata_v1.csv",
+      "pass": true,
+      "evidence": "98a095048f3f296e35579b6f33d9286364cd642d19809648084492fec53a12b9"
+    },
+    {
+      "check": "output_exists_abcb1_external_selective_enrichment_bootstrap_v1.csv",
+      "pass": true,
+      "evidence": "数据/processed/abcb1_external_selective_enrichment_bootstrap_v1.csv"
+    },
+    {
+      "check": "output_hash_abcb1_external_selective_enrichment_bootstrap_v1.csv",
+      "pass": true,
+      "evidence": "cdfdf3b0106fc4c16a2e5b577d88a4539b40f8db1167be586f776a089c5a2638"
+    },
+    {
+      "check": "identity_clean_n",
+      "pass": true,
+      "evidence": {
+        "identity_clean_n": 2624,
+        "identity_clean_positive_n": 1145,
+        "identity_clean_negative_n": 1479,
+        "scaffold_clean_n": 2562
+      }
+    },
+    {
+      "check": "identity_clean_class_counts",
+      "pass": true,
+      "evidence": {
+        "identity_clean_n": 2624,
+        "identity_clean_positive_n": 1145,
+        "identity_clean_negative_n": 1479,
+        "scaffold_clean_n": 2562
+      }
+    },
+    {
+      "check": "scaffold_clean_n",
+      "pass": true,
+      "evidence": {
+        "identity_clean_n": 2624,
+        "identity_clean_positive_n": 1145,
+        "identity_clean_negative_n": 1479,
+        "scaffold_clean_n": 2562
+      }
+    },
+    {
+      "check": "full_rule_reconstruction_exact",
+      "pass": true,
+      "evidence": {
+        "exactly_reproduced": true,
+        "frozen_accepted_n": 453,
+        "reconstructed_accepted_n": 453,
+        "symmetric_difference_n": 0,
+        "final_cumulative_accepted_n": 453
+      }
+    },
+    {
+      "check": "full_rule_accepted_n",
+      "pass": true,
+      "evidence": {
+        "exactly_reproduced": true,
+        "frozen_accepted_n": 453,
+        "reconstructed_accepted_n": 453,
+        "symmetric_difference_n": 0,
+        "final_cumulative_accepted_n": 453
+      }
+    },
+    {
+      "check": "all_operating_points_present",
+      "pass": true,
+      "evidence": [
+        "forced_binary_all",
+        "forced_binary_on_v0_4_rejected_layer",
+        "frozen_full_v0_4",
+        "frozen_probability_margin_only"
+      ]
+    },
+    {
+      "check": "forced_binary_metrics_reproduced",
+      "pass": true,
+      "evidence": {
+        "balanced_accuracy": 0.58169541,
+        "mcc": 0.16768795
+      }
+    },
+    {
+      "check": "selective_metrics_reproduced",
+      "pass": true,
+      "evidence": {
+        "accepted_n": 453,
+        "balanced_accuracy": 0.73510345,
+        "mcc": 0.49857011
+      }
+    },
+    {
+      "check": "rejected_layer_metrics_reproduced",
+      "pass": true,
+      "evidence": {
+        "accepted_n": 2171,
+        "balanced_accuracy": 0.54746152,
+        "mcc": 0.09621794
+      }
+    },
+    {
+      "check": "selective_coverage_reproduced",
+      "pass": true,
+      "evidence": 0.1726372
+    },
+    {
+      "check": "bootstrap_replicates_operating_points",
+      "pass": true,
+      "evidence": [
+        2000
+      ]
+    },
+    {
+      "check": "coverage_curve_row_count",
+      "pass": true,
+      "evidence": 32
+    },
+    {
+      "check": "coverage_curve_targets_respected",
+      "pass": true,
+      "evidence": "coverage follows locked target grid within one row"
+    },
+    {
+      "check": "coverage_curve_metric_bounds",
+      "pass": true,
+      "evidence": "BAcc in [0,1], MCC in [-1,1]"
+    },
+    {
+      "check": "cumulative_stage_count",
+      "pass": true,
+      "evidence": [
+        {
+          "stage_index": 0,
+          "rule_added": "none"
+        },
+        {
+          "stage_index": 1,
+          "rule_added": "probability_margin"
+        },
+        {
+          "stage_index": 2,
+          "rule_added": "bootstrap_direction_stability"
+        },
+        {
+          "stage_index": 3,
+          "rule_added": "applicability_domain"
+        },
+        {
+          "stage_index": 4,
+          "rule_added": "supported_model_direction_agreement"
+        },
+        {
+          "stage_index": 5,
+          "rule_added": "local_neighborhood_agreement"
+        },
+        {
+          "stage_index": 6,
+          "rule_added": "stereo_collision_guard"
+        }
+      ]
+    },
+    {
+      "check": "cumulative_acceptance_nonincreasing",
+      "pass": true,
+      "evidence": [
+        2624,
+        935,
+        909,
+        823,
+        551,
+        453,
+        453
+      ]
+    },
+    {
+      "check": "cumulative_final_matches_frozen",
+      "pass": true,
+      "evidence": {
+        "accepted_n": 453,
+        "balanced_accuracy": 0.73510345
+      }
+    },
+    {
+      "check": "leave_one_out_complete",
+      "pass": true,
+      "evidence": [
+        "full_rule_set",
+        "probability_margin_only",
+        "without_applicability_domain",
+        "without_bootstrap_direction_stability",
+        "without_local_neighborhood_agreement",
+        "without_stereo_collision_guard",
+        "without_supported_model_direction_agreement"
+      ]
+    },
+    {
+      "check": "local_rule_external_failure_detected",
+      "pass": true,
+      "evidence": {
+        "full_rule_set": {
+          "coverage": 0.1726372,
+          "balanced_accuracy": 0.73510345,
+          "mcc": 0.49857011
+        },
+        "without_local_neighborhood_agreement": {
+          "coverage": 0.20998476,
+          "balanced_accuracy": 0.76329591,
+          "mcc": 0.53323829
+        }
+      }
+    },
+    {
+      "check": "model_agreement_rule_external_value_detected",
+      "pass": true,
+      "evidence": {
+        "full_rule_set": {
+          "coverage": 0.1726372,
+          "balanced_accuracy": 0.73510345,
+          "mcc": 0.49857011
+        },
+        "without_supported_model_direction_agreement": {
+          "coverage": 0.25762195,
+          "balanced_accuracy": 0.63407552,
+          "mcc": 0.30245945
+        }
+      }
+    },
+    {
+      "check": "enrichment_metrics_complete",
+      "pass": true,
+      "evidence": [
+        "accuracy",
+        "balanced_accuracy",
+        "error_rate",
+        "mcc"
+      ]
+    },
+    {
+      "check": "enrichment_ci_excludes_zero",
+      "pass": true,
+      "evidence": [
+        {
+          "metric": "accuracy",
+          "favorable_difference": 0.22544824,
+          "ci95_low": 0.17739986,
+          "ci95_high": 0.27328863
+        },
+        {
+          "metric": "balanced_accuracy",
+          "favorable_difference": 0.18764193,
+          "ci95_low": 0.13663565,
+          "ci95_high": 0.23748035
+        },
+        {
+          "metric": "mcc",
+          "favorable_difference": 0.40235217,
+          "ci95_low": 0.30404292,
+          "ci95_high": 0.5002423
+        },
+        {
+          "metric": "error_rate",
+          "favorable_difference": 0.22544824,
+          "ci95_low": 0.17739986,
+          "ci95_high": 0.27328863
+        }
+      ]
+    },
+    {
+      "check": "enrichment_bootstrap_replicates",
+      "pass": true,
+      "evidence": [
+        2000
+      ]
+    },
+    {
+      "check": "calibration_population_complete",
+      "pass": true,
+      "evidence": {
+        "n": 2624,
+        "n_positive": 1145,
+        "n_negative": 1479
+      }
+    },
+    {
+      "check": "calibration_metrics_finite",
+      "pass": true,
+      "evidence": {
+        "population": "identity_clean_all",
+        "n": 2624,
+        "n_positive": 1145,
+        "n_negative": 1479,
+        "observed_prevalence": 0.43635671,
+        "mean_predicted_probability": 0.55709681,
+        "brier_score": 0.25296644,
+        "log_loss": 0.70480952,
+        "ece_equal_width_10": 0.12074011,
+        "ece_adaptive_10": 0.12074011,
+        "calibration_intercept": -0.42205394,
+        "calibration_slope": 0.58367794,
+        "roc_auc": 0.62468445,
+        "average_precision": 0.54941436
+      }
+    },
+    {
+      "check": "calibration_probability_bounds",
+      "pass": true,
+      "evidence": "all calibration points in [0,1]"
+    },
+    {
+      "check": "calibration_bin_strategies",
+      "pass": true,
+      "evidence": [
+        "adaptive",
+        "equal_width"
+      ]
+    },
+    {
+      "check": "error_strata_complete",
+      "pass": true,
+      "evidence": [
+        "abstention_reason",
+        "applicability_status",
+        "risk_call",
+        "selection_layer",
+        "uncertainty_status"
+      ]
+    },
+    {
+      "check": "error_metrics_bounded",
+      "pass": true,
+      "evidence": "accuracy and BAcc bounded"
+    },
+    {
+      "check": "figure_manifest_count",
+      "pass": true,
+      "evidence": 9
+    },
+    {
+      "check": "figure_formats_complete",
+      "pass": true,
+      "evidence": {
+        "Figure2_external_coverage_reliability": [
+          "png",
+          "svg",
+          "pdf"
+        ],
+        "Figure3_external_rejector_ablation": [
+          "png",
+          "svg",
+          "pdf"
+        ],
+        "Figure4_external_calibration_error": [
+          "png",
+          "svg",
+          "pdf"
+        ]
+      }
+    },
+    {
+      "check": "figure_exists_Figure2_external_coverage_reliability.png",
+      "pass": true,
+      "evidence": "outputs/20260805_abcb1_external_risk_experiments_v1/figures/Figure2_external_coverage_reliability.png"
+    },
+    {
+      "check": "figure_hash_Figure2_external_coverage_reliability.png",
+      "pass": true,
+      "evidence": "fea7238f31940294a06c8177bc897aba739af93e2030c8c825531fe767732558"
+    },
+    {
+      "check": "figure_nontrivial_Figure2_external_coverage_reliability.png",
+      "pass": true,
+      "evidence": 336828
+    },
+    {
+      "check": "figure_exists_Figure2_external_coverage_reliability.svg",
+      "pass": true,
+      "evidence": "outputs/20260805_abcb1_external_risk_experiments_v1/figures/Figure2_external_coverage_reliability.svg"
+    },
+    {
+      "check": "figure_hash_Figure2_external_coverage_reliability.svg",
+      "pass": true,
+      "evidence": "0920d5a628b8a8b6e4a72be584a9ba37187e8d172c704f22ac799fffbacaaa77"
+    },
+    {
+      "check": "figure_nontrivial_Figure2_external_coverage_reliability.svg",
+      "pass": true,
+      "evidence": 107076
+    },
+    {
+      "check": "figure_exists_Figure2_external_coverage_reliability.pdf",
+      "pass": true,
+      "evidence": "outputs/20260805_abcb1_external_risk_experiments_v1/figures/Figure2_external_coverage_reliability.pdf"
+    },
+    {
+      "check": "figure_hash_Figure2_external_coverage_reliability.pdf",
+      "pass": true,
+      "evidence": "bffa918f22f4d024d5e0891385f8a37f09789bf8f25849211ed2fe09d34c623c"
+    },
+    {
+      "check": "figure_nontrivial_Figure2_external_coverage_reliability.pdf",
+      "pass": true,
+      "evidence": 31726
+    },
+    {
+      "check": "figure_exists_Figure3_external_rejector_ablation.png",
+      "pass": true,
+      "evidence": "outputs/20260805_abcb1_external_risk_experiments_v1/figures/Figure3_external_rejector_ablation.png"
+    },
+    {
+      "check": "figure_hash_Figure3_external_rejector_ablation.png",
+      "pass": true,
+      "evidence": "157eaf31a266f986266bea6a4a6f4e06a6b870a73f83df51b9c138a3005c4e4b"
+    },
+    {
+      "check": "figure_nontrivial_Figure3_external_rejector_ablation.png",
+      "pass": true,
+      "evidence": 252614
+    },
+    {
+      "check": "figure_exists_Figure3_external_rejector_ablation.svg",
+      "pass": true,
+      "evidence": "outputs/20260805_abcb1_external_risk_experiments_v1/figures/Figure3_external_rejector_ablation.svg"
+    },
+    {
+      "check": "figure_hash_Figure3_external_rejector_ablation.svg",
+      "pass": true,
+      "evidence": "307fe6cd9fac7b3dfeb0a8850fc87ef83d808bf7fea14c3f0f43e0176e7034d0"
+    },
+    {
+      "check": "figure_nontrivial_Figure3_external_rejector_ablation.svg",
+      "pass": true,
+      "evidence": 96172
+    },
+    {
+      "check": "figure_exists_Figure3_external_rejector_ablation.pdf",
+      "pass": true,
+      "evidence": "outputs/20260805_abcb1_external_risk_experiments_v1/figures/Figure3_external_rejector_ablation.pdf"
+    },
+    {
+      "check": "figure_hash_Figure3_external_rejector_ablation.pdf",
+      "pass": true,
+      "evidence": "2bd7d10325748e29a7eec440ef77ba008e0abf7c0ad159a4657a3b276a77a4d1"
+    },
+    {
+      "check": "figure_nontrivial_Figure3_external_rejector_ablation.pdf",
+      "pass": true,
+      "evidence": 26474
+    },
+    {
+      "check": "figure_exists_Figure4_external_calibration_error.png",
+      "pass": true,
+      "evidence": "outputs/20260805_abcb1_external_risk_experiments_v1/figures/Figure4_external_calibration_error.png"
+    },
+    {
+      "check": "figure_hash_Figure4_external_calibration_error.png",
+      "pass": true,
+      "evidence": "20f0c5e09ea466d89c3d549bf4877dafe744405e8001a389fcc23fbe0957cc5e"
+    },
+    {
+      "check": "figure_nontrivial_Figure4_external_calibration_error.png",
+      "pass": true,
+      "evidence": 404366
+    },
+    {
+      "check": "figure_exists_Figure4_external_calibration_error.svg",
+      "pass": true,
+      "evidence": "outputs/20260805_abcb1_external_risk_experiments_v1/figures/Figure4_external_calibration_error.svg"
+    },
+    {
+      "check": "figure_hash_Figure4_external_calibration_error.svg",
+      "pass": true,
+      "evidence": "5cfbf0a55395741c2106190408f2f81dac02ab529c7d32912fe77a271cef345e"
+    },
+    {
+      "check": "figure_nontrivial_Figure4_external_calibration_error.svg",
+      "pass": true,
+      "evidence": 221017
+    },
+    {
+      "check": "figure_exists_Figure4_external_calibration_error.pdf",
+      "pass": true,
+      "evidence": "outputs/20260805_abcb1_external_risk_experiments_v1/figures/Figure4_external_calibration_error.pdf"
+    },
+    {
+      "check": "figure_hash_Figure4_external_calibration_error.pdf",
+      "pass": true,
+      "evidence": "aba1f5e90fcf221d1e744be0cb80501945cbb2acb5a07e74bfe3903f7e5d51e7"
+    },
+    {
+      "check": "figure_nontrivial_Figure4_external_calibration_error.pdf",
+      "pass": true,
+      "evidence": 34950
+    }
+  ]
+}

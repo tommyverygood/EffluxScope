@@ -1,0 +1,7 @@
+population,method,brier_score,reliability,resolution,uncertainty,binning_residual
+identity_clean,raw_frozen_score,0.25296644,0.01974706,0.01227848,0.24594953,-0.00045168
+identity_clean,cross_fitted_platt,0.23478098,0.00120656,0.01236098,0.24594953,-1.413e-05
+identity_clean,cross_fitted_isotonic,0.23525361,0.00075385,0.01032521,0.24594953,-0.00112456
+scaffold_clean,raw_frozen_score,0.25440854,0.02010397,0.01180629,0.24638687,-0.00027601
+scaffold_clean,cross_fitted_platt,0.23588266,0.00099994,0.01119908,0.24638687,-0.00030506
+scaffold_clean,cross_fitted_isotonic,0.2366752,0.00087578,0.00988336,0.24638687,-0.00070409

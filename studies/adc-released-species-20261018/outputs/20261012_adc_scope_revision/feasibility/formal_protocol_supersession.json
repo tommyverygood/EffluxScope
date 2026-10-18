@@ -1,0 +1,53 @@
+{
+  "status": "RECORDED",
+  "sole_performance_protocol": "outputs/20261012_adc_scope_revision/protocol.json",
+  "formal_protocol_sha256": "15d8f0b6d565a38bd449bbc608ed136ec9a011d80666c9b97d4ef187f97e1bdd",
+  "superseded_count_only_practical_gate": "feasibility/protocol.json minimum_practical_gate_not_power_analysis (10 accepted/3 each class) is diagnostic only and has no authority for performance comparison",
+  "formal_gate_receipt": [
+    {
+      "source": "Biogen2624",
+      "region": "MW_ge600",
+      "formal_population_gate_pass": false,
+      "formal_full_matched_gate_pass": false,
+      "performance_comparison_allowed": false
+    },
+    {
+      "source": "Biogen2624",
+      "region": "TPSA_ge140",
+      "formal_population_gate_pass": false,
+      "formal_full_matched_gate_pass": false,
+      "performance_comparison_allowed": false
+    },
+    {
+      "source": "Biogen2624",
+      "region": "amide_ge4_MW_ge500",
+      "formal_population_gate_pass": false,
+      "formal_full_matched_gate_pass": false,
+      "performance_comparison_allowed": false
+    },
+    {
+      "source": "ASAP56",
+      "region": "MW_ge600",
+      "formal_population_gate_pass": false,
+      "formal_full_matched_gate_pass": false,
+      "performance_comparison_allowed": false
+    },
+    {
+      "source": "ASAP56",
+      "region": "TPSA_ge140",
+      "formal_population_gate_pass": false,
+      "formal_full_matched_gate_pass": false,
+      "performance_comparison_allowed": false
+    },
+    {
+      "source": "ASAP56",
+      "region": "amide_ge4_MW_ge500",
+      "formal_population_gate_pass": false,
+      "formal_full_matched_gate_pass": false,
+      "performance_comparison_allowed": false
+    }
+  ],
+  "three_regions_all_fail_formal_gate": true,
+  "thresholds_unchanged": true,
+  "no_performance_computed": true
+}

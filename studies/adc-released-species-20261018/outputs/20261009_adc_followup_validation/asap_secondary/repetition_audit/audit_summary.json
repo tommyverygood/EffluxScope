@@ -1,0 +1,57 @@
+{
+  "status": "PASS_IDENTITY_REPEAT_AUDIT_WITH_CONTEXT_LIMITATIONS",
+  "observation_rows": 62,
+  "unique_standardized_compounds": 56,
+  "unique_source_exact_graph_keys": 56,
+  "repeated_compounds": 4,
+  "rows_in_repeated_compounds": 10,
+  "extra_rows_over_unique_compounds": 6,
+  "repeated_group_sizes": [
+    4,
+    2,
+    2,
+    2
+  ],
+  "weak_threshold_crossing_compounds": [
+    "CHEMBL5605022"
+  ],
+  "source_graph_constant_in_each_group": true,
+  "model_scores_constant_in_each_group": true,
+  "no_repeated_endpoint_activity_ids": true,
+  "raw_endpoint_receipts_checked": 40,
+  "same_vendor_assay_description_in_repeated_groups": true,
+  "raw_assay_parameters": [],
+  "legacy_score_graph_boundary": "All grouping is audited against source SMILES; standardized key is a model representation, not procurement identity.",
+  "raw_pairing_limit": "R1/R2 were reconstructed by ordinal endpoint occurrence within record, ordered by activity_id; export has no explicit paired sample ID.",
+  "material_context_limit": "same chemical identity/document/assay, not proof of same lot, concentration, time, or independent experimental day.",
+  "statistical_unit": "56 unique compounds; historical 62-row analysis preserves observation weighting and is sensitivity only.",
+  "prospective_status": "Retrospective reanalysis of already scored/seen outcomes; old protocol prohibited independent treatment of repeated observations.",
+  "original_protocol_primary": "Spearman on 62 estimable rows with whole Murcko-scaffold bootstrap; unique-compound aggregation is a new retrospective sensitivity/primary reporting choice.",
+  "inference_boundary": "one MDCK-MDR1 vendor dataset; no matched parental, inhibitor rescue, strict ABCB1 or ADC-specific validation",
+  "max_absolute_er_reconstruction_error": 4.87804818760651e-09,
+  "max_absolute_log2_reconstruction_error": 0.0,
+  "rdkit_version": "2026.03.4",
+  "lock_checks": {
+    "observations_hash_matches_original_lock": true,
+    "raw_document_hash_matches_lock": true,
+    "raw_assay_hash_matches_lock": true,
+    "raw_activity_hash_matches_lock": true
+  },
+  "inputs_sha256_before": {
+    "数据/processed/abcb1_asap2025_sourceheldout_predictions_v1.csv": "100e11e56c319d7f1cb1a7d30b4938f38721a715920d647386131ae205cbe4c7",
+    "数据/processed/abcb1_asap_mdck_mdr1_observations_v1.csv": "130f4e6daffea2f8a4337ac2e31a67f992af64cc4d10c5ad351207a387c4f8f5",
+    "数据/processed/abcb1_asap2025_sourceheldout_protocol_lock_v1.json": "e4e58ef6fe311574332106a87feeeb38f798f65558f5dfe478255f16c90fed58",
+    "数据/raw/abcb1_asap_mdck_mdr1_v1/CHEMBL5674852_activities.json": "f022cfa0e45cb843b34ae75ffe04d9029ca0a087b4bb14a102139a0b169d8878",
+    "数据/raw/abcb1_asap_mdck_mdr1_v1/CHEMBL5674852_assays.json": "c2c0b76b3bb4181ce15819f83fe095509500606b06d1ba7f4e8330ae71824884",
+    "数据/raw/abcb1_asap_mdck_mdr1_v1/CHEMBL5674852_document.json": "9b5bf214ed2a185f069c29f0ee409435e258f137bdf26824e7e28ead0bcc9b89"
+  },
+  "inputs_sha256_after": {
+    "数据/processed/abcb1_asap2025_sourceheldout_predictions_v1.csv": "100e11e56c319d7f1cb1a7d30b4938f38721a715920d647386131ae205cbe4c7",
+    "数据/processed/abcb1_asap_mdck_mdr1_observations_v1.csv": "130f4e6daffea2f8a4337ac2e31a67f992af64cc4d10c5ad351207a387c4f8f5",
+    "数据/processed/abcb1_asap2025_sourceheldout_protocol_lock_v1.json": "e4e58ef6fe311574332106a87feeeb38f798f65558f5dfe478255f16c90fed58",
+    "数据/raw/abcb1_asap_mdck_mdr1_v1/CHEMBL5674852_activities.json": "f022cfa0e45cb843b34ae75ffe04d9029ca0a087b4bb14a102139a0b169d8878",
+    "数据/raw/abcb1_asap_mdck_mdr1_v1/CHEMBL5674852_assays.json": "c2c0b76b3bb4181ce15819f83fe095509500606b06d1ba7f4e8330ae71824884",
+    "数据/raw/abcb1_asap_mdck_mdr1_v1/CHEMBL5674852_document.json": "9b5bf214ed2a185f069c29f0ee409435e258f137bdf26824e7e28ead0bcc9b89"
+  },
+  "inputs_unchanged": true
+}

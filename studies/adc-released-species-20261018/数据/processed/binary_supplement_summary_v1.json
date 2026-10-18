@@ -1,0 +1,34 @@
+{
+  "run_date": "2026-07-29",
+  "seed": 20260729,
+  "interface_counts": {
+    "audit_holdout|ABCB1": 4,
+    "audit_holdout|ABCG2": 3,
+    "candidate_supervised|ABCB1": 443,
+    "candidate_supervised|ABCG2": 69,
+    "external_adc_anchor|ABCB1": 13,
+    "external_adc_anchor|ABCG2": 3,
+    "pu_unlabeled|ABCB1": 164,
+    "pu_unlabeled|ABCG2": 438
+  },
+  "adc_anchor_counts": {
+    "ABCB1|": 10,
+    "ABCB1|1": 3,
+    "ABCG2|": 1,
+    "ABCG2|1": 2
+  },
+  "manual_holdout_count": 7,
+  "public_independent_source_holdout_count": 512,
+  "pu_iterations": 50,
+  "pu_rule": "labeled positives from A/B candidates; auxiliary rows sampled as temporary negatives across repeated fits; output is ranking/probability distribution only",
+  "derived_binary_rule": "same comparability group, no-inhibitor net efflux ratio >= 2 and selective-inhibitor rescue >= 50%; gene-specific context required for truth_set_eligible",
+  "model_claim": "development sensitivity baseline only; no universal ordinary-substrate or ADC predictor claim",
+  "artifacts": [
+    "binary_supplement_training_interface_v1.csv",
+    "adc_direct_numeric_binary_anchors_v1.csv",
+    "binary_supplement_model_diagnostics_v1.csv",
+    "binary_supplement_predictions_v1.csv",
+    "public_independent_transporter_labels_long_v1.csv",
+    "public_independent_cross_source_overlap_audit_v1.csv"
+  ]
+}

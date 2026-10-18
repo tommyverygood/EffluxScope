@@ -1,0 +1,31 @@
+{
+  "role": "retrospective_structure_defined_chemical_stress_region_feasibility_not_ADC_validation",
+  "new_source_collection": false,
+  "model_refit_or_recalibration": false,
+  "performance_computation_or_region_selection": false,
+  "region_rules_frozen_before_counts": {
+    "MW_ge600": "frozen standardized molecular_weight >= 600",
+    "TPSA_ge140": "frozen standardized tpsa >= 140",
+    "amide_ge4_MW_ge500": "amide_count >= 4 and frozen standardized molecular_weight >= 500"
+  },
+  "amide_definition": "Unique C(=O)-N matches of RDKit SMARTS [CX3](=[OX1])[NX3] on the frozen standardized_isomeric_smiles; operational amide motif count, not a validated peptide classifier",
+  "descriptor_definition": "Use existing frozen physicochemical_descriptors_json for MW/TPSA. Compute amide motif count only; do not rerun standardizer or model.",
+  "Biogen_unit": "identity_audited_v2 analysis rows; identity_clean=yes and model_usable=yes; unique connectivity; remove development reference exact/connectivity overlap",
+  "ASAP_unit": "existing posthoc 56-compound median-log2ER aggregation, joined to existing 62 frozen prediction rows by standardized key; remove development reference exact/connectivity overlap",
+  "ADC_unit": "existing 14 frozen source-resolved species_predictions; coverage mapping only; no ER labels supplied or inferred",
+  "development_reference_sets": "443 weak-label training audited keys and 84 identity-audited direct reference panel keys; conservative source-key connectivity check reported separately",
+  "label_boundary": "ER >= 2 is an assay-specific weak measured endpoint; general-molecule negatives are not ADC negatives",
+  "ASAP_aggregation_boundary": "Known post-outcome secondary sensitivity aggregation; actual vial/lot and biological independence are not established",
+  "cross_source_identity": "Reported, not pooled or treated as independent additional measurements",
+  "minimum_practical_gate_not_power_analysis": {
+    "population_n": 30,
+    "positive_n": 5,
+    "negative_n": 5,
+    "scaffold_n": 10,
+    "full_accepted_n": 10,
+    "full_accepted_positive_n": 3,
+    "full_accepted_negative_n": 3
+  },
+  "gate_purpose": "Count-only advice for a limited retrospective same-count comparison; never a validated ADC domain or confirmatory statistical adequacy claim",
+  "no_statistical_performance_metrics": true
+}

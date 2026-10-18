@@ -1,0 +1,99 @@
+{
+  "analysis_version": "ABCB1_QUANTITY_EXTERNAL_IDENTITY_AUDITED_SENSITIVITY_V2",
+  "analysis_date": "2026-08-05",
+  "status": "completed_post_outcome_identity_sensitivity_not_new_external_validation",
+  "protocol_path": "outputs/20260810_soskuti_identity_double_review_v1/reanalysis/external/protocol/abcb1_quantity_external_protocol_identity_audited_v2.json",
+  "protocol_sha256": "c15087d79b27b81e6858e5174fd0ec45e2283fbdcbf54d9ecaf5581151881307",
+  "model_sha256": "8a1ce6bcc4073c7fe0a4ac8318ad7352c76b1567c2a3f46e6d9bb3bb9acb00e7",
+  "reference_panel_counts": {
+    "primary_rows": 443,
+    "primary_unique_connectivity_blocks": 443,
+    "direct_rows": 84,
+    "direct_unique_connectivity_blocks": 84
+  },
+  "new_data_quantity": {
+    "raw_scored_rows": 3249,
+    "biogen_raw_rows": 2642,
+    "daood_raw_rows": 607,
+    "collapsed_unique_connectivity_or_unresolved_rows": 3248,
+    "identity_clean_unique_rows": 2780,
+    "scaffold_clean_unique_rows": 2689
+  },
+  "overlap_audit": {
+    "biogen_exact_overlap_primary": 9,
+    "biogen_exact_overlap_direct": 8,
+    "biogen_identity_clean": 2624,
+    "biogen_scaffold_clean": 2562,
+    "daood_exact_overlap_primary": 443,
+    "daood_exact_overlap_direct": 42,
+    "daood_identity_clean": 156,
+    "daood_scaffold_clean": 127,
+    "daood_label_conflict_connectivities": 0
+  },
+  "primary_biogen_identity_clean_result": {
+    "source": "Biogen_Fang_2023",
+    "subset": "identity_clean",
+    "stratum": "all",
+    "n_unique_structures": 2624,
+    "n_endpoint_positive": 1145,
+    "n_endpoint_negative": 1479,
+    "n_high_call": 305,
+    "n_low_call": 148,
+    "n_abstain": 2171,
+    "coverage": 0.1726372,
+    "accepted_n": 453,
+    "accepted_positive_n": 250,
+    "accepted_negative_n": 203,
+    "accuracy": 0.75055188,
+    "balanced_accuracy": 0.73510345,
+    "mcc": 0.49857011,
+    "sensitivity": 0.884,
+    "specificity": 0.5862069,
+    "high_risk_precision": 0.72459016,
+    "low_risk_npv": 0.80405405,
+    "roc_auc_all_probabilities": 0.62468445,
+    "spearman_probability_vs_endpoint": 0.24718176,
+    "spearman_ci95_low": 0.20746734,
+    "spearman_ci95_high": 0.28434392,
+    "spearman_bootstrap_valid_replicates": 2000,
+    "balanced_accuracy_ci95_low": 0.69083545,
+    "balanced_accuracy_ci95_high": 0.77622322,
+    "balanced_accuracy_bootstrap_valid_replicates": 2000,
+    "mcc_ci95_low": 0.41328292,
+    "mcc_ci95_high": 0.58007208,
+    "mcc_bootstrap_valid_replicates": 2000,
+    "accepted_high_endpoint_median": 0.88818322,
+    "accepted_low_endpoint_median": -0.14430289,
+    "accepted_high_minus_low_median": 1.03248611,
+    "accepted_high_vs_low_cliffs_delta": 0.68870182,
+    "accepted_high_vs_low_mannwhitney_p": 0.0,
+    "n_murcko_bootstrap_clusters": 2312
+  },
+  "predeclared_quantity_gate": {
+    "continuous_direction_positive_ci_excludes_zero": true,
+    "accepted_high_median_exceeds_low_median": true,
+    "quantity_support_status": "pass",
+    "interpretation_if_pass": "supports a bounded external ABCB1 efflux-risk ranking/selective-triage claim",
+    "interpretation_if_fail": "does not support an external quantity-based risk-ranking claim; retain only failure-boundary evidence"
+  },
+  "strict_predictor_upgrade": {
+    "status": "not_permitted",
+    "reason": "no new outcome-unseen matched-parental or inhibitor-rescue source with both positive and negative calls"
+  },
+  "claim_boundary": "free or released small-molecule ABCB1 efflux-risk ranking and selective triage only; not intact-ADC transport, universal substrate truth, intracellular unbound exposure, resistance, efficacy, or clinical DDI",
+  "output_hashes": {
+    "outputs/20260810_soskuti_identity_double_review_v1/reanalysis/external/analysis/abcb1_quantity_biogen_analysis_rows_identity_audited_v2.csv": "9e650cbc3b72d6757994eb9c02b0f130729f5a327a1decb17df3f8c8e36f07e9",
+    "outputs/20260810_soskuti_identity_double_review_v1/reanalysis/external/analysis/abcb1_quantity_daood_analysis_rows_identity_audited_v2.csv": "c6c13a3fb34c792abe07c261ed518dee1904ddcda8b478223d5150880bd2fcef",
+    "outputs/20260810_soskuti_identity_double_review_v1/reanalysis/external/analysis/abcb1_quantity_external_metrics_identity_audited_v2.csv": "128044c371bc036ff352ac1f7e316089e3dea3635274ee85371f5471283fd13d",
+    "outputs/20260810_soskuti_identity_double_review_v1/reanalysis/external/analysis/abcb1_quantity_external_abstention_reasons_identity_audited_v2.csv": "63bd8dd8daae3990bb851c19bf8d0261884e3afd1fbf1fa3a61e7a7c92e16184",
+    "outputs/20260810_soskuti_identity_double_review_v1/reanalysis/external/analysis/abcb1_quantity_external_evidence_ledger_identity_audited_v2.csv": "690d6b49036da8071a3cac654032c1d62be0a54c93c6aba6890bb5449678de55"
+  },
+  "reanalysis_context": {
+    "analysis_type": "identity_corrected_post_outcome_sensitivity_reanalysis",
+    "is_prospective_redevelopment": false,
+    "is_untouched_external_validation": false,
+    "historical_rules_changed": false,
+    "historical_artifacts_overwritten": false,
+    "interpretation": "Replays the originally locked algorithms after independent compound-identity audit and adjudication. It quantifies identity-correction sensitivity only."
+  }
+}

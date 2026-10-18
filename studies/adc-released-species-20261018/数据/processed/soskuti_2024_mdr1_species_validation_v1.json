@@ -1,0 +1,53 @@
+{
+  "created_utc": "2026-08-03T10:56:38.663365+00:00",
+  "source_pdf_sha256": "11d8c9be639e32be21cdcd0f367b25867cd5710e2befb5378646149b13cc2482",
+  "frozen_443_training_audit_sha256": "54979f1037817d6a218d31301c59a1056b0123747f1aacbbf2e12ddc85c8d747",
+  "development_external_overlay_sha256": "aab920970b71e8be2efac9f88ee5cb19eab3cdfb070a1417d875be6a279169c1",
+  "parsed_entity_count": 84,
+  "long_observation_count": 504,
+  "expected_long_observation_count": 504,
+  "low_recovery_entity_count": 12,
+  "permeability_control_entity_count": 1,
+  "point_label_eligible_entity_count": 71,
+  "point_label_counts": {
+    "1": 45,
+    "0": 26
+  },
+  "conservative_interval_label_entity_count": 63,
+  "conservative_label_counts": {
+    "1": 41,
+    "0": 22
+  },
+  "borderline_interval_entity_count": 8,
+  "structure_standardization_ok_count": 84,
+  "structure_resolution_issue_count": 0,
+  "frozen_training_exact_overlap_count": 33,
+  "frozen_training_connectivity_only_overlap_count": 1,
+  "current_development_external_exact_overlap_count": 14,
+  "current_development_external_connectivity_only_overlap_count": 2,
+  "weak_vs_direct_screen_status_counts": {
+    "not_comparable_no_weak_identity_overlap": 53,
+    "concordant": 29,
+    "discordant": 2
+  },
+  "checks": {
+    "parsed_83_compounds_plus_1_control": true,
+    "generated_504_long_observations": true,
+    "unique_panel_entity_ids": true,
+    "all_six_systems_per_entity": true,
+    "all_numeric_er_positive": true,
+    "no_low_recovery_or_control_admitted": true
+  },
+  "limitations": [
+    "PubChem name-to-structure matches are automated and provisional until blinded human identity review.",
+    "The net-ER approximate interval assumes independent errors and is only a sensitivity screen.",
+    "Table S1 has no compound-level selective-inhibitor rescue; derived calls are not confirmed universal substrate labels.",
+    "This 2024 panel is assigned to development and must never be used as the future untouched temporal/prospective validation set."
+  ],
+  "outputs": {
+    "panel": "数据/processed/soskuti_2024_mdr1_species_panel_v1.csv",
+    "observations": "数据/processed/soskuti_2024_mdr1_species_observations_v1.csv",
+    "structure_issues": "数据/processed/soskuti_2024_mdr1_species_structure_resolution_issues_v1.csv",
+    "source_registry": "数据/processed/soskuti_2024_mdr1_species_source_registry_v1.csv"
+  }
+}

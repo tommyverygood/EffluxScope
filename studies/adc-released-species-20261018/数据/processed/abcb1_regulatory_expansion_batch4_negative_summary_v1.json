@@ -1,0 +1,40 @@
+{
+  "batch4_source_documents_or_html_snapshots": 13,
+  "batch4_structured_entity_rows": 13,
+  "batch4_standardization_ok": 13,
+  "batch4_identity_clean_rows": 13,
+  "batch4_new_strict_negative_candidates": 12,
+  "batch4_new_strict_negative_names": [
+    "Sepiapterin",
+    "Pentamidine",
+    "Furamidine (DB75)",
+    "DB820",
+    "DB829 (CPD0801)",
+    "Acetaminophen",
+    "4-Aminoantipyrine",
+    "Theophylline",
+    "Ganciclovir",
+    "Pemetrexed",
+    "N-desmethyl netupitant (M1; RO0681133)",
+    "Monohydroxy netupitant (M3; RO0731519)"
+  ],
+  "batch4_strict_upstream_cluster_count": 4,
+  "batch4_secondary_names": [
+    "Vandetanib"
+  ],
+  "batch4_exclusion_log_rows": 27,
+  "regulatory_strict_pool_v4_rows": 33,
+  "regulatory_strict_pool_v4_class_counts": {
+    "1": 15,
+    "0": 18
+  },
+  "formal_external_shortfall_if_minimum_15_per_class": {
+    "positive": 0,
+    "negative": 0
+  },
+  "stopping_rule_reached": true,
+  "source_dependence_warning": "five Shen compounds share one experiment and four diamidines share one experiment; use source-cluster bootstrap and report entity-level plus cluster-level uncertainty",
+  "model_scoring_performed": false,
+  "model_refit_or_threshold_change_performed": false,
+  "formal_status": "negative count gate reached; final source-lineage audit is complete for this batch; scoring remains locked"
+}

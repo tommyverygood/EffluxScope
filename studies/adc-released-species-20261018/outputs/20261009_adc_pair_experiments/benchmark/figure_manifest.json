@@ -1,0 +1,14 @@
+{
+  "status": "rendered_from_completed_metrics",
+  "matplotlib_version": "3.11.2",
+  "script_sha256": "db13b5ae16a18f7bd021847406d8d78df4c61ddbe3e67b171bee75dc59cf20a0",
+  "input_sha256": "b28b8472d27e5cd8afabbefbf6997a53105317f1871beec9fc875df6eaac238f",
+  "fixed_figure": "all four policies retain exactly453; full uses original mask; no-local is reranked within551 accepted pool",
+  "curve_figure": "same targets except the nominal17.3% adjacent point omitted visually; exact table retains every target",
+  "outputs": {
+    "coverage_curves.png": "5319a5efcd20557220169b29a049901d83bf1ad7a7237600c5515dd068e21fa9",
+    "fixed_coverage_comparison.png": "b9e786e2fe64b83a2127f30ed2ec11529ebc4165a68bb939213376dfd1f358dc",
+    "coverage_curves.pdf": "a39d799c9d7ffc9faa79cd2c9109d1ad8b1e4561e85847d7f52f875629598306",
+    "fixed_coverage_comparison.pdf": "fa64044eabcc6a5feef5c10bfd52f65b20f0ae7bb32d0e93da7899ab50c3f0c9"
+  }
+}

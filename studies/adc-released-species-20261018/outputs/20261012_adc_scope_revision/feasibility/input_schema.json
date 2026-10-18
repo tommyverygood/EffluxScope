@@ -1,0 +1,34 @@
+{
+  "feature_table": "features.csv",
+  "primary_analysis_filter": "source in Biogen2624 or ASAP56; apply one prespecified region boolean; ADC14 has no measured labels",
+  "unique_unit": "connectivity_block within source",
+  "join_key": "source + uid",
+  "model_graph": "standardized_isomeric_smiles",
+  "chemical_stress_features": {
+    "molecular_weight": "existing frozen descriptor JSON",
+    "tpsa": "existing frozen descriptor JSON",
+    "amide_count": "Unique C(=O)-N matches of RDKit SMARTS [CX3](=[OX1])[NX3] on the frozen standardized_isomeric_smiles; operational amide motif count, not a validated peptide classifier"
+  },
+  "labels": {
+    "er_ge2_weak_label": "0/1 for general transport sources, empty for ADC14",
+    "measured_er": "Biogen original ER; ASAP existing median-log2ER derived ER; empty for ADC14"
+  },
+  "frozen_predictions": {
+    "full_accepted": "bool existing full v0.4 mask",
+    "primary_score": "fixed v0.1 channel",
+    "auxiliary_score": "fixed direct v0.3 channel"
+  },
+  "scaffold_cluster": "murcko_scaffold; empty original scaffold falls back to entity connectivity",
+  "status_boundaries": [
+    "already observed labels; retrospective",
+    "ASAP56 aggregation is known posthoc secondary sensitivity",
+    "general molecule negative does not equal ADC negative",
+    "stress regions are operational thresholds, not validated ADC applicability domains"
+  ],
+  "source_field_paths": {
+    "Biogen": "outputs/20260810_soskuti_identity_double_review_v1/reanalysis/external/analysis/abcb1_quantity_biogen_analysis_rows_identity_audited_v2.csv",
+    "ASAP62": "数据/processed/abcb1_selective_v0_4_asap2025_posthoc_predictions_v1.csv",
+    "ASAP56": "outputs/20261009_adc_followup_validation/asap_secondary/compound_aggregation_ledger.csv",
+    "ADC14": "outputs/20261012_adc_completion/scoring/species_predictions.csv"
+  }
+}

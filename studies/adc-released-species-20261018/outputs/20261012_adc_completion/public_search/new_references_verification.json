@@ -1,0 +1,58 @@
+{
+  "date_client": "2026-10-12",
+  "keys": [
+    "ema2017besponsa",
+    "obi2025payload",
+    "weng2023exatecan",
+    "pmda2021padcev",
+    "fda2020blenrep",
+    "bao2025transporters",
+    "maji2025auristatin"
+  ],
+  "sources": {
+    "ema2017besponsa": {
+      "basis": "Official EMA original PDF cover",
+      "metadata_file": "../family_expansion/sources/EMA_Besponsa_assessment.txt",
+      "checked_fields": [
+        "title",
+        "date",
+        "number",
+        "procedure",
+        "agency"
+      ]
+    },
+    "obi2025payload": {
+      "basis": "Publisher-deposited Crossref metadata plus official publisher indexed title/PMC supplement page",
+      "metadata_file": "source_extracts/OBI992_Crossref_metadata.json",
+      "note": "Formal issue year2025 differs from online2024. All13 authors from metadata."
+    },
+    "weng2023exatecan": {
+      "basis": "Publisher-deposited Crossref metadata plus AACR Figshare SI",
+      "metadata_file": "source_extracts/Weng2023_Crossref_metadata.json",
+      "SI_metadata": "../family_expansion/sources/Weng2023_figshare_metadata.json",
+      "note": "All23 authors from metadata; issue13(4)950-973; SI figureS1-S19 deposit DOI10.1158/2159-8290.22553455.v1."
+    },
+    "pmda2021padcev": {
+      "basis": "Original Japanese public sponsor CTD PDF cover and p76; English title descriptive translation",
+      "metadata_file": "source_extracts/PMDA_Padcev_current.pdf",
+      "note": "Astellas sponsor author printed on CTD; PMDA public host; year2021 from official release URL."
+    },
+    "fda2020blenrep": {
+      "basis": "FDA original review cover and printed98",
+      "metadata_file": "source_extracts/FDA_Blenrep2020_review.pdf",
+      "note": "Institutional author; CDER/application/referenceID verified."
+    },
+    "bao2025transporters": {
+      "basis": "Original meeting abstract PDF cover and p140",
+      "metadata_file": "source_extracts/ISSX2025_abstracts.pdf",
+      "note": "All5 authors; conference place/date verified cover; abstractP178."
+    },
+    "maji2025auristatin": {
+      "basis": "Original PMC HTML header and PubMed PMID39934176",
+      "metadata_file": "source_extracts/Maji2025_PMC.html",
+      "note": "Crossref request429; did not infer fields from failed request."
+    }
+  },
+  "bib_sha256": "c7e033f55b4c3a232cc57a82114f78ca68597f8c9a0a55943828f01d22d456a1",
+  "manuscript_modified": false
+}

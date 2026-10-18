@@ -1,0 +1,194 @@
+{
+  "validation_version": "ABCB1_QUANTITY_EXTERNAL_VALIDATION_OUTPUT_CHECK_V1",
+  "status": "PASS",
+  "checks_passed": 31,
+  "checks_total": 31,
+  "checks": [
+    {
+      "check": "protocol_precedes_scoring_status",
+      "status": "PASS",
+      "detail": "locked_before_new_external_outcome_scoring"
+    },
+    {
+      "check": "protocol_hash_matches_summary",
+      "status": "PASS",
+      "detail": "9026b19f5ea3e4a288bc52ec96db1cbc8deccf6821ed08c2e85e76d5f3be9a4d"
+    },
+    {
+      "check": "model_hash_frozen",
+      "status": "PASS",
+      "detail": "c56fb6b8f6f8bf13472a1a2d433b05d4c6a35eb2490ba84ce9371395b8bbff8b"
+    },
+    {
+      "check": "raw_scored_rows",
+      "status": "PASS",
+      "detail": 3249
+    },
+    {
+      "check": "collapsed_unique_rows",
+      "status": "PASS",
+      "detail": {
+        "biogen": 2641,
+        "daood": 607
+      }
+    },
+    {
+      "check": "biogen_identity_clean_n",
+      "status": "PASS",
+      "detail": 2624
+    },
+    {
+      "check": "biogen_scaffold_clean_n",
+      "status": "PASS",
+      "detail": 2562
+    },
+    {
+      "check": "daood_identity_clean_n",
+      "status": "PASS",
+      "detail": 156
+    },
+    {
+      "check": "daood_identity_clean_positive_n",
+      "status": "PASS",
+      "detail": 4
+    },
+    {
+      "check": "biogen_identity_clean_has_no_exact_reference_overlap",
+      "status": "PASS",
+      "detail": 0
+    },
+    {
+      "check": "biogen_scaffold_clean_has_no_reference_scaffold_overlap",
+      "status": "PASS",
+      "detail": 0
+    },
+    {
+      "check": "daood_identity_clean_has_no_exact_reference_overlap",
+      "status": "PASS",
+      "detail": 0
+    },
+    {
+      "check": "daood_scaffold_clean_has_no_reference_scaffold_overlap",
+      "status": "PASS",
+      "detail": 0
+    },
+    {
+      "check": "primary_spearman",
+      "status": "PASS",
+      "detail": 0.24718176
+    },
+    {
+      "check": "primary_spearman_ci_excludes_zero",
+      "status": "PASS",
+      "detail": [
+        0.20746734,
+        0.28434392
+      ]
+    },
+    {
+      "check": "primary_coverage",
+      "status": "PASS",
+      "detail": 0.1726372
+    },
+    {
+      "check": "primary_accepted_n",
+      "status": "PASS",
+      "detail": 453
+    },
+    {
+      "check": "primary_balanced_accuracy",
+      "status": "PASS",
+      "detail": 0.73510345
+    },
+    {
+      "check": "primary_mcc",
+      "status": "PASS",
+      "detail": 0.49857011
+    },
+    {
+      "check": "primary_high_endpoint_exceeds_low",
+      "status": "PASS",
+      "detail": [
+        0.88818322,
+        -0.14430289
+      ]
+    },
+    {
+      "check": "scaffold_clean_direction_robust",
+      "status": "PASS",
+      "detail": [
+        0.20500252,
+        0.47925669
+      ]
+    },
+    {
+      "check": "predeclared_quantity_gate_pass",
+      "status": "PASS",
+      "detail": {
+        "continuous_direction_positive_ci_excludes_zero": true,
+        "accepted_high_median_exceeds_low_median": true,
+        "quantity_support_status": "pass",
+        "interpretation_if_pass": "supports a bounded external ABCB1 efflux-risk ranking/selective-triage claim",
+        "interpretation_if_fail": "does not support an external quantity-based risk-ranking claim; retain only failure-boundary evidence"
+      }
+    },
+    {
+      "check": "strict_upgrade_remains_closed",
+      "status": "PASS",
+      "detail": {
+        "status": "not_permitted",
+        "reason": "no new outcome-unseen matched-parental or inhibitor-rescue source with both positive and negative calls"
+      }
+    },
+    {
+      "check": "output_hash::数据/processed/abcb1_quantity_biogen_analysis_rows_v1.csv",
+      "status": "PASS",
+      "detail": "9346b705e83a8606c00aabbe77b63f125ad1ef3aefc4e6899be17cf4cba61457"
+    },
+    {
+      "check": "output_hash::数据/processed/abcb1_quantity_daood_analysis_rows_v1.csv",
+      "status": "PASS",
+      "detail": "649a28091f7e690d98c731b9c6d234bb3db6ba7d0a1906a8bfce5bd4d188ad59"
+    },
+    {
+      "check": "output_hash::数据/processed/abcb1_quantity_external_metrics_v1.csv",
+      "status": "PASS",
+      "detail": "128044c371bc036ff352ac1f7e316089e3dea3635274ee85371f5471283fd13d"
+    },
+    {
+      "check": "output_hash::数据/processed/abcb1_quantity_external_abstention_reasons_v1.csv",
+      "status": "PASS",
+      "detail": "59d098675e407cd3747b488b6d553e2b0806894b5da60cc3d1ce89dbc68cf7a6"
+    },
+    {
+      "check": "output_hash::数据/processed/abcb1_quantity_external_evidence_ledger_v1.csv",
+      "status": "PASS",
+      "detail": "690d6b49036da8071a3cac654032c1d62be0a54c93c6aba6890bb5449678de55"
+    },
+    {
+      "check": "report_exists",
+      "status": "PASS",
+      "detail": "${RELATED_PROJECT_ROOT}/ABCB1数量型外部风险验证报告_v1_20260805.md"
+    },
+    {
+      "check": "workbook_exists",
+      "status": "PASS",
+      "detail": "${RELATED_PROJECT_ROOT}/outputs/20260805_abcb1_quantity_external_validation_v1/ABCB1数量型外部风险验证_20260805.xlsx"
+    },
+    {
+      "check": "workbook_post_export_validation",
+      "status": "PASS",
+      "detail": {
+        "workbook_path": "${RELATED_PROJECT_ROOT}/outputs/20260805_abcb1_quantity_external_validation_v1/ABCB1数量型外部风险验证_20260805.xlsx",
+        "expected_sheet_count": 7,
+        "sheet_count": 7,
+        "rendered_exported_sheet_count": 7,
+        "formula_error_match_count": 0,
+        "summary_contains_n_2624": true,
+        "summary_contains_gate_pass": true,
+        "summary_contains_claim_boundary": true,
+        "status": "PASS"
+      }
+    }
+  ]
+}

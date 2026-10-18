@@ -1,0 +1,65 @@
+{
+  "created_utc": "2026-10-12T09:37:38.583262+00:00",
+  "client_date": "2026-10-12",
+  "study_type": "posthoc secondary chemical stress diagnostic; all source outcomes previously seen, rules locked before new regional performance computation",
+  "regions": [
+    {
+      "id": "MW600",
+      "rule": "frozen_standardized_MW >= 600"
+    },
+    {
+      "id": "TPSA140",
+      "rule": "frozen_standardized_TPSA >= 140"
+    },
+    {
+      "id": "AMIDE4_MW500",
+      "rule": "SMARTS [CX3](=[OX1])[NX3] count >= 4 and frozen_standardized_MW >= 500"
+    }
+  ],
+  "region_justification": "Operational high-MW, polar and amide-rich stress regions motivated by ADC release chemistry; not an empirically validated ADC applicability domain. No threshold tuning or choosing favorable region results.",
+  "ADC_panel": "14 unique source identities for coverage description only; no label transfer or accuracy estimate. Counts apply to model-standardized representations.",
+  "sources": [
+    "Biogen 2624 identity-audited connectivity-distinct rows",
+    "ASAP 56 unique compounds with previously defined median-log2ER aggregate; posthoc sensitivity population"
+  ],
+  "endpoint": "Within each source measured ER>=2 study-specific weak direction; no gene-isolated substrate truth transfer",
+  "count_unit": "unique chemical entity within source; concentrations and repeats never counted as new molecules; sources analyzed separately",
+  "identity_policy": "exclude source/model exact or connectivity development overlaps; retain raw and effective denominator audit",
+  "population_gate": {
+    "minimum_n": 30,
+    "minimum_each_measured_class": 5,
+    "minimum_scaffolds": 10
+  },
+  "matched_count_gate": {
+    "minimum_k": 20,
+    "minimum_each_selected_measured_class": 5,
+    "minimum_selected_scaffolds": 10
+  },
+  "gate_interpretation": "Reporting safeguards for small denominators, not sample-size power guarantees or confirmatory validation",
+  "policies": [
+    "full frozen v0.4 at native accepted k within each region",
+    "v0.1 absolute distance from0.5 selects same k within region",
+    "v0.3 absolute distance from0.5 selects same k within region"
+  ],
+  "selection_rule": "fixed UID tie-break; no force-fill of full-selector abstentions; k=0 remains0",
+  "underqualified_results": "n, class count, selected n, coverage, source/scaffold counts and confusion counts only; performance-comparison metrics null with reasons",
+  "bootstrap": {
+    "draws": 2000,
+    "seed": 20261012,
+    "unit": "whole Murcko scaffold within source and region",
+    "same_draw_multiplicity_shared_across_policies": true,
+    "masks_and_ranks_fixed": true,
+    "paired_delta": "within draw full minus each margin",
+    "minimum_valid_paired_draws": 1900,
+    "less_valid_draws": "CI null; counts remain visible, no survivorship interval"
+  },
+  "inference_limits": [
+    "not ADC-specific performance validation",
+    "not parent-release transport-change prediction",
+    "not a new independent source",
+    "not evidence of equivalence from non-significance",
+    "not new model/architecture/recalibration",
+    "not synergy or complete-ADC efficacy"
+  ],
+  "protected_files": 883
+}

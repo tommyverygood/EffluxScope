@@ -1,0 +1,38 @@
+{
+  "batch3_source_documents": 6,
+  "batch3_entity_rows": 6,
+  "batch3_standardization_ok": 6,
+  "batch3_identity_clean_rows": 6,
+  "batch3_strict_identity_clean_candidates": 5,
+  "batch3_strict_names": [
+    "Atrasentan",
+    "Riociguat",
+    "Futibatinib",
+    "Pirtobrutinib",
+    "Gepotidacin"
+  ],
+  "batch3_secondary_names": [
+    "Brensocatib"
+  ],
+  "batch3_identity_status_counts": {
+    "no_exact_or_connectivity_prior_overlap": 6
+  },
+  "regulatory_strict_pool_v3_rows": 21,
+  "regulatory_strict_pool_v3_class_counts": {
+    "1": 15,
+    "0": 6
+  },
+  "external_candidate_ledger_v3_rows": 100,
+  "external_candidate_ledger_v3_role_counts": {
+    "retrospective_assay_transfer_stress_only": 71,
+    "pre_scoring_strict_external_candidate": 21,
+    "regulatory_secondary_evidence_only": 8
+  },
+  "formal_external_shortfall_if_minimum_15_per_class": {
+    "positive": 0,
+    "negative": 9
+  },
+  "source_lineage_cluster_count_batch3": 6,
+  "model_scoring_performed": false,
+  "formal_status": "positive_side_candidate_count_gate_reached_if_identity_clean; negative_side_and_vendor_lineage_audit_pending"
+}

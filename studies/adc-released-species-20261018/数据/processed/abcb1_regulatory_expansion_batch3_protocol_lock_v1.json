@@ -1,0 +1,24 @@
+{
+  "protocol_id": "ABCB1_REGULATORY_EXPANSION_BATCH3_V1",
+  "lock_date": "2026-08-03",
+  "status": "locked_before_any_batch3_model_scoring",
+  "objective": "Complete the positive side of the source-traceable external ABCB1 candidate pool using official regulatory reports without changing the frozen v0.3-dev model, threshold, features, or applicability-domain rule.",
+  "predeclared_entities": [
+    "Atrasentan",
+    "Riociguat",
+    "Futibatinib",
+    "Pirtobrutinib",
+    "Gepotidacin",
+    "Brensocatib"
+  ],
+  "source_scope": [
+    "FDA integrated or clinical pharmacology review reports",
+    "PMDA English review reports"
+  ],
+  "strict_positive_rule": "Identity-clean released parent drug with a human ABCB1-transfected assay and either matched parent or knockout background correction yielding net ER >= 2, or a transporter ER reduced by more than 50% to below 2 with a selective P-gp inhibitor. Positive-control and monolayer/recovery information are recorded when exposed.",
+  "secondary_rule": "Keep Caco-2-only, qualitative, non-human, uncorrected, or incompletely exposed studies outside the formal strict metric even when the regulatory conclusion is directionally positive.",
+  "identity_rule": "Exclude exact InChIKey or connectivity-block overlap with the frozen 443 training set, all development/external stress sets, Broccatelli 2012, and regulatory strict pool v2.",
+  "source_lineage_rule": "A regulatory report is not automatically an independent experiment. Sponsor study identifiers, cited publications, metabolites, shared reports, and common assay vendors must be retained for source-clustered analysis.",
+  "modeling_rule": "No model scoring, refit, threshold selection, feature selection, applicability-domain modification, calibration, or candidate inclusion change using batch3 outcomes.",
+  "formal_gate": "The batch may update the frozen candidate ledger only after PDF-page verification, structure standardization, identity-overlap audit, evidence-tier adjudication, and source-lineage fields are complete."
+}

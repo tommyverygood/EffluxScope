@@ -1,0 +1,328 @@
+{
+  "status": "PASS_frozen_gate_application",
+  "qualifying_regions": 0,
+  "source_region_rows": [
+    {
+      "source": "Biogen2624",
+      "region": "MW_ge600",
+      "population_n": 6,
+      "positive_n": 4,
+      "negative_n": 2,
+      "scaffold_n": 6,
+      "full_selected_n": 2,
+      "full_selected_positive_n": 1,
+      "full_selected_negative_n": 1,
+      "full_selected_scaffold_n": 2,
+      "full_coverage": 0.3333333333333333,
+      "adc14_region_n": 10,
+      "regional_comparison_status": "not_evaluable",
+      "failed_report_gates": {
+        "population_n": {
+          "observed": 6,
+          "required": 30
+        },
+        "population_positive_n": {
+          "observed": 4,
+          "required": 5
+        },
+        "population_negative_n": {
+          "observed": 2,
+          "required": 5
+        },
+        "population_scaffold_n": {
+          "observed": 6,
+          "required": 10
+        },
+        "full_selected_n": {
+          "observed": 2,
+          "required": 20
+        },
+        "full_selected_positive_n": {
+          "observed": 1,
+          "required": 5
+        },
+        "full_selected_negative_n": {
+          "observed": 1,
+          "required": 5
+        },
+        "full_selected_scaffold_n": {
+          "observed": 2,
+          "required": 10
+        }
+      },
+      "BAcc": null,
+      "MCC": null,
+      "paired_delta_BAcc": null,
+      "paired_CI95": null,
+      "bootstrap_executed": false,
+      "null_reason": "prespecified small-denominator safeguards failed"
+    },
+    {
+      "source": "Biogen2624",
+      "region": "TPSA_ge140",
+      "population_n": 18,
+      "positive_n": 14,
+      "negative_n": 4,
+      "scaffold_n": 17,
+      "full_selected_n": 12,
+      "full_selected_positive_n": 10,
+      "full_selected_negative_n": 2,
+      "full_selected_scaffold_n": 11,
+      "full_coverage": 0.6666666666666666,
+      "adc14_region_n": 10,
+      "regional_comparison_status": "not_evaluable",
+      "failed_report_gates": {
+        "population_n": {
+          "observed": 18,
+          "required": 30
+        },
+        "population_negative_n": {
+          "observed": 4,
+          "required": 5
+        },
+        "full_selected_n": {
+          "observed": 12,
+          "required": 20
+        },
+        "full_selected_negative_n": {
+          "observed": 2,
+          "required": 5
+        }
+      },
+      "BAcc": null,
+      "MCC": null,
+      "paired_delta_BAcc": null,
+      "paired_CI95": null,
+      "bootstrap_executed": false,
+      "null_reason": "prespecified small-denominator safeguards failed"
+    },
+    {
+      "source": "Biogen2624",
+      "region": "amide_ge4_MW_ge500",
+      "population_n": 1,
+      "positive_n": 1,
+      "negative_n": 0,
+      "scaffold_n": 1,
+      "full_selected_n": 1,
+      "full_selected_positive_n": 1,
+      "full_selected_negative_n": 0,
+      "full_selected_scaffold_n": 1,
+      "full_coverage": 1.0,
+      "adc14_region_n": 6,
+      "regional_comparison_status": "not_evaluable",
+      "failed_report_gates": {
+        "population_n": {
+          "observed": 1,
+          "required": 30
+        },
+        "population_positive_n": {
+          "observed": 1,
+          "required": 5
+        },
+        "population_negative_n": {
+          "observed": 0,
+          "required": 5
+        },
+        "population_scaffold_n": {
+          "observed": 1,
+          "required": 10
+        },
+        "full_selected_n": {
+          "observed": 1,
+          "required": 20
+        },
+        "full_selected_positive_n": {
+          "observed": 1,
+          "required": 5
+        },
+        "full_selected_negative_n": {
+          "observed": 0,
+          "required": 5
+        },
+        "full_selected_scaffold_n": {
+          "observed": 1,
+          "required": 10
+        }
+      },
+      "BAcc": null,
+      "MCC": null,
+      "paired_delta_BAcc": null,
+      "paired_CI95": null,
+      "bootstrap_executed": false,
+      "null_reason": "prespecified small-denominator safeguards failed"
+    },
+    {
+      "source": "ASAP56",
+      "region": "MW_ge600",
+      "population_n": 0,
+      "positive_n": 0,
+      "negative_n": 0,
+      "scaffold_n": 0,
+      "full_selected_n": 0,
+      "full_selected_positive_n": 0,
+      "full_selected_negative_n": 0,
+      "full_selected_scaffold_n": 0,
+      "full_coverage": null,
+      "adc14_region_n": 10,
+      "regional_comparison_status": "not_evaluable",
+      "failed_report_gates": {
+        "population_n": {
+          "observed": 0,
+          "required": 30
+        },
+        "population_positive_n": {
+          "observed": 0,
+          "required": 5
+        },
+        "population_negative_n": {
+          "observed": 0,
+          "required": 5
+        },
+        "population_scaffold_n": {
+          "observed": 0,
+          "required": 10
+        },
+        "full_selected_n": {
+          "observed": 0,
+          "required": 20
+        },
+        "full_selected_positive_n": {
+          "observed": 0,
+          "required": 5
+        },
+        "full_selected_negative_n": {
+          "observed": 0,
+          "required": 5
+        },
+        "full_selected_scaffold_n": {
+          "observed": 0,
+          "required": 10
+        }
+      },
+      "BAcc": null,
+      "MCC": null,
+      "paired_delta_BAcc": null,
+      "paired_CI95": null,
+      "bootstrap_executed": false,
+      "null_reason": "prespecified small-denominator safeguards failed"
+    },
+    {
+      "source": "ASAP56",
+      "region": "TPSA_ge140",
+      "population_n": 0,
+      "positive_n": 0,
+      "negative_n": 0,
+      "scaffold_n": 0,
+      "full_selected_n": 0,
+      "full_selected_positive_n": 0,
+      "full_selected_negative_n": 0,
+      "full_selected_scaffold_n": 0,
+      "full_coverage": null,
+      "adc14_region_n": 10,
+      "regional_comparison_status": "not_evaluable",
+      "failed_report_gates": {
+        "population_n": {
+          "observed": 0,
+          "required": 30
+        },
+        "population_positive_n": {
+          "observed": 0,
+          "required": 5
+        },
+        "population_negative_n": {
+          "observed": 0,
+          "required": 5
+        },
+        "population_scaffold_n": {
+          "observed": 0,
+          "required": 10
+        },
+        "full_selected_n": {
+          "observed": 0,
+          "required": 20
+        },
+        "full_selected_positive_n": {
+          "observed": 0,
+          "required": 5
+        },
+        "full_selected_negative_n": {
+          "observed": 0,
+          "required": 5
+        },
+        "full_selected_scaffold_n": {
+          "observed": 0,
+          "required": 10
+        }
+      },
+      "BAcc": null,
+      "MCC": null,
+      "paired_delta_BAcc": null,
+      "paired_CI95": null,
+      "bootstrap_executed": false,
+      "null_reason": "prespecified small-denominator safeguards failed"
+    },
+    {
+      "source": "ASAP56",
+      "region": "amide_ge4_MW_ge500",
+      "population_n": 0,
+      "positive_n": 0,
+      "negative_n": 0,
+      "scaffold_n": 0,
+      "full_selected_n": 0,
+      "full_selected_positive_n": 0,
+      "full_selected_negative_n": 0,
+      "full_selected_scaffold_n": 0,
+      "full_coverage": null,
+      "adc14_region_n": 6,
+      "regional_comparison_status": "not_evaluable",
+      "failed_report_gates": {
+        "population_n": {
+          "observed": 0,
+          "required": 30
+        },
+        "population_positive_n": {
+          "observed": 0,
+          "required": 5
+        },
+        "population_negative_n": {
+          "observed": 0,
+          "required": 5
+        },
+        "population_scaffold_n": {
+          "observed": 0,
+          "required": 10
+        },
+        "full_selected_n": {
+          "observed": 0,
+          "required": 20
+        },
+        "full_selected_positive_n": {
+          "observed": 0,
+          "required": 5
+        },
+        "full_selected_negative_n": {
+          "observed": 0,
+          "required": 5
+        },
+        "full_selected_scaffold_n": {
+          "observed": 0,
+          "required": 10
+        }
+      },
+      "BAcc": null,
+      "MCC": null,
+      "paired_delta_BAcc": null,
+      "paired_CI95": null,
+      "bootstrap_executed": false,
+      "null_reason": "prespecified small-denominator safeguards failed"
+    }
+  ],
+  "no_threshold_relaxation": true,
+  "no_regional_performance_or_bootstrap_computed": true,
+  "no_new_ADC_accuracy_validation": true,
+  "input_sha256": {
+    "protocol.json": "15d8f0b6d565a38bd449bbc608ed136ec9a011d80666c9b97d4ef187f97e1bdd",
+    "feasibility/count_feasibility.json": "98963c903e271599b13113cf1bf763404b3a4d510285a3cae2c5d384539d4303",
+    "apply_reporting_gates.py": "801cccb68bcad7c7153d91e67d7d4155649fa8626123e319ad9264abedf0f14a"
+  }
+}

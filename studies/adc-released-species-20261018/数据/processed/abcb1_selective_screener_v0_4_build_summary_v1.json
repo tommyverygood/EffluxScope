@@ -1,0 +1,40 @@
+{
+  "model_version": "ABCB1_selective_screener_v0.4_dev",
+  "status": "development_selective_risk_screener_not_future_source_validated",
+  "protocol_path": "数据/processed/abcb1_selective_screener_v0_4_protocol_lock_v1.json",
+  "protocol_sha256": "716d5285bed29d7caaca192b2fd76ea4dc645fe973ee3ec64d889187ac51a641",
+  "package_path": "模型/ABCB1_selective_screener_v0_4_dev/ABCB1_selective_uncertainty_v0_4_dev.joblib",
+  "package_sha256": "c56fb6b8f6f8bf13472a1a2d433b05d4c6a35eb2490ba84ce9371395b8bbff8b",
+  "frozen_dependency_hashes_verified": true,
+  "bootstrap_estimators": 64,
+  "primary_reference_n": 443,
+  "direct_reference_n": 63,
+  "physchem_reference_n": 506,
+  "physchem_score_threshold_q99": 7.0,
+  "probability_margin_internal_metrics": {
+    "n": 443,
+    "low_probability_threshold": 0.35,
+    "high_probability_threshold": 0.7,
+    "accepted_n": 271,
+    "abstain_n": 172,
+    "coverage": 0.6117381489841986,
+    "accepted_accuracy": 0.8523985239852399,
+    "high_n": 217,
+    "high_precision": 0.8571428571428571,
+    "high_precision_wilson95_lower": 0.8043617096009157,
+    "low_n": 54,
+    "low_negative_predictive_value": 0.8333333333333334,
+    "low_npv_wilson95_lower": 0.7126323220121027
+  },
+  "runtime": {
+    "python": "3.12.13",
+    "numpy": "2.5.1",
+    "scikit_learn": "1.9.0",
+    "scipy": "1.18.0",
+    "rdkit": "2026.03.4",
+    "joblib": "1.5.3"
+  },
+  "historical_external_outcomes_used_for_rule_selection": false,
+  "future_source_confirmation_required": true,
+  "claim_boundary": "ABCB1 efflux-risk triage for a standardized free/released small-molecule structure; not intact-ADC transport, intracellular unbound exposure, resistance, efficacy, clinical DDI, or universal assay-independent substrate truth"
+}

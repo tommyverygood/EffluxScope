@@ -1,0 +1,23 @@
+{
+  "unique_structures_scored": 13,
+  "chemical_change_pairs_both_scored": 5,
+  "actual_major_or_downstream_release_pairs_both_scored": 3,
+  "processing_intermediate_pairs_both_scored": 2,
+  "chemical_change_pairs_identity_HOLD": 2,
+  "identity_preserving_release_controls": 5,
+  "identity_ambiguous_Roth_DXd_pair": 1,
+  "catabolite_to_catabolite_mechanistic_context_hold": 1,
+  "dual_component_A_individual_scores": "completed_free_MMAE_free_MMAF",
+  "dual_component_B_individual_scores": "completed_free_MMAE_cys_mcMMAF",
+  "dual_exatecan_triptolide_source_material": "identity_HOLD",
+  "biological_transport_validation_pairs": 0,
+  "shared_base_score_checks": {
+    "shared_unique_structures": 12,
+    "checks": 72,
+    "passed": 72,
+    "all_pass": true,
+    "curated_added_unique_structures": [
+      "AYWIIXDQRUFQGH-PANPCQOCSA-N"
+    ]
+  }
+}

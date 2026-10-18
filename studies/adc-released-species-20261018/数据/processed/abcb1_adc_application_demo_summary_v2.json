@@ -1,0 +1,123 @@
+{
+  "dataset_version": "ADC_application_demo_v2",
+  "data_lock_date": "2026-08-10",
+  "model_version": "ABCB1_selective_screener_v0.4_dev",
+  "model_package_sha256": "c56fb6b8f6f8bf13472a1a2d433b05d4c6a35eb2490ba84ce9371395b8bbff8b",
+  "application_status": "stratified_ADC_release_related_entity_demonstration_not_accuracy_validation",
+  "strata": {
+    "R2_plus_R3_main": {
+      "stratum": "R2_plus_R3_main",
+      "registry_entities": 13,
+      "model_evaluable": 11,
+      "accepted": 5,
+      "model_abstain": 6,
+      "not_scored_identity": 2,
+      "high_risk": 5,
+      "low_risk": 0,
+      "coverage": 0.45454545,
+      "accepted_entity_ids": [
+        "ADC_REL_007",
+        "ADC_REL_009",
+        "ADC_REL_010",
+        "ADC_REL_011",
+        "ADC_REL_013"
+      ],
+      "abstained_entity_ids": [
+        "ADC_REL_001",
+        "ADC_REL_003",
+        "ADC_REL_004",
+        "ADC_REL_005",
+        "ADC_REL_006",
+        "ADC_REL_008"
+      ],
+      "not_scored_entity_ids": [
+        "ADC_REL_002",
+        "ADC_REL_012"
+      ]
+    },
+    "R3_strict": {
+      "stratum": "R3_strict",
+      "registry_entities": 10,
+      "model_evaluable": 9,
+      "accepted": 4,
+      "model_abstain": 5,
+      "not_scored_identity": 1,
+      "high_risk": 4,
+      "low_risk": 0,
+      "coverage": 0.44444444,
+      "accepted_entity_ids": [
+        "ADC_REL_007",
+        "ADC_REL_009",
+        "ADC_REL_010",
+        "ADC_REL_011"
+      ],
+      "abstained_entity_ids": [
+        "ADC_REL_001",
+        "ADC_REL_003",
+        "ADC_REL_004",
+        "ADC_REL_006",
+        "ADC_REL_008"
+      ],
+      "not_scored_entity_ids": [
+        "ADC_REL_002"
+      ]
+    },
+    "R2_extended": {
+      "stratum": "R2_extended",
+      "registry_entities": 3,
+      "model_evaluable": 2,
+      "accepted": 1,
+      "model_abstain": 1,
+      "not_scored_identity": 1,
+      "high_risk": 1,
+      "low_risk": 0,
+      "coverage": 0.5,
+      "accepted_entity_ids": [
+        "ADC_REL_013"
+      ],
+      "abstained_entity_ids": [
+        "ADC_REL_005"
+      ],
+      "not_scored_entity_ids": [
+        "ADC_REL_012"
+      ]
+    }
+  },
+  "release_grade_counts": {
+    "R3": 10,
+    "R2": 3
+  },
+  "identity_grade_counts": {
+    "ID2": 5,
+    "ID1": 1,
+    "ID3": 6,
+    "ID0": 1
+  },
+  "decision_state_counts": {
+    "model_abstain": 6,
+    "not_scored_identity": 2,
+    "high_ABCB1_efflux_risk": 5
+  },
+  "model_abstention_reason_counts": {
+    "outside_both_reference_panels": 5,
+    "outside_physicochemical_envelope": 2
+  },
+  "historical_snapshot_reexpression": {
+    "registry_entities": 10,
+    "model_evaluable": 9,
+    "accepted": 3,
+    "model_abstain": 6,
+    "not_scored_identity": 1,
+    "coverage": 0.33333333,
+    "note": "The historical phrase 3 high-risk and 7 abstentions mixed one unscored identity with six model abstentions."
+  },
+  "claim_boundary": "ABCB1 efflux-risk triage for a standardized free/released small-molecule structure; not intact-ADC transport, intracellular unbound exposure, resistance, efficacy, clinical DDI, or universal assay-independent substrate truth",
+  "interpretation": "This case series demonstrates identity gating, selective scoring and machine-readable abstention for ADC-related released entities. It is not an ADC-specific accuracy estimate, a prevalence sample, an intact-ADC transport model or a universal substrate truth set.",
+  "processed_outputs": {
+    "registry": "数据/processed/adc_application_demo_registry_reconstructed_v2.csv",
+    "predictions": "数据/processed/abcb1_adc_application_demo_predictions_v2.csv",
+    "sources": "数据/processed/adc_application_demo_sources_v2.csv",
+    "source_corrections": "数据/processed/adc_application_demo_source_corrections_v2.csv",
+    "abcb1_context": "数据/processed/adc_application_demo_abcb1_context_v2.csv"
+  }
+}

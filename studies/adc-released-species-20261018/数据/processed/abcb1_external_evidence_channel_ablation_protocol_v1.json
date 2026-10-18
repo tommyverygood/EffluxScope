@@ -1,0 +1,73 @@
+{
+  "analysis_version": "ABCB1_EXTERNAL_EVIDENCE_CHANNEL_ABLATION_V1",
+  "lock_date": "2026-08-05",
+  "status": "locked_posthoc_component_ablation_after_primary_and_rule_ablation_outcomes_observed_before_new_channel_variant_scoring",
+  "purpose": "Decompose the contribution of the weak-label prior, primary-reference support, direct-experiment reference support, cross-model direction agreement, and primary/direct local-neighborhood guards without refitting the frozen model.",
+  "frozen_inputs": {
+    "external_analysis_rows": {
+      "path": "数据/processed/abcb1_quantity_biogen_analysis_rows_v1.csv",
+      "sha256": "9346b705e83a8606c00aabbe77b63f125ad1ef3aefc4e6899be17cf4cba61457"
+    },
+    "selective_model": {
+      "path": "模型/ABCB1_selective_screener_v0_4_dev/ABCB1_selective_uncertainty_v0_4_dev.joblib",
+      "sha256": "c56fb6b8f6f8bf13472a1a2d433b05d4c6a35eb2490ba84ce9371395b8bbff8b"
+    },
+    "prior_risk_protocol": {
+      "path": "数据/processed/abcb1_external_risk_experiment_protocol_v1.json",
+      "sha256": "cef22ff8f7a0da5555235848e2362e214988f6f0e6b45c2ee130c6a9875999d8"
+    }
+  },
+  "analysis_populations": ["identity_clean", "scaffold_clean"],
+  "frozen_thresholds": {
+    "forced_binary": 0.5,
+    "low_probability": 0.35,
+    "high_probability": 0.7,
+    "primary_similarity_support": 0.23015384615384615,
+    "direct_similarity_support": 0.17399660825325045
+  },
+  "component_definitions": {
+    "margin": "primary score <=0.35 or >=0.70",
+    "bootstrap": "frozen scaffold-bootstrap interval remains on the same side of 0.5 as the selected direction",
+    "primary_support": "primary-reference maximum Tanimoto >= frozen q10 boundary",
+    "direct_support": "direct-experiment-reference maximum Tanimoto >= frozen q10 boundary",
+    "dual_support": "primary_support OR direct_support",
+    "physchem": "inside the frozen physicochemical envelope",
+    "cross_model": "when direct-supported, direct-channel probability direction agrees with the primary direction",
+    "primary_local": "when primary-supported, primary local positive fraction is not strongly opposite",
+    "direct_local": "when direct-supported, direct local positive fraction is not strongly opposite",
+    "stereo": "no stereo-blind fingerprint collision"
+  },
+  "locked_variants": [
+    {"variant_id": "V00_forced_binary_all", "components": []},
+    {"variant_id": "V01_probability_margin_only", "components": ["margin"]},
+    {"variant_id": "V02_prior_stability_only", "components": ["margin", "bootstrap"]},
+    {"variant_id": "V03_primary_support_no_local", "components": ["margin", "bootstrap", "primary_support", "physchem", "stereo"]},
+    {"variant_id": "V04_primary_channel_complete", "components": ["margin", "bootstrap", "primary_support", "physchem", "primary_local", "stereo"]},
+    {"variant_id": "V05_direct_support_no_local", "components": ["margin", "bootstrap", "direct_support", "physchem", "cross_model", "stereo"]},
+    {"variant_id": "V06_direct_channel_complete", "components": ["margin", "bootstrap", "direct_support", "physchem", "cross_model", "direct_local", "stereo"]},
+    {"variant_id": "V07_dual_support_only", "components": ["margin", "bootstrap", "dual_support", "physchem", "stereo"]},
+    {"variant_id": "V08_dual_cross_model_no_local", "components": ["margin", "bootstrap", "dual_support", "physchem", "cross_model", "stereo"]},
+    {"variant_id": "V09_dual_cross_primary_local", "components": ["margin", "bootstrap", "dual_support", "physchem", "cross_model", "primary_local", "stereo"]},
+    {"variant_id": "V10_dual_cross_direct_local", "components": ["margin", "bootstrap", "dual_support", "physchem", "cross_model", "direct_local", "stereo"]},
+    {"variant_id": "V11_full_v0_4", "components": ["margin", "bootstrap", "dual_support", "physchem", "cross_model", "primary_local", "direct_local", "stereo"]}
+  ],
+  "locked_set_contrasts": [
+    ["V11_full_v0_4", "V04_primary_channel_complete"],
+    ["V11_full_v0_4", "V06_direct_channel_complete"],
+    ["V11_full_v0_4", "V07_dual_support_only"],
+    ["V11_full_v0_4", "V08_dual_cross_model_no_local"],
+    ["V11_full_v0_4", "V09_dual_cross_primary_local"],
+    ["V11_full_v0_4", "V10_dual_cross_direct_local"]
+  ],
+  "metrics": ["coverage", "accuracy", "balanced_accuracy", "mcc", "sensitivity", "specificity", "high_risk_precision", "low_risk_npv"],
+  "bootstrap": {
+    "unit": "bootstrap_cluster inherited from the locked external analysis rows",
+    "replicates": 2000,
+    "seed": 20260805,
+    "confidence_interval": "percentile_95"
+  },
+  "interpretation_rules": {
+    "allowed": "Post-hoc evidence-channel decomposition and hypotheses for the next frozen model revision.",
+    "not_allowed": "Selecting a new deployed variant, claiming prospective validation, or changing the current v0.4 model from this same external outcome."
+  }
+}

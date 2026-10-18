@@ -1,0 +1,42 @@
+query_id,search_date_client,engine,query,coverage_limit
+Q001,2026-10-12,web.run search_query,"""MMAF"" ""cys-mcMMAF"" ""P-gp"" transport",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q002,2026-10-12,web.run search_query,"""DM1"" ""Lys-MCC-DM1"" transport P-gp",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q003,2026-10-12,web.run search_query,"""DM4"" ""S-methyl-DM4"" ""P-gp""",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q004,2026-10-12,web.run search_query,"""Lys-MCC-DM1"" ""efflux""",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q005,2026-10-12,web.run search_query,"""MMAF"" ""P-gp"" ""transport"" MDCK",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q006,2026-10-12,web.run search_query,"""S-methyl-DM4"" ""efflux ratio""",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q007,2026-10-12,web.run search_query,"""Lys-MCC-DM1"" ""LLC-PK1""",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q008,2026-10-12,web.run search_query,"""maytansinoid"" ""DM1"" ""catabolites"" ""MDR1"" efflux transport",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q009,2026-10-12,web.run search_query,"""MMAF"" ""efflux ratio""",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q010,2026-10-12,web.run search_query,"""DM1"" ""Lys-MCC-DM1"" ""P-glycoprotein"" permeability",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q011,2026-10-12,web.run search_query,"""DM4"" ""S-methyl"" MDCK MDR1",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q012,2026-10-12,web.run search_query,"""MMAF"" ""P-gp"" ""Caco-2""",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q013,2026-10-12,web.run search_query,"""MMAF"" ""MDCK"" ""elacridar""",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q014,2026-10-12,web.run search_query,"""cys-mcMMAF"" ""MMAF"" ""MDR1"" permeability transport",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q015,2026-10-12,web.run search_query,"""Intracellular Catabolism"" ""064253"" supplement",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q016,2026-10-12,web.run search_query,"""SVG28-001"" DM4 transporter",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q017,2026-10-12,web.run search_query,"""cys-mcMMAF"" ""efflux"" ""MMAF"" assay",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q018,2026-10-12,web.run search_query,"""DM1"" ""Lys-SMCC-DM1"" ""P-gp"" transport",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q019,2026-10-12,web.run search_query,"""MMAF"" ""DXd"" ""duocarmycin"" ""ISSX"" 2025",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q020,2026-10-12,web.run search_query,"""MMAF"" ""BCRP"" ""transport"" ""2025"" MDCK",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q021,2026-10-12,web.run search_query,"""Application of drug-induced growth rate inhibition"" auristatin ""86919""",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q022,2026-10-12,web.run search_query,"""Intracellular Catabolism of an Antibody Drug Conjugate"" full text supplemental table 2",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q023,2026-10-12,web.run search_query,"""MMAF"" ""efflux ratio"" -site:benchchem.com -site:smolecule.com",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q024,2026-10-12,web.run search_query,"""DM4"" ""P-gp"" ""permeability"" S-methyl",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q025,2026-10-12,web.run search_query,"""Lys-MCC-DM1"" ""transport"" ""supplemental""",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q026,2026-10-12,web.run search_query,"""cys-mcMMAF"" ""MMAF"" ""MDCKII"" transport",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q027,2026-10-12,web.run search_query,"""P178"" ""MMAF"" ISSX",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q028,2026-10-12,web.run search_query,"""ISSX"" ""MMAF"" ""transporters"" 2025",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q029,2026-10-12,web.run search_query,"""MMAF"" ""solely"" ""BCRP""",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q030,2026-10-12,web.run search_query,"belantamab 761158 ""cys-mcMMAF"" ""P-gp"" review",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q031,2026-10-12,web.run search_query,"""cys-mcMMAF"" ""conflicting"" FDA",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q032,2026-10-12,web.run search_query,"""cys-mcMMAF"" ""Caco-2"" ""efflux""",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q033,2026-10-12,web.run search_query,"""TRANSPORTER EVALUATION OF PAYLOADS"" Bao",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q034,2026-10-12,web.run search_query,"""Yifan Bao"" ""MMAF"" permeability",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q035,2026-10-12,web.run search_query,"""Maji"" ""MMAE"" ""MDR1"" ""human""",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q036,2026-10-12,web.run search_query,"""cys-mcMMAF"" ""efflux ratio"" ""negative""",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q037,2026-10-12,web.run search_query,"""Improvement of workflows and assay reproducibility"" ""human"" MDR1",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q038,2026-10-12,web.run search_query,"""Muschong"" ""2023"" ""MDR1"" MDCK transport",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q039,2026-10-12,web.run search_query,"""cys-mcMMAF"" ""P-gp"" ""Caco""",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q040,2026-10-12,web.run search_query,"""MDCK_ZFN"" ""human MDR1"" Muschong",ranked web discovery; not exhaustive database coverage; total result count not supplied
+Q041,2026-10-12,web.run search_query,"""MMAF"" ""Yifan"" ""Johnson"" transporter",ranked web discovery; not exhaustive database coverage; total result count not supplied

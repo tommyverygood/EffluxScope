@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-10-12T06:19:02.117638+00:00",
+  "input_sha256": {
+    "outputs/20261009_adc_pair_experiments/pairs/results_curated_v2/entities_scored_or_hold.csv": "abb7062752273ba8382752d45103d6e808adbe8b44b9e09667c0add4d07ec59b",
+    "outputs/20261012_adc_completion/family_expansion/new_machine_entities.csv": "d0a2d105af16b24e07431fd9d279d7ff2bc82d3257d62cbbc13a06031af10624",
+    "outputs/20261012_adc_completion/protocol.json": "4ed2639fb4c8ec83669783e6b8811a15a1df5281fb201f44e8ec3dec753c3bf3",
+    "outputs/20261012_adc_completion/run_frozen_expansion.py": "ccfd97891d0a5d28f3c7d76414e41f3e52aead5693de98b54c9d4cd74dac1965",
+    "模型/ABCB1_selective_screener_v0_4_dev/predict_abcb1_selective.py": "129e8891eb92f464baf27b130b64d9abfc58450474625858d17a7a89a6f54dcc",
+    "数据/scripts/abcb1_screener_core_v0_1.py": "d97c1ee11973ea729ea4dcd62932560e4d60e1ac1cfdfa86ac08798c4bcf2267",
+    "模型/ABCB1_selective_screener_v0_4_dev/ABCB1_selective_uncertainty_v0_4_dev.joblib": "c56fb6b8f6f8bf13472a1a2d433b05d4c6a35eb2490ba84ce9371395b8bbff8b",
+    "模型/ABCB1_screener_v0_1/ABCB1_screener_v0_1.joblib": "fbc92dfa99583386ba124141fed5e77c6ecf8a59850301a6533db3883b298ac3",
+    "模型/ABCB1_assay_aware_candidate_v0_3_dev/ABCB1_assay_aware_candidate_v0_3_dev.joblib": "ebe6d1a8d5f06afc5c2d0b306dfd5266af56fd28fefd130147d20c5e015b907a"
+  }
+}

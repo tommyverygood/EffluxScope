@@ -1,0 +1,432 @@
+{
+  "validation_version": "ABCB1_EXTERNAL_EVIDENCE_CHANNEL_ABLATION_VALIDATION_V1",
+  "validation_date": "2026-08-05",
+  "overall_status": "pass",
+  "checks_passed": 49,
+  "checks_total": 49,
+  "checks": [
+    {
+      "check": "protocol_status_truthful_posthoc",
+      "pass": true,
+      "evidence": "locked_posthoc_component_ablation_after_primary_and_rule_ablation_outcomes_observed_before_new_channel_variant_scoring"
+    },
+    {
+      "check": "summary_completed",
+      "pass": true,
+      "evidence": "completed_frozen_model_posthoc_evidence_channel_ablation"
+    },
+    {
+      "check": "summary_protocol_hash",
+      "pass": true,
+      "evidence": "1231d8ef2825a4b09a7530cf9e984b564995bb0659a2ebf049d5fe88fe9766c6"
+    },
+    {
+      "check": "frozen_input_exists_external_analysis_rows",
+      "pass": true,
+      "evidence": "数据/processed/abcb1_quantity_biogen_analysis_rows_v1.csv"
+    },
+    {
+      "check": "frozen_input_hash_external_analysis_rows",
+      "pass": true,
+      "evidence": "9346b705e83a8606c00aabbe77b63f125ad1ef3aefc4e6899be17cf4cba61457"
+    },
+    {
+      "check": "frozen_input_exists_selective_model",
+      "pass": true,
+      "evidence": "模型/ABCB1_selective_screener_v0_4_dev/ABCB1_selective_uncertainty_v0_4_dev.joblib"
+    },
+    {
+      "check": "frozen_input_hash_selective_model",
+      "pass": true,
+      "evidence": "c56fb6b8f6f8bf13472a1a2d433b05d4c6a35eb2490ba84ce9371395b8bbff8b"
+    },
+    {
+      "check": "frozen_input_exists_prior_risk_protocol",
+      "pass": true,
+      "evidence": "数据/processed/abcb1_external_risk_experiment_protocol_v1.json"
+    },
+    {
+      "check": "frozen_input_hash_prior_risk_protocol",
+      "pass": true,
+      "evidence": "cef22ff8f7a0da5555235848e2362e214988f6f0e6b45c2ee130c6a9875999d8"
+    },
+    {
+      "check": "output_exists_abcb1_external_evidence_channel_ablation_metrics_v1.csv",
+      "pass": true,
+      "evidence": "数据/processed/abcb1_external_evidence_channel_ablation_metrics_v1.csv"
+    },
+    {
+      "check": "output_hash_abcb1_external_evidence_channel_ablation_metrics_v1.csv",
+      "pass": true,
+      "evidence": "6d24ff028b0b7fdd4b6994c341e8b164ce74dfc27ff1db0f7d63c868ac93a346"
+    },
+    {
+      "check": "output_exists_abcb1_external_evidence_channel_set_contrasts_v1.csv",
+      "pass": true,
+      "evidence": "数据/processed/abcb1_external_evidence_channel_set_contrasts_v1.csv"
+    },
+    {
+      "check": "output_hash_abcb1_external_evidence_channel_set_contrasts_v1.csv",
+      "pass": true,
+      "evidence": "a977ebce76988ef67e2c6f998f890d02eca771cfa32b76a441f2643ab23a5ead"
+    },
+    {
+      "check": "output_exists_abcb1_external_evidence_channel_pairwise_bootstrap_v1.csv",
+      "pass": true,
+      "evidence": "数据/processed/abcb1_external_evidence_channel_pairwise_bootstrap_v1.csv"
+    },
+    {
+      "check": "output_hash_abcb1_external_evidence_channel_pairwise_bootstrap_v1.csv",
+      "pass": true,
+      "evidence": "675f586c4bc627aefa60051b9084eb804889273dfd5136aa6d68fe950b80877b"
+    },
+    {
+      "check": "locked_variant_count",
+      "pass": true,
+      "evidence": [
+        "V00_forced_binary_all",
+        "V01_probability_margin_only",
+        "V02_prior_stability_only",
+        "V03_primary_support_no_local",
+        "V04_primary_channel_complete",
+        "V05_direct_support_no_local",
+        "V06_direct_channel_complete",
+        "V07_dual_support_only",
+        "V08_dual_cross_model_no_local",
+        "V09_dual_cross_primary_local",
+        "V10_dual_cross_direct_local",
+        "V11_full_v0_4"
+      ]
+    },
+    {
+      "check": "metrics_row_count",
+      "pass": true,
+      "evidence": 24
+    },
+    {
+      "check": "all_variants_present_identity_clean",
+      "pass": true,
+      "evidence": [
+        "V00_forced_binary_all",
+        "V01_probability_margin_only",
+        "V02_prior_stability_only",
+        "V03_primary_support_no_local",
+        "V04_primary_channel_complete",
+        "V05_direct_support_no_local",
+        "V06_direct_channel_complete",
+        "V07_dual_support_only",
+        "V08_dual_cross_model_no_local",
+        "V09_dual_cross_primary_local",
+        "V10_dual_cross_direct_local",
+        "V11_full_v0_4"
+      ]
+    },
+    {
+      "check": "metric_bounds_identity_clean",
+      "pass": true,
+      "evidence": "coverage/BAcc/MCC bounded"
+    },
+    {
+      "check": "bootstrap_complete_identity_clean",
+      "pass": true,
+      "evidence": [
+        2000
+      ]
+    },
+    {
+      "check": "all_variants_present_scaffold_clean",
+      "pass": true,
+      "evidence": [
+        "V00_forced_binary_all",
+        "V01_probability_margin_only",
+        "V02_prior_stability_only",
+        "V03_primary_support_no_local",
+        "V04_primary_channel_complete",
+        "V05_direct_support_no_local",
+        "V06_direct_channel_complete",
+        "V07_dual_support_only",
+        "V08_dual_cross_model_no_local",
+        "V09_dual_cross_primary_local",
+        "V10_dual_cross_direct_local",
+        "V11_full_v0_4"
+      ]
+    },
+    {
+      "check": "metric_bounds_scaffold_clean",
+      "pass": true,
+      "evidence": "coverage/BAcc/MCC bounded"
+    },
+    {
+      "check": "bootstrap_complete_scaffold_clean",
+      "pass": true,
+      "evidence": [
+        2000
+      ]
+    },
+    {
+      "check": "full_reconstruction_exact",
+      "pass": true,
+      "evidence": {
+        "exactly_reproduced": true,
+        "frozen_accepted_n": 453,
+        "reconstructed_accepted_n": 453,
+        "symmetric_difference_n": 0,
+        "balanced_accuracy": 0.73510345,
+        "mcc": 0.49857011
+      }
+    },
+    {
+      "check": "full_reconstruction_anchor",
+      "pass": true,
+      "evidence": {
+        "exactly_reproduced": true,
+        "frozen_accepted_n": 453,
+        "reconstructed_accepted_n": 453,
+        "symmetric_difference_n": 0,
+        "balanced_accuracy": 0.73510345,
+        "mcc": 0.49857011
+      }
+    },
+    {
+      "check": "direct_no_local_exceeds_primary_no_local",
+      "pass": true,
+      "evidence": {
+        "V03_primary_support_no_local": {
+          "coverage": 0.23246951,
+          "balanced_accuracy": 0.68008941,
+          "mcc": 0.36296929
+        },
+        "V05_direct_support_no_local": {
+          "coverage": 0.19588415,
+          "balanced_accuracy": 0.77457304,
+          "mcc": 0.55372574
+        }
+      }
+    },
+    {
+      "check": "direct_complete_exceeds_primary_complete",
+      "pass": true,
+      "evidence": {
+        "V04_primary_channel_complete": {
+          "coverage": 0.2191311,
+          "balanced_accuracy": 0.67807439,
+          "mcc": 0.35905019
+        },
+        "V06_direct_channel_complete": {
+          "coverage": 0.16577744,
+          "balanced_accuracy": 0.75043892,
+          "mcc": 0.52609386
+        }
+      }
+    },
+    {
+      "check": "cross_model_guard_adds_value",
+      "pass": true,
+      "evidence": {
+        "V07_dual_support_only": {
+          "coverage": 0.31364329,
+          "balanced_accuracy": 0.65959696,
+          "mcc": 0.32905488
+        },
+        "V08_dual_cross_model_no_local": {
+          "coverage": 0.20998476,
+          "balanced_accuracy": 0.76329591,
+          "mcc": 0.53323829
+        }
+      }
+    },
+    {
+      "check": "direct_local_guard_harms_external_bacc",
+      "pass": true,
+      "evidence": {
+        "V08_dual_cross_model_no_local": {
+          "coverage": 0.20998476,
+          "balanced_accuracy": 0.76329591,
+          "mcc": 0.53323829
+        },
+        "V10_dual_cross_direct_local": {
+          "coverage": 0.17987805,
+          "balanced_accuracy": 0.73819097,
+          "mcc": 0.50498276
+        }
+      }
+    },
+    {
+      "check": "direct_local_loss_larger_than_primary_local_loss",
+      "pass": true,
+      "evidence": {
+        "primary_local_delta": -0.0032187200000000082,
+        "direct_local_delta": -0.025104939999999965
+      }
+    },
+    {
+      "check": "descriptive_maximum_flagged_not_selection",
+      "pass": true,
+      "evidence": {
+        "variant_id": "V05_direct_support_no_local",
+        "coverage": 0.19588415,
+        "balanced_accuracy": 0.77457304,
+        "mcc": 0.55372574,
+        "warning": "Outcome-observed post-hoc maximum; cannot be selected as a validated replacement model."
+      }
+    },
+    {
+      "check": "set_contrast_row_count",
+      "pass": true,
+      "evidence": 48
+    },
+    {
+      "check": "set_contrast_regions_complete",
+      "pass": true,
+      "evidence": [
+        "comparator_only",
+        "full_only",
+        "intersection",
+        "neither"
+      ]
+    },
+    {
+      "check": "set_jaccard_bounds",
+      "pass": true,
+      "evidence": {
+        "count": 48.0,
+        "mean": 0.763733195,
+        "std": 0.17629833204572096,
+        "min": 0.50072993,
+        "25%": 0.54966434,
+        "50%": 0.838946025,
+        "75%": 0.8950638224999999,
+        "max": 0.95974576
+      }
+    },
+    {
+      "check": "pairwise_row_count",
+      "pass": true,
+      "evidence": 36
+    },
+    {
+      "check": "pairwise_bootstrap_complete",
+      "pass": true,
+      "evidence": [
+        2000
+      ]
+    },
+    {
+      "check": "full_exceeds_primary_channel_ci",
+      "pass": true,
+      "evidence": {
+        "population": "identity_clean",
+        "full_variant": "V11_full_v0_4",
+        "comparator_variant": "V04_primary_channel_complete",
+        "metric": "balanced_accuracy",
+        "full_value": 0.73510345,
+        "comparator_value": 0.67807439,
+        "full_minus_comparator": 0.05702906,
+        "ci95_low": 0.01863849,
+        "ci95_high": 0.09267134,
+        "bootstrap_probability_full_gt_comparator": 0.9995,
+        "valid_bootstrap_replicates": 2000,
+        "n_bootstrap_clusters": 2312
+      }
+    },
+    {
+      "check": "direct_complete_exceeds_full_ci",
+      "pass": true,
+      "evidence": {
+        "population": "identity_clean",
+        "full_variant": "V11_full_v0_4",
+        "comparator_variant": "V06_direct_channel_complete",
+        "metric": "balanced_accuracy",
+        "full_value": 0.73510345,
+        "comparator_value": 0.75043892,
+        "full_minus_comparator": -0.01533547,
+        "ci95_low": -0.03064422,
+        "ci95_high": -0.0015467,
+        "bootstrap_probability_full_gt_comparator": 0.0125,
+        "valid_bootstrap_replicates": 2000,
+        "n_bootstrap_clusters": 2312
+      }
+    },
+    {
+      "check": "no_local_exceeds_full_ci",
+      "pass": true,
+      "evidence": {
+        "population": "identity_clean",
+        "full_variant": "V11_full_v0_4",
+        "comparator_variant": "V08_dual_cross_model_no_local",
+        "metric": "balanced_accuracy",
+        "full_value": 0.73510345,
+        "comparator_value": 0.76329591,
+        "full_minus_comparator": -0.02819246,
+        "ci95_low": -0.05026203,
+        "ci95_high": -0.00747529,
+        "bootstrap_probability_full_gt_comparator": 0.0035,
+        "valid_bootstrap_replicates": 2000,
+        "n_bootstrap_clusters": 2312
+      }
+    },
+    {
+      "check": "figure_manifest_complete",
+      "pass": true,
+      "evidence": [
+        {
+          "format": "png",
+          "path": "outputs/20260805_abcb1_external_evidence_channel_ablation_v1/figures/FigureS4_external_evidence_channel_ablation.png"
+        },
+        {
+          "format": "svg",
+          "path": "outputs/20260805_abcb1_external_evidence_channel_ablation_v1/figures/FigureS4_external_evidence_channel_ablation.svg"
+        },
+        {
+          "format": "pdf",
+          "path": "outputs/20260805_abcb1_external_evidence_channel_ablation_v1/figures/FigureS4_external_evidence_channel_ablation.pdf"
+        }
+      ]
+    },
+    {
+      "check": "figure_exists_FigureS4_external_evidence_channel_ablation.png",
+      "pass": true,
+      "evidence": "outputs/20260805_abcb1_external_evidence_channel_ablation_v1/figures/FigureS4_external_evidence_channel_ablation.png"
+    },
+    {
+      "check": "figure_hash_FigureS4_external_evidence_channel_ablation.png",
+      "pass": true,
+      "evidence": "c8404ff434d4000ba82e4976d9b4a5ada496174f65eebe6bc04a83bad840c010"
+    },
+    {
+      "check": "figure_nontrivial_FigureS4_external_evidence_channel_ablation.png",
+      "pass": true,
+      "evidence": 391045
+    },
+    {
+      "check": "figure_exists_FigureS4_external_evidence_channel_ablation.svg",
+      "pass": true,
+      "evidence": "outputs/20260805_abcb1_external_evidence_channel_ablation_v1/figures/FigureS4_external_evidence_channel_ablation.svg"
+    },
+    {
+      "check": "figure_hash_FigureS4_external_evidence_channel_ablation.svg",
+      "pass": true,
+      "evidence": "323a24469523e9a5d17f374513aacd410d25de383cc15b3f88b847799ade1200"
+    },
+    {
+      "check": "figure_nontrivial_FigureS4_external_evidence_channel_ablation.svg",
+      "pass": true,
+      "evidence": 137661
+    },
+    {
+      "check": "figure_exists_FigureS4_external_evidence_channel_ablation.pdf",
+      "pass": true,
+      "evidence": "outputs/20260805_abcb1_external_evidence_channel_ablation_v1/figures/FigureS4_external_evidence_channel_ablation.pdf"
+    },
+    {
+      "check": "figure_hash_FigureS4_external_evidence_channel_ablation.pdf",
+      "pass": true,
+      "evidence": "8e63d565f5cdc6da0f71ecad05242a1c40c42c6cea327c0d5b409c26647104c3"
+    },
+    {
+      "check": "figure_nontrivial_FigureS4_external_evidence_channel_ablation.pdf",
+      "pass": true,
+      "evidence": 32225
+    }
+  ]
+}

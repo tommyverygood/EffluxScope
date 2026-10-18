@@ -1,0 +1,62 @@
+{
+  "status": "completed_frozen_computational_experiment_not_wet_lab_validation",
+  "model_version": "ABCB1_selective_screener_v0.4_dev",
+  "no_refit_or_threshold_tuning": true,
+  "old_inputs_unchanged": true,
+  "entity_rows_including_control_aliases": 26,
+  "unique_structures_scored": 13,
+  "identity_hold_entity_count": 4,
+  "unique_structure_full_decisions": {
+    "abstain": 8,
+    "high_ABCB1_efflux_risk": 5
+  },
+  "unique_structure_exact_development_identities": 0,
+  "chemical_changed_pair_count": 7,
+  "chemical_changed_pairs_both_scored": 5,
+  "identity_preserving_control_checks": [
+    {
+      "audit_record_id": "ADC_REL_007_IDENTITY_CONTROL",
+      "passed": true
+    },
+    {
+      "audit_record_id": "ADC_REL_009_IDENTITY_CONTROL",
+      "passed": true
+    },
+    {
+      "audit_record_id": "ADC_REL_010_IDENTITY_CONTROL",
+      "passed": true
+    },
+    {
+      "audit_record_id": "ADC_REL_011_IDENTITY_CONTROL",
+      "passed": true
+    },
+    {
+      "audit_record_id": "ADC_REL_013_IDENTITY_CONTROL",
+      "passed": true
+    }
+  ],
+  "identity_preserving_control_checks_all_pass": true,
+  "dual_individual_component_comparisons_completed": 2,
+  "matched_M0_biological_transport_pairs": 0,
+  "output_dir": "${PROJECT_ROOT}/outputs/20261009_adc_pair_experiments/pairs/results_curated_v2",
+  "claim_boundary": "Only frozen individual structure scores and abstention behavior were measured; paired score deltas are not transporter effects, ADC efficacy, or synergy.",
+  "input_hashes": {
+    "outputs/20261009_adc_central_pairing/local_pair_audit.csv": "85abf5ac06925c0107991ae4bbb613b325321bb4fe159fd28b187dd4258dbdb2",
+    "数据/processed/compound_registry_v1.csv": "067ee79978e912206e7480b96eb80fc951de27adb9e473fe73802a9bd76c3d60",
+    "outputs/20260810_adc_demo_reconstruction_v2/adc_application_demo_registry_reconstructed_v2.csv": "d0c8b3cdcb6b34a482ccf33c86c873431de9cf207ca9cdd5724f7b172122910b",
+    "模型/ABCB1_selective_screener_v0_4_dev/ABCB1_selective_uncertainty_v0_4_dev.joblib": "c56fb6b8f6f8bf13472a1a2d433b05d4c6a35eb2490ba84ce9371395b8bbff8b",
+    "模型/ABCB1_screener_v0_1/ABCB1_screener_v0_1.joblib": "fbc92dfa99583386ba124141fed5e77c6ecf8a59850301a6533db3883b298ac3",
+    "模型/ABCB1_assay_aware_candidate_v0_3_dev/ABCB1_assay_aware_candidate_v0_3_dev.joblib": "ebe6d1a8d5f06afc5c2d0b306dfd5266af56fd28fefd130147d20c5e015b907a",
+    "模型/ABCB1_selective_screener_v0_4_dev/predict_abcb1_selective.py": "129e8891eb92f464baf27b130b64d9abfc58450474625858d17a7a89a6f54dcc",
+    "outputs/20261009_adc_pair_experiments/pairs/run_frozen_pair_scores.py": "c332ccabeef44f359f7e772851613619f648cb0aa58d062b8fab14680acea158",
+    "outputs/20261009_adc_pair_experiments/identity/approved_structures_v2.csv": "0196c183f57ea71704ec05128a4d39c3bd3c41a6f7bf5d12de29912a05945c1c"
+  },
+  "runtime": {
+    "executable": "${PROJECT_ROOT}/.venv-experiments/bin/python",
+    "python": "3.12.14",
+    "numpy": "2.5.1",
+    "scikit_learn": "1.9.0",
+    "joblib": "1.5.3",
+    "rdkit": "2026.03.4"
+  }
+}

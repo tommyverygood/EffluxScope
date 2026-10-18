@@ -1,0 +1,655 @@
+{
+  "validation_version": "ABCB1_SELECTIVE_MANUSCRIPT_PACKAGE_VALIDATION_V1",
+  "status": "PASS",
+  "checks_passed": 44,
+  "checks_total": 44,
+  "manuscript_readiness": "go_for_draft_under_bounded_methods_claim",
+  "plan_sha256": "8ca64cb2adf4f449eb7c8668ad94f38227b3da077e050853fc8afe6ec313c2d9",
+  "checks": [
+    {
+      "check": "primary_results_row_count",
+      "status": "PASS",
+      "detail": 18
+    },
+    {
+      "check": "primary_result_ids_unique",
+      "status": "PASS",
+      "detail": [
+        "R1_BINARY_BASELINE_IDENTITY_CLEAN",
+        "R2_SELECTIVE_PRIMARY_IDENTITY_CLEAN",
+        "R3_FORCED_REJECTED_LAYER_IDENTITY_CLEAN",
+        "R4_BINARY_BASELINE_SCAFFOLD_CLEAN",
+        "R5_SELECTIVE_PRIMARY_SCAFFOLD_CLEAN",
+        "R6_CONTINUOUS_DIRECTION_IDENTITY_CLEAN",
+        "R7_CONTINUOUS_DIRECTION_SCAFFOLD_CLEAN",
+        "R8_DAOOD_LIMITATION",
+        "R9_ASAP_SOURCE_HELDOUT",
+        "R10_REGULATORY_POSTHOC",
+        "R11_PROBABILITY_MARGIN_ONLY_POSTHOC",
+        "R12_SELECTIVE_ENRICHMENT_DIFFERENCE_POSTHOC",
+        "R13_EXTERNAL_CALIBRATION_POSTHOC",
+        "R14_LOCAL_RULE_ABLATION_HYPOTHESIS",
+        "R15_DIRECT_EVIDENCE_CHANNEL_CONTRIBUTION",
+        "R16_RAW_EXTERNAL_CALIBRATION_LIMITATION",
+        "R17_WITHIN_SOURCE_PLATT_DIAGNOSTIC",
+        "R18_FALSE_POSITIVE_ERROR_CONCENTRATION"
+      ]
+    },
+    {
+      "check": "binary_baseline_anchor",
+      "status": "PASS",
+      "detail": {
+        "result_id": "R1_BINARY_BASELINE_IDENTITY_CLEAN",
+        "dataset": "Biogen/Fang 2023 MDR1-MDCK",
+        "endpoint": "ER>=2 weak binary sensitivity label",
+        "analysis_subset": "identity-clean",
+        "method_layer": "forced full-coverage weak binary baseline",
+        "n_total": 2624,
+        "n_evaluated": 2624,
+        "coverage": 1.0,
+        "primary_metric": "balanced_accuracy",
+        "primary_value": 0.58169541,
+        "ci95_low": 0.56208192,
+        "ci95_high": 0.60127912,
+        "mcc": 0.16768795,
+        "mcc_ci95_low": 0.12770506,
+        "mcc_ci95_high": 0.20694907,
+        "sensitivity": 0.72052402,
+        "specificity": 0.4428668,
+        "ppv": 0.50030321,
+        "npv": 0.67179487,
+        "manuscript_role": "baseline",
+        "evidence_timing": "threshold pre-existing; interface evaluation post-outcome",
+        "allowed_interpretation": "full coverage has a stable but low-discrimination signal"
+      }
+    },
+    {
+      "check": "selective_anchor",
+      "status": "PASS",
+      "detail": {
+        "result_id": "R2_SELECTIVE_PRIMARY_IDENTITY_CLEAN",
+        "dataset": "Biogen/Fang 2023 MDR1-MDCK",
+        "endpoint": "ER>=2 weak binary sensitivity label",
+        "analysis_subset": "identity-clean",
+        "method_layer": "v0.4 high/low accepted; abstentions excluded from accepted-performance denominator",
+        "n_total": 2624,
+        "n_evaluated": 453,
+        "coverage": 0.1726372,
+        "primary_metric": "balanced_accuracy",
+        "primary_value": 0.73510345,
+        "ci95_low": 0.69106812,
+        "ci95_high": 0.77745435,
+        "mcc": 0.49857011,
+        "mcc_ci95_low": 0.41453859,
+        "mcc_ci95_high": 0.58090928,
+        "sensitivity": 0.884,
+        "specificity": 0.5862069,
+        "ppv": 0.72459016,
+        "npv": 0.80405405,
+        "manuscript_role": "primary selective-classification result",
+        "evidence_timing": "v0.4 rules and thresholds locked before Biogen outcomes were scored",
+        "allowed_interpretation": "abstention identifies a smaller subset with materially improved reliability"
+      }
+    },
+    {
+      "check": "forced_layer_anchor",
+      "status": "PASS",
+      "detail": {
+        "result_id": "R3_FORCED_REJECTED_LAYER_IDENTITY_CLEAN",
+        "dataset": "Biogen/Fang 2023 MDR1-MDCK",
+        "endpoint": "ER>=2 weak binary sensitivity label",
+        "analysis_subset": "identity-clean",
+        "method_layer": "rows rejected by v0.4 but forced through the 0.5 binary interface",
+        "n_total": 2624,
+        "n_evaluated": 2171,
+        "coverage": 0.8273628,
+        "primary_metric": "balanced_accuracy",
+        "primary_value": 0.54746152,
+        "ci95_low": 0.5254534,
+        "ci95_high": 0.56820535,
+        "mcc": 0.09621794,
+        "mcc_ci95_low": 0.05394668,
+        "mcc_ci95_high": 0.14108242,
+        "sensitivity": 0.67486034,
+        "specificity": 0.4200627,
+        "ppv": 0.44940476,
+        "npv": 0.64812576,
+        "manuscript_role": "ablation and falsification control",
+        "evidence_timing": "post-outcome binary overlay; no threshold tuning",
+        "allowed_interpretation": "most coverage gained by forcing abstentions is low-confidence"
+      }
+    },
+    {
+      "check": "continuous_anchor",
+      "status": "PASS",
+      "detail": {
+        "result_id": "R6_CONTINUOUS_DIRECTION_IDENTITY_CLEAN",
+        "dataset": "Biogen/Fang 2023 MDR1-MDCK",
+        "endpoint": "continuous log10 efflux ratio",
+        "analysis_subset": "identity-clean",
+        "method_layer": "frozen primary probability ranking",
+        "n_total": 2624,
+        "n_evaluated": 2624,
+        "coverage": 1.0,
+        "primary_metric": "Spearman_rho",
+        "primary_value": 0.24718176,
+        "ci95_low": 0.20746734,
+        "ci95_high": 0.28434392,
+        "mcc": null,
+        "mcc_ci95_low": null,
+        "mcc_ci95_high": null,
+        "sensitivity": null,
+        "specificity": null,
+        "ppv": null,
+        "npv": null,
+        "manuscript_role": "primary continuous endpoint result",
+        "evidence_timing": "protocol and model locked before new outcomes were scored",
+        "allowed_interpretation": "large external dataset supports a positive ABCB1 efflux-risk direction"
+      }
+    },
+    {
+      "check": "selective_outperforms_binary",
+      "status": "PASS",
+      "detail": [
+        0.58169541,
+        0.73510345,
+        1.0,
+        0.1726372
+      ]
+    },
+    {
+      "check": "forced_layer_is_weaker",
+      "status": "PASS",
+      "detail": [
+        0.54746152,
+        0.09621794
+      ]
+    },
+    {
+      "check": "daood_limitation_preserved",
+      "status": "PASS",
+      "detail": {
+        "n_total": 156,
+        "analysis_subset": "identity-clean; only 4 positive labels"
+      }
+    },
+    {
+      "check": "selective_enrichment_anchor",
+      "status": "PASS",
+      "detail": {
+        "result_id": "R12_SELECTIVE_ENRICHMENT_DIFFERENCE_POSTHOC",
+        "dataset": "Biogen/Fang 2023 MDR1-MDCK",
+        "endpoint": "ER>=2 weak external risk label",
+        "analysis_subset": "identity-clean accepted versus rejected-forced layers",
+        "method_layer": "joint Murcko-scaffold bootstrap contrast",
+        "n_total": 2624,
+        "n_evaluated": 2624,
+        "coverage": 1.0,
+        "primary_metric": "accepted_minus_rejected_balanced_accuracy",
+        "primary_value": 0.18764193,
+        "ci95_low": 0.13663565,
+        "ci95_high": 0.23748035,
+        "mcc": 0.40235217,
+        "mcc_ci95_low": 0.30404292,
+        "mcc_ci95_high": 0.5002423,
+        "sensitivity": null,
+        "specificity": null,
+        "ppv": null,
+        "npv": null,
+        "manuscript_role": "post-hoc selective-enrichment contrast",
+        "evidence_timing": "secondary analysis locked after primary external outcome observation",
+        "allowed_interpretation": "the frozen rejector enriches lower-reliability rows under the weak external endpoint"
+      }
+    },
+    {
+      "check": "external_calibration_anchor",
+      "status": "PASS",
+      "detail": {
+        "result_id": "R13_EXTERNAL_CALIBRATION_POSTHOC",
+        "dataset": "Biogen/Fang 2023 MDR1-MDCK",
+        "endpoint": "ER>=2 weak external risk label",
+        "analysis_subset": "identity-clean",
+        "method_layer": "frozen primary score calibration diagnostic",
+        "n_total": 2624,
+        "n_evaluated": 2624,
+        "coverage": 1.0,
+        "primary_metric": "calibration_slope",
+        "primary_value": 0.58367794,
+        "ci95_low": null,
+        "ci95_high": null,
+        "mcc": null,
+        "mcc_ci95_low": null,
+        "mcc_ci95_high": null,
+        "sensitivity": null,
+        "specificity": null,
+        "ppv": null,
+        "npv": null,
+        "manuscript_role": "post-hoc calibration limitation",
+        "evidence_timing": "secondary analysis locked after primary external outcome observation",
+        "allowed_interpretation": "score is not an absolute probability; ECE=0.121"
+      }
+    },
+    {
+      "check": "local_ablation_hypothesis_preserved",
+      "status": "PASS",
+      "detail": {
+        "result_id": "R14_LOCAL_RULE_ABLATION_HYPOTHESIS",
+        "dataset": "Biogen/Fang 2023 MDR1-MDCK",
+        "endpoint": "ER>=2 weak external risk label",
+        "analysis_subset": "identity-clean",
+        "method_layer": "full frozen rejector without local-neighborhood agreement rule",
+        "n_total": 2624,
+        "n_evaluated": 551,
+        "coverage": 0.20998476,
+        "primary_metric": "balanced_accuracy",
+        "primary_value": 0.76329591,
+        "ci95_low": 0.72614572,
+        "ci95_high": 0.80111253,
+        "mcc": 0.53323829,
+        "mcc_ci95_low": 0.46042724,
+        "mcc_ci95_high": 0.60672257,
+        "sensitivity": 0.84558824,
+        "specificity": 0.68100358,
+        "ppv": 0.72100313,
+        "npv": 0.81896552,
+        "manuscript_role": "post-hoc rule-simplification hypothesis",
+        "evidence_timing": "same external outcome used to identify this hypothesis; requires new frozen validation",
+        "allowed_interpretation": "local-neighborhood guard was not supported here; do not promote this ablation as a validated replacement model"
+      }
+    },
+    {
+      "check": "direct_channel_contribution_anchor",
+      "status": "PASS",
+      "detail": {
+        "result_id": "R15_DIRECT_EVIDENCE_CHANNEL_CONTRIBUTION",
+        "dataset": "Biogen/Fang 2023 MDR1-MDCK",
+        "endpoint": "ER>=2 weak external risk label",
+        "analysis_subset": "identity-clean full v0.4 versus primary-reference-only complete channel",
+        "method_layer": "post-hoc evidence-channel ablation with joint Murcko-scaffold bootstrap",
+        "n_total": 2624,
+        "n_evaluated": 575,
+        "coverage": 0.2191311,
+        "primary_metric": "full_minus_primary_channel_balanced_accuracy",
+        "primary_value": 0.05702906,
+        "ci95_low": 0.01863849,
+        "ci95_high": 0.09267134,
+        "mcc": 0.13951992,
+        "mcc_ci95_low": 0.06512428,
+        "mcc_ci95_high": 0.20953371,
+        "sensitivity": null,
+        "specificity": null,
+        "ppv": null,
+        "npv": null,
+        "manuscript_role": "post-hoc evidence-channel decomposition",
+        "evidence_timing": "component variants locked after primary and first rule-ablation outcomes were observed",
+        "allowed_interpretation": "direct-experiment reference evidence contributes non-redundant selective information; not a causal or prospective channel comparison"
+      }
+    },
+    {
+      "check": "raw_calibration_anchor_v2",
+      "status": "PASS",
+      "detail": {
+        "result_id": "R16_RAW_EXTERNAL_CALIBRATION_LIMITATION",
+        "dataset": "Biogen/Fang 2023 MDR1-MDCK",
+        "endpoint": "ER>=2 weak external risk label",
+        "analysis_subset": "identity-clean",
+        "method_layer": "frozen raw score external calibration",
+        "n_total": 2624,
+        "n_evaluated": 2624,
+        "coverage": 1.0,
+        "primary_metric": "calibration_slope",
+        "primary_value": 0.58381812,
+        "ci95_low": 0.47579358,
+        "ci95_high": 0.69320624,
+        "mcc": null,
+        "mcc_ci95_low": null,
+        "mcc_ci95_high": null,
+        "sensitivity": null,
+        "specificity": null,
+        "ppv": null,
+        "npv": null,
+        "manuscript_role": "post-hoc external calibration limitation",
+        "evidence_timing": "deep calibration protocol locked after prior external diagnostics were observed",
+        "allowed_interpretation": "raw score is over-scaled and overpredicts high risk; ECE=0.121; do not interpret as universal probability"
+      }
+    },
+    {
+      "check": "platt_diagnostic_anchor",
+      "status": "PASS",
+      "detail": {
+        "result_id": "R17_WITHIN_SOURCE_PLATT_DIAGNOSTIC",
+        "dataset": "Biogen/Fang 2023 MDR1-MDCK",
+        "endpoint": "ER>=2 weak external risk label",
+        "analysis_subset": "identity-clean 5-fold Murcko-group cross-fit",
+        "method_layer": "same-source Platt recalibration diagnostic",
+        "n_total": 2624,
+        "n_evaluated": 2624,
+        "coverage": 1.0,
+        "primary_metric": "favorable_brier_improvement",
+        "primary_value": 0.01818545,
+        "ci95_low": 0.01288217,
+        "ci95_high": 0.02389918,
+        "mcc": null,
+        "mcc_ci95_low": null,
+        "mcc_ci95_high": null,
+        "sensitivity": null,
+        "specificity": null,
+        "ppv": null,
+        "npv": null,
+        "manuscript_role": "post-hoc same-source calibratability diagnostic",
+        "evidence_timing": "all folds come from the same outcome-observed Biogen source",
+        "allowed_interpretation": "assay-specific scale is correctable within source; Platt slope=0.981; not independent validation"
+      }
+    },
+    {
+      "check": "error_concentration_anchor",
+      "status": "PASS",
+      "detail": {
+        "result_id": "R18_FALSE_POSITIVE_ERROR_CONCENTRATION",
+        "dataset": "Biogen/Fang 2023 MDR1-MDCK",
+        "endpoint": "ER>=2 weak external risk label",
+        "analysis_subset": "identity-clean forced binary",
+        "method_layer": "post-hoc error taxonomy and frozen score bands",
+        "n_total": 2624,
+        "n_evaluated": 1050,
+        "coverage": 0.4001524390243902,
+        "primary_metric": "error_rate_in_score_0_50_to_0_70",
+        "primary_value": 0.53619048,
+        "ci95_low": 0.50594972,
+        "ci95_high": 0.56616739,
+        "mcc": null,
+        "mcc_ci95_low": null,
+        "mcc_ci95_high": null,
+        "sensitivity": null,
+        "specificity": null,
+        "ppv": null,
+        "npv": null,
+        "manuscript_role": "post-hoc error localization",
+        "evidence_timing": "deep error protocol locked after prior external diagnostics were observed",
+        "allowed_interpretation": "forced-binary errors are concentrated just above 0.5 and are dominated by 824 false positives"
+      }
+    },
+    {
+      "check": "claim_ledger_has_allowed_and_forbidden",
+      "status": "PASS",
+      "detail": {
+        "allowed": 9,
+        "allowed_with_boundary": 6,
+        "forbidden": 3
+      }
+    },
+    {
+      "check": "abstention_not_biological_class",
+      "status": "PASS",
+      "detail": [
+        "C10"
+      ]
+    },
+    {
+      "check": "adc_accuracy_claim_forbidden",
+      "status": "PASS",
+      "detail": [
+        {
+          "claim_id": "C9",
+          "role": "forbidden",
+          "manuscript_wording": "The study validates intact-ADC efflux, intracellular unbound exposure, resistance, efficacy, or clinical DDI.",
+          "supporting_evidence": "No such endpoint is modeled",
+          "mandatory_boundary_or_replacement": "Keep ADC as an implications/application section only.",
+          "status": "forbidden"
+        }
+      ]
+    },
+    {
+      "check": "figure_manifest_complete",
+      "status": "PASS",
+      "detail": [
+        {
+          "figure_id": "Figure 1",
+          "status": "ready_for_drawing"
+        },
+        {
+          "figure_id": "Figure 2",
+          "status": "figure_ready"
+        },
+        {
+          "figure_id": "Figure 3",
+          "status": "figure_ready"
+        },
+        {
+          "figure_id": "Figure 4",
+          "status": "figure_ready"
+        },
+        {
+          "figure_id": "Figure 5",
+          "status": "data_ready"
+        },
+        {
+          "figure_id": "Figure S1",
+          "status": "data_ready"
+        },
+        {
+          "figure_id": "Figure S2",
+          "status": "data_ready"
+        },
+        {
+          "figure_id": "Figure S3",
+          "status": "data_ready"
+        },
+        {
+          "figure_id": "Figure S4",
+          "status": "figure_ready"
+        },
+        {
+          "figure_id": "Figure S5",
+          "status": "figure_ready"
+        },
+        {
+          "figure_id": "Figure S6",
+          "status": "figure_ready"
+        }
+      ]
+    },
+    {
+      "check": "main_figure_data_ready",
+      "status": "PASS",
+      "detail": [
+        {
+          "figure_id": "Figure 1",
+          "status": "ready_for_drawing"
+        },
+        {
+          "figure_id": "Figure 2",
+          "status": "figure_ready"
+        },
+        {
+          "figure_id": "Figure 3",
+          "status": "figure_ready"
+        },
+        {
+          "figure_id": "Figure 4",
+          "status": "figure_ready"
+        }
+      ]
+    },
+    {
+      "check": "external_risk_figures_ready",
+      "status": "PASS",
+      "detail": [
+        {
+          "figure_id": "Figure 2",
+          "source_artifacts": "outputs/20260805_abcb1_external_risk_experiments_v1/figures/Figure2_external_coverage_reliability.*"
+        },
+        {
+          "figure_id": "Figure 3",
+          "source_artifacts": "outputs/20260805_abcb1_external_risk_experiments_v1/figures/Figure3_external_rejector_ablation.*"
+        },
+        {
+          "figure_id": "Figure 4",
+          "source_artifacts": "outputs/20260805_abcb1_external_risk_experiments_v1/figures/Figure4_external_calibration_error.*"
+        },
+        {
+          "figure_id": "Figure S4",
+          "source_artifacts": "outputs/20260805_abcb1_external_evidence_channel_ablation_v1/figures/FigureS4_external_evidence_channel_ablation.*"
+        },
+        {
+          "figure_id": "Figure S5",
+          "source_artifacts": "outputs/20260805_abcb1_external_calibration_error_v2/figures/FigureS5_external_calibration_error_v2.*"
+        },
+        {
+          "figure_id": "Figure S6",
+          "source_artifacts": "outputs/20260805_abcb1_external_calibration_error_v2/figures/FigureS6_external_error_phenotypes_v2.*"
+        }
+      ]
+    },
+    {
+      "check": "evidence_channel_figure_ready",
+      "status": "PASS",
+      "detail": [
+        {
+          "figure_id": "Figure S4",
+          "title": "External evidence-channel ablation",
+          "content": "Coverage-reliability, channel-level BAcc, sensitivity/specificity, and primary/direct local-guard decomposition",
+          "source_artifacts": "outputs/20260805_abcb1_external_evidence_channel_ablation_v1/figures/FigureS4_external_evidence_channel_ablation.*",
+          "role": "supplementary",
+          "status": "figure_ready"
+        }
+      ]
+    },
+    {
+      "check": "deep_calibration_figures_ready",
+      "status": "PASS",
+      "detail": [
+        {
+          "figure_id": "Figure S5",
+          "title": "Deep external calibration and forced-decision errors",
+          "content": "Raw and cross-fitted calibration curves, calibration metrics, TP/TN/FP/FN counts, and error by frozen score band",
+          "source_artifacts": "outputs/20260805_abcb1_external_calibration_error_v2/figures/FigureS5_external_calibration_error_v2.*",
+          "role": "supplementary",
+          "status": "figure_ready"
+        },
+        {
+          "figure_id": "Figure S6",
+          "title": "External error phenotypes and scaffold hotspots",
+          "content": "FP/FN feature effect sizes, error by selection/support layer, and shrunken Murcko-scaffold hotspots",
+          "source_artifacts": "outputs/20260805_abcb1_external_calibration_error_v2/figures/FigureS6_external_error_phenotypes_v2.*",
+          "role": "supplementary",
+          "status": "figure_ready"
+        }
+      ]
+    },
+    {
+      "check": "table_manifest_complete",
+      "status": "PASS",
+      "detail": 12
+    },
+    {
+      "check": "readiness_gates_exact",
+      "status": "PASS",
+      "detail": {
+        "large_external_continuous_direction": "pass",
+        "identity_clean_analysis": "pass",
+        "scaffold_clean_sensitivity": "pass",
+        "selective_reliability_improvement": "pass",
+        "posthoc_external_risk_experiments": "pass",
+        "posthoc_evidence_channel_ablation": "pass",
+        "posthoc_deep_calibration_error_analysis": "pass",
+        "binary_full_coverage_high_discrimination": "fail",
+        "future_strict_matched_parental_or_inhibitor_validation": "pending",
+        "adc_specific_external_validation": "fail"
+      }
+    },
+    {
+      "check": "bounded_draft_go",
+      "status": "PASS",
+      "detail": "go_for_draft_under_bounded_methods_claim"
+    },
+    {
+      "check": "primary_method_is_selective",
+      "status": "PASS",
+      "detail": "v0.4 selective high-risk/low-risk/abstain screening"
+    },
+    {
+      "check": "binary_is_baseline",
+      "status": "PASS",
+      "detail": "v0.5 weak-label forced binary interface at frozen 0.5 threshold"
+    },
+    {
+      "check": "readiness_output_hash::数据/processed/abcb1_manuscript_primary_results_v1.csv",
+      "status": "PASS",
+      "detail": "9e06c68344592b8f44a96c6fb4ef2ef96ebc83bb8a81bc40d30cf4276e286414"
+    },
+    {
+      "check": "readiness_output_hash::数据/processed/abcb1_manuscript_claim_ledger_v1.csv",
+      "status": "PASS",
+      "detail": "b410b4980b943fa0db4cf4678d5b8cf9da119a01f1ea846c7bca128be119fdfb"
+    },
+    {
+      "check": "readiness_output_hash::数据/processed/abcb1_manuscript_figure_manifest_v1.csv",
+      "status": "PASS",
+      "detail": "82e0c6f1f855207cbc3d81fb156bcc3c47d6b6f7dc7413904738e820b7092ab8"
+    },
+    {
+      "check": "readiness_output_hash::数据/processed/abcb1_manuscript_table_manifest_v1.csv",
+      "status": "PASS",
+      "detail": "69c845338fbb06398141396e9025b291865cc91f292dd4582e5270fb0c907079"
+    },
+    {
+      "check": "plan_token::An uncertainty-aware selective screening framework for ABCB1 efflux risk",
+      "status": "PASS",
+      "detail": "An uncertainty-aware selective screening framework for ABCB1 efflux risk"
+    },
+    {
+      "check": "plan_token::2,624",
+      "status": "PASS",
+      "detail": "2,624"
+    },
+    {
+      "check": "plan_token::0.582",
+      "status": "PASS",
+      "detail": "0.582"
+    },
+    {
+      "check": "plan_token::0.735",
+      "status": "PASS",
+      "detail": "0.735"
+    },
+    {
+      "check": "plan_token::17.3%",
+      "status": "PASS",
+      "detail": "17.3%"
+    },
+    {
+      "check": "plan_token::2,171",
+      "status": "PASS",
+      "detail": "2,171"
+    },
+    {
+      "check": "plan_token::0.547",
+      "status": "PASS",
+      "detail": "0.547"
+    },
+    {
+      "check": "plan_token::拒判是决策状态",
+      "status": "PASS",
+      "detail": "拒判是决策状态"
+    },
+    {
+      "check": "plan_token::不是第三种生物学类别",
+      "status": "PASS",
+      "detail": "不是第三种生物学类别"
+    },
+    {
+      "check": "plan_token::ADC 释放物仅作风险分诊案例",
+      "status": "PASS",
+      "detail": "ADC 释放物仅作风险分诊案例"
+    },
+    {
+      "check": "plan_exists_and_substantial",
+      "status": "PASS",
+      "detail": {
+        "path": "${RELATED_PROJECT_ROOT}/论文计划/论文一_ABCB1不确定性感知选择性筛查_主稿实施方案_20260805.md",
+        "bytes": 26555
+      }
+    }
+  ]
+}

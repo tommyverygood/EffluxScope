@@ -1,0 +1,206 @@
+{
+  "analysis_id": "ABCB1_OOD_STRUCTURAL_SHIFT_AUDIT_V1",
+  "status": "complete_retrospective_post_outcome_frozen_OOD_audit",
+  "protocol_sha256": "a20cede774bf47597ab73bdd08a0ec7d305b6a22698b2d647443023227db7547",
+  "structure_lock_sha256": "b15878b3c38b576daf101d2a0257e45f98a4800a1adff023980590e513033238",
+  "timing": "retrospective_post_Biogen_outcome_observed_structure_only_rules_frozen_before_new_OOD_metrics",
+  "structural_shift": {
+    "identity_clean_n": 2624,
+    "scaffold_clean_n": 2562,
+    "reference_strata": {
+      "ID_like": 7,
+      "OOD": 1249,
+      "extreme_OOD": 195,
+      "transition": 1173
+    },
+    "strict_lohi_n": 2581,
+    "dual_ood_n": 609,
+    "kmeans_ood20_n": 544,
+    "joint_model_s1_median": 0.25,
+    "joint_model_s5_median": 0.22725581904770698,
+    "joint_model_d5_median": 0.772744180952293
+  },
+  "metric_anchors": {
+    "overall_full": {
+      "n_total": 2624,
+      "n_evaluated": 2624,
+      "coverage": 0.17263719512195122,
+      "balanced_accuracy": 0.58169540968021,
+      "mcc": 0.16768794607746743,
+      "spearman_probability_log10_er": 0.2471817631751286
+    },
+    "overall_accepted": {
+      "n_total": 2624,
+      "n_evaluated": 453,
+      "coverage": 0.17263719512195122,
+      "balanced_accuracy": 0.735103448275862,
+      "mcc": 0.49857011254223454,
+      "spearman_probability_log10_er": 0.4791755146320929
+    },
+    "Q1_full": {
+      "n_total": 525,
+      "n_evaluated": 525,
+      "coverage": 0.21523809523809523,
+      "balanced_accuracy": 0.6296944858420268,
+      "mcc": 0.25699862543323626,
+      "spearman_probability_log10_er": 0.31705553321087526
+    },
+    "Q5_full": {
+      "n_total": 525,
+      "n_evaluated": 525,
+      "coverage": 0.06857142857142857,
+      "balanced_accuracy": 0.5520947284392278,
+      "mcc": 0.11448742251579826,
+      "spearman_probability_log10_er": 0.2396579190698716
+    },
+    "Q1_accepted": {
+      "n_total": 525,
+      "n_evaluated": 113,
+      "coverage": 0.21523809523809523,
+      "balanced_accuracy": 0.7797619047619048,
+      "mcc": 0.5737188637199557,
+      "spearman_probability_log10_er": 0.5576136136802182
+    },
+    "Q5_accepted": {
+      "n_total": 525,
+      "n_evaluated": 36,
+      "coverage": 0.06857142857142857,
+      "balanced_accuracy": 0.6915584415584416,
+      "mcc": 0.4719094020913629,
+      "spearman_probability_log10_er": 0.38790218790218794
+    },
+    "dual_OOD_accepted": {
+      "n_total": 609,
+      "n_evaluated": 50,
+      "coverage": 0.08210180623973727,
+      "balanced_accuracy": 0.7065972222222222,
+      "mcc": 0.5162410462428922,
+      "spearman_probability_log10_er": 0.4227130852340936
+    },
+    "kmeans_OOD20_accepted": {
+      "n_total": 544,
+      "n_evaluated": 45,
+      "coverage": 0.08272058823529412,
+      "balanced_accuracy": 0.6953441295546559,
+      "mcc": 0.3860277950018962,
+      "spearman_probability_log10_er": 0.3363636363636363
+    }
+  },
+  "gates": {
+    "gate1_distance_marks_failure": "not_evaluable_ID_like_count_below_frozen_minimum",
+    "gate2_rejector_responds_to_shift": "not_evaluable_ID_like_count_below_frozen_minimum",
+    "gate3_OOD_accepted_reliability": "pass",
+    "gate3_candidates": [
+      {
+        "subset_id": "reference_extreme_OOD",
+        "n": 195,
+        "coverage": 0.02564102564102564,
+        "adequate_counts": false,
+        "pass": false
+      },
+      {
+        "subset_id": "strict_LoHi",
+        "n": 2581,
+        "coverage": 0.16853932584269662,
+        "adequate_counts": true,
+        "pass": true
+      },
+      {
+        "subset_id": "dual_OOD",
+        "n": 609,
+        "coverage": 0.08210180623973727,
+        "adequate_counts": true,
+        "pass": true
+      },
+      {
+        "subset_id": "kmeans_OOD20",
+        "n": 544,
+        "coverage": 0.08272058823529412,
+        "adequate_counts": true,
+        "pass": true
+      },
+      {
+        "subset_id": "external_Q5_farthest",
+        "n": 525,
+        "coverage": 0.06857142857142857,
+        "adequate_counts": false,
+        "pass": false
+      }
+    ],
+    "overall": "partial_support_OOD_accepted_reliability_only_main_distance_gradient_not_evaluable"
+  },
+  "key_contrasts": {
+    "distance_error_spearman": {
+      "contrast_id": "distance_error_spearman",
+      "subset_id": "overall_identity_clean",
+      "bootstrap_scheme": "murcko_cluster",
+      "metric": "spearman_joint_model_d5_vs_row_brier_loss",
+      "point_estimate": 0.07417284448346906,
+      "ci95_low": 0.03546934973819454,
+      "ci95_high": 0.11401816558322257,
+      "valid_replicates": 2000,
+      "inference_status": "adequate"
+    },
+    "reference_extreme_minus_ID_like_full_BAcc": {
+      "contrast_id": "reference_extreme_minus_ID_like::full_balanced_accuracy_a_minus_b",
+      "subset_id": "reference_extreme_minus_ID_like",
+      "bootstrap_scheme": "murcko_cluster",
+      "metric": "full_balanced_accuracy_a_minus_b",
+      "point_estimate": -0.05900621118012417,
+      "ci95_low": null,
+      "ci95_high": null,
+      "valid_replicates": 0,
+      "inference_status": "insufficient_subset_or_class_count"
+    },
+    "reference_extreme_minus_ID_like_coverage": {
+      "contrast_id": "reference_extreme_minus_ID_like::selective_coverage_a_minus_b",
+      "subset_id": "reference_extreme_minus_ID_like",
+      "bootstrap_scheme": "murcko_cluster",
+      "metric": "selective_coverage_a_minus_b",
+      "point_estimate": -0.11721611721611722,
+      "ci95_low": null,
+      "ci95_high": null,
+      "valid_replicates": 0,
+      "inference_status": "insufficient_subset_or_class_count"
+    },
+    "external_Q5_minus_Q1": [
+      {
+        "contrast_id": "external_Q5_minus_Q1::full_balanced_accuracy_a_minus_b",
+        "subset_id": "external_Q5_minus_Q1",
+        "bootstrap_scheme": "murcko_cluster",
+        "metric": "full_balanced_accuracy_a_minus_b",
+        "point_estimate": -0.07759975740279901,
+        "ci95_low": -0.1339632874552812,
+        "ci95_high": -0.01867113636063339,
+        "valid_replicates": 2000,
+        "inference_status": "adequate"
+      },
+      {
+        "contrast_id": "external_Q5_minus_Q1::selective_coverage_a_minus_b",
+        "subset_id": "external_Q5_minus_Q1",
+        "bootstrap_scheme": "murcko_cluster",
+        "metric": "selective_coverage_a_minus_b",
+        "point_estimate": -0.14666666666666667,
+        "ci95_low": -0.18688545427595246,
+        "ci95_high": -0.10402753389088974,
+        "valid_replicates": 2000,
+        "inference_status": "adequate"
+      }
+    ]
+  },
+  "outputs": {
+    "数据/processed/abcb1_ood_analysis_rows_v1.csv": "ee6c7ea05526099b795253f9574a24012b624428b98f84387e47acb9c955d404",
+    "数据/processed/abcb1_ood_stratum_metrics_v1.csv": "5e2ce1cb2f94872952af4e28fa076ec7e7cd424ec3a3a2dd8b7a5f9d29142624",
+    "数据/processed/abcb1_ood_bootstrap_summary_v1.csv": "097f1404523da928ea434556ee3b1ed8d850800599e7bfae382bb6f6e2839380",
+    "数据/processed/abcb1_ood_contrasts_v1.csv": "26b714f4e4ae866e549dfdbc859a2e73d11a8124f7354923dd9a6013544ccb1e",
+    "数据/processed/abcb1_ood_abstention_reasons_v1.csv": "d213d41f84f8c03099703046b09b286d9fd899e672daff264b22e1b8862cbf5b"
+  },
+  "interpretation_boundaries": [
+    "Murcko-scaffold cleaning is a sensitivity analysis, not proof of strict OOD generalization.",
+    "This retrospective analysis cannot be called prospective or outcome-unseen OOD validation.",
+    "Structural distance is not a mechanistic ABCB1 distance.",
+    "No result may be used to retune v0.4 or promote a post-hoc variant without a new outcome-unseen source.",
+    "No claim of ADC-release-species or intact-ADC OOD accuracy is permitted.",
+    "Coverage must always be reported with accepted-set performance."
+  ]
+}

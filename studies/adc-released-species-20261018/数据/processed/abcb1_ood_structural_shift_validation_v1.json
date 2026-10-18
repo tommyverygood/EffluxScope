@@ -1,0 +1,639 @@
+{
+  "validation_id": "ABCB1_OOD_STRUCTURAL_SHIFT_VALIDATION_V1",
+  "created_at": "2026-08-07T04:16:20.616060+00:00",
+  "status": "pass",
+  "independence": "does_not_import_or_execute_the_primary_analysis_runner",
+  "validated_analysis_id": "ABCB1_OOD_STRUCTURAL_SHIFT_AUDIT_V1",
+  "checks_total": 37,
+  "checks_passed": 36,
+  "checks_failed": 0,
+  "warnings": 1,
+  "key_observations": {
+    "identity_clean_n": 2624,
+    "scaffold_clean_n": 2562,
+    "reference_ID_like_n": 7,
+    "adequate_bootstrap_rows": 362,
+    "minimum_valid_bootstrap_replicates": 1867,
+    "adequate_contrast_rows": 54,
+    "minimum_valid_contrast_replicates": 1999,
+    "independently_rederived_gates": {
+      "gate1_distance_marks_failure": "not_evaluable_ID_like_count_below_frozen_minimum",
+      "gate2_rejector_responds_to_shift": "not_evaluable_ID_like_count_below_frozen_minimum",
+      "gate3_OOD_accepted_reliability": "pass",
+      "gate3_candidates": [
+        {
+          "subset_id": "reference_extreme_OOD",
+          "n": 195,
+          "coverage": 0.02564102564102564,
+          "adequate_counts": false,
+          "pass": false
+        },
+        {
+          "subset_id": "strict_LoHi",
+          "n": 2581,
+          "coverage": 0.16853932584269662,
+          "adequate_counts": true,
+          "pass": true
+        },
+        {
+          "subset_id": "dual_OOD",
+          "n": 609,
+          "coverage": 0.08210180623973727,
+          "adequate_counts": true,
+          "pass": true
+        },
+        {
+          "subset_id": "kmeans_OOD20",
+          "n": 544,
+          "coverage": 0.08272058823529412,
+          "adequate_counts": true,
+          "pass": true
+        },
+        {
+          "subset_id": "external_Q5_farthest",
+          "n": 525,
+          "coverage": 0.06857142857142857,
+          "adequate_counts": false,
+          "pass": false
+        }
+      ],
+      "overall": "partial_support_OOD_accepted_reliability_only_main_distance_gradient_not_evaluable"
+    }
+  },
+  "checks": [
+    {
+      "check_id": "protocol_hash_matches_structure_lock",
+      "status": "pass",
+      "observed": "a20cede774bf47597ab73bdd08a0ec7d305b6a22698b2d647443023227db7547",
+      "expected": "a20cede774bf47597ab73bdd08a0ec7d305b6a22698b2d647443023227db7547",
+      "detail": ""
+    },
+    {
+      "check_id": "protocol_hash_matches_summary",
+      "status": "pass",
+      "observed": "a20cede774bf47597ab73bdd08a0ec7d305b6a22698b2d647443023227db7547",
+      "expected": "a20cede774bf47597ab73bdd08a0ec7d305b6a22698b2d647443023227db7547",
+      "detail": ""
+    },
+    {
+      "check_id": "structure_lock_hash_matches_summary",
+      "status": "pass",
+      "observed": "b15878b3c38b576daf101d2a0257e45f98a4800a1adff023980590e513033238",
+      "expected": "b15878b3c38b576daf101d2a0257e45f98a4800a1adff023980590e513033238",
+      "detail": ""
+    },
+    {
+      "check_id": "structure_lock_status",
+      "status": "pass",
+      "observed": "structure_only_assignments_frozen_before_new_metric_generation",
+      "expected": "structure_only_assignments_frozen_before_new_metric_generation",
+      "detail": ""
+    },
+    {
+      "check_id": "structure_rows_hash_matches_lock",
+      "status": "pass",
+      "observed": "3f6096aa89ecdf2db7e37a80204d5c630aa1cad695ecfc76adc1b649ea1ba0fe",
+      "expected": "3f6096aa89ecdf2db7e37a80204d5c630aa1cad695ecfc76adc1b649ea1ba0fe",
+      "detail": ""
+    },
+    {
+      "check_id": "structure_rows_required_columns",
+      "status": "pass",
+      "observed": [],
+      "expected": [],
+      "detail": ""
+    },
+    {
+      "check_id": "analysis_rows_required_columns",
+      "status": "pass",
+      "observed": [],
+      "expected": [],
+      "detail": ""
+    },
+    {
+      "check_id": "stratum_metrics_required_columns",
+      "status": "pass",
+      "observed": [],
+      "expected": [],
+      "detail": ""
+    },
+    {
+      "check_id": "bootstrap_summary_required_columns",
+      "status": "pass",
+      "observed": [],
+      "expected": [],
+      "detail": ""
+    },
+    {
+      "check_id": "contrasts_required_columns",
+      "status": "pass",
+      "observed": [],
+      "expected": [],
+      "detail": ""
+    },
+    {
+      "check_id": "abstention_reasons_required_columns",
+      "status": "pass",
+      "observed": [],
+      "expected": [],
+      "detail": ""
+    },
+    {
+      "check_id": "structure_row_count",
+      "status": "pass",
+      "observed": 2624,
+      "expected": 2624,
+      "detail": ""
+    },
+    {
+      "check_id": "analysis_row_count",
+      "status": "pass",
+      "observed": 2624,
+      "expected": 2624,
+      "detail": ""
+    },
+    {
+      "check_id": "structure_external_row_id_unique",
+      "status": "pass",
+      "observed": 2624,
+      "expected": 2624,
+      "detail": ""
+    },
+    {
+      "check_id": "analysis_external_row_id_unique",
+      "status": "pass",
+      "observed": 2624,
+      "expected": 2624,
+      "detail": ""
+    },
+    {
+      "check_id": "analysis_ids_match_structure_ids",
+      "status": "pass",
+      "observed": 0,
+      "expected": 0,
+      "detail": ""
+    },
+    {
+      "check_id": "frozen_structural_counts",
+      "status": "pass",
+      "observed": {
+        "identity_clean": 2624,
+        "scaffold_clean": 2562,
+        "reference_adaptive_stratum": {
+          "OOD": 1249,
+          "transition": 1173,
+          "extreme_OOD": 195,
+          "ID_like": 7
+        },
+        "strict_lohi_ood": 2581,
+        "dual_ood": 609,
+        "kmeans_ood20": 544,
+        "kmeans_ood20_clusters": [
+          3,
+          15
+        ],
+        "external_d5_quintile": {
+          "Q4": 525,
+          "Q5_farthest": 525,
+          "Q2": 525,
+          "Q1_nearest": 525,
+          "Q3": 524
+        }
+      },
+      "expected": {
+        "identity_clean": 2624,
+        "scaffold_clean": 2562,
+        "reference_adaptive_stratum": {
+          "ID_like": 7,
+          "transition": 1173,
+          "OOD": 1249,
+          "extreme_OOD": 195
+        },
+        "strict_lohi_ood": 2581,
+        "dual_ood": 609,
+        "kmeans_ood20": 544,
+        "kmeans_ood20_clusters": [
+          3,
+          15
+        ],
+        "external_d5_quintile": {
+          "Q1_nearest": 525,
+          "Q2": 525,
+          "Q3": 524,
+          "Q4": 525,
+          "Q5_farthest": 525
+        }
+      },
+      "detail": ""
+    },
+    {
+      "check_id": "structural_counts_match_lock",
+      "status": "pass",
+      "observed": {
+        "identity_clean": 2624,
+        "scaffold_clean": 2562,
+        "reference_adaptive_stratum": {
+          "OOD": 1249,
+          "transition": 1173,
+          "extreme_OOD": 195,
+          "ID_like": 7
+        },
+        "strict_lohi_ood": 2581,
+        "dual_ood": 609,
+        "kmeans_ood20": 544,
+        "kmeans_ood20_clusters": [
+          3,
+          15
+        ],
+        "external_d5_quintile": {
+          "Q4": 525,
+          "Q5_farthest": 525,
+          "Q2": 525,
+          "Q1_nearest": 525,
+          "Q3": 524
+        }
+      },
+      "expected": {
+        "identity_clean": 2624,
+        "scaffold_clean": 2562,
+        "reference_adaptive_strata": {
+          "ID_like": 7,
+          "OOD": 1249,
+          "extreme_OOD": 195,
+          "transition": 1173
+        },
+        "strict_lohi_ood": 2581,
+        "dual_ood": 609,
+        "kmeans_ood20": 544,
+        "kmeans_ood20_clusters": [
+          3,
+          15
+        ],
+        "kmeans_total_clusters": 20,
+        "butina_total_clusters": 1686,
+        "butina_singletons": 1173
+      },
+      "detail": ""
+    },
+    {
+      "check_id": "analysis_preserves_frozen_structure_assignments",
+      "status": "pass",
+      "observed": 0,
+      "expected": 0,
+      "detail": ""
+    },
+    {
+      "check_id": "derived_analysis_columns",
+      "status": "pass",
+      "observed": {
+        "forced_prediction_mismatches": 0,
+        "accepted_flag_mismatches": 0,
+        "max_brier_difference": 9.8879238130678e-17
+      },
+      "expected": {
+        "all_mismatches": 0
+      },
+      "detail": ""
+    },
+    {
+      "check_id": "metrics_composite_key_unique",
+      "status": "pass",
+      "observed": 0,
+      "expected": 0,
+      "detail": ""
+    },
+    {
+      "check_id": "metrics_expected_rows",
+      "status": "pass",
+      "observed": {
+        "rows": 45,
+        "subset_ids": [
+          "dual_OOD",
+          "external_Q1_nearest",
+          "external_Q2",
+          "external_Q3",
+          "external_Q4",
+          "external_Q5_farthest",
+          "kmeans_OOD20",
+          "kmeans_non_OOD80",
+          "overall_identity_clean",
+          "reference_ID_like",
+          "reference_OOD",
+          "reference_extreme_OOD",
+          "reference_transition",
+          "scaffold_clean",
+          "strict_LoHi"
+        ],
+        "layers": [
+          "forced_rejected",
+          "full_forced_binary",
+          "selective_accepted"
+        ]
+      },
+      "expected": {
+        "rows": 45,
+        "subset_ids": [
+          "dual_OOD",
+          "external_Q1_nearest",
+          "external_Q2",
+          "external_Q3",
+          "external_Q4",
+          "external_Q5_farthest",
+          "kmeans_OOD20",
+          "kmeans_non_OOD80",
+          "overall_identity_clean",
+          "reference_ID_like",
+          "reference_OOD",
+          "reference_extreme_OOD",
+          "reference_transition",
+          "scaffold_clean",
+          "strict_LoHi"
+        ],
+        "layers": [
+          "forced_rejected",
+          "full_forced_binary",
+          "selective_accepted"
+        ]
+      },
+      "detail": ""
+    },
+    {
+      "check_id": "subset_counts_consistent",
+      "status": "pass",
+      "observed": [],
+      "expected": [],
+      "detail": ""
+    },
+    {
+      "check_id": "point_metrics_independently_recomputed",
+      "status": "pass",
+      "observed": [],
+      "expected": [],
+      "detail": ""
+    },
+    {
+      "check_id": "bootstrap_composite_key_unique",
+      "status": "pass",
+      "observed": 0,
+      "expected": 0,
+      "detail": ""
+    },
+    {
+      "check_id": "bootstrap_expected_design_rows",
+      "status": "pass",
+      "observed": {
+        "rows": 390,
+        "subsets": 15,
+        "schemes": [
+          "butina_ecfp4_cluster",
+          "murcko_cluster"
+        ]
+      },
+      "expected": {
+        "rows": 390,
+        "subsets": 15,
+        "schemes": [
+          "murcko_cluster",
+          "butina_ecfp4_cluster"
+        ]
+      },
+      "detail": ""
+    },
+    {
+      "check_id": "contrast_composite_key_unique",
+      "status": "pass",
+      "observed": 0,
+      "expected": 0,
+      "detail": ""
+    },
+    {
+      "check_id": "abstention_reason_key_unique",
+      "status": "pass",
+      "observed": 0,
+      "expected": 0,
+      "detail": ""
+    },
+    {
+      "check_id": "bootstrap_point_estimates_match_analysis",
+      "status": "pass",
+      "observed": [],
+      "expected": [],
+      "detail": ""
+    },
+    {
+      "check_id": "adequate_bootstrap_rows_have_at_least_1800_valid_replicates",
+      "status": "pass",
+      "observed": {
+        "adequate_rows": 362,
+        "minimum_valid_replicates": 1867
+      },
+      "expected": {
+        "minimum_valid_replicates": 1800
+      },
+      "detail": ""
+    },
+    {
+      "check_id": "bootstrap_rows_explicitly_marked_unstable",
+      "status": "warning",
+      "observed": [
+        {
+          "subset_id": "reference_extreme_OOD",
+          "bootstrap_scheme": "murcko_cluster",
+          "layer": "selective_accepted",
+          "metric": "mcc",
+          "valid_replicates": 1482
+        },
+        {
+          "subset_id": "reference_extreme_OOD",
+          "bootstrap_scheme": "butina_ecfp4_cluster",
+          "layer": "selective_accepted",
+          "metric": "mcc",
+          "valid_replicates": 1533
+        }
+      ],
+      "expected": null,
+      "detail": "These rows are not treated as adequate inference. In this run they arise from the five accepted extreme-OOD rows and must not support a selective-reliability claim."
+    },
+    {
+      "check_id": "adequate_contrast_rows_have_at_least_1800_valid_replicates",
+      "status": "pass",
+      "observed": {
+        "adequate_rows": 54,
+        "minimum_valid_replicates": 1999
+      },
+      "expected": {
+        "minimum_valid_replicates": 1800
+      },
+      "detail": ""
+    },
+    {
+      "check_id": "replicate_counts_within_frozen_range",
+      "status": "pass",
+      "observed": 0,
+      "expected": 0,
+      "detail": ""
+    },
+    {
+      "check_id": "summary_output_hashes",
+      "status": "pass",
+      "observed": [],
+      "expected": [],
+      "detail": ""
+    },
+    {
+      "check_id": "summary_structural_counts",
+      "status": "pass",
+      "observed": {
+        "identity_clean_n": 2624,
+        "scaffold_clean_n": 2562,
+        "reference_strata": {
+          "ID_like": 7,
+          "OOD": 1249,
+          "extreme_OOD": 195,
+          "transition": 1173
+        },
+        "strict_lohi_n": 2581,
+        "dual_ood_n": 609,
+        "kmeans_ood20_n": 544,
+        "joint_model_s1_median": 0.25,
+        "joint_model_s5_median": 0.22725581904770698,
+        "joint_model_d5_median": 0.772744180952293
+      },
+      "expected": {
+        "identity_clean": 2624,
+        "scaffold_clean": 2562,
+        "reference_adaptive_stratum": {
+          "ID_like": 7,
+          "transition": 1173,
+          "OOD": 1249,
+          "extreme_OOD": 195
+        },
+        "strict_lohi_ood": 2581,
+        "dual_ood": 609,
+        "kmeans_ood20": 544,
+        "kmeans_ood20_clusters": [
+          3,
+          15
+        ],
+        "external_d5_quintile": {
+          "Q1_nearest": 525,
+          "Q2": 525,
+          "Q3": 524,
+          "Q4": 525,
+          "Q5_farthest": 525
+        }
+      },
+      "detail": ""
+    },
+    {
+      "check_id": "summary_metric_anchors",
+      "status": "pass",
+      "observed": [],
+      "expected": [],
+      "detail": ""
+    },
+    {
+      "check_id": "summary_gates_independently_rederived",
+      "status": "pass",
+      "observed": {
+        "gate1_distance_marks_failure": "not_evaluable_ID_like_count_below_frozen_minimum",
+        "gate2_rejector_responds_to_shift": "not_evaluable_ID_like_count_below_frozen_minimum",
+        "gate3_OOD_accepted_reliability": "pass",
+        "gate3_candidates": [
+          {
+            "subset_id": "reference_extreme_OOD",
+            "n": 195,
+            "coverage": 0.02564102564102564,
+            "adequate_counts": false,
+            "pass": false
+          },
+          {
+            "subset_id": "strict_LoHi",
+            "n": 2581,
+            "coverage": 0.16853932584269662,
+            "adequate_counts": true,
+            "pass": true
+          },
+          {
+            "subset_id": "dual_OOD",
+            "n": 609,
+            "coverage": 0.08210180623973727,
+            "adequate_counts": true,
+            "pass": true
+          },
+          {
+            "subset_id": "kmeans_OOD20",
+            "n": 544,
+            "coverage": 0.08272058823529412,
+            "adequate_counts": true,
+            "pass": true
+          },
+          {
+            "subset_id": "external_Q5_farthest",
+            "n": 525,
+            "coverage": 0.06857142857142857,
+            "adequate_counts": false,
+            "pass": false
+          }
+        ],
+        "overall": "partial_support_OOD_accepted_reliability_only_main_distance_gradient_not_evaluable"
+      },
+      "expected": {
+        "gate1_distance_marks_failure": "not_evaluable_ID_like_count_below_frozen_minimum",
+        "gate2_rejector_responds_to_shift": "not_evaluable_ID_like_count_below_frozen_minimum",
+        "gate3_OOD_accepted_reliability": "pass",
+        "gate3_candidates": [
+          {
+            "subset_id": "reference_extreme_OOD",
+            "n": 195,
+            "coverage": 0.02564102564102564,
+            "adequate_counts": false,
+            "pass": false
+          },
+          {
+            "subset_id": "strict_LoHi",
+            "n": 2581,
+            "coverage": 0.16853932584269662,
+            "adequate_counts": true,
+            "pass": true
+          },
+          {
+            "subset_id": "dual_OOD",
+            "n": 609,
+            "coverage": 0.08210180623973727,
+            "adequate_counts": true,
+            "pass": true
+          },
+          {
+            "subset_id": "kmeans_OOD20",
+            "n": 544,
+            "coverage": 0.08272058823529412,
+            "adequate_counts": true,
+            "pass": true
+          },
+          {
+            "subset_id": "external_Q5_farthest",
+            "n": 525,
+            "coverage": 0.06857142857142857,
+            "adequate_counts": false,
+            "pass": false
+          }
+        ],
+        "overall": "partial_support_OOD_accepted_reliability_only_main_distance_gradient_not_evaluable"
+      },
+      "detail": ""
+    }
+  ],
+  "validated_file_hashes": {
+    "数据/processed/abcb1_ood_structural_shift_protocol_v1.json": "a20cede774bf47597ab73bdd08a0ec7d305b6a22698b2d647443023227db7547",
+    "数据/processed/abcb1_ood_structure_assignment_lock_v1.json": "b15878b3c38b576daf101d2a0257e45f98a4800a1adff023980590e513033238",
+    "数据/processed/abcb1_ood_structural_assignments_v1.csv": "3f6096aa89ecdf2db7e37a80204d5c630aa1cad695ecfc76adc1b649ea1ba0fe",
+    "数据/processed/abcb1_ood_analysis_rows_v1.csv": "ee6c7ea05526099b795253f9574a24012b624428b98f84387e47acb9c955d404",
+    "数据/processed/abcb1_ood_stratum_metrics_v1.csv": "5e2ce1cb2f94872952af4e28fa076ec7e7cd424ec3a3a2dd8b7a5f9d29142624",
+    "数据/processed/abcb1_ood_bootstrap_summary_v1.csv": "097f1404523da928ea434556ee3b1ed8d850800599e7bfae382bb6f6e2839380",
+    "数据/processed/abcb1_ood_contrasts_v1.csv": "26b714f4e4ae866e549dfdbc859a2e73d11a8124f7354923dd9a6013544ccb1e",
+    "数据/processed/abcb1_ood_abstention_reasons_v1.csv": "d213d41f84f8c03099703046b09b286d9fd899e672daff264b22e1b8862cbf5b",
+    "数据/processed/abcb1_ood_structural_shift_summary_v1.json": "ca0c4ad36a034711cb077d5382c409ae370c9b4b850c038d98e3d3a0af496267"
+  },
+  "interpretation_boundary": "Validation confirms computational integrity and frozen gate logic only; it does not convert the retrospective post-outcome audit into prospective OOD or ADC validation."
+}

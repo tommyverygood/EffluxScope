@@ -1,0 +1,340 @@
+{
+  "analysis_version": "ABCB1_EXTERNAL_CALIBRATION_ERROR_V2",
+  "analysis_date": "2026-08-05",
+  "status": "completed_frozen_model_posthoc_deep_calibration_and_error_diagnostic",
+  "protocol_path": "数据/processed/abcb1_external_calibration_error_protocol_v2.json",
+  "protocol_sha256": "5067f42eb614c3b20c2913174a7aa65949038b28daa678075fe18c5d1fb108e7",
+  "identity_clean_raw_calibration": {
+    "n": 2624,
+    "observed_prevalence": 0.43635671,
+    "mean_predicted_probability": 0.55709681,
+    "brier_score": 0.25296644,
+    "log_loss": 0.70480952,
+    "ece_equal_width_10": 0.12074011,
+    "ece_ci95": [
+      0.10425317,
+      0.14282627
+    ],
+    "calibration_intercept": -0.42212015,
+    "calibration_intercept_ci95": [
+      -0.52135527,
+      -0.33061469
+    ],
+    "calibration_slope": 0.58381812,
+    "calibration_slope_ci95": [
+      0.47579358,
+      0.69320624
+    ],
+    "roc_auc": 0.62468445,
+    "average_precision": 0.54941436
+  },
+  "within_source_crossfitted_recalibration": {
+    "platt": {
+      "brier_score": 0.23478098,
+      "log_loss": 0.66168693,
+      "ece_equal_width_10": 0.01180836,
+      "calibration_intercept": -0.00444898,
+      "calibration_slope": 0.9806919,
+      "brier_favorable_improvement_ci95": [
+        0.01288217,
+        0.02389918
+      ],
+      "ece_favorable_improvement_ci95": [
+        0.07198102,
+        0.12111786
+      ]
+    },
+    "isotonic": {
+      "brier_score": 0.23525361,
+      "log_loss": 0.6714668,
+      "ece_equal_width_10": 0.01438051,
+      "calibration_intercept": -0.07910422,
+      "calibration_slope": 0.67360752
+    },
+    "warning": "Same-source group-cross-fitted diagnostic only; not an independent calibrated model."
+  },
+  "identity_clean_error_counts": {
+    "true_positive": 825,
+    "true_negative": 655,
+    "false_positive": 824,
+    "false_negative": 320
+  },
+  "highest_error_strata_n_ge_50": [
+    {
+      "stratum_type": "probability_band",
+      "stratum_level": "[0.50,0.70)",
+      "n": 1050,
+      "error_rate": 0.53619048,
+      "false_positive_n": 563,
+      "false_negative_n": 0
+    },
+    {
+      "stratum_type": "applicability_status",
+      "stratum_level": "outside_both_reference_panels",
+      "n": 303,
+      "error_rate": 0.51815182,
+      "false_positive_n": 126,
+      "false_negative_n": 31
+    },
+    {
+      "stratum_type": "support_combination",
+      "stratum_level": "neither_supported",
+      "n": 303,
+      "error_rate": 0.51815182,
+      "false_positive_n": 126,
+      "false_negative_n": 31
+    },
+    {
+      "stratum_type": "applicability_status",
+      "stratum_level": "supported_by_primary_reference_panel_only",
+      "n": 119,
+      "error_rate": 0.48739496,
+      "false_positive_n": 43,
+      "false_negative_n": 15
+    },
+    {
+      "stratum_type": "support_combination",
+      "stratum_level": "primary_only",
+      "n": 119,
+      "error_rate": 0.48739496,
+      "false_positive_n": 43,
+      "false_negative_n": 15
+    },
+    {
+      "stratum_type": "risk_call",
+      "stratum_level": "abstain",
+      "n": 2171,
+      "error_rate": 0.47489636,
+      "false_positive_n": 740,
+      "false_negative_n": 291
+    },
+    {
+      "stratum_type": "selection_layer",
+      "stratum_level": "v0_4_rejected",
+      "n": 2171,
+      "error_rate": 0.47489636,
+      "false_positive_n": 740,
+      "false_negative_n": 291
+    },
+    {
+      "stratum_type": "uncertainty_status",
+      "stratum_level": "uncertain_or_gray_zone",
+      "n": 1715,
+      "error_rate": 0.47230321,
+      "false_positive_n": 565,
+      "false_negative_n": 245
+    },
+    {
+      "stratum_type": "probability_band",
+      "stratum_level": "[0.70,0.85)",
+      "n": 502,
+      "error_rate": 0.45219124,
+      "false_positive_n": 227,
+      "false_negative_n": 0
+    },
+    {
+      "stratum_type": "applicability_status",
+      "stratum_level": "supported_by_direct_reference_panel_only",
+      "n": 583,
+      "error_rate": 0.42881647,
+      "false_positive_n": 188,
+      "false_negative_n": 62
+    }
+  ],
+  "largest_fdr_significant_feature_differences": [
+    {
+      "comparison": "false_negative_vs_true_negative",
+      "feature": "heavy_atoms",
+      "group_a_median": 25.0,
+      "group_b_median": 20.0,
+      "cliffs_delta": 0.49254771,
+      "fdr_bh_within_comparison": 0.0
+    },
+    {
+      "comparison": "false_positive_vs_true_positive",
+      "feature": "direct_probability",
+      "group_a_median": 0.47621629,
+      "group_b_median": 0.52261228,
+      "cliffs_delta": -0.48454251,
+      "fdr_bh_within_comparison": 0.0
+    },
+    {
+      "comparison": "false_negative_vs_true_negative",
+      "feature": "molecular_weight",
+      "group_a_median": 339.4335,
+      "group_b_median": 283.331,
+      "cliffs_delta": 0.4831584,
+      "fdr_bh_within_comparison": 0.0
+    },
+    {
+      "comparison": "false_positive_vs_true_positive",
+      "feature": "heavy_atoms",
+      "group_a_median": 21.0,
+      "group_b_median": 26.0,
+      "cliffs_delta": -0.47187261,
+      "fdr_bh_within_comparison": 0.0
+    },
+    {
+      "comparison": "false_positive_vs_true_positive",
+      "feature": "molecular_weight",
+      "group_a_median": 300.3965,
+      "group_b_median": 353.813,
+      "cliffs_delta": -0.46327743,
+      "fdr_bh_within_comparison": 0.0
+    },
+    {
+      "comparison": "false_negative_vs_true_negative",
+      "feature": "direct_probability",
+      "group_a_median": 0.50236274,
+      "group_b_median": 0.46458427,
+      "cliffs_delta": 0.45249046,
+      "fdr_bh_within_comparison": 0.0
+    },
+    {
+      "comparison": "false_positive_vs_true_positive",
+      "feature": "tpsa",
+      "group_a_median": 55.085,
+      "group_b_median": 69.48,
+      "cliffs_delta": -0.444594,
+      "fdr_bh_within_comparison": 0.0
+    },
+    {
+      "comparison": "false_negative_vs_true_negative",
+      "feature": "tpsa",
+      "group_a_median": 66.71,
+      "group_b_median": 52.32,
+      "cliffs_delta": 0.44121183,
+      "fdr_bh_within_comparison": 0.0
+    },
+    {
+      "comparison": "false_positive_vs_true_positive",
+      "feature": "hbond_donors",
+      "group_a_median": 1.0,
+      "group_b_median": 1.0,
+      "cliffs_delta": -0.33985437,
+      "fdr_bh_within_comparison": 0.0
+    },
+    {
+      "comparison": "false_negative_vs_true_negative",
+      "feature": "bootstrap_p90",
+      "group_a_median": 0.55640376,
+      "group_b_median": 0.50113781,
+      "cliffs_delta": 0.29050573,
+      "fdr_bh_within_comparison": 0.0
+    },
+    {
+      "comparison": "false_positive_vs_true_positive",
+      "feature": "rotatable_bonds",
+      "group_a_median": 4.0,
+      "group_b_median": 4.0,
+      "cliffs_delta": -0.28176375,
+      "fdr_bh_within_comparison": 0.0
+    },
+    {
+      "comparison": "false_negative_vs_true_negative",
+      "feature": "rotatable_bonds",
+      "group_a_median": 4.0,
+      "group_b_median": 4.0,
+      "cliffs_delta": 0.27568702,
+      "fdr_bh_within_comparison": 0.0
+    }
+  ],
+  "top_shrunken_error_scaffold_hotspots": [
+    {
+      "bootstrap_cluster": "O=C(CN1CCCN(c2nccs2)CC1)Nc1ccccc1",
+      "n": 4,
+      "raw_error_rate": 0.75,
+      "shrunken_error_rate": 0.52569686,
+      "false_positive_n": 3,
+      "false_negative_n": 0
+    },
+    {
+      "bootstrap_cluster": "O=C(CN1CCCN(c2ccccn2)CC1)Nc1ccccc1",
+      "n": 10,
+      "raw_error_rate": 0.6,
+      "shrunken_error_rate": 0.5179878,
+      "false_positive_n": 6,
+      "false_negative_n": 0
+    },
+    {
+      "bootstrap_cluster": "c1cc(C2CCNCC2)ncn1",
+      "n": 5,
+      "raw_error_rate": 0.6,
+      "shrunken_error_rate": 0.49065041,
+      "false_positive_n": 2,
+      "false_negative_n": 1
+    },
+    {
+      "bootstrap_cluster": "O=C(CN1CCCC(c2nc3ccccc3o2)C1)Nc1ccccc1",
+      "n": 5,
+      "raw_error_rate": 0.6,
+      "shrunken_error_rate": 0.49065041,
+      "false_positive_n": 3,
+      "false_negative_n": 0
+    },
+    {
+      "bootstrap_cluster": "c1ccc2[nH]cnc2c1",
+      "n": 6,
+      "raw_error_rate": 0.5,
+      "shrunken_error_rate": 0.45998476,
+      "false_positive_n": 1,
+      "false_negative_n": 2
+    },
+    {
+      "bootstrap_cluster": "c1ccc(-c2ccccn2)cc1",
+      "n": 6,
+      "raw_error_rate": 0.5,
+      "shrunken_error_rate": 0.45998476,
+      "false_positive_n": 2,
+      "false_negative_n": 1
+    },
+    {
+      "bootstrap_cluster": "O=c1ccccn1Cc1ccccc1",
+      "n": 4,
+      "raw_error_rate": 0.5,
+      "shrunken_error_rate": 0.45426829,
+      "false_positive_n": 2,
+      "false_negative_n": 0
+    },
+    {
+      "bootstrap_cluster": "c1cn[nH]c1",
+      "n": 9,
+      "raw_error_rate": 0.44444444,
+      "shrunken_error_rate": 0.43998716,
+      "false_positive_n": 2,
+      "false_negative_n": 2
+    },
+    {
+      "bootstrap_cluster": "C1CCNCC1",
+      "n": 6,
+      "raw_error_rate": 0.33333333,
+      "shrunken_error_rate": 0.39748476,
+      "false_positive_n": 2,
+      "false_negative_n": 0
+    },
+    {
+      "bootstrap_cluster": "O=C(NCc1ccccc1)c1ccc(-n2ccnc2)nc1",
+      "n": 4,
+      "raw_error_rate": 0.25,
+      "shrunken_error_rate": 0.38283972,
+      "false_positive_n": 1,
+      "false_negative_n": 0
+    }
+  ],
+  "interpretation": {
+    "allowed": "External calibration uncertainty, within-source assay-specific recalibration feasibility, and descriptive error localization.",
+    "not_allowed": "Calling cross-fitted Biogen recalibration an independent external validation, replacing the frozen model, selecting a new threshold, or claiming an absolute universal ABCB1 substrate probability."
+  },
+  "output_hashes": {
+    "数据/processed/abcb1_external_crossfitted_calibration_predictions_v2.csv": "fe07a8e952622443f40206ea2a9be4f2dad4a3026873bb20ab1a3c53a6f4aaf7",
+    "数据/processed/abcb1_external_calibration_metrics_v2.csv": "772fba793b4642443dc5cb991a3c51fde4fa520710bd95068037ac4ee818b783",
+    "数据/processed/abcb1_external_calibration_bootstrap_v2.csv": "99d3187541e6f11fa55d5ae59eabef5d0713957fc8ce658f8f82c81cf5ad3922",
+    "数据/processed/abcb1_external_calibration_pairwise_bootstrap_v2.csv": "c23f542b8e66696b00ce73f156b1e558c6b7e04a640abea6301a27d1d039d379",
+    "数据/processed/abcb1_external_calibration_bins_v2.csv": "6c103f1175cffdba9736b67767c82b05a96728c4b61bff23ecac8f3219db66c7",
+    "数据/processed/abcb1_external_brier_decomposition_v2.csv": "c3678ff6ae188dd68b859768540f9a3450a212acc256fd9ea684443b1488c251",
+    "数据/processed/abcb1_external_error_counts_v2.csv": "60932ca5390805164dda595275ce5674fce0096fdf7468e49d7fdb3452f1b08e",
+    "数据/processed/abcb1_external_error_feature_comparisons_v2.csv": "ecf89e9e437bae2e1e9e76f101daef0f49f0bcd0f64c31695826a045ba814f7d",
+    "数据/processed/abcb1_external_error_strata_v2.csv": "73b4cd4f7dfbd6610b1297bfd06602f352a204d204cd066e5444de0ff17c4a2b",
+    "数据/processed/abcb1_external_error_scaffold_hotspots_v2.csv": "0ecc01207b610f836213b53fb5b49678c8995229b47f6560eeac91de86e6c102"
+  }
+}

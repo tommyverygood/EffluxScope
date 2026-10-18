@@ -1,0 +1,5 @@
+sensitivity_id,role,pubchem_cid,exact_inchikey,exact_isomeric_smiles,formula,molecular_weight
+SMe_DM4_correct_EE_thioether,accepted_main_case,89493732,AYWIIXDQRUFQGH-SIDGEOBYSA-N,C[C@@H]1[C@@H]2C[C@]([C@@H](/C=C/C=C(/CC3=CC(=C(C(=C3)OC)Cl)N(C(=O)C[C@@H]([C@]4([C@H]1O4)C)OC(=O)[C@H](C)N(C)C(=O)CCC(C)(C)SC)C)\C)OC)(NC(=O)O2)O,C39H56ClN3O10S,794.4
+SMe_DM4_legacy_EE_methyl_disulfide,wrong_identity_diagnostic_only,11542407,LTLNAIFGVAUBEJ-SIDGEOBYSA-N,C[C@@H]1[C@@H]2C[C@]([C@@H](/C=C/C=C(/CC3=CC(=C(C(=C3)OC)Cl)N(C(=O)C[C@@H]([C@]4([C@H]1O4)C)OC(=O)[C@H](C)N(C)C(=O)CCC(C)(C)SSC)C)\C)OC)(NC(=O)O2)O,C39H56ClN3O10S2,826.5
+SMe_DM4_CAS_first_ZZ_thioether,wrong_stereo_diagnostic_only,168445453,AYWIIXDQRUFQGH-CJUSJEAQSA-N,C[C@@H]1[C@@H]2C[C@]([C@@H](/C=C\C=C(/CC3=CC(=C(C(=C3)OC)Cl)N(C(=O)C[C@@H]([C@]4([C@H]1O4)C)OC(=O)[C@H](C)N(C)C(=O)CCC(C)(C)SC)C)\C)OC)(NC(=O)O2)O,C39H56ClN3O10S,794.4
+DM4_parent_EE_thiol,independent_parent_control,11686439,JFCFGYGEYRIEBE-YVLHJLIDSA-N,C[C@@H]1[C@@H]2C[C@]([C@@H](/C=C/C=C(/CC3=CC(=C(C(=C3)OC)Cl)N(C(=O)C[C@@H]([C@]4([C@H]1O4)C)OC(=O)[C@H](C)N(C)C(=O)CCC(C)(C)S)C)\C)OC)(NC(=O)O2)O,C38H54ClN3O10S,780.4

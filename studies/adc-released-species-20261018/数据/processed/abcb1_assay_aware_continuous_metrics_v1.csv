@@ -1,0 +1,10 @@
+﻿analysis_set,model,metric,point_estimate,n_entities,claim_boundary
+point_qc_eligible_continuous,physchem_ridge,Spearman_rho,0.6915828303152246,71,repeated scaffold-grouped internal development; single source
+point_qc_eligible_continuous,physchem_ridge,MAE_log2_net_ER,1.4219262391317293,71,repeated scaffold-grouped internal development; single source
+point_qc_eligible_continuous,physchem_ridge,RMSE_log2_net_ER,1.721103013918316,71,repeated scaffold-grouped internal development; single source
+point_qc_eligible_continuous,morgan_ridge,Spearman_rho,0.5474513749161636,71,repeated scaffold-grouped internal development; single source
+point_qc_eligible_continuous,morgan_ridge,MAE_log2_net_ER,1.5094532755834962,71,repeated scaffold-grouped internal development; single source
+point_qc_eligible_continuous,morgan_ridge,RMSE_log2_net_ER,1.9150517916170773,71,repeated scaffold-grouped internal development; single source
+point_qc_eligible_continuous,morgan_plus_physchem_ridge,Spearman_rho,0.6416834339369549,71,repeated scaffold-grouped internal development; single source
+point_qc_eligible_continuous,morgan_plus_physchem_ridge,MAE_log2_net_ER,1.4043423155800034,71,repeated scaffold-grouped internal development; single source
+point_qc_eligible_continuous,morgan_plus_physchem_ridge,RMSE_log2_net_ER,1.7721997329946777,71,repeated scaffold-grouped internal development; single source

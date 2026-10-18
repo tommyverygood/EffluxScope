@@ -1,0 +1,17 @@
+{
+  "input_sha256": {
+    "/Users/hongyanliu/Desktop/论文/adc药物项目/预测器2/outputs/20260810_soskuti_identity_double_review_v1/reanalysis/external/analysis/abcb1_quantity_biogen_analysis_rows_identity_audited_v2.csv": "9e650cbc3b72d6757994eb9c02b0f130729f5a327a1decb17df3f8c8e36f07e9",
+    "/Users/hongyanliu/Desktop/论文/adc药物项目/预测器2/数据/processed/abcb1_selective_v0_4_asap2025_posthoc_predictions_v1.csv": "ad881d5c403eccb16a5f1ec9089d400ff7f24574c64a20c134ca6f723fa1afd0",
+    "/Users/hongyanliu/Desktop/论文/adc药物项目/预测器2/outputs/20261012_adc_completion/scoring/species_predictions.csv": "9c62f876b0e0549220d2bb5ddcdcbdda1c6b5f4eb56c3922eba1d33eb8ed5c4d",
+    "/Users/hongyanliu/Desktop/论文/adc药物项目/预测器2/outputs/20261012_adc_completion/scored_family_inventory.csv": "9fed826fb6b3a2909f77664cacae427d967c2af2a9f19190135d77157ba92f52"
+  },
+  "inputs_unchanged": true,
+  "score_metrics_computed": false,
+  "rdkit_version": "2026.03.4",
+  "descriptor_policy": "MW/TPSA use frozen table; [CX3](=[OX1])[NX3] unique matches computed on frozen standardized model input; alternative fr_amide and source counts separate diagnostic",
+  "outputs": [
+    "independent_region_feasibility.csv",
+    "ADC14_fixed_descriptor_region_mapping.csv"
+  ],
+  "analysis_scope": "Post hoc chemical stress regions on previously observed sources; not ADC validation"
+}

@@ -1,0 +1,42 @@
+{
+  "status": "PASS_independent_computation_and_manuscript_review_complete_with_two_recommended_text_clarifications",
+  "date": "2026-10-12",
+  "DMH_independent_pipeline_checks": 25,
+  "DMH_independent_pipeline_status": "PASS_independent_DMH_pipeline_and_ledger_audit",
+  "historical_ledger_comparisons": 52,
+  "historical_unique_structures": 13,
+  "prior_finite_source_validation_numeric_checks": 12,
+  "root_results_modified": false,
+  "old_scientific_inputs_modified": false,
+  "manuscript_modified_by_review_agent": false,
+  "new_models_fitted": 0,
+  "new_wet_experiments": 0,
+  "independent_pipeline_helpers_imported_from_root_or_project": false,
+  "root_runner_reviewed": "outputs/20261012_adc_completion/run_frozen_expansion.py",
+  "manuscript_review_scopes": [
+    "sections/03b_adc_public_completion.tex",
+    "sections/02_methods.tex added public transport and chronology paragraphs",
+    "sections/04_conclusions.tex added paragraph"
+  ],
+  "recommended_clarifications": [
+    "State DMH source and standardized connectivity blocks differ, not only full stereo key.",
+    "Explicitly date new public-source/DMH follow-up to12 October2026 rather than implying all ADC follow-ups occurred9 October."
+  ],
+  "family_counts": {
+    "auristatin": 4,
+    "maytansinoid": 5,
+    "TOP1": 3,
+    "PBD": 1,
+    "calicheamicin_DMH": 1
+  },
+  "chemically_changed_pairs_n": 5,
+  "chemically_changed_pair_families_n": 2,
+  "files_sha256": {
+    "verify_expansion_pipeline.py": "762dfd5a327675ad31224ef3ca35f14c56b46fa189f1687197b70e5915581270",
+    "independent_expansion_verification.json": "6e320e73b836f6bb567d751b9da4b0bc537b2275223a99bdb4e59fa3f43e32c7",
+    "新增主稿段落独立审阅.md": "751b236d3e643ee5ce5bdfdd7fe9e0f9ace8872ecb3b96255766e85f9628d4d4",
+    "公开数据验证协议审阅.md": "ff2ea93e5d0536413fbf1483b79a1db387c03d6d6d9bef8c0e26121757f76bf1",
+    "本轮ADC有限验证结果.md": "faf02f4ef0af230970633ea2528925f64b397f5cee62788d6caf3438422cc5b7",
+    "independent_numeric_verification.json": "96ca6623713a607058cd8cfdceaa3fadb70031ee51f4b4c1834f3ba172a5e7a6"
+  }
+}

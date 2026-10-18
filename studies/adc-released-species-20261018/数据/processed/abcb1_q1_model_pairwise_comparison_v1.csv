@@ -1,0 +1,6 @@
+﻿comparison,metric,frozen_value,one_nn_value,paired_difference,ci95_lower,ci95_upper,n,bootstrap_iterations,direction_note,claim_boundary
+frozen_ABCB1_v0_1_minus_one_nearest_neighbor,mcc,0.09759001,0.38737582,-0.28978581,-0.76114597,0.20121715,24,2000,positive favors frozen,paired historical external diagnostic; no model selection or tuning on these results
+frozen_ABCB1_v0_1_minus_one_nearest_neighbor,balanced_accuracy,0.54285714,0.67857143,-0.13571429,-0.35017857,0.08571429,24,2000,positive favors frozen,paired historical external diagnostic; no model selection or tuning on these results
+frozen_ABCB1_v0_1_minus_one_nearest_neighbor,roc_auc,0.65714286,0.67857143,-0.02142857,-0.29285714,0.22142857,24,2000,positive favors frozen,paired historical external diagnostic; no model selection or tuning on these results
+frozen_ABCB1_v0_1_minus_one_nearest_neighbor,brier,0.21812259,0.29166667,-0.07354407,-0.23759426,0.08708765,24,2000,negative favors frozen because lower Brier is better,paired historical external diagnostic; no model selection or tuning on these results
+frozen_ABCB1_v0_1_minus_one_nearest_neighbor,mcnemar_exact_discordant_accuracy,2,5,-3,,,24,0,two-sided_exact_p=0.45312500; counts are frozen-only-correct versus 1NN-only-correct,paired historical external diagnostic; no model selection or tuning on these results

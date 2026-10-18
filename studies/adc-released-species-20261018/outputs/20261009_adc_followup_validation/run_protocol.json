@@ -1,0 +1,29 @@
+{
+  "created_at": "2026-10-09T07:49:36.398073+00:00",
+  "type": "followup_retrospective_computational_and_primary_evidence_validation",
+  "hypotheses": [
+    "source-to-model standardization affects representation and may change frozen scores",
+    "released-species external direction may expose a model failure, especially Lys-MCC-DM1",
+    "Biogen auxiliary model advantage may not hold for another assay source",
+    "same-system parent-release experiments require exact source material and locked QC"
+  ],
+  "modules": {
+    "normalization": "Direct frozen estimator feature comparisons across representation variants; not a new deployed model",
+    "transport_evidence": "Independent primary-source verification by species and assay context; no pooled cross-source delta ER",
+    "asap_secondary": "Paired scaffold-bootstrap v0.1-v0.3 rank comparison with unique-compound primary and historical row-level sensitivity",
+    "lab_handoff": "Prospective execution package only; randomized schedule and synthetic-only script verification"
+  },
+  "old_outcomes_already_known": true,
+  "preregistered_or_blind": false,
+  "model_refitting": false,
+  "wet_experiments_executed": false,
+  "synthetic_data": "Permitted only as conspicuously named analysis fixtures; never study observations",
+  "protected_directories": [
+    "模型",
+    "数据/processed",
+    "数据/scripts",
+    "论文主稿/旧稿_外排预测与选择性拒判/latex_jcim",
+    "outputs/20261009_adc_pair_experiments",
+    "outputs/20261009_adc_central_pairing"
+  ]
+}

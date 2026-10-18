@@ -1,0 +1,251 @@
+{
+  "run_date": "2026-08-03",
+  "protocol_lock_path": "${RELATED_PROJECT_ROOT}/数据/processed/abcb1_regulatory_v4_blind_scoring_protocol_lock_v1.json",
+  "protocol_lock_sha256": "03501815f256b54840e0561b79ac67d1ee54318133465d333325d5cd077db537",
+  "one_time_run_status": "completed_without_refit_recalibration_or_threshold_change",
+  "frozen_model_sha256": "fbc92dfa99583386ba124141fed5e77c6ecf8a59850301a6533db3883b298ac3",
+  "strict_pool_v4_sha256": "2286c888213ee893736b7784e8af9c337137250a461b90a96ed06b3e175333c6",
+  "n": 33,
+  "class_counts": {
+    "1": 15,
+    "0": 18
+  },
+  "upstream_experiment_clusters": 20,
+  "multi_entity_clusters": {
+    "PMDA_BICTEGRAVIR_FDC": 3,
+    "PMDA_SEPETAPROST": 2,
+    "PMDA_OSIMERTINIB": 3,
+    "YANG2014_WT_MDCK_MDR1_MDCK_TABLE1": 4,
+    "SHEN2020_PARENT_MDCK_MDR1_MDCK_TABLE3": 5,
+    "FDA_NDA205718_MDCKII_MDR1_METABOLITES_M1_M3": 2
+  },
+  "applicability_counts": {
+    "low_empirical_support": 12,
+    "within_empirical_support": 5,
+    "outside_empirical_support": 16
+  },
+  "nonabstain_n": 17,
+  "nonabstain_coverage": 0.51515152,
+  "frozen_primary_metrics": {
+    "n": 33,
+    "n_negative": 18,
+    "n_positive": 15,
+    "threshold": 0.5,
+    "tn": 7,
+    "fp": 11,
+    "fn": 1,
+    "tp": 14,
+    "mcc": 0.37438839,
+    "balanced_accuracy": 0.66111111,
+    "sensitivity": 0.93333333,
+    "specificity": 0.38888889,
+    "precision": 0.56,
+    "negative_predictive_value": 0.875,
+    "f1": 0.7,
+    "roc_auc": 0.75555556,
+    "average_precision": 0.66050639,
+    "brier": 0.23605471,
+    "log_loss": 0.69995904,
+    "ece_10bin": 0.17881707
+  },
+  "frozen_primary_uncertainty": {
+    "mcc": {
+      "value": 0.37438839,
+      "entity_ci95": [
+        0.09036961,
+        0.60192927
+      ],
+      "cluster_ci95": [
+        -0.01892553,
+        0.60172452
+      ]
+    },
+    "balanced_accuracy": {
+      "value": 0.66111111,
+      "entity_ci95": [
+        0.53888889,
+        0.77777778
+      ],
+      "cluster_ci95": [
+        0.49246084,
+        0.77272727
+      ]
+    },
+    "sensitivity": {
+      "value": 0.93333333,
+      "entity_ci95": [
+        0.8,
+        1.0
+      ],
+      "cluster_ci95": [
+        0.75,
+        1.0
+      ]
+    },
+    "specificity": {
+      "value": 0.38888889,
+      "entity_ci95": [
+        0.16666667,
+        0.61111111
+      ],
+      "cluster_ci95": [
+        0.11111111,
+        0.57894737
+      ]
+    },
+    "precision": {
+      "value": 0.56,
+      "entity_ci95": [
+        0.48,
+        0.66666667
+      ],
+      "cluster_ci95": [
+        0.32142857,
+        0.8
+      ]
+    },
+    "negative_predictive_value": {
+      "value": 0.875,
+      "entity_ci95": [
+        0.625,
+        1.0
+      ],
+      "cluster_ci95": [
+        0.375,
+        1.0
+      ]
+    },
+    "f1": {
+      "value": 0.7,
+      "entity_ci95": [
+        0.60465116,
+        0.78947368
+      ],
+      "cluster_ci95": [
+        0.46666667,
+        0.86956522
+      ]
+    },
+    "roc_auc": {
+      "value": 0.75555556,
+      "entity_ci95": [
+        0.58148148,
+        0.90740741
+      ],
+      "cluster_ci95": [
+        0.46027569,
+        0.91666667
+      ]
+    },
+    "average_precision": {
+      "value": 0.66050639,
+      "entity_ci95": [
+        0.51846433,
+        0.89910897
+      ],
+      "cluster_ci95": [
+        0.40273215,
+        0.92437448
+      ]
+    },
+    "brier": {
+      "value": 0.23605471,
+      "entity_ci95": [
+        0.180123,
+        0.2982206
+      ],
+      "cluster_ci95": [
+        0.15911044,
+        0.3290741
+      ]
+    },
+    "log_loss": {
+      "value": 0.69995904,
+      "entity_ci95": [
+        0.54330439,
+        0.89948585
+      ],
+      "cluster_ci95": [
+        0.49765631,
+        0.97621912
+      ]
+    },
+    "ece_10bin": {
+      "value": 0.17881707,
+      "entity_ci95": [
+        0.16160235,
+        0.31056124
+      ],
+      "cluster_ci95": [
+        0.11918004,
+        0.36365683
+      ]
+    }
+  },
+  "error_counts": {
+    "correct": 21,
+    "false_positive_substrate_call": 11,
+    "false_negative_non_substrate_call": 1
+  },
+  "claim_gates": [
+    {
+      "gate": "entity_MCC_lower_95CI_gt_0",
+      "value": 0.09036961,
+      "rule": ">0",
+      "status": "pass"
+    },
+    {
+      "gate": "entity_BAcc_lower_95CI_gt_0_5",
+      "value": 0.53888889,
+      "rule": ">0.5",
+      "status": "pass"
+    },
+    {
+      "gate": "cluster_MCC_lower_95CI_gt_0",
+      "value": -0.01892553,
+      "rule": ">0",
+      "status": "fail"
+    },
+    {
+      "gate": "cluster_BAcc_lower_95CI_gt_0_5",
+      "value": 0.49246084,
+      "rule": ">0.5",
+      "status": "fail"
+    },
+    {
+      "gate": "entity_ROC_AUC_lower_95CI_gt_0_5",
+      "value": 0.58148148,
+      "rule": ">0.5",
+      "status": "pass"
+    },
+    {
+      "gate": "leave_one_cluster_out_min_BAcc_gt_0_5",
+      "value": 0.62051282,
+      "rule": ">0.5",
+      "status": "pass"
+    },
+    {
+      "gate": "nonabstain_coverage_at_least_0_5",
+      "value": 0.51515152,
+      "rule": ">=0.5",
+      "status": "pass"
+    },
+    {
+      "gate": "sensitivity_and_specificity_at_least_0_5",
+      "value": "sensitivity=0.93333333;specificity=0.38888889",
+      "rule": "both>=0.5",
+      "status": "fail"
+    }
+  ],
+  "validated_binary_predictor_claim_status": "fail",
+  "action": "do_not_tune_on_v4; retain bounded screener and use frozen errors to design assay-aware v0.2",
+  "claim_boundary": "ordinary-drug direct-assay blind external evaluation; not intact-ADC or ADC release-species validation",
+  "output_hashes": {
+    "数据/processed/abcb1_regulatory_v4_blind_predictions_v1.csv": "014f2277408775e50065f6aaac856aa9e7a85211869d2169800402f2a3a83482",
+    "数据/processed/abcb1_regulatory_v4_blind_metric_summary_v1.csv": "96508583c8352fa6a65712b329894780956333106ec71ef4fe3fbd516a7c9b7b",
+    "数据/processed/abcb1_regulatory_v4_blind_uncertainty_v1.csv": "114ccfe2edd18c48746b18dc3117d34d3e477ee1f47d401905f808f0ef0bb376",
+    "数据/processed/abcb1_regulatory_v4_blind_paired_comparison_v1.csv": "2f6e860da1497dacebdf58ffcdd21a6478c08e0c10884ecf0aa33f0cdffe4062",
+    "数据/processed/abcb1_regulatory_v4_blind_cluster_sensitivity_v1.csv": "2157e2f6ed4c3e886a7986e122e2bd2792e3e79b94e987fa7de454bf81366bfe",
+    "数据/processed/abcb1_regulatory_v4_blind_error_audit_v1.csv": "bc8e9635eeb3b57b936b2c246a1f9eafff0a33c32def657eb54bcb0305b089cf"
+  }
+}

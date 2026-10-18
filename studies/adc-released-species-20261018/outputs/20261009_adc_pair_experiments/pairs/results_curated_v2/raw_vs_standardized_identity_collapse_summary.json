@@ -1,0 +1,139 @@
+{
+  "scope": "curated_v2_scored_entities_only_identity_HOLD_entities_excluded",
+  "scored_entity_alias_rows": 22,
+  "raw_exact_source_unique_keys": 13,
+  "frozen_model_standardized_unique_keys": 13,
+  "source_vs_model_full_key_change_unique_structures": 10,
+  "distinct_raw_source_keys_collapsed_into_one_standardized_key_count": 0,
+  "distinct_raw_source_identity_collapse_groups": [],
+  "one_raw_identity_mapped_to_multiple_model_keys_count": 0,
+  "intended_alias_group_count": 5,
+  "intended_alias_groups": [
+    {
+      "model_standardized_key": "DASWEROEPLKSEI-DBJMJIIBSA-N",
+      "raw_source_keys": [
+        "DASWEROEPLKSEI-UIJRFTGLSA-N"
+      ],
+      "entity_aliases": [
+        {
+          "entity_id": "ADC_PAYLOAD_017",
+          "entity_name": "MMAE",
+          "raw_source_key": "DASWEROEPLKSEI-UIJRFTGLSA-N",
+          "unique_structure_id": "STRUCT_008"
+        },
+        {
+          "entity_id": "ADC_REL_007",
+          "entity_name": "MMAE",
+          "raw_source_key": "DASWEROEPLKSEI-UIJRFTGLSA-N",
+          "unique_structure_id": "STRUCT_008"
+        },
+        {
+          "entity_id": "CONTROL_PARENT::ADC_REL_007",
+          "entity_name": "MMAE free parent identity control",
+          "raw_source_key": "DASWEROEPLKSEI-UIJRFTGLSA-N",
+          "unique_structure_id": "STRUCT_008"
+        }
+      ]
+    },
+    {
+      "model_standardized_key": "PLXLYXLUCNZSAA-QLXKLKPCSA-N",
+      "raw_source_keys": [
+        "PLXLYXLUCNZSAA-QLXKLKPCSA-N"
+      ],
+      "entity_aliases": [
+        {
+          "entity_id": "ADC_REL_010",
+          "entity_name": "DXd",
+          "raw_source_key": "PLXLYXLUCNZSAA-QLXKLKPCSA-N",
+          "unique_structure_id": "STRUCT_010"
+        },
+        {
+          "entity_id": "CONTROL_PARENT::ADC_REL_010",
+          "entity_name": "DXd free parent identity control",
+          "raw_source_key": "PLXLYXLUCNZSAA-QLXKLKPCSA-N",
+          "unique_structure_id": "STRUCT_010"
+        }
+      ]
+    },
+    {
+      "model_standardized_key": "FJHBVJOVLFPMQE-QFIPXVFZSA-N",
+      "raw_source_keys": [
+        "FJHBVJOVLFPMQE-QFIPXVFZSA-N"
+      ],
+      "entity_aliases": [
+        {
+          "entity_id": "ADC_PAYLOAD_024",
+          "entity_name": "SN-38",
+          "raw_source_key": "FJHBVJOVLFPMQE-QFIPXVFZSA-N",
+          "unique_structure_id": "STRUCT_011"
+        },
+        {
+          "entity_id": "ADC_REL_009",
+          "entity_name": "SN-38",
+          "raw_source_key": "FJHBVJOVLFPMQE-QFIPXVFZSA-N",
+          "unique_structure_id": "STRUCT_011"
+        },
+        {
+          "entity_id": "CONTROL_PARENT::ADC_REL_009",
+          "entity_name": "SN-38 free parent identity control",
+          "raw_source_key": "FJHBVJOVLFPMQE-QFIPXVFZSA-N",
+          "unique_structure_id": "STRUCT_011"
+        }
+      ]
+    },
+    {
+      "model_standardized_key": "ZVYVPGLRVWUPMP-FYSMJZIKSA-N",
+      "raw_source_keys": [
+        "ZVYVPGLRVWUPMP-FYSMJZIKSA-N"
+      ],
+      "entity_aliases": [
+        {
+          "entity_id": "ADC_PAYLOAD_028",
+          "entity_name": "Exatecan",
+          "raw_source_key": "ZVYVPGLRVWUPMP-FYSMJZIKSA-N",
+          "unique_structure_id": "STRUCT_012"
+        },
+        {
+          "entity_id": "ADC_REL_011",
+          "entity_name": "Exatecan",
+          "raw_source_key": "ZVYVPGLRVWUPMP-FYSMJZIKSA-N",
+          "unique_structure_id": "STRUCT_012"
+        },
+        {
+          "entity_id": "CONTROL_PARENT::ADC_REL_011",
+          "entity_name": "Exatecan free parent identity control",
+          "raw_source_key": "ZVYVPGLRVWUPMP-FYSMJZIKSA-N",
+          "unique_structure_id": "STRUCT_012"
+        }
+      ]
+    },
+    {
+      "model_standardized_key": "YMTZZJOPSATRTO-UHFFFAOYSA-N",
+      "raw_source_keys": [
+        "YMTZZJOPSATRTO-GOTSBHOMSA-N"
+      ],
+      "entity_aliases": [
+        {
+          "entity_id": "ADC_PAYLOAD_032",
+          "entity_name": "SG3199",
+          "raw_source_key": "YMTZZJOPSATRTO-GOTSBHOMSA-N",
+          "unique_structure_id": "STRUCT_013"
+        },
+        {
+          "entity_id": "ADC_REL_013",
+          "entity_name": "SG3199",
+          "raw_source_key": "YMTZZJOPSATRTO-GOTSBHOMSA-N",
+          "unique_structure_id": "STRUCT_013"
+        },
+        {
+          "entity_id": "CONTROL_PARENT::ADC_REL_013",
+          "entity_name": "SG3199 free parent identity control",
+          "raw_source_key": "YMTZZJOPSATRTO-GOTSBHOMSA-N",
+          "unique_structure_id": "STRUCT_013"
+        }
+      ]
+    }
+  ],
+  "pair_delta_not_affected_by_distinct_raw_identity_dedup_collision": true,
+  "claim_boundary": "Identical chemical entities under free/release/control IDs were deduplicated intentionally; no distinct raw identities merged. Model standardization still changes stereochemical or tautomeric representation for some entities."
+}

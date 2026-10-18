@@ -1,0 +1,62 @@
+{
+  "addendum_version": "ABCB1_ASAP2025_POSTSCORING_ADDENDUM_V1",
+  "addendum_date": "2026-08-03",
+  "relation_to_lock": "The pre-scoring lock abcb1_asap2025_sourceheldout_protocol_lock_v1.json is intentionally left byte-unchanged. This addendum records post-scoring bookkeeping only.",
+  "model_scoring_performed": true,
+  "gate_outcome": {
+    "frozen_ABCB1_v0_1": {
+      "spearman_rho": 0.55015301,
+      "ci95_lower": 0.20837074,
+      "ci95_upper": 0.74409192,
+      "n": 62,
+      "n_scaffold_clusters": 29,
+      "status": "pass",
+      "rule": "Spearman point estimate > 0 and 95% Murcko-scaffold bootstrap lower bound > 0",
+      "interpretation": "source-heldout continuous direction is supported in one MDCK-MDR1 vendor dataset"
+    },
+    "frozen_ABCB1_assay_aware_v0_3_dev": {
+      "spearman_rho": 0.56861486,
+      "ci95_lower": 0.13629651,
+      "ci95_upper": 0.75519321,
+      "n": 62,
+      "n_scaffold_clusters": 29,
+      "status": "pass",
+      "rule": "Spearman point estimate > 0 and 95% Murcko-scaffold bootstrap lower bound > 0",
+      "interpretation": "source-heldout continuous direction is supported in one MDCK-MDR1 vendor dataset"
+    }
+  },
+  "cumulative_stopping_rule": {
+    "status": "recorded_not_triggered",
+    "rule": "连续端点方向此前两次不支持：Roth 2026 面板 ABCB1 Morgan Spearman = -0.520；Langthaler 2024 n=11 rho = +0.2096 (p = 0.536)。ASAP 2025 为第三次独立检验。若第三次仍不通过方向门，则宣布『普通二分类训练知识不能迁移到连续外排端点』，停止继续堆积弱标签，转向针对 ADC 化学空间的少量实验数据或证据分层/拒判系统，不再对该命题复测。",
+    "outcome": "第三次检验通过（v0.1 rho=+0.550, 95%CI 下界 0.208；v0.3-dev rho=+0.569, 下界 0.136），停止规则未触发。"
+  },
+  "continuous_direction_sources": [
+    {
+      "source_id": "SRC_B23_LANGTHALER2024_HUMAN_ABCB1_REFERENCE_PANEL",
+      "n_entities": 11,
+      "model": "frozen_ABCB1_v0_1",
+      "spearman_rho": 0.209567,
+      "p_value": 0.53627,
+      "direction": "positive_point_estimate_not_significant",
+      "note": "point estimate positive; p = 0.536; no bootstrap lower bound above zero"
+    },
+    {
+      "source_id": "ASAP2025_CHEMBL5674852_MDCK_MDR1",
+      "n_entities": 62,
+      "model": "frozen_ABCB1_v0_1",
+      "spearman_rho": 0.55015301,
+      "ci95_lower": 0.20837074,
+      "ci95_upper": 0.74409192,
+      "direction": "positive_with_scaffold_bootstrap_lower_bound_above_zero",
+      "note": "pre-registered source-held-out scoring; models frozen and hash-verified before scoring"
+    }
+  ],
+  "claim_gate_ledger": {
+    "previous": "数据/processed/abcb1_q1_predictor_claim_gates_v1.csv",
+    "updated": "数据/processed/abcb1_q1_predictor_claim_gates_v2_post_asap2025.csv",
+    "gates_passed": 2,
+    "gates_total": 5
+  },
+  "unchanged_gates_note": "The four binary/source-call gates were NOT re-evaluated on ASAP 2025. ASAP has no matched parental arm and no inhibitor-rescue arm, so it cannot supply direct source-call labels.",
+  "claim_boundary": "Continuous ranking direction is now supported source-held-out. Binary substrate classification remains unvalidated: MCC and balanced-accuracy gates stay failed, and the deliverable remains a ranking/triage instrument, not a classifier."
+}

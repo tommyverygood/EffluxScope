@@ -1,0 +1,153 @@
+{
+  "analysis_version": "ABCB1_EXTERNAL_RISK_EXPERIMENT_V1",
+  "analysis_date": "2026-08-05",
+  "status": "completed_frozen_model_posthoc_secondary_external_risk_experiments",
+  "protocol_path": "数据/processed/abcb1_external_risk_experiment_protocol_v1.json",
+  "protocol_sha256": "cef22ff8f7a0da5555235848e2362e214988f6f0e6b45c2ee130c6a9875999d8",
+  "analysis_populations": {
+    "identity_clean_n": 2624,
+    "identity_clean_positive_n": 1145,
+    "identity_clean_negative_n": 1479,
+    "scaffold_clean_n": 2562
+  },
+  "frozen_rule_reconstruction": {
+    "exactly_reproduced": true,
+    "frozen_accepted_n": 453,
+    "reconstructed_accepted_n": 453,
+    "symmetric_difference_n": 0,
+    "final_cumulative_accepted_n": 453
+  },
+  "identity_clean_operating_points": {
+    "forced_binary_all": {
+      "accepted_n": 2624,
+      "coverage": 1.0,
+      "accuracy": 0.56402439,
+      "error_rate": 0.43597561,
+      "balanced_accuracy": 0.58169541,
+      "mcc": 0.16768795,
+      "sensitivity": 0.72052402,
+      "specificity": 0.4428668,
+      "high_risk_precision": 0.50030321,
+      "low_risk_npv": 0.67179487,
+      "balanced_accuracy_ci95_low": 0.56162469,
+      "balanced_accuracy_ci95_high": 0.6012337,
+      "mcc_ci95_low": 0.12677827,
+      "mcc_ci95_high": 0.20641881
+    },
+    "frozen_probability_margin_only": {
+      "accepted_n": 935,
+      "coverage": 0.35632622,
+      "accuracy": 0.62780749,
+      "error_rate": 0.37219251,
+      "balanced_accuracy": 0.64176471,
+      "mcc": 0.2942352,
+      "sensitivity": 0.79529412,
+      "specificity": 0.48823529,
+      "high_risk_precision": 0.56427379,
+      "low_risk_npv": 0.74107143,
+      "balanced_accuracy_ci95_low": 0.61041426,
+      "balanced_accuracy_ci95_high": 0.67372068,
+      "mcc_ci95_low": 0.23098052,
+      "mcc_ci95_high": 0.35746496
+    },
+    "frozen_full_v0_4": {
+      "accepted_n": 453,
+      "coverage": 0.1726372,
+      "accuracy": 0.75055188,
+      "error_rate": 0.24944812,
+      "balanced_accuracy": 0.73510345,
+      "mcc": 0.49857011,
+      "sensitivity": 0.884,
+      "specificity": 0.5862069,
+      "high_risk_precision": 0.72459016,
+      "low_risk_npv": 0.80405405,
+      "balanced_accuracy_ci95_low": 0.69147191,
+      "balanced_accuracy_ci95_high": 0.77643739,
+      "mcc_ci95_low": 0.41404223,
+      "mcc_ci95_high": 0.58026468
+    },
+    "forced_binary_on_v0_4_rejected_layer": {
+      "accepted_n": 2171,
+      "coverage": 0.8273628,
+      "accuracy": 0.52510364,
+      "error_rate": 0.47489636,
+      "balanced_accuracy": 0.54746152,
+      "mcc": 0.09621794,
+      "sensitivity": 0.67486034,
+      "specificity": 0.4200627,
+      "high_risk_precision": 0.44940476,
+      "low_risk_npv": 0.64812576,
+      "balanced_accuracy_ci95_low": 0.52611708,
+      "balanced_accuracy_ci95_high": 0.56912995,
+      "mcc_ci95_low": 0.05302862,
+      "mcc_ci95_high": 0.14002834
+    }
+  },
+  "selective_enrichment_identity_clean": {
+    "accuracy": {
+      "contrast": "accepted_minus_rejected",
+      "accepted_value": 0.75055188,
+      "rejected_forced_value": 0.52510364,
+      "favorable_difference": 0.22544824,
+      "ci95_low": 0.17739986,
+      "ci95_high": 0.27328863,
+      "bootstrap_probability_favorable_gt_0": 1.0
+    },
+    "balanced_accuracy": {
+      "contrast": "accepted_minus_rejected",
+      "accepted_value": 0.73510345,
+      "rejected_forced_value": 0.54746152,
+      "favorable_difference": 0.18764193,
+      "ci95_low": 0.13663565,
+      "ci95_high": 0.23748035,
+      "bootstrap_probability_favorable_gt_0": 1.0
+    },
+    "mcc": {
+      "contrast": "accepted_minus_rejected",
+      "accepted_value": 0.49857011,
+      "rejected_forced_value": 0.09621794,
+      "favorable_difference": 0.40235217,
+      "ci95_low": 0.30404292,
+      "ci95_high": 0.5002423,
+      "bootstrap_probability_favorable_gt_0": 1.0
+    },
+    "error_rate": {
+      "contrast": "rejected_minus_accepted",
+      "accepted_value": 0.24944812,
+      "rejected_forced_value": 0.47489636,
+      "favorable_difference": 0.22544824,
+      "ci95_low": 0.17739986,
+      "ci95_high": 0.27328863,
+      "bootstrap_probability_favorable_gt_0": 1.0
+    }
+  },
+  "external_calibration_identity_clean": {
+    "n": 2624,
+    "observed_prevalence": 0.43635671,
+    "mean_predicted_probability": 0.55709681,
+    "brier_score": 0.25296644,
+    "log_loss": 0.70480952,
+    "ece_equal_width_10": 0.12074011,
+    "ece_adaptive_10": 0.12074011,
+    "calibration_intercept": -0.42205394,
+    "calibration_slope": 0.58367794,
+    "roc_auc": 0.62468445,
+    "average_precision": 0.54941436
+  },
+  "interpretation": {
+    "allowed": "External weak-label risk ranking, coverage-reliability trade-off, and enrichment of reliable calls under selective rejection.",
+    "not_allowed": "Calling this analysis preregistered, choosing thresholds from these outcomes, claiming universal ABCB1 substrate classification, intact-ADC transport, intracellular unbound exposure, resistance, efficacy, or clinical DDI.",
+    "analysis_status_note": "These are post-hoc secondary analyses performed after the primary external outcome was observed; they are not a new preregistered validation."
+  },
+  "output_hashes": {
+    "数据/processed/abcb1_external_risk_coverage_curve_v1.csv": "46e9aecf06ce1cbf4b54f5f273b893c8e9731e0ced81b0888fc40a7517cd5e12",
+    "数据/processed/abcb1_external_risk_operating_points_v1.csv": "05ba54a1aad20152815ecbfa938033c0a9c078f64fa2335961024c499ba2b492",
+    "数据/processed/abcb1_external_rejector_cumulative_ablation_v1.csv": "a4b5773acafb91de075fd6d0b17bc980ee50ac7c5f259a716974764a205ab57e",
+    "数据/processed/abcb1_external_rejector_leave_one_out_v1.csv": "b8f212442a6a6941bca60b903094cfd790a179e79bcc8536630ad60abce11962",
+    "数据/processed/abcb1_external_rejector_rule_burden_v1.csv": "fa43011de67283a2d1efd2add2d7cb38b0ed0eedcbd41729134e8b65d65a0680",
+    "数据/processed/abcb1_external_calibration_bins_v1.csv": "7a159b03dccceb4289ebe78b15674460b4ac339fdaa5cd53656bfd3f3a2c4b09",
+    "数据/processed/abcb1_external_calibration_summary_v1.csv": "4e8a44f972891d9ef21c23710b3768f18212a4ca0b987c2807c36d7d9e162099",
+    "数据/processed/abcb1_external_error_strata_v1.csv": "98a095048f3f296e35579b6f33d9286364cd642d19809648084492fec53a12b9",
+    "数据/processed/abcb1_external_selective_enrichment_bootstrap_v1.csv": "cdfdf3b0106fc4c16a2e5b577d88a4539b40f8db1167be586f776a089c5a2638"
+  }
+}

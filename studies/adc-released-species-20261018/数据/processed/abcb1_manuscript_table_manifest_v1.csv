@@ -1,0 +1,13 @@
+table_id,title,source,role,status
+Table 1,"Dataset roles, endpoints, overlap, and allowed use",source registry; quantity summary,main,data_ready
+Table 2,Binary baseline versus selective screening,R1-R5,main,data_ready
+Table 3,Source-separated continuous and direct evidence,R6-R10,main,data_ready
+Table S1,Frozen model and protocol hashes,protocol/config/manifest files,supplementary,data_ready
+Table S2,Per-structure Biogen predictions and overlap audit,abcb1_quantity_biogen_analysis_rows_v1.csv,supplementary,data_ready
+Table S3,Per-structure Daood audit,abcb1_quantity_daood_analysis_rows_v1.csv,supplementary,data_ready
+Table S4,Abstention reason counts,abcb1_quantity_external_abstention_reasons_v1.csv,supplementary,data_ready
+Table S5,Claim ledger and prohibited interpretations,abcb1_manuscript_claim_ledger_v1.csv,supplementary/internal governance,data_ready
+Table S6,External coverage-reliability curve and rejector ablation,abcb1_external_risk_coverage_curve_v1.csv; abcb1_external_rejector_cumulative_ablation_v1.csv; abcb1_external_rejector_leave_one_out_v1.csv,supplementary,data_ready
+Table S7,External calibration and error strata,abcb1_external_calibration_summary_v1.csv; abcb1_external_calibration_bins_v1.csv; abcb1_external_error_strata_v1.csv,supplementary,data_ready
+Table S8,External evidence-channel ablation and accepted-set contrasts,abcb1_external_evidence_channel_ablation_metrics_v1.csv; abcb1_external_evidence_channel_set_contrasts_v1.csv; abcb1_external_evidence_channel_pairwise_bootstrap_v1.csv,supplementary,data_ready
+Table S9,Deep external calibration and error diagnostics,abcb1_external_calibration_metrics_v2.csv; abcb1_external_calibration_bootstrap_v2.csv; abcb1_external_error_counts_v2.csv; abcb1_external_error_feature_comparisons_v2.csv; abcb1_external_error_strata_v2.csv,supplementary,data_ready

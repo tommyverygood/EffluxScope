@@ -1,0 +1,24 @@
+{
+  "abstract": "According to the assay cascade defined by the AI-driven Structure-enabled Antiviral Platform (ASAP, https://asapdiscovery.org) which contains assays and progression criteria used by the drug discovery program, this dataset includes permeability data.",
+  "authors": "ASAP Discovery Consortium",
+  "chembl_release": {
+    "chembl_release": "CHEMBL_36",
+    "creation_date": "2025-07-28"
+  },
+  "contact": "https://orcid.org/0000-0003-0542-119X, https://orcid.org/0009-0001-3935-9083, https://orcid.org/0000-0002-3811-4068",
+  "doc_type": "DATASET",
+  "document_chembl_id": "CHEMBL5674852",
+  "doi": "10.6019/CHEMBL5674852",
+  "doi_chembl": null,
+  "first_page": null,
+  "issue": null,
+  "journal": null,
+  "journal_full_title": null,
+  "last_page": null,
+  "patent_id": null,
+  "pubmed_id": null,
+  "src_id": 71,
+  "title": "ASAP - In vitro MDCK-MDR1 permeability",
+  "volume": null,
+  "year": 2024
+}

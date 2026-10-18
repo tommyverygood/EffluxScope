@@ -1,0 +1,161 @@
+{
+  "status": "completed",
+  "completed_utc": "2026-10-09T07:51:25.350537+00:00",
+  "runtime": {
+    "executable": "${PROJECT_ROOT}/.venv-experiments/bin/python",
+    "python": "3.12.14",
+    "rdkit": "2026.03.4",
+    "sklearn": "1.9.0",
+    "numpy": "2.5.1",
+    "joblib": "1.5.3"
+  },
+  "models": {
+    "v0_1_feature_type": "morgan_physchem",
+    "v0_3_feature_type": "morgan_plus_physchem",
+    "morgan_include_chirality": false,
+    "default_remove_sp3_stereo": true,
+    "default_remove_bond_stereo": true
+  },
+  "unique_source_structures": 13,
+  "scored_variant_rows": 65,
+  "identity_control_count": 25,
+  "input_sha256": {
+    "outputs/20261009_adc_pair_experiments/pairs/results_curated_v2/entities_scored_or_hold.csv": "abb7062752273ba8382752d45103d6e808adbe8b44b9e09667c0add4d07ec59b",
+    "outputs/20261009_adc_pair_experiments/pairs/results_curated_v2/unique_structure_predictions.csv": "6fcdb11416895317ed0f593c3c8264ade6a52b0e9714c2418a7abfbd81976347",
+    "outputs/20261009_adc_pair_experiments/pairs/results_curated_v2/parent_release_score_contrasts.csv": "ee6a302d8e687ea32991a00ae3ae5858121600c4d4ea7ed3d28fb9fcc34c8553",
+    "outputs/20261009_adc_pair_experiments/pairs/results_curated_v2/pair_release_stage_classification.csv": "f2ad3087121bb0ba7c38943c4460ca34ac776fac19a47dec9e5e4c09959fe49e",
+    "模型/ABCB1_screener_v0_1/ABCB1_screener_v0_1.joblib": "fbc92dfa99583386ba124141fed5e77c6ecf8a59850301a6533db3883b298ac3",
+    "模型/ABCB1_assay_aware_candidate_v0_3_dev/ABCB1_assay_aware_candidate_v0_3_dev.joblib": "ebe6d1a8d5f06afc5c2d0b306dfd5266af56fd28fefd130147d20c5e015b907a",
+    "数据/scripts/abcb1_screener_core_v0_1.py": "d97c1ee11973ea729ea4dcd62932560e4d60e1ac1cfdfa86ac08798c4bcf2267",
+    "outputs/20261009_adc_followup_validation/normalization/run_normalization_validation.py": "e4c59b55e4ed80a1bcea5632215cb9c8e17aea0822653795d06d8af98bf4f9fc",
+    "outputs/20261009_adc_followup_validation/normalization/PROTOCOL.md": "477fa86c87dba1661ecdf43fe95b0daafdec675c953c2fbf0a8560d39d58d2e6"
+  },
+  "checks": {
+    "frozen_inputs_unchanged": true,
+    "prior_scores_reproduced": true,
+    "same_identity_controls_all_equal": true,
+    "stereo_only_features_scores_invariant": true
+  },
+  "captured_python_warnings": [
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed).",
+      "filename": "${PROJECT_ROOT}/.venv-experiments/lib/python3.12/site-packages/joblib/numpy_pickle.py",
+      "lineno": 207
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed).",
+      "filename": "${PROJECT_ROOT}/.venv-experiments/lib/python3.12/site-packages/joblib/numpy_pickle.py",
+      "lineno": 207
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed).",
+      "filename": "${PROJECT_ROOT}/.venv-experiments/lib/python3.12/site-packages/joblib/numpy_pickle.py",
+      "lineno": 207
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed).",
+      "filename": "${PROJECT_ROOT}/.venv-experiments/lib/python3.12/site-packages/joblib/numpy_pickle.py",
+      "lineno": 207
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed).",
+      "filename": "${PROJECT_ROOT}/.venv-experiments/lib/python3.12/site-packages/joblib/numpy_pickle.py",
+      "lineno": 207
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed).",
+      "filename": "${PROJECT_ROOT}/.venv-experiments/lib/python3.12/site-packages/joblib/numpy_pickle.py",
+      "lineno": 207
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed).",
+      "filename": "${PROJECT_ROOT}/.venv-experiments/lib/python3.12/site-packages/joblib/numpy_pickle.py",
+      "lineno": 207
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed).",
+      "filename": "${PROJECT_ROOT}/.venv-experiments/lib/python3.12/site-packages/joblib/numpy_pickle.py",
+      "lineno": 207
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed).",
+      "filename": "${PROJECT_ROOT}/.venv-experiments/lib/python3.12/site-packages/joblib/numpy_pickle.py",
+      "lineno": 207
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed).",
+      "filename": "${PROJECT_ROOT}/.venv-experiments/lib/python3.12/site-packages/joblib/numpy_pickle.py",
+      "lineno": 207
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed).",
+      "filename": "${PROJECT_ROOT}/.venv-experiments/lib/python3.12/site-packages/joblib/numpy_pickle.py",
+      "lineno": 207
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed).",
+      "filename": "${PROJECT_ROOT}/.venv-experiments/lib/python3.12/site-packages/joblib/numpy_pickle.py",
+      "lineno": 207
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed).",
+      "filename": "${PROJECT_ROOT}/.venv-experiments/lib/python3.12/site-packages/joblib/numpy_pickle.py",
+      "lineno": 207
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed).",
+      "filename": "${PROJECT_ROOT}/.venv-experiments/lib/python3.12/site-packages/joblib/numpy_pickle.py",
+      "lineno": 207
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed).",
+      "filename": "${PROJECT_ROOT}/.venv-experiments/lib/python3.12/site-packages/joblib/numpy_pickle.py",
+      "lineno": 207
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed).",
+      "filename": "${PROJECT_ROOT}/.venv-experiments/lib/python3.12/site-packages/joblib/numpy_pickle.py",
+      "lineno": 207
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed).",
+      "filename": "${PROJECT_ROOT}/.venv-experiments/lib/python3.12/site-packages/joblib/numpy_pickle.py",
+      "lineno": 207
+    },
+    {
+      "category": "DeprecationWarning",
+      "message": "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed).",
+      "filename": "${PROJECT_ROOT}/.venv-experiments/lib/python3.12/site-packages/joblib/numpy_pickle.py",
+      "lineno": 207
+    }
+  ],
+  "rdkit_warning_policy": "core disables rdApp.warning; stderr retained separately; enumeration status recorded and incomplete variants HOLD",
+  "no_new_truth_labels": true,
+  "no_refit": true,
+  "alternate_representation_validated": false,
+  "source_vs_frozen_full_key_changed": 10,
+  "source_vs_frozen_connectivity_block_changed": 2,
+  "stereo_loss_source_atom_count": 27,
+  "source_hold_count": 0,
+  "no_tautomer_hold_count": 0,
+  "stereo_preserved_tautomer_hold_count": 3,
+  "frozen_old_hold_count": 3,
+  "source_stereo_stripped_hold_count": 0
+}

@@ -1,0 +1,14 @@
+{
+  "pubchem_cid": 86567977,
+  "pubchem_inchikey": "URAOPNXILLDXAL-KJEDTADQSA-N",
+  "rdkit_inchikey": "URAOPNXILLDXAL-KJEDTADQSA-N",
+  "exact_inchikey_match": true,
+  "molecular_formula": "C61H84IN5O23S3",
+  "MW_rdkit": 1478.4599999999994,
+  "MW_pubchem": "1478.4",
+  "NCATS_UNII": "3FJ2DCE5R2",
+  "NCATS_inchikey": "URAOPNXILLDXAL-KJEDTADQSA-N",
+  "NCATS_pubchem_crosswalk_match": true,
+  "frozen_source_file": "outputs/20261012_adc_completion/family_expansion/sources/PubChem_86567977_properties.json",
+  "sha256": "adb0c70d73297e3bad1081ccf113191f6f4d30bc54df9453e25f7a2a2e5d775b"
+}

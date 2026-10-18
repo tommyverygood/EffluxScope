@@ -1,0 +1,491 @@
+path,licence_scope
+handoff/fig1_permband.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+handoff/fig1ab.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+handoff/fig1ab_grid.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+handoff/fig1new_stats.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+handoff/fig2_ci.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+handoff/fig2_emb.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+handoff/fig2_hist.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+handoff/fig2_leak.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+handoff/fig2_perf.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+handoff/fig3_data.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+handoff/fig4_data.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+handoff/fig5_data.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20260810_adc_demo_reconstruction_v2/adc_application_demo_registry_reconstructed_v2.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20260810_soskuti_identity_double_review_v1/reanalysis/external/analysis/abcb1_quantity_biogen_analysis_rows_identity_audited_v2.csv,Fang Computational-ADME: MIT; author-derived scores/analysis with attribution
+outputs/20260810_soskuti_identity_double_review_v1/reanalysis/external/analysis/abcb1_quantity_daood_analysis_rows_identity_audited_v2.csv,Soskuti 2024: CC-BY-4.0; author standardization/exclusion modifications indicated
+outputs/20260810_soskuti_identity_double_review_v1/reanalysis/external/analysis/abcb1_quantity_external_abstention_reasons_identity_audited_v2.csv,Soskuti 2024: CC-BY-4.0; author standardization/exclusion modifications indicated
+outputs/20260810_soskuti_identity_double_review_v1/reanalysis/external/analysis/abcb1_quantity_external_evidence_ledger_identity_audited_v2.csv,Soskuti 2024: CC-BY-4.0; author standardization/exclusion modifications indicated
+outputs/20260810_soskuti_identity_double_review_v1/reanalysis/external/analysis/abcb1_quantity_external_metrics_identity_audited_v2.csv,Soskuti 2024: CC-BY-4.0; author standardization/exclusion modifications indicated
+outputs/20260810_soskuti_identity_double_review_v1/reanalysis/external/analysis/abcb1_quantity_external_validation_summary_identity_audited_v2.json,Soskuti 2024: CC-BY-4.0; author standardization/exclusion modifications indicated
+outputs/20261009_adc_central_pairing/local_pair_audit.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/asap_secondary/ASAP复核.md,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/asap_secondary/completion.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/asap_secondary/compound_aggregation_ledger.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/asap_secondary/duplicate_groups.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/asap_secondary/matched_count_metrics.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/asap_secondary/model_metrics.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/asap_secondary/paired_rho_contrasts.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/asap_secondary/protocol.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/asap_secondary/repetition_audit/audit_repeated_observations.py,MIT (author-owned software); third-party imports retain their licences
+outputs/20261009_adc_followup_validation/asap_secondary/repetition_audit/audit_summary.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/asap_secondary/repetition_audit/independent_statistic_checks.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/asap_secondary/repetition_audit/independent_statistics_verification.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/asap_secondary/repetition_audit/raw_activity_receipts.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/asap_secondary/repetition_audit/repeated_group_summary.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/asap_secondary/repetition_audit/repeated_observation_details.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/asap_secondary/repetition_audit/unique_compound_identity_and_aggregation.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/asap_secondary/repetition_audit/verify_asap_statistics_independent.py,MIT (author-owned software); third-party imports retain their licences
+outputs/20261009_adc_followup_validation/asap_secondary/repetition_audit/重复观察审计.md,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/asap_secondary/run_asap_replication.py,MIT (author-owned software); third-party imports retain their licences
+outputs/20261009_adc_followup_validation/normalization/PROTOCOL.md,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/normalization/additional_verification.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/normalization/atom_order_invariance/PROTOCOL.md,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/normalization/atom_order_invariance/historical_score_reproduction.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/normalization/atom_order_invariance/pair_score_ranges.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/normalization/atom_order_invariance/prerun_freeze.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/normalization/atom_order_invariance/representation_rows.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/normalization/atom_order_invariance/run_atom_order_invariance.py,MIT (author-owned software); third-party imports retain their licences
+outputs/20261009_adc_followup_validation/normalization/atom_order_invariance/run_manifest.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/normalization/atom_order_invariance/structure_invariance_summary.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/normalization/build_normalization_report.py,MIT (author-owned software); third-party imports retain their licences
+outputs/20261009_adc_followup_validation/normalization/frozen_score_reproduction.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/normalization/nonlegacy_stereo_count_crosscheck.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/normalization/parent_release_variant_contrasts.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/normalization/prerun_freeze.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/normalization/run_manifest.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/normalization/run_normalization_validation.py,MIT (author-owned software); third-party imports retain their licences
+outputs/20261009_adc_followup_validation/normalization/same_identity_control_checks.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/normalization/source_atom_stereo_audit.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/normalization/stage_structure_audit.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/normalization/stereo_only_negative_control.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/normalization/variant_scores.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/run_protocol.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/transport_evidence/Foti_Figure8_visual_coordinate_review.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/transport_evidence/Foti_old_vs_visual_review.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/transport_evidence/Foti_within_source_net_ER_visual_review.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/transport_evidence/Roth_Table3_functional_recheck.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/transport_evidence/build_stdout.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/transport_evidence/build_transport_validation.py,MIT (author-owned software); third-party imports retain their licences
+outputs/20261009_adc_followup_validation/transport_evidence/primary_observation_evidence_rows.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/transport_evidence/protocol_and_input_sha256.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/transport_evidence/unique_entity_model_direction_crosscheck.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/transport_evidence/validation_status.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_followup_validation/transport_evidence/verification_and_manifest.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/benchmark/README.md,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/benchmark/completion.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/benchmark/figure_manifest.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/benchmark/input_audit.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/benchmark/metrics.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/benchmark/paired_contrasts.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/benchmark/plot_benchmark.py,MIT (author-owned software); third-party imports retain their licences
+outputs/20261009_adc_pair_experiments/benchmark/protocol.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/benchmark/run_benchmark.py,MIT (author-owned software); third-party imports retain their licences
+outputs/20261009_adc_pair_experiments/benchmark/selection_ledger.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/benchmark/unattainable_targets.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/benchmark/实验报告.md,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/environment-lock.txt,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/identity/accepted_structure.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/identity/approved_structures_v2.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/identity/fetch_identity_sources.py,MIT (author-owned software); third-party imports retain their licences
+outputs/20261009_adc_pair_experiments/identity/file_manifest.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/identity/identity_checks.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/identity/identity_sensitivity_inputs.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/identity/validate_identity.py,MIT (author-owned software); third-party imports retain their licences
+outputs/20261009_adc_pair_experiments/identity/validation_stdout.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/mask_score_diagnostic/crossed_metrics.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/mask_score_diagnostic/paired_contrasts.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/mask_score_diagnostic/protocol.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/mask_score_diagnostic/review.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/pairs/identity_sensitivity_v1/identity_sensitivity_scores.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/pairs/identity_sensitivity_v1/identity_sensitivity_summary.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/pairs/results_curated_v2/base_v1_unchanged_structure_checks.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/pairs/results_curated_v2/base_v1_unchanged_structure_summary.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/pairs/results_curated_v2/dual_component_scores.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/pairs/results_curated_v2/entities_scored_or_hold.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/pairs/results_curated_v2/pair_release_stage_classification.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/pairs/results_curated_v2/pair_stage_statistics.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/pairs/results_curated_v2/parent_release_score_contrasts.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/pairs/results_curated_v2/raw_vs_standardized_identity_collapse_summary.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/pairs/results_curated_v2/scoring_summary.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/pairs/results_curated_v2/source_vs_frozen_model_structure_audit.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/pairs/results_curated_v2/unique_structure_predictions.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261009_adc_pair_experiments/pairs/run_frozen_pair_scores.py,MIT (author-owned software); third-party imports retain their licences
+outputs/20261009_adc_pair_experiments/pairs/run_identity_sensitivity.py,MIT (author-owned software); third-party imports retain their licences
+outputs/20261009_adc_pair_experiments/run_mask_score_crosscheck.py,MIT (author-owned software); third-party imports retain their licences
+outputs/20261009_adc_pair_experiments/run_protocol.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/design_audit/adc_component_candidate_eligibility.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/design_audit/adc_core_direct_context_anchors.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/design_audit/adc_source_context_positive_anchors.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/design_audit/adc_strict_human_transfectant_positive_anchors.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/design_audit/audit_manifest.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/design_audit/build_eligibility_audit.py,MIT (author-owned software); third-party imports retain their licences
+outputs/20261012_adc_completion/design_audit/core_comparison_feasibility_and_null_metrics.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/design_audit/descriptive_validation_results.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/design_audit/direct_positive_matched_run_results.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/design_audit/direct_positive_strategy_counts.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/design_audit/expansion_review_manifest.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/design_audit/independent_expansion_verification.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/design_audit/independent_numeric_verification.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/design_audit/non_adc_direct_negative_stress_eligibility.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/design_audit/run_descriptive_validation.py,MIT (author-owned software); third-party imports retain their licences
+outputs/20261012_adc_completion/design_audit/top1_same_source_Pgp_arm_results.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/design_audit/top1_same_source_descriptive_spearman.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/design_audit/top1_same_source_pairwise_order_checks.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/design_audit/verify_expansion_pipeline.py,MIT (author-owned software); third-party imports retain their licences
+outputs/20261012_adc_completion/design_audit/verify_numeric_results.py,MIT (author-owned software); third-party imports retain their licences
+outputs/20261012_adc_completion/experiment_summary.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/family_expansion/DMH_identity_crosscheck.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/family_expansion/OBI992_TableS5_extracted.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/family_expansion/TableS5_reextraction_verification.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/family_expansion/Weng2023_FigS1E_transport.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/family_expansion/Weng2023_review_receipt.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/family_expansion/direct_transport_observations.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/family_expansion/family_candidate_evidence.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/family_expansion/family_expansion_manifest.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/family_expansion/new_machine_entities.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/family_expansion/sources/PubChem_46240929_properties.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/family_expansion/sources/PubChem_86567977_properties.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/protocol.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/public_search/bib_metadata_fetch_receipts.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/public_search/bibliographic_query_log.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/public_search/build_extraction.py,MIT (author-owned software); third-party imports retain their licences
+outputs/20261012_adc_completion/public_search/build_new_references.py,MIT (author-owned software); third-party imports retain their licences
+outputs/20261012_adc_completion/public_search/completion_status.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/public_search/fetch_additional.py,MIT (author-owned software); third-party imports retain their licences
+outputs/20261012_adc_completion/public_search/fetch_sources.py,MIT (author-owned software); third-party imports retain their licences
+outputs/20261012_adc_completion/public_search/file_sha256.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/public_search/new_references_verification.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/public_search/new_source_observations.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/public_search/parent_release_pair_eligibility.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/public_search/prepare_bib_metadata.py,MIT (author-owned software); third-party imports retain their licences
+outputs/20261012_adc_completion/public_search/source_inventory.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/public_search/web_search_query_log.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/replay_frozen_expansion.py,MIT (author-owned software); third-party imports retain their licences
+outputs/20261012_adc_completion/run_frozen_expansion.py,MIT (author-owned software); third-party imports retain their licences
+outputs/20261012_adc_completion/runtime_lock.txt,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/scored_family_inventory.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/scoring/completion.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/scoring/historical_reproduction.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/scoring/prerun_inputs.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_completion/scoring/species_predictions.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_scope_revision/apply_reporting_gates.py,MIT (author-owned software); third-party imports retain their licences
+outputs/20261012_adc_scope_revision/feasibility/completion.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_scope_revision/feasibility/count_feasibility.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_scope_revision/feasibility/count_feasibility.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_scope_revision/feasibility/cross_agent_count_receipt.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_scope_revision/feasibility/exclusion_ledger.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_scope_revision/feasibility/features.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_scope_revision/feasibility/formal_protocol_supersession.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_scope_revision/feasibility/independent_feature_count_verification.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_scope_revision/feasibility/input_schema.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_scope_revision/feasibility/prerun_input_manifest.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_scope_revision/feasibility/protocol.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_scope_revision/feasibility/run_feasibility.py,MIT (author-owned software); third-party imports retain their licences
+outputs/20261012_adc_scope_revision/feasibility/verify_counts_and_protocol.py,MIT (author-owned software); third-party imports retain their licences
+outputs/20261012_adc_scope_revision/protocol.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_scope_revision/protocol_review/ADC14_fixed_descriptor_region_mapping.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_scope_revision/protocol_review/feasibility_audit_manifest.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_scope_revision/protocol_review/formal_gate_and_status_independent_verification.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_scope_revision/protocol_review/independent_feasibility_audit.py,MIT (author-owned software); third-party imports retain their licences
+outputs/20261012_adc_scope_revision/protocol_review/independent_region_feasibility.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_scope_revision/protocol_review/verify_formal_gate_status.py,MIT (author-owned software); third-party imports retain their licences
+outputs/20261012_adc_scope_revision/regional_evaluation_status.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+outputs/20261012_adc_scope_revision/regional_evaluation_status.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+requirements-model.txt,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/DATA_DICTIONARY.md,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_adc_application_demo_predictions_v2.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_adc_application_demo_summary_v2.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_asap2025_sourceheldout_metrics_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_asap2025_sourceheldout_postscoring_addendum_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_asap2025_sourceheldout_predictions_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_asap2025_sourceheldout_protocol_lock_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_asap2025_sourceheldout_summary_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_asap_mdck_mdr1_activity_rows_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_asap_mdck_mdr1_observations_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_asap_mdck_mdr1_source_registry_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_asap_mdck_mdr1_summary_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_assay_aware_candidate_predictions_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_assay_aware_classification_fold_metrics_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_assay_aware_classification_metrics_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_assay_aware_classification_oof_aggregate_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_assay_aware_classification_oof_details_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_assay_aware_continuous_fold_metrics_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_assay_aware_continuous_metrics_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_assay_aware_continuous_oof_aggregate_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_assay_aware_continuous_oof_details_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_assay_aware_development_protocol_lock_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_assay_aware_development_summary_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_assay_aware_pairwise_comparison_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_conrad2024_figure5_pairs_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_conrad2024_matched_pair_entities_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_brier_decomposition_v2.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_calibration_bins_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_calibration_bins_v2.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_calibration_bootstrap_v2.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_calibration_error_figure_manifest_v2.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_calibration_error_protocol_v2.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_calibration_error_summary_v2.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_calibration_error_validation_v2.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_calibration_metrics_v2.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_calibration_pairwise_bootstrap_v2.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_calibration_summary_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_collection_candidate_ledger_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_collection_candidate_ledger_v2.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_collection_candidate_ledger_v3.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_collection_candidate_ledger_v4.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_crossfitted_calibration_predictions_v2.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_error_counts_v2.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_error_feature_comparisons_v2.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_error_scaffold_hotspots_v2.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_error_strata_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_error_strata_v2.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_evidence_channel_ablation_figure_manifest_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_evidence_channel_ablation_metrics_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_evidence_channel_ablation_protocol_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_evidence_channel_ablation_summary_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_evidence_channel_ablation_validation_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_evidence_channel_pairwise_bootstrap_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_evidence_channel_set_contrasts_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_rejector_cumulative_ablation_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_rejector_leave_one_out_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_rejector_rule_burden_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_risk_coverage_curve_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_risk_experiment_protocol_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_risk_experiment_summary_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_risk_experiment_validation_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_risk_figure_manifest_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_risk_operating_points_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_external_selective_enrichment_bootstrap_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_kelly2022_table7_external_stress_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_manuscript_claim_ledger_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_manuscript_figure_manifest_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_manuscript_package_validation_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_manuscript_primary_results_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_manuscript_readiness_summary_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_manuscript_table_manifest_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_npmmp_inhibitor_pair_reconstruction_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_ood_abstention_reasons_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_ood_analysis_rows_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_ood_bootstrap_summary_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_ood_contrasts_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_ood_reference_loo_distances_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_ood_stratum_metrics_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_ood_structural_assignments_v1.csv,Fang Computational-ADME: MIT; author-derived scores/analysis with attribution
+数据/processed/abcb1_ood_structural_shift_protocol_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_ood_structural_shift_summary_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_ood_structural_shift_validation_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_ood_structure_assignment_lock_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_public_predictor_benchmark_protocol_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_public_predictor_benchmark_summary_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_public_predictor_benchmark_validation_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_public_predictor_coverage_curve_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_public_predictor_metrics_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_public_predictor_ood_comparison_protocol_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_public_predictor_ood_comparison_summary_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_public_predictor_ood_comparison_validation_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_public_predictor_ood_contrasts_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_public_predictor_ood_model_status_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_public_predictor_ood_stratum_metrics_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_public_predictor_rejection_contrasts_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_q1_direct_external_entity_predictions_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_q1_external_benchmark_protocol_lock_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_q1_external_benchmark_summary_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_q1_external_continuous_metrics_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_q1_external_metric_summary_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_q1_external_source_sensitivity_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_q1_legacy_bikadi_predictions_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_q1_model_pairwise_comparison_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_q1_predictor_claim_gates_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_q1_predictor_claim_gates_v2_post_asap2025.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_quantity_biogen_analysis_rows_v1.csv,Fang Computational-ADME: MIT; author-derived scores/analysis with attribution
+数据/processed/abcb1_quantity_biogen_model_input_v1.csv,Fang Computational-ADME: MIT; author-derived scores/analysis with attribution
+数据/processed/abcb1_quantity_biogen_v0_4_predictions_v1.csv,Fang Computational-ADME: MIT; author-derived scores/analysis with attribution
+数据/processed/abcb1_quantity_daood_analysis_rows_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_quantity_daood_model_input_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_quantity_daood_v0_4_predictions_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_quantity_external_abstention_reasons_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_quantity_external_evidence_ledger_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_quantity_external_metrics_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_quantity_external_preparation_summary_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_quantity_external_source_registry_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_quantity_external_validation_protocol_lock_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_quantity_external_validation_summary_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_quantity_external_validation_validation_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_evidence_tiered_pool_v2.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_evidence_tiered_pool_v3.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_evidence_tiered_pool_v4.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_expansion_batch2_entities_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_expansion_batch2_source_registry_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_expansion_batch2_summary_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_expansion_batch3_entities_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_expansion_batch3_protocol_lock_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_expansion_batch3_source_lineage_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_expansion_batch3_source_registry_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_expansion_batch3_summary_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_expansion_batch4_negative_entities_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_expansion_batch4_negative_exclusion_log_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_expansion_batch4_negative_protocol_lock_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_expansion_batch4_negative_source_lineage_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_expansion_batch4_negative_source_registry_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_expansion_batch4_negative_summary_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_expansion_search_queue_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_expansion_search_queue_v2.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_expansion_search_queue_v3.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_reuse_entities_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_reuse_observations_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_reuse_source_registry_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_reuse_summary_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_strict_external_pool_v2.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_strict_external_pool_v3.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_strict_external_pool_v4.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_strict_increment_batch5_reserved_unscored_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_v4_blind_cluster_sensitivity_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_v4_blind_error_audit_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_v4_blind_metric_summary_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_v4_blind_paired_comparison_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_v4_blind_predictions_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_v4_blind_scoring_protocol_lock_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_v4_blind_summary_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_v4_blind_uncertainty_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_v4_prior_score_exposure_audit_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_regulatory_v4_prior_score_exposure_summary_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_screener_v0_1_conflict_audit.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_screener_v0_1_cv_fold_metrics.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_screener_v0_1_external_pressure_predictions.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_screener_v0_1_model_summary.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_screener_v0_1_oof_predictions.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_screener_v0_1_summary.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_screener_v0_1_threshold_sweep.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_screener_v0_1_training_audit.csv,ChEMBL-derived records: CC-BY-SA-3.0; curated labels: CC-BY-4.0
+数据/processed/abcb1_selective_internal_metrics_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_selective_probability_threshold_sweep_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_selective_screener_v0_4_build_summary_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_selective_screener_v0_4_protocol_lock_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_selective_screener_v0_4_validation_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_selective_v0_4_adc_release_registry_predictions_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_selective_v0_4_adc_release_registry_summary_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_selective_v0_4_asap2025_posthoc_predictions_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_selective_v0_4_conrad_pairwise_posthoc_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_selective_v0_4_conrad_posthoc_predictions_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_selective_v0_4_posthoc_diagnostic_metrics_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_selective_v0_4_posthoc_diagnostic_summary_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_selective_v0_4_regulatory_v4_posthoc_predictions_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/abcb1_three_layer_evidence_manifest_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/adc_direct_numeric_binary_anchors_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/adc_release_species_transporter_evidence_long_v6.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/bay716_caco2_transport_numeric_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/binary_supplement_model_diagnostics_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/binary_supplement_predictions_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/binary_supplement_summary_v1.json,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/binary_supplement_training_interface_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/compound_registry_standardized_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/compound_registry_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/direct_bidirectional_transport_numeric_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/direct_bidirectional_transport_numeric_v2.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/direct_bidirectional_transport_numeric_v3.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/dxd_maaa1181a_caco2_transport_numeric_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/external_truth_set_v1_pgp_bcrp_continuous_26.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/external_truth_set_v2_pgp_bcrp_continuous_identity_audited.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/foti_figure8_digitization_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/free_payload_release_pair_evidence_v3.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/independent_human_transporter_negative_contrast_panel_observations_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/obi992_caco2_payload_transport_numeric_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+数据/processed/soskuti_2024_mdr1_species_observations_v1.csv,Soskuti 2024: CC-BY-4.0; author standardization/exclusion modifications indicated
+数据/processed/soskuti_2024_mdr1_species_panel_identity_audited_v2.csv,Soskuti 2024: CC-BY-4.0; author standardization/exclusion modifications indicated
+数据/processed/soskuti_2024_mdr1_species_panel_v1.csv,Soskuti 2024: CC-BY-4.0; author standardization/exclusion modifications indicated
+数据/processed/soskuti_2024_mdr1_species_source_registry_v1.csv,Soskuti 2024: CC-BY-4.0; author standardization/exclusion modifications indicated
+数据/processed/soskuti_2024_mdr1_species_structure_resolution_issues_v1.csv,Soskuti 2024: CC-BY-4.0; author standardization/exclusion modifications indicated
+数据/processed/soskuti_2024_mdr1_species_training63_identity_audited_v2.csv,Soskuti 2024: CC-BY-4.0; author standardization/exclusion modifications indicated
+数据/processed/soskuti_2024_mdr1_species_validation_v1.json,Soskuti 2024: CC-BY-4.0; author standardization/exclusion modifications indicated
+数据/processed/soskuti_identity_adjudication_summary_v2.json,Soskuti 2024: CC-BY-4.0; author standardization/exclusion modifications indicated
+数据/processed/soskuti_identity_adjudication_v2.csv,Soskuti 2024: CC-BY-4.0; author standardization/exclusion modifications indicated
+数据/processed/soskuti_identity_crosssource_snapshot_v1.csv,Soskuti 2024: CC-BY-4.0; author standardization/exclusion modifications indicated
+数据/processed/soskuti_identity_model_input_diff_v2.csv,Soskuti 2024: CC-BY-4.0; author standardization/exclusion modifications indicated
+数据/processed/soskuti_identity_review_a_v1.csv,Soskuti 2024: CC-BY-4.0; author standardization/exclusion modifications indicated
+数据/processed/soskuti_identity_review_b_v1.csv,Soskuti 2024: CC-BY-4.0; author standardization/exclusion modifications indicated
+数据/raw/abcb1_asap_mdck_mdr1_v1/CHEMBL5674852_activities.json,ChEMBL-derived records: CC-BY-SA-3.0; curated labels: CC-BY-4.0
+数据/raw/abcb1_asap_mdck_mdr1_v1/CHEMBL5674852_assays.json,ChEMBL-derived records: CC-BY-SA-3.0; curated labels: CC-BY-4.0
+数据/raw/abcb1_asap_mdck_mdr1_v1/CHEMBL5674852_document.json,ChEMBL-derived records: CC-BY-SA-3.0; curated labels: CC-BY-4.0
+数据/scripts/abcb1_screener_core_v0_1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/analyze_abcb1_quantity_external_validation_v1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/audit_abcb1_regulatory_v4_prior_score_exposure_v1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/audit_training_labels_tenth_batch.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/build_abcb1_selective_manuscript_package_v1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/build_abcb1_selective_screener_v0_4_dev.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/collect_abcb1_asap_mdck_mdr1_v1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/collect_abcb1_regulatory_expansion_batch2_v1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/collect_abcb1_regulatory_expansion_batch3_v1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/collect_abcb1_regulatory_expansion_batch4_negative_v1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/collect_abcb1_regulatory_reuse_panel_v1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/collect_eighth_batch.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/collect_eleventh_batch_chembl_assays.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/collect_fifth_batch.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/collect_first_batch.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/collect_langthaler_2024_human_abcb1_reference_panel.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/collect_public_independent_sources.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/collect_second_batch.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/collect_seventh_batch.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/collect_sixth_batch.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/collect_soskuti_2024_mdr1_panel.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/collect_third_batch.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/develop_abcb1_assay_aware_candidate_v0_3.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/diagnose_abcb1_selective_screener_v0_4_dev.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/digitize_foti_figure8.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/digitize_khera_figure4b.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/plot_abcb1_external_calibration_error_v2.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/plot_abcb1_external_evidence_channel_ablation_v1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/plot_abcb1_external_risk_experiments_v1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/plot_abcb1_ood_structural_shift_v1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/plot_abcb1_public_models_reference_relative_distance_v1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/plot_abcb1_public_predictor_benchmark_v1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/plot_abcb1_public_predictor_ood_strata_v1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/prepare_abcb1_ood_structural_shift_v1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/prepare_abcb1_public_predictor_benchmark_v1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/prepare_abcb1_quantity_external_validation_v1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/rebuild_abcb1_adc_application_demo_v2.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/run_abcb1_external_calibration_error_v2.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/run_abcb1_external_evidence_channel_ablation_v1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/run_abcb1_external_risk_experiments_v1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/run_abcb1_ood_structural_shift_v1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/run_abcb1_public_predictor_benchmark_v1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/run_abcb1_public_predictor_ood_comparison_v1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/run_abcb1_q1_external_benchmark_v1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/run_abcb1_regulatory_v4_blind_scoring_v1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/run_binary_supplement_pu_baseline.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/run_standardization_leakage_baseline.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/score_abcb1_asap2025_sourceheldout_v1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/score_abcb1_selective_adc_release_registry_v0_4_dev.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/train_abcb1_screener_v0_1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/validate_abcb1_external_calibration_error_v2.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/validate_abcb1_external_evidence_channel_ablation_v1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/validate_abcb1_external_risk_experiments_v1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/validate_abcb1_ood_structural_shift_v1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/validate_abcb1_public_predictor_benchmark_v1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/validate_abcb1_public_predictor_ood_comparison_v1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/validate_abcb1_quantity_external_validation_v1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/validate_abcb1_selective_manuscript_package_v1.py,MIT (author-owned software); third-party imports retain their licences
+数据/scripts/validate_abcb1_selective_screener_v0_4_dev.py,MIT (author-owned software); third-party imports retain their licences
+模型/ABCB1_assay_aware_candidate_v0_3_dev/ABCB1_assay_aware_candidate_v0_3_dev.joblib,MIT software; embedded ChEMBL CC-BY-SA-3.0 and direct-panel CC-BY-4.0 records
+模型/ABCB1_assay_aware_candidate_v0_3_dev/MODEL_CARD.md,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+模型/ABCB1_assay_aware_candidate_v0_3_dev/README.md,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+模型/ABCB1_assay_aware_candidate_v0_3_dev/manifest.json,MIT software; embedded ChEMBL CC-BY-SA-3.0 and direct-panel CC-BY-4.0 records
+模型/ABCB1_assay_aware_candidate_v0_3_dev/predict_abcb1_assay_aware.py,MIT (author-owned software); third-party imports retain their licences
+模型/ABCB1_assay_aware_candidate_v0_3_dev/runtime-lock.txt,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+模型/ABCB1_assay_aware_candidate_v0_3_dev/test_smoke.py,MIT (author-owned software); third-party imports retain their licences
+模型/ABCB1_screener_v0_1/ABCB1_screener_v0_1.joblib,MIT software; embedded ChEMBL CC-BY-SA-3.0 and direct-panel CC-BY-4.0 records
+模型/ABCB1_screener_v0_1/MODEL_CARD.md,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+模型/ABCB1_screener_v0_1/manifest.json,MIT software; embedded ChEMBL CC-BY-SA-3.0 and direct-panel CC-BY-4.0 records
+模型/ABCB1_screener_v0_1/predict_abcb1.py,MIT (author-owned software); third-party imports retain their licences
+模型/ABCB1_selective_screener_v0_4_dev/ABCB1_selective_uncertainty_v0_4_dev.joblib,MIT software; embedded ChEMBL CC-BY-SA-3.0 and direct-panel CC-BY-4.0 records
+模型/ABCB1_selective_screener_v0_4_dev/MODEL_CARD.md,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+模型/ABCB1_selective_screener_v0_4_dev/README.md,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+模型/ABCB1_selective_screener_v0_4_dev/example_predictions.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+模型/ABCB1_selective_screener_v0_4_dev/example_queries.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+模型/ABCB1_selective_screener_v0_4_dev/manifest.json,MIT software; embedded ChEMBL CC-BY-SA-3.0 and direct-panel CC-BY-4.0 records
+模型/ABCB1_selective_screener_v0_4_dev/predict_abcb1_selective.py,MIT (author-owned software); third-party imports retain their licences
+模型/ABCB1_selective_screener_v0_4_dev/runtime-lock.txt,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+模型/ABCB1_selective_screener_v0_4_dev/test_smoke.py,MIT (author-owned software); third-party imports retain their licences
+论文主稿/zenodo_deposit_20260915/abcb1_ood_reference_loo_distances_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md
+论文主稿/zenodo_deposit_20260915/abcb1_ood_structural_assignments_v1.csv,Fang Computational-ADME: MIT; author-derived scores/analysis with attribution
+论文主稿/zenodo_deposit_20260915/abcb1_public_predictor_metrics_v1.csv,Mixed provenance: retain per-record attribution; see THIRD_PARTY_NOTICES.md

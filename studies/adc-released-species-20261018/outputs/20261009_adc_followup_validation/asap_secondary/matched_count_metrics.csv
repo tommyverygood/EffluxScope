@@ -1,0 +1,7 @@
+﻿cohort,policy,population_n,coverage,selected_n,positive_n,negative_n,tp,tn,fp,fn,balanced_accuracy,npv,bacc_unavailable_reason
+unique_compound_56,v01_own_margin,56,0.08928571428571429,5,5,0,5,0,0,0,,,selected_subset_missing_true_class
+unique_compound_56,v03_own_margin,56,0.08928571428571429,5,5,0,5,0,0,0,,,selected_subset_missing_true_class
+unique_compound_56,full_v04_native,56,0.08928571428571429,5,5,0,5,0,0,0,,,selected_subset_missing_true_class
+measurement_rows_62,v01_own_margin,62,0.08064516129032258,5,5,0,5,0,0,0,,,selected_subset_missing_true_class
+measurement_rows_62,v03_own_margin,62,0.08064516129032258,5,5,0,5,0,0,0,,,selected_subset_missing_true_class
+measurement_rows_62,full_v04_native,62,0.08064516129032258,5,5,0,5,0,0,0,,,selected_subset_missing_true_class

@@ -1,0 +1,128 @@
+{
+  "status": "identity_and_source_extraction_complete",
+  "new_exact_machine_entities": 1,
+  "candidate_rows": 7,
+  "main_transport_observations": 17,
+  "independent_Weng_transport_observations": 12,
+  "new_direct_ABCB1_negative_entities": 0,
+  "new_changed_parent_release_pairs": 0,
+  "wetlab_done": false,
+  "manuscript_changed": false,
+  "files": [
+    {
+      "file": "DMH_identity_crosscheck.json",
+      "bytes": 585,
+      "sha256": "69b88e67fada6b419372d64fd8c62c4c2598616dfaf498ad3bb2f66d1317d051"
+    },
+    {
+      "file": "OBI992_TableS5_extracted.json",
+      "bytes": 1790,
+      "sha256": "c798f765a04c0ffa06905b92a1ed815157158eaf3d321234e10a5be4678a5832"
+    },
+    {
+      "file": "TableS5_reextraction_verification.json",
+      "bytes": 1143,
+      "sha256": "9880815e610473f779b6cc54ee39807d27a7850894cb334f5a9f04d005833dc2"
+    },
+    {
+      "file": "Weng2023_FigS1E_transport.csv",
+      "bytes": 11384,
+      "sha256": "2db915740d59baa1795a4e71804c9a32b84739bcf205aeb402d9d82f18f315bb"
+    },
+    {
+      "file": "Weng2023_review_receipt.json",
+      "bytes": 432,
+      "sha256": "a71ddc0721367f55c33078a0059d32846b32ca27f377525e4ce7b4abe3873df2"
+    },
+    {
+      "file": "direct_transport_observations.csv",
+      "bytes": 11375,
+      "sha256": "40f7050c6ed84bdbb97f3cb399774ad3dbfb0a1c4be4874b4c4b165bd47fb0e8"
+    },
+    {
+      "file": "family_candidate_evidence.csv",
+      "bytes": 6556,
+      "sha256": "9d03c7da10a95903fd3c4e9a374582578f6cfca4c20539e9fc4b37118d67c67b"
+    },
+    {
+      "file": "new_machine_entities.csv",
+      "bytes": 796,
+      "sha256": "d0a2d105af16b24e07431fd9d279d7ff2bc82d3257d62cbbc13a06031af10624"
+    },
+    {
+      "file": "sources/EMA_Besponsa_assessment.pdf",
+      "bytes": 3703052,
+      "sha256": "aa91e0cc70e497534c932e4c0474a7941e9669a393267cee50d1709e7429e523"
+    },
+    {
+      "file": "sources/EMA_Besponsa_assessment.txt",
+      "bytes": 399017,
+      "sha256": "bedab3e321c4b5e717c6c50433e6d379fe56298180fd4ebcd1569a4b2c8f9f8f"
+    },
+    {
+      "file": "sources/EMA_Besponsa_page29_text.txt",
+      "bytes": 3396,
+      "sha256": "3a447b7a226e6b35d4ec66703db7eabdbfec3fa2d346b61daf2199b1fe1e240a"
+    },
+    {
+      "file": "sources/EMA_Besponsa_page49_text.txt",
+      "bytes": 4248,
+      "sha256": "e8739832f7c3ca0f48e03b451b9f6aafad20f16f53dcf618eeefc9a3fcea0a1b"
+    },
+    {
+      "file": "sources/FDA_Zynlonta_multidiscipline_review_2021.txt",
+      "bytes": 861364,
+      "sha256": "bfda7d40abc3727ee50e3b6f13f28522bb036cae856499ea993ad00541b2149b"
+    },
+    {
+      "file": "sources/FDA_Zynlonta_page46_text.txt",
+      "bytes": 4322,
+      "sha256": "93c641489d06f5cfc419c9ed31c15f8fe81f78882ce627be0c4df811b146f9d6"
+    },
+    {
+      "file": "sources/NCATS_DMH_3FJ2DCE5R2.html",
+      "bytes": 31704,
+      "sha256": "5058641ec571694236f01f555fde94a61956e0d2bc9993785d4b0ed496c8775e"
+    },
+    {
+      "file": "sources/PubChem_46240929_properties.json",
+      "bytes": 362,
+      "sha256": "4cf6d00f58db1dcef056e911bd1e529d50bf6b71ea9e2b3e1d432f9c9ce7f047"
+    },
+    {
+      "file": "sources/PubChem_86567977_properties.json",
+      "bytes": 544,
+      "sha256": "adb0c70d73297e3bad1081ccf113191f6f4d30bc54df9453e25f7a2a2e5d775b"
+    },
+    {
+      "file": "sources/Weng2023_S1E_page2.png",
+      "bytes": 742161,
+      "sha256": "3f516b86add68cf50b7f1e13e5d4c38b38d6390350acdd418ac51176bb2d2497"
+    },
+    {
+      "file": "sources/Weng2023_SFigures.txt",
+      "bytes": 310354,
+      "sha256": "8f72e6ad66cadc613e9639ee2c71621209bd19fb92900c17b404a7f6c6326d30"
+    },
+    {
+      "file": "sources/Weng2023_figshare_metadata.json",
+      "bytes": 11124,
+      "sha256": "766b45517daf148f6d2c3fec7dbe984d08ee485b5b81b9bf9c1d2b940aa1f616"
+    },
+    {
+      "file": "sources/cd-22-1368_figure_s1-s19_suppsf1.pdf",
+      "bytes": 4642218,
+      "sha256": "8e5886a5f8d3096164a2dd4e09e142582eff4891c49d527fa80033a797414466"
+    },
+    {
+      "file": "sources/mct-24-0588_supplementary_methods_and_tables_suppsmt.docx",
+      "bytes": 230510,
+      "sha256": "8c1edea72faf45a16e982b31d2ef6c5525adb45b11d667d119a67ae3b42dfd96"
+    },
+    {
+      "file": "\u5bb6\u65cf\u6269\u5145\u4e0e\u8bc1\u636e\u6838\u9a8c.md",
+      "bytes": 6929,
+      "sha256": "10551f25bce335a5e4ecaa93577faaa6a7eef525138032e62afe9ec2bd3a5a02"
+    }
+  ]
+}

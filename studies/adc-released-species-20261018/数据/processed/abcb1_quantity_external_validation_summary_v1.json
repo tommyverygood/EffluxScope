@@ -1,0 +1,91 @@
+{
+  "analysis_version": "ABCB1_QUANTITY_EXTERNAL_VALIDATION_V1",
+  "analysis_date": "2026-08-05",
+  "status": "completed_frozen_model_no_tuning",
+  "protocol_path": "数据/processed/abcb1_quantity_external_validation_protocol_lock_v1.json",
+  "protocol_sha256": "9026b19f5ea3e4a288bc52ec96db1cbc8deccf6821ed08c2e85e76d5f3be9a4d",
+  "model_sha256": "c56fb6b8f6f8bf13472a1a2d433b05d4c6a35eb2490ba84ce9371395b8bbff8b",
+  "reference_panel_counts": {
+    "primary_rows": 443,
+    "primary_unique_connectivity_blocks": 443,
+    "direct_rows": 84,
+    "direct_unique_connectivity_blocks": 84
+  },
+  "new_data_quantity": {
+    "raw_scored_rows": 3249,
+    "biogen_raw_rows": 2642,
+    "daood_raw_rows": 607,
+    "collapsed_unique_connectivity_or_unresolved_rows": 3248,
+    "identity_clean_unique_rows": 2780,
+    "scaffold_clean_unique_rows": 2689
+  },
+  "overlap_audit": {
+    "biogen_exact_overlap_primary": 9,
+    "biogen_exact_overlap_direct": 8,
+    "biogen_identity_clean": 2624,
+    "biogen_scaffold_clean": 2562,
+    "daood_exact_overlap_primary": 443,
+    "daood_exact_overlap_direct": 42,
+    "daood_identity_clean": 156,
+    "daood_scaffold_clean": 127,
+    "daood_label_conflict_connectivities": 0
+  },
+  "primary_biogen_identity_clean_result": {
+    "source": "Biogen_Fang_2023",
+    "subset": "identity_clean",
+    "stratum": "all",
+    "n_unique_structures": 2624,
+    "n_endpoint_positive": 1145,
+    "n_endpoint_negative": 1479,
+    "n_high_call": 305,
+    "n_low_call": 148,
+    "n_abstain": 2171,
+    "coverage": 0.1726372,
+    "accepted_n": 453,
+    "accepted_positive_n": 250,
+    "accepted_negative_n": 203,
+    "accuracy": 0.75055188,
+    "balanced_accuracy": 0.73510345,
+    "mcc": 0.49857011,
+    "sensitivity": 0.884,
+    "specificity": 0.5862069,
+    "high_risk_precision": 0.72459016,
+    "low_risk_npv": 0.80405405,
+    "roc_auc_all_probabilities": 0.62468445,
+    "spearman_probability_vs_endpoint": 0.24718176,
+    "spearman_ci95_low": 0.20746734,
+    "spearman_ci95_high": 0.28434392,
+    "spearman_bootstrap_valid_replicates": 2000,
+    "balanced_accuracy_ci95_low": 0.69083545,
+    "balanced_accuracy_ci95_high": 0.77622322,
+    "balanced_accuracy_bootstrap_valid_replicates": 2000,
+    "mcc_ci95_low": 0.41328292,
+    "mcc_ci95_high": 0.58007208,
+    "mcc_bootstrap_valid_replicates": 2000,
+    "accepted_high_endpoint_median": 0.88818322,
+    "accepted_low_endpoint_median": -0.14430289,
+    "accepted_high_minus_low_median": 1.03248611,
+    "accepted_high_vs_low_cliffs_delta": 0.68870182,
+    "accepted_high_vs_low_mannwhitney_p": 0.0,
+    "n_murcko_bootstrap_clusters": 2312
+  },
+  "predeclared_quantity_gate": {
+    "continuous_direction_positive_ci_excludes_zero": true,
+    "accepted_high_median_exceeds_low_median": true,
+    "quantity_support_status": "pass",
+    "interpretation_if_pass": "supports a bounded external ABCB1 efflux-risk ranking/selective-triage claim",
+    "interpretation_if_fail": "does not support an external quantity-based risk-ranking claim; retain only failure-boundary evidence"
+  },
+  "strict_predictor_upgrade": {
+    "status": "not_permitted",
+    "reason": "no new outcome-unseen matched-parental or inhibitor-rescue source with both positive and negative calls"
+  },
+  "claim_boundary": "free or released small-molecule ABCB1 efflux-risk ranking and selective triage only; not intact-ADC transport, universal substrate truth, intracellular unbound exposure, resistance, efficacy, or clinical DDI",
+  "output_hashes": {
+    "数据/processed/abcb1_quantity_biogen_analysis_rows_v1.csv": "9346b705e83a8606c00aabbe77b63f125ad1ef3aefc4e6899be17cf4cba61457",
+    "数据/processed/abcb1_quantity_daood_analysis_rows_v1.csv": "649a28091f7e690d98c731b9c6d234bb3db6ba7d0a1906a8bfce5bd4d188ad59",
+    "数据/processed/abcb1_quantity_external_metrics_v1.csv": "128044c371bc036ff352ac1f7e316089e3dea3635274ee85371f5471283fd13d",
+    "数据/processed/abcb1_quantity_external_abstention_reasons_v1.csv": "59d098675e407cd3747b488b6d553e2b0806894b5da60cc3d1ce89dbc68cf7a6",
+    "数据/processed/abcb1_quantity_external_evidence_ledger_v1.csv": "690d6b49036da8071a3cac654032c1d62be0a54c93c6aba6890bb5449678de55"
+  }
+}

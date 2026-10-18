@@ -1,0 +1,588 @@
+{
+  "status": "PASS_count_only_feasibility",
+  "counts": [
+    {
+      "source": "Biogen2624",
+      "region": "all_identity_clean",
+      "unique_compound_n": 2624,
+      "positive_n": 1145,
+      "negative_n": 1479,
+      "scaffold_n": 2312,
+      "full_accepted_n": 453,
+      "full_accepted_positive_n": 250,
+      "full_accepted_negative_n": 203,
+      "full_accepted_scaffold_n": 419,
+      "adc14_region_n": 14,
+      "adc14_region_fraction": 1.0,
+      "missing_full_selected_class": false,
+      "no_full_accepted": false,
+      "minimum_practical_count_gate_pass": true,
+      "count_gate_shortfalls": {}
+    },
+    {
+      "source": "Biogen2624",
+      "region": "MW_ge600",
+      "unique_compound_n": 6,
+      "positive_n": 4,
+      "negative_n": 2,
+      "scaffold_n": 6,
+      "full_accepted_n": 2,
+      "full_accepted_positive_n": 1,
+      "full_accepted_negative_n": 1,
+      "full_accepted_scaffold_n": 2,
+      "adc14_region_n": 10,
+      "adc14_region_fraction": 0.7142857142857143,
+      "missing_full_selected_class": false,
+      "no_full_accepted": false,
+      "minimum_practical_count_gate_pass": false,
+      "count_gate_shortfalls": {
+        "population_n": {
+          "observed": 6,
+          "required": 30
+        },
+        "positive_n": {
+          "observed": 4,
+          "required": 5
+        },
+        "negative_n": {
+          "observed": 2,
+          "required": 5
+        },
+        "scaffold_n": {
+          "observed": 6,
+          "required": 10
+        },
+        "full_accepted_n": {
+          "observed": 2,
+          "required": 10
+        },
+        "full_accepted_positive_n": {
+          "observed": 1,
+          "required": 3
+        },
+        "full_accepted_negative_n": {
+          "observed": 1,
+          "required": 3
+        }
+      }
+    },
+    {
+      "source": "Biogen2624",
+      "region": "TPSA_ge140",
+      "unique_compound_n": 18,
+      "positive_n": 14,
+      "negative_n": 4,
+      "scaffold_n": 17,
+      "full_accepted_n": 12,
+      "full_accepted_positive_n": 10,
+      "full_accepted_negative_n": 2,
+      "full_accepted_scaffold_n": 11,
+      "adc14_region_n": 10,
+      "adc14_region_fraction": 0.7142857142857143,
+      "missing_full_selected_class": false,
+      "no_full_accepted": false,
+      "minimum_practical_count_gate_pass": false,
+      "count_gate_shortfalls": {
+        "population_n": {
+          "observed": 18,
+          "required": 30
+        },
+        "negative_n": {
+          "observed": 4,
+          "required": 5
+        },
+        "full_accepted_negative_n": {
+          "observed": 2,
+          "required": 3
+        }
+      }
+    },
+    {
+      "source": "Biogen2624",
+      "region": "amide_ge4_MW_ge500",
+      "unique_compound_n": 1,
+      "positive_n": 1,
+      "negative_n": 0,
+      "scaffold_n": 1,
+      "full_accepted_n": 1,
+      "full_accepted_positive_n": 1,
+      "full_accepted_negative_n": 0,
+      "full_accepted_scaffold_n": 1,
+      "adc14_region_n": 6,
+      "adc14_region_fraction": 0.42857142857142855,
+      "missing_full_selected_class": true,
+      "no_full_accepted": false,
+      "minimum_practical_count_gate_pass": false,
+      "count_gate_shortfalls": {
+        "population_n": {
+          "observed": 1,
+          "required": 30
+        },
+        "positive_n": {
+          "observed": 1,
+          "required": 5
+        },
+        "negative_n": {
+          "observed": 0,
+          "required": 5
+        },
+        "scaffold_n": {
+          "observed": 1,
+          "required": 10
+        },
+        "full_accepted_n": {
+          "observed": 1,
+          "required": 10
+        },
+        "full_accepted_positive_n": {
+          "observed": 1,
+          "required": 3
+        },
+        "full_accepted_negative_n": {
+          "observed": 0,
+          "required": 3
+        }
+      }
+    },
+    {
+      "source": "ASAP56",
+      "region": "all_identity_clean",
+      "unique_compound_n": 56,
+      "positive_n": 44,
+      "negative_n": 12,
+      "scaffold_n": 29,
+      "full_accepted_n": 5,
+      "full_accepted_positive_n": 5,
+      "full_accepted_negative_n": 0,
+      "full_accepted_scaffold_n": 4,
+      "adc14_region_n": 14,
+      "adc14_region_fraction": 1.0,
+      "missing_full_selected_class": true,
+      "no_full_accepted": false,
+      "minimum_practical_count_gate_pass": false,
+      "count_gate_shortfalls": {
+        "full_accepted_n": {
+          "observed": 5,
+          "required": 10
+        },
+        "full_accepted_negative_n": {
+          "observed": 0,
+          "required": 3
+        }
+      }
+    },
+    {
+      "source": "ASAP56",
+      "region": "MW_ge600",
+      "unique_compound_n": 0,
+      "positive_n": 0,
+      "negative_n": 0,
+      "scaffold_n": 0,
+      "full_accepted_n": 0,
+      "full_accepted_positive_n": 0,
+      "full_accepted_negative_n": 0,
+      "full_accepted_scaffold_n": 0,
+      "adc14_region_n": 10,
+      "adc14_region_fraction": 0.7142857142857143,
+      "missing_full_selected_class": true,
+      "no_full_accepted": true,
+      "minimum_practical_count_gate_pass": false,
+      "count_gate_shortfalls": {
+        "population_n": {
+          "observed": 0,
+          "required": 30
+        },
+        "positive_n": {
+          "observed": 0,
+          "required": 5
+        },
+        "negative_n": {
+          "observed": 0,
+          "required": 5
+        },
+        "scaffold_n": {
+          "observed": 0,
+          "required": 10
+        },
+        "full_accepted_n": {
+          "observed": 0,
+          "required": 10
+        },
+        "full_accepted_positive_n": {
+          "observed": 0,
+          "required": 3
+        },
+        "full_accepted_negative_n": {
+          "observed": 0,
+          "required": 3
+        }
+      }
+    },
+    {
+      "source": "ASAP56",
+      "region": "TPSA_ge140",
+      "unique_compound_n": 0,
+      "positive_n": 0,
+      "negative_n": 0,
+      "scaffold_n": 0,
+      "full_accepted_n": 0,
+      "full_accepted_positive_n": 0,
+      "full_accepted_negative_n": 0,
+      "full_accepted_scaffold_n": 0,
+      "adc14_region_n": 10,
+      "adc14_region_fraction": 0.7142857142857143,
+      "missing_full_selected_class": true,
+      "no_full_accepted": true,
+      "minimum_practical_count_gate_pass": false,
+      "count_gate_shortfalls": {
+        "population_n": {
+          "observed": 0,
+          "required": 30
+        },
+        "positive_n": {
+          "observed": 0,
+          "required": 5
+        },
+        "negative_n": {
+          "observed": 0,
+          "required": 5
+        },
+        "scaffold_n": {
+          "observed": 0,
+          "required": 10
+        },
+        "full_accepted_n": {
+          "observed": 0,
+          "required": 10
+        },
+        "full_accepted_positive_n": {
+          "observed": 0,
+          "required": 3
+        },
+        "full_accepted_negative_n": {
+          "observed": 0,
+          "required": 3
+        }
+      }
+    },
+    {
+      "source": "ASAP56",
+      "region": "amide_ge4_MW_ge500",
+      "unique_compound_n": 0,
+      "positive_n": 0,
+      "negative_n": 0,
+      "scaffold_n": 0,
+      "full_accepted_n": 0,
+      "full_accepted_positive_n": 0,
+      "full_accepted_negative_n": 0,
+      "full_accepted_scaffold_n": 0,
+      "adc14_region_n": 6,
+      "adc14_region_fraction": 0.42857142857142855,
+      "missing_full_selected_class": true,
+      "no_full_accepted": true,
+      "minimum_practical_count_gate_pass": false,
+      "count_gate_shortfalls": {
+        "population_n": {
+          "observed": 0,
+          "required": 30
+        },
+        "positive_n": {
+          "observed": 0,
+          "required": 5
+        },
+        "negative_n": {
+          "observed": 0,
+          "required": 5
+        },
+        "scaffold_n": {
+          "observed": 0,
+          "required": 10
+        },
+        "full_accepted_n": {
+          "observed": 0,
+          "required": 10
+        },
+        "full_accepted_positive_n": {
+          "observed": 0,
+          "required": 3
+        },
+        "full_accepted_negative_n": {
+          "observed": 0,
+          "required": 3
+        }
+      }
+    }
+  ],
+  "adc14": [
+    {
+      "uid": "ADC_PAYLOAD_018",
+      "entity_name": "MMAF",
+      "molecular_weight": 731.976,
+      "tpsa": 166.61,
+      "amide_count": 4,
+      "MW_ge600": true,
+      "TPSA_ge140": true,
+      "amide_ge4_MW_ge500": true,
+      "full_accepted": false
+    },
+    {
+      "uid": "ADC_REL_006",
+      "entity_name": "cys-mcMMAF",
+      "molecular_weight": 1046.339,
+      "tpsa": 283.6,
+      "amide_count": 5,
+      "MW_ge600": true,
+      "TPSA_ge140": true,
+      "amide_ge4_MW_ge500": true,
+      "full_accepted": false
+    },
+    {
+      "uid": "ADC_PAYLOAD_008",
+      "entity_name": "DM1",
+      "molecular_weight": 738.3,
+      "tpsa": 156.47,
+      "amide_count": 3,
+      "MW_ge600": true,
+      "TPSA_ge140": true,
+      "amide_ge4_MW_ge500": false,
+      "full_accepted": false
+    },
+    {
+      "uid": "ADC_REL_001",
+      "entity_name": "Lys-MCC-DM1",
+      "molecular_weight": 1103.73,
+      "tpsa": 294.28,
+      "amide_count": 4,
+      "MW_ge600": true,
+      "TPSA_ge140": true,
+      "amide_ge4_MW_ge500": true,
+      "full_accepted": false
+    },
+    {
+      "uid": "ADC_PAYLOAD_009",
+      "entity_name": "DM4",
+      "molecular_weight": 780.381,
+      "tpsa": 156.47,
+      "amide_count": 3,
+      "MW_ge600": true,
+      "TPSA_ge140": true,
+      "amide_ge4_MW_ge500": false,
+      "full_accepted": false
+    },
+    {
+      "uid": "ADC_REL_004",
+      "entity_name": "S-methyl-DM4",
+      "molecular_weight": 794.408,
+      "tpsa": 156.47,
+      "amide_count": 3,
+      "MW_ge600": true,
+      "TPSA_ge140": true,
+      "amide_ge4_MW_ge500": false,
+      "full_accepted": false
+    },
+    {
+      "uid": "ADC_REL_003",
+      "entity_name": "Lys-SPDB-DM4",
+      "molecular_weight": 1026.713,
+      "tpsa": 248.89,
+      "amide_count": 4,
+      "MW_ge600": true,
+      "TPSA_ge140": true,
+      "amide_ge4_MW_ge500": true,
+      "full_accepted": false
+    },
+    {
+      "uid": "ADC_PAYLOAD_017",
+      "entity_name": "MMAE",
+      "molecular_weight": 717.993,
+      "tpsa": 149.54,
+      "amide_count": 4,
+      "MW_ge600": true,
+      "TPSA_ge140": true,
+      "amide_ge4_MW_ge500": true,
+      "full_accepted": true
+    },
+    {
+      "uid": "ADC_REL_008",
+      "entity_name": "cys-VC-MMAE",
+      "molecular_weight": 1437.811,
+      "tpsa": 410.17,
+      "amide_count": 12,
+      "MW_ge600": true,
+      "TPSA_ge140": true,
+      "amide_ge4_MW_ge500": true,
+      "full_accepted": false
+    },
+    {
+      "uid": "ADC_REL_010",
+      "entity_name": "DXd",
+      "molecular_weight": 493.491,
+      "tpsa": 130.75,
+      "amide_count": 1,
+      "MW_ge600": false,
+      "TPSA_ge140": false,
+      "amide_ge4_MW_ge500": false,
+      "full_accepted": true
+    },
+    {
+      "uid": "ADC_PAYLOAD_024",
+      "entity_name": "SN-38",
+      "molecular_weight": 392.411,
+      "tpsa": 101.65,
+      "amide_count": 0,
+      "MW_ge600": false,
+      "TPSA_ge140": false,
+      "amide_ge4_MW_ge500": false,
+      "full_accepted": true
+    },
+    {
+      "uid": "ADC_PAYLOAD_028",
+      "entity_name": "Exatecan",
+      "molecular_weight": 435.455,
+      "tpsa": 107.44,
+      "amide_count": 0,
+      "MW_ge600": false,
+      "TPSA_ge140": false,
+      "amide_ge4_MW_ge500": false,
+      "full_accepted": true
+    },
+    {
+      "uid": "ADC_PAYLOAD_032",
+      "entity_name": "SG3199",
+      "molecular_weight": 584.673,
+      "tpsa": 102.26,
+      "amide_count": 2,
+      "MW_ge600": false,
+      "TPSA_ge140": false,
+      "amide_ge4_MW_ge500": false,
+      "full_accepted": true
+    },
+    {
+      "uid": "NEWF_CALICH_DMH",
+      "entity_name": "N-acetyl-gamma-calicheamicin dimethylhydrazide",
+      "molecular_weight": 1478.46,
+      "tpsa": 372.17,
+      "amide_count": 2,
+      "MW_ge600": true,
+      "TPSA_ge140": true,
+      "amide_ge4_MW_ge500": false,
+      "full_accepted": false
+    }
+  ],
+  "excluded": [
+    {
+      "source": "Biogen2624",
+      "uid": "BIOGEN_MDR1_0007",
+      "reason": "historical_identity_clean_or_model_usable_exclusion",
+      "standardized_inchikey": "AQHHHDLHHXJYJD-UHFFFAOYSA-N"
+    },
+    {
+      "source": "Biogen2624",
+      "uid": "BIOGEN_MDR1_0027",
+      "reason": "historical_identity_clean_or_model_usable_exclusion",
+      "standardized_inchikey": "XPLZTJWZDBFWDE-OYOVHJISSA-N"
+    },
+    {
+      "source": "Biogen2624",
+      "uid": "BIOGEN_MDR1_0028",
+      "reason": "historical_identity_clean_or_model_usable_exclusion",
+      "standardized_inchikey": "FAJGIEVMPKNFTN-UHFFFAOYSA-N"
+    },
+    {
+      "source": "Biogen2624",
+      "uid": "BIOGEN_MDR1_1006",
+      "reason": "historical_identity_clean_or_model_usable_exclusion",
+      "standardized_inchikey": "WDZVGELJXXEGPV-YIXHJXPBSA-N"
+    },
+    {
+      "source": "Biogen2624",
+      "uid": "BIOGEN_MDR1_1204",
+      "reason": "historical_identity_clean_or_model_usable_exclusion",
+      "standardized_inchikey": "XGALLCVXEZPNRQ-UHFFFAOYSA-N"
+    },
+    {
+      "source": "Biogen2624",
+      "uid": "BIOGEN_MDR1_1215",
+      "reason": "historical_identity_clean_or_model_usable_exclusion",
+      "standardized_inchikey": "RFHAOTPXVQNOHP-UHFFFAOYSA-N"
+    },
+    {
+      "source": "Biogen2624",
+      "uid": "BIOGEN_MDR1_1858",
+      "reason": "historical_identity_clean_or_model_usable_exclusion",
+      "standardized_inchikey": "RYYVLZVUVIJVGH-UHFFFAOYSA-N"
+    },
+    {
+      "source": "Biogen2624",
+      "uid": "BIOGEN_MDR1_2181",
+      "reason": "historical_identity_clean_or_model_usable_exclusion",
+      "standardized_inchikey": "OIGNJSKKLXVSLS-VWUMJDOOSA-N"
+    },
+    {
+      "source": "Biogen2624",
+      "uid": "BIOGEN_MDR1_2305",
+      "reason": "historical_identity_clean_or_model_usable_exclusion",
+      "standardized_inchikey": "JAUOIFJMECXRGI-UHFFFAOYSA-N"
+    },
+    {
+      "source": "Biogen2624",
+      "uid": "BIOGEN_MDR1_2331",
+      "reason": "historical_identity_clean_or_model_usable_exclusion",
+      "standardized_inchikey": "UWKQSNNFCGGAFS-XIFFEERXSA-N"
+    },
+    {
+      "source": "Biogen2624",
+      "uid": "BIOGEN_MDR1_2642",
+      "reason": "historical_identity_clean_or_model_usable_exclusion",
+      "standardized_inchikey": "PUXPEQJKNAWNQA-AAEUAGOBSA-N"
+    },
+    {
+      "source": "Biogen2624",
+      "uid": "BIOGEN_MDR1_3055",
+      "reason": "historical_identity_clean_or_model_usable_exclusion",
+      "standardized_inchikey": "IENZQIKPVFGBNW-UHFFFAOYSA-N"
+    },
+    {
+      "source": "Biogen2624",
+      "uid": "BIOGEN_MDR1_3132",
+      "reason": "historical_identity_clean_or_model_usable_exclusion",
+      "standardized_inchikey": ""
+    },
+    {
+      "source": "Biogen2624",
+      "uid": "BIOGEN_MDR1_3192",
+      "reason": "historical_identity_clean_or_model_usable_exclusion",
+      "standardized_inchikey": ""
+    },
+    {
+      "source": "Biogen2624",
+      "uid": "BIOGEN_MDR1_3240",
+      "reason": "historical_identity_clean_or_model_usable_exclusion",
+      "standardized_inchikey": ""
+    },
+    {
+      "source": "Biogen2624",
+      "uid": "BIOGEN_MDR1_3512",
+      "reason": "historical_identity_clean_or_model_usable_exclusion",
+      "standardized_inchikey": "RDOIQAHITMMDAJ-UHFFFAOYSA-N"
+    },
+    {
+      "source": "Biogen2624",
+      "uid": "BIOGEN_MDR1_3516",
+      "reason": "historical_identity_clean_or_model_usable_exclusion",
+      "standardized_inchikey": "KTUFNOKKBVMGRW-UHFFFAOYSA-N"
+    }
+  ],
+  "reference_unique_exact_key_n": 493,
+  "reference_unique_connectivity_n": 493,
+  "cross_source_connectivity_overlap": [],
+  "ADC_general_source_connectivity_overlap": {
+    "Biogen2624": [
+      "FJHBVJOVLFPMQE"
+    ],
+    "ASAP56": []
+  },
+  "all_source_graphs_parse_and_frozen_model_key_reproduces": true,
+  "no_performance_computed": true,
+  "all_inputs_unchanged": true
+}

@@ -1,0 +1,102 @@
+{
+  "protocol_id": "ABCB1_PUBLIC_PREDICTOR_OOD_COMPARISON_V1",
+  "created_at": "2026-08-07T14:15:47+10:00",
+  "status": "frozen_retrospective_projection_before_new_stratified_metrics",
+  "analysis_timing": "Biogen outcomes and earlier overall public-model results were already observed; public-model scores, thresholds, and structure-only OOD assignments were frozen before this stratified projection",
+  "scientific_role": "project already-generated public-model scores onto the project's frozen ABCB1-reference distance strata; this is not prospective validation and does not establish OOD relative to any public model's own training space",
+  "inputs_sha256": {
+    "数据/processed/abcb1_ood_structural_assignments_v1.csv": "3f6096aa89ecdf2db7e37a80204d5c630aa1cad695ecfc76adc1b649ea1ba0fe",
+    "数据/processed/abcb1_ood_structure_assignment_lock_v1.json": "b15878b3c38b576daf101d2a0257e45f98a4800a1adff023980590e513033238",
+    "数据/processed/abcb1_public_predictor_predictions_long_v1.csv": "1a54dd7fcc580f9f0dc8695c1644e0e798ef9cf738b5381a03760f835ce81793",
+    "数据/processed/abcb1_public_predictor_benchmark_protocol_v1.json": "2a364a1cf924ac2fa4ab2f15772ec88373bb384a048eab0638101fdbf3aed545",
+    "数据/processed/abcb1_public_predictor_benchmark_summary_v1.json": "0e2a5b1350b4a78d1caf6d0d21a5058ea36df04835ccdf3ce66b61e7b56bb519"
+  },
+  "population": {
+    "source": "Biogen/Fang 2023 identity-clean connectivity-collapsed MDR1-MDCK panel",
+    "expected_n": 2624,
+    "continuous_outcome": "observed log10 MDR1-MDCK efflux ratio",
+    "binary_outcome": "observed ER >= 2"
+  },
+  "included_models": [
+    {
+      "comparator_id": "astrazeneca_gnn_mtl_mdck_er_2025",
+      "endpoint": "human MDR1-transfected MDCK LogER",
+      "score_direction": "higher means higher predicted efflux ratio",
+      "binary_threshold": 0.3010299956639812,
+      "threshold_basis": "log10(ER=2), frozen in the prior public-predictor protocol",
+      "substrate_ranking_eligible": true,
+      "training_space_limit": "proprietary AstraZeneca training structures are unavailable, so overlap and distance to the model's own training chemistry cannot be audited"
+    },
+    {
+      "comparator_id": "astrazeneca_gnn_mtl_nih_mdck_er_2025",
+      "endpoint": "human MDR1-transfected NIH-MDCK LogER",
+      "score_direction": "higher means higher predicted efflux ratio",
+      "binary_threshold": 0.3010299956639812,
+      "threshold_basis": "log10(ER=2), frozen in the prior public-predictor protocol",
+      "substrate_ranking_eligible": true,
+      "training_space_limit": "proprietary AstraZeneca training structures are unavailable, so overlap and distance to the model's own training chemistry cannot be audited"
+    },
+    {
+      "comparator_id": "deeppk_pgp_substrate_2026_08_05",
+      "endpoint": "P-glycoprotein substrate probability",
+      "score_direction": "higher means higher predicted substrate probability",
+      "binary_threshold": 0.5,
+      "threshold_basis": "server classification threshold, frozen in the prior public-predictor protocol",
+      "substrate_ranking_eligible": true,
+      "training_space_limit": "exact development-set identity overlap was audited previously, but the present distance strata are still defined from this project's ABCB1 references"
+    },
+    {
+      "comparator_id": "admet_ai_v2_pgp_broccatelli_inhibition",
+      "endpoint": "P-glycoprotein inhibition probability",
+      "score_direction": "higher means higher predicted inhibition probability",
+      "binary_threshold": 0.5,
+      "threshold_basis": "package classification threshold, frozen in the prior public-predictor protocol",
+      "substrate_ranking_eligible": false,
+      "training_space_limit": "endpoint mismatch; retained only as a negative control and excluded from substrate-model ranking"
+    }
+  ],
+  "missing_models": [
+    {
+      "model": "ADMETlab 3.0 P-gp substrate",
+      "status": "unavailable_no_predictions",
+      "reason": "official server-side failure recorded in the frozen prior protocol",
+      "handling": "not imputed and not replaced by another version"
+    }
+  ],
+  "frozen_strata": {
+    "external_D5_quintile": "five equal-frequency groups of D5 to this project's frozen joint ABCB1 model-reference union",
+    "dual_OOD": "D5 exceeds the frozen Q80 threshold for both this project's primary and direct-model references",
+    "kmeans_OOD20": "label-free external clusters selected by frozen median D5 until at least 20 percent of rows",
+    "strict_LoHi": "maximum ECFP4 Tanimoto similarity to this project's joint model reference is at most 0.40"
+  },
+  "analysis_layers": {
+    "full_coverage": "all rows in each frozen stratum",
+    "model_native_margin_top17_3pct_within_stratum": {
+      "target_rate": 0.17263719512195122,
+      "selection": "largest absolute distance from each model's frozen binary threshold, ranked without outcomes within each predeclared stratum",
+      "rounding": "nearest integer using floor(n*rate+0.5), minimum one row",
+      "purpose": "descriptive equal-coverage selective comparison; no threshold refitting or outcome-based selection"
+    }
+  },
+  "metrics": [
+    "balanced_accuracy",
+    "MCC",
+    "ROC_AUC",
+    "Spearman score versus observed log10 MDR1-MDCK ER",
+    "sensitivity",
+    "specificity"
+  ],
+  "minimum_descriptive_support": {
+    "total_n": 50,
+    "each_true_class_n": 20,
+    "handling": "rows below these counts remain in the output but are marked sparse_descriptive_only"
+  },
+  "prohibitions": [
+    "Do not refit or recalibrate a public model.",
+    "Do not change a frozen binary threshold.",
+    "Do not use outcome values to select retained rows.",
+    "Do not call these strata AstraZeneca-training-space OOD or Deep-PK-training-space OOD.",
+    "Do not include ADMET-AI inhibition in substrate-model rankings.",
+    "Do not infer ADC-release-species accuracy from this small-molecule MDR1-MDCK panel."
+  ]
+}

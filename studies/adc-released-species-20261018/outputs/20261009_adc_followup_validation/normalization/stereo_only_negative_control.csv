@@ -1,0 +1,14 @@
+﻿unique_structure_id,entity_name,morgan_features_identical,descriptors_identical,v0_1_score_delta_strip_minus_source,v0_3_score_delta_strip_minus_source
+STRUCT_001,MMAF,True,True,0.0,0.0
+STRUCT_002,cys-mcMMAF,True,True,0.0,0.0
+STRUCT_003,DM1,True,True,0.0,0.0
+STRUCT_004,Lys-MCC-DM1,True,True,0.0,0.0
+STRUCT_005,DM4,True,True,0.0,0.0
+STRUCT_006,S-methyl-DM4,True,True,0.0,0.0
+STRUCT_007,Lys-SPDB-DM4,True,True,0.0,0.0
+STRUCT_008,MMAE,True,True,0.0,0.0
+STRUCT_009,cys-VC-MMAE,True,True,0.0,0.0
+STRUCT_010,DXd,True,True,0.0,0.0
+STRUCT_011,SN-38,True,True,0.0,0.0
+STRUCT_012,Exatecan,True,True,0.0,0.0
+STRUCT_013,SG3199,True,True,0.0,0.0

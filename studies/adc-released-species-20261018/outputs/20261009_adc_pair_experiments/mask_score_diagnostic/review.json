@@ -1,0 +1,46 @@
+{
+  "status": "independent_readonly_review_passed",
+  "reviewer": "experiment_audit",
+  "verified_source_sha256": "9e650cbc3b72d6757994eb9c02b0f130729f5a327a1decb17df3f8c8e36f07e9",
+  "verified_ledger_sha256": "dc073be3100fb42027ea283f8d821b84ef5088c5c70143f77ac1d7f32d0951ce",
+  "script_sha256": "85be53e361946cdee0c82f8bde53512fe7504177303b329ad15d7ef5a2750146",
+  "input_population_n": 2624,
+  "unique_connectivity_n": 2624,
+  "whole_cluster_n": 2312,
+  "selected_count_each_mask": 453,
+  "all_masks_reconstructed_from_frozen_raw_scores_and_reasons": true,
+  "classification_threshold": 0.5,
+  "bootstrap_replicates": 2000,
+  "shared_wholecluster_draws": true,
+  "main_benchmark_not_rerun": true,
+  "shared_benchmark_helper_not_used_in_independent_recalculation": true,
+  "max_abs_point_disagreement": 0.0,
+  "max_abs_ci_disagreement": 0.0,
+  "key_effects": {
+    "auxiliary_classifier_fixed_masks_changed": {
+      "lhs": "v03_margin::auxiliary_v03",
+      "rhs": "full_v04_pool_primary_margin::auxiliary_v03",
+      "point_delta": 0.09665769559952109,
+      "ci95": [
+        0.04854515101933976,
+        0.1452381974497964
+      ]
+    },
+    "full_mask_fixed_classifier_changed": {
+      "lhs": "full_v04_pool_primary_margin::auxiliary_v03",
+      "rhs": "full_v04_pool_primary_margin::primary_v01",
+      "point_delta": 0.010778325123152799,
+      "ci95": [
+        -0.004473715160660435,
+        0.02686031602340574
+      ]
+    }
+  },
+  "interpretation": "The auxiliary own-margin mask has higher BAcc than the full mask even holding auxiliary classifier fixed. Switching classifier on the fixed full mask has small positive BAcc difference with CI crossing0. This is an exploratory conditional decomposition of frozen decisions, not prospective selector validation or proof of causal channel contribution.",
+  "existing_outputs_sha256": {
+    "crossed_metrics.csv": "05dcb97184c1cbc7b388e106992c2ac24937909b547cc7579641af463138dede",
+    "paired_contrasts.csv": "3efa1db961ca22482a0a890e3724f27083bf0adb0bd5f70d7213a46bb47002ca",
+    "protocol.json": "116be400d7beed49c0d1d2b1c61a609b7f0bfd56d92194bf4cc8761702281d13",
+    "交叉诊断.md": "c4db10f61d4d307518d0b157787bb2afecfda93e92087d8c2390e93bb644ead7"
+  }
+}

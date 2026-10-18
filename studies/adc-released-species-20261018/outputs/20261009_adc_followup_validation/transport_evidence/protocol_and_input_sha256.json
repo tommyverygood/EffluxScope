@@ -1,0 +1,30 @@
+{
+  "created_at": "2026-10-09T07:58:13.761307+00:00",
+  "timing": "Retrospective follow-up: prior scores and curated literature outcomes were already known. Not blind, preregistered, or prospective validation.",
+  "models": "Existing frozen v0.1, v0.3, and v0.4 scores. No retraining, recalibration, selector changes, or source-label changes.",
+  "score_direction": "Operational high/low is score >= 0.5 / score < 0.5; a raw-score direction is not an accepted v0.4 prediction or calibrated substrate probability.",
+  "source_direction": "Retain author direction. Strong direct positive means the primary source reports high bidirectional ER plus matched inhibitor rescue; low source evidence is limited to its tested system and material.",
+  "endpoints": "Direct transport, cytotoxicity/GI50 resistance, and regulatory call are separate evidence layers. No cross-layer numerical pooling.",
+  "unit_of_count": "Unique molecular entity in one evidence layer. Concentrations, source runs, duplicated free/released MMAE identities and inhibitor arms are not independent samples.",
+  "parent_release_rule": "No cross-study delta ER or fold change. DM1 versus Lys-MCC-DM1 remains unmatched because cells, concentrations, labs and source materials differ.",
+  "figure_review": "Manual source-image coordinates with conservative +/- 2 source pixels. Previous numerical extraction was visible to this research agent, so this is not a blinded second curator or independent human curation. No gold promotion.",
+  "material_mapping": "Source material name/structure is separate from frozen standardized model representation. Mixture/stereochemical and tautomerization limitations remain visible.",
+  "input_sha256": {
+    "数据/processed/adc_release_species_transporter_evidence_long_v6.csv": "c9640c34dc083e7fdec14f3c36927e8bdfd8cd18ebd35c263cb5d4cfb2eb1371",
+    "数据/processed/direct_bidirectional_transport_numeric_v3.csv": "568a44789eebbad99c48418d6a0db5b6da617bdcf9300ac71e2f4714c0dd7896",
+    "数据/processed/free_payload_release_pair_evidence_v3.csv": "86c4d6b68f9e01f08578b88e7e8c07fcce2c77eec2b1999a77d7d3e4b26411e8",
+    "数据/processed/foti_figure8_digitization_v1.csv": "dff8221e01ad5e640885412373dc1aa2466aa9236ece16d021adbbe4231a05ff",
+    "outputs/20261009_adc_central_pairing/local_pair_audit.csv": "85abf5ac06925c0107991ae4bbb613b325321bb4fe159fd28b187dd4258dbdb2",
+    "outputs/20261009_adc_pair_experiments/pairs/results_curated_v2/entities_scored_or_hold.csv": "abb7062752273ba8382752d45103d6e808adbe8b44b9e09667c0add4d07ec59b",
+    "outputs/20261009_adc_pair_experiments/pairs/results_curated_v2/source_vs_frozen_model_structure_audit.csv": "71241f3598def623efc1ad623560aa8ea31d58492c117bbd3e05eb13fe6fc1f8",
+    "outputs/20261009_adc_pair_experiments/identity/accepted_structure.json": "84cef329285c77b7baeda529e564d302382fb52c7a040633929595eeb169992e",
+    "数据/raw/second_batch_release_species/Foti_2015_Figure8_LysMCCDM1_Pgp.jpg": "b59861d4f1f6be2100da2a8ba0a4ff793e50cb925a70e3c1f6eecd268b288bdf",
+    "数据/raw/second_batch_release_species/Foti_2015_PubMed_metadata.xml": "9f0cd9a03c8a2b86c4f521728da715d4baab4677f911732cde40abe06f03497b",
+    "数据/raw/second_batch_release_species/PMDA_belantamab_mafodotin_English_report.pdf": "c3d2c6e8d3c77c743437f6f0bfded2261f11a335b0b738daf73bdd7e12e21cf3",
+    "数据/raw/third_batch_pair_resolution/FDA_Elahere_2022_MultidisciplineReview.pdf": "fd3d266e52c07ab6426cd50e80960d84b9a2aec4a1e478abea40acf902899dce",
+    "数据/raw/fifth_batch_matched_pairs/PMDA_Kadcyla_2013_Nonclinical_PK.pdf": "28792bc8fed9664dbfd0814f047da3e1e923e3d20e7cbe8864d14ffc45365371",
+    "数据/raw/seventh_batch_direct_transport/PMDA_Padcev_MMAE_transport_CTD_2021.pdf": "a08a8263d4d3e48f19ac5f2f8c88fd907ed09dfc112845216d3d9a95728d091e",
+    "数据/raw/fifth_batch_matched_pairs/US7750116B1_Auristatin_Patent.pdf": "e78c8e56cec77702cdc736a35486ed29811e2fe90b79612dc390d7d9e1c6b764",
+    "数据/raw/roth_2026/PMC12883344_fulltext.xml": "3de69123e7302131f0b4f36669ad9b48a25046db2fc2defdc66a89e71b203183"
+  }
+}

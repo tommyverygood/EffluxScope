@@ -1,0 +1,20 @@
+{
+  "protocol_id": "ABCB1_REGULATORY_EXPANSION_BATCH4_NEGATIVE_V1",
+  "lock_date": "2026-08-03",
+  "status": "locked_before_candidate_identity_and_model_scoring",
+  "objective": "Recover at least nine additional identity-clean strict ABCB1 non-substrate candidates from official regulatory reports or source-traceable primary studies, without changing the frozen model or threshold.",
+  "predeclared_search_concepts": [
+    "not a substrate of P-gp plus MDR1-MDCK or LLC-PK1",
+    "net efflux ratio below 2 plus matched parent or wild-type",
+    "no difference between P-gp-expressing and non-expressing cells",
+    "efflux ratio unchanged by selective P-gp inhibitor plus valid positive control",
+    "Abcb1KO-MDCKII-MDR1 negative"
+  ],
+  "strict_negative_rule": "Admit only a released parent drug or named metabolite tested in human ABCB1-transfected cells with matched non-expressing, wild-type, mock, or knockout-background cells, where net ER is below 2 or transporter and parent values show no selective differential. A same-batch positive control or selective-inhibitor condition must demonstrate assay competence when exposed.",
+  "allowed_exception": "A matched-parent multi-concentration study with net ER below 2 and a documented same-batch positive control may be admitted without a substrate-assay inhibitor condition.",
+  "secondary_only": "Transfectant-only ER, qualitative regulatory call, Caco-2-only data, non-human transporter, raw ER without background correction, unspecified metabolite mixture, or missing structure remains outside the formal metric.",
+  "identity_rule": "Exclude exact InChIKey or connectivity-block overlap with the frozen 443 training set, development sets, prior stress sets, and regulatory candidate ledger v3.",
+  "source_lineage_rule": "Retain sponsor study identifiers, report numbers, cited publications, assay vendor, shared positive controls, and common upstream experiments; report count is not treated as proof of laboratory independence.",
+  "stopping_rule": "Stop formal-negative collection when the frozen strict pool contains at least 15 negatives, then run a final identity and source-lineage audit before any model scoring.",
+  "modeling_rule": "No scoring, refit, calibration, threshold tuning, feature selection, applicability-domain modification, or post-result candidate removal during batch4 collection."
+}

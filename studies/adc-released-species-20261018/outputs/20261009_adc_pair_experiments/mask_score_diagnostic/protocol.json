@@ -1,0 +1,12 @@
+{
+  "role": "exploratory_posthoc_diagnostic_not_confirmatory",
+  "trigger": "Primary matched-coverage experiment found auxiliary own-margin superior to full",
+  "question": "Does the gap remain when classifier is held fixed and only mask changes?",
+  "source_sha256": "dc073be3100fb42027ea283f8d821b84ef5088c5c70143f77ac1d7f32d0951ce",
+  "all_masks": "preexisting frozen 453-member masks from the benchmark ledger",
+  "all_classifiers": "v0.1 and v0.3, each at fixed 0.5 threshold",
+  "bootstrap": "2000 shared whole-cluster draws; same seed as main experiment",
+  "refitting": false,
+  "new_mask_tuning": false,
+  "cross_population_version_join": false
+}

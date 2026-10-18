@@ -1,0 +1,71 @@
+{
+  "package_version": "ABCB1_screener_v0.1",
+  "generated_on": "2026-08-03",
+  "artifacts": [
+    {
+      "path": "${RELATED_PROJECT_ROOT}/模型/ABCB1_screener_v0_1/ABCB1_screener_v0_1.joblib",
+      "sha256": "fbc92dfa99583386ba124141fed5e77c6ecf8a59850301a6533db3883b298ac3",
+      "bytes": 53808
+    },
+    {
+      "path": "${RELATED_PROJECT_ROOT}/数据/processed/abcb1_screener_v0_1_conflict_audit.csv",
+      "sha256": "a9146744a331b88e1587c5dda91a0f29908147bd37d32a997c05889c2a747c3d",
+      "bytes": 90
+    },
+    {
+      "path": "${RELATED_PROJECT_ROOT}/数据/processed/abcb1_screener_v0_1_training_audit.csv",
+      "sha256": "54979f1037817d6a218d31301c59a1056b0123747f1aacbbf2e12ddc85c8d747",
+      "bytes": 324941
+    },
+    {
+      "path": "${RELATED_PROJECT_ROOT}/数据/processed/abcb1_screener_v0_1_cv_fold_metrics.csv",
+      "sha256": "463dc1fc2fa693b9b25a83a20900ff1a51628309159c6d348b653a469ee0750a",
+      "bytes": 53022
+    },
+    {
+      "path": "${RELATED_PROJECT_ROOT}/数据/processed/abcb1_screener_v0_1_model_summary.csv",
+      "sha256": "c1054394b2629d7d8f892d9294f4182d6a34a20ba6527958269f004536b39b54",
+      "bytes": 5144
+    },
+    {
+      "path": "${RELATED_PROJECT_ROOT}/数据/processed/abcb1_screener_v0_1_oof_predictions.csv",
+      "sha256": "330d1124886229e4f6cd22988e1e438a3250a208339a3336b49357edbef5e7b4",
+      "bytes": 134492
+    },
+    {
+      "path": "${RELATED_PROJECT_ROOT}/数据/processed/abcb1_screener_v0_1_threshold_sweep.csv",
+      "sha256": "43b72725a3eff35ca62147d8b635c4b8d178129fd380251e04876748dfe8af75",
+      "bytes": 13732
+    },
+    {
+      "path": "${RELATED_PROJECT_ROOT}/数据/processed/abcb1_screener_v0_1_external_pressure_predictions.csv",
+      "sha256": "a85031b26b34bf3272eada9ef3488cf03eee709dde7308b527fe345bf3947c3c",
+      "bytes": 9573
+    },
+    {
+      "path": "${RELATED_PROJECT_ROOT}/数据/processed/abcb1_screener_v0_1_summary.json",
+      "sha256": "211f2d6618fe503d87ca542720e4c9105b761458bdf25f79da6b65826f95d639",
+      "bytes": 4581
+    },
+    {
+      "path": "${RELATED_PROJECT_ROOT}/模型/ABCB1_screener_v0_1/MODEL_CARD.md",
+      "sha256": "dc2b815e9097fe4dac3bd4490fc4af551fb7c49587377586df89383c4c59427a",
+      "bytes": 1758
+    },
+    {
+      "path": "${RELATED_PROJECT_ROOT}/模型/ABCB1_screener_v0_1/predict_abcb1.py",
+      "sha256": "aa6423815d97ef7b5a2e2796b328614f2610ffd38b97e87e010311eaa243520f",
+      "bytes": 2576
+    },
+    {
+      "path": "${RELATED_PROJECT_ROOT}/数据/scripts/train_abcb1_screener_v0_1.py",
+      "sha256": "c7615610cbffb878f171be75c3f2ed92523e10b32edb3d05559b41cdbe4cc220",
+      "bytes": 37497
+    },
+    {
+      "path": "${RELATED_PROJECT_ROOT}/数据/scripts/abcb1_screener_core_v0_1.py",
+      "sha256": "d97c1ee11973ea729ea4dcd62932560e4d60e1ac1cfdfa86ac08798c4bcf2267",
+      "bytes": 8078
+    }
+  ]
+}

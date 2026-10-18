@@ -1,0 +1,65 @@
+{
+  "analysis_id": "20261009_frozen_efflux_selective_benchmark",
+  "created_utc": "2026-10-09T05:54:32.972875+00:00",
+  "status": "protocol_before_this_run_metrics; retrospective_outcomes_already_seen",
+  "is_preregistered": false,
+  "is_prospective": false,
+  "is_adc_paired_validation": false,
+  "inputs": {
+    "identity_audited_v2": {
+      "path": "outputs/20260810_soskuti_identity_double_review_v1/reanalysis/external/analysis/abcb1_quantity_biogen_analysis_rows_identity_audited_v2.csv",
+      "sha256": "9e650cbc3b72d6757994eb9c02b0f130729f5a327a1decb17df3f8c8e36f07e9"
+    },
+    "historical_v1_sensitivity": {
+      "path": "数据/processed/abcb1_quantity_biogen_analysis_rows_v1.csv",
+      "sha256": "9346b705e83a8606c00aabbe77b63f125ad1ef3aefc4e6899be17cf4cba61457"
+    }
+  },
+  "script_sha256": "825495306fe9fe681637ac04e59042279c3590d5095545cfa7595511b1b83717",
+  "runtime": {
+    "python_executable": "${PROJECT_ROOT}/.venv-experiments/bin/python",
+    "python_version": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "numpy_version": "2.5.1"
+  },
+  "population": "same-version identity_clean=yes and model_usable=yes; unique connectivity; no overlap weak443 or direct84",
+  "endpoint": "unchanged measured MDR1-MDCK ER>=2",
+  "classification_threshold": 0.5,
+  "frozen_full_selection_thresholds": {
+    "low": 0.35,
+    "high": 0.7
+  },
+  "ranking": "absolute distance from own 0.5 threshold, descending; external_row_id ascending ties",
+  "grid": [
+    0.05,
+    0.1,
+    "fixed_full453/2624",
+    0.173,
+    0.2,
+    0.25
+  ],
+  "rounding": "floor(population_n*target+0.5); fixed full uses exact existing selected count",
+  "full_and_no_local_grid": "rank primary margin only inside corresponding accepted pool; above pool targets unavailable",
+  "no_local_definition": "only remove the two named local-neighborhood-opposition reasons; all other frozen reasons retained",
+  "removed_reasons": [
+    "direct_local_neighborhood_strongly_opposite",
+    "primary_local_neighborhood_strongly_opposite"
+  ],
+  "simplification_role": "posthoc diagnostic, cannot select/redeploy a best rule on this source",
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 20261009,
+    "unit": "whole existing Murcko scaffold cluster with existing acyclic fallback",
+    "paired": "identical cluster multiplicity bank for all masks in one common population",
+    "selection_fixed": true,
+    "CI": "percentile95 of per-draw correlated metric differences",
+    "uncertainty_scope": "test-population sampling conditional on frozen scores and fixed masks; no refit uncertainty"
+  },
+  "prohibitions": [
+    "no training",
+    "no external-outcome threshold optimization",
+    "no pooled v1/v2 score join",
+    "no independent-CI subtraction",
+    "no filling full-rule abstentions to reach a larger coverage",
+    "no ADC accuracy claim"
+  ]
+}

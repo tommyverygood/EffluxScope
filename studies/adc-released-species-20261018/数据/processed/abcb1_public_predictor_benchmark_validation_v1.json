@@ -1,0 +1,425 @@
+{
+  "validation_version": "ABCB1_PUBLIC_PREDICTOR_BENCHMARK_VALIDATION_V1",
+  "validation_date": "2026-08-05",
+  "overall_status": "pass",
+  "checks_passed": 68,
+  "checks_total": 68,
+  "checks": [
+    {
+      "check": "protocol_truthful_posthoc",
+      "pass": true,
+      "evidence": "locked_posthoc_after_biogen_outcomes_v0_4_external_results_and_preliminary_astrazeneca_spearman_correlations_were_observed_but_before_complete_comparator_and_rejection_metrics_were_analyzed"
+    },
+    {
+      "check": "protocol_input_hash",
+      "pass": true,
+      "evidence": "4b5c5fd332b2cfd9c119fc7fde575b7512f27fb1619c47e108464a80cbee01d4"
+    },
+    {
+      "check": "input_n",
+      "pass": true,
+      "evidence": 2624
+    },
+    {
+      "check": "input_unique_ids",
+      "pass": true,
+      "evidence": 2624
+    },
+    {
+      "check": "input_accepted_n",
+      "pass": true,
+      "evidence": 453
+    },
+    {
+      "check": "summary_protocol_hash",
+      "pass": true,
+      "evidence": "2a364a1cf924ac2fa4ab2f15772ec88373bb384a048eab0638101fdbf3aed545"
+    },
+    {
+      "check": "summary_status",
+      "pass": true,
+      "evidence": "completed_available_comparators_admetlab_pending_server_failure"
+    },
+    {
+      "check": "admetlab_pending",
+      "pass": true,
+      "evidence": {
+        "status": "pending_official_server_failure",
+        "observed_error": "HTTP 500 KeyError ['BSEP'] not in index at /api/single/admet; documented /api/admet returned 404"
+      }
+    },
+    {
+      "check": "admetlab_error_preserved",
+      "pass": true,
+      "evidence": "HTTP 500 KeyError ['BSEP'] not in index at /api/single/admet; documented /api/admet returned 404"
+    },
+    {
+      "check": "prediction_model_set",
+      "pass": true,
+      "evidence": [
+        "admet_ai_v2_pgp_broccatelli_inhibition",
+        "astrazeneca_gnn_mtl_mdck_er_2025",
+        "astrazeneca_gnn_mtl_nih_mdck_er_2025",
+        "deeppk_pgp_substrate_2026_08_05",
+        "internal_v0_4_primary_score"
+      ]
+    },
+    {
+      "check": "prediction_row_count",
+      "pass": true,
+      "evidence": 13120
+    },
+    {
+      "check": "prediction_each_model_n",
+      "pass": true,
+      "evidence": {
+        "admet_ai_v2_pgp_broccatelli_inhibition": 2624,
+        "astrazeneca_gnn_mtl_mdck_er_2025": 2624,
+        "astrazeneca_gnn_mtl_nih_mdck_er_2025": 2624,
+        "deeppk_pgp_substrate_2026_08_05": 2624,
+        "internal_v0_4_primary_score": 2624
+      }
+    },
+    {
+      "check": "prediction_scores_complete",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "check": "prediction_labels_binary",
+      "pass": true,
+      "evidence": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "check": "admet_ai_endpoint_mismatch",
+      "pass": true,
+      "evidence": "ineligible"
+    },
+    {
+      "check": "deeppk_overlap_rows",
+      "pass": true,
+      "evidence": 2624
+    },
+    {
+      "check": "deeppk_train_overlap_3",
+      "pass": true,
+      "evidence": 3
+    },
+    {
+      "check": "deeppk_validation_overlap_0",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "check": "deeppk_test_overlap_0",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "check": "deeppk_development_clean_n",
+      "pass": true,
+      "evidence": 2621
+    },
+    {
+      "check": "anchor_bacc::internal_v0_4_primary_score::all_identity_clean",
+      "pass": true,
+      "evidence": 0.58169540968021
+    },
+    {
+      "check": "anchor_rho::internal_v0_4_primary_score::all_identity_clean",
+      "pass": true,
+      "evidence": 0.2471817631751286
+    },
+    {
+      "check": "anchor_bacc::internal_v0_4_primary_score::v0_4_accepted_mask",
+      "pass": true,
+      "evidence": 0.735103448275862
+    },
+    {
+      "check": "anchor_rho::internal_v0_4_primary_score::v0_4_accepted_mask",
+      "pass": true,
+      "evidence": 0.4791755146320929
+    },
+    {
+      "check": "anchor_bacc::astrazeneca_gnn_mtl_mdck_er_2025::all_identity_clean",
+      "pass": true,
+      "evidence": 0.7432627380119342
+    },
+    {
+      "check": "anchor_rho::astrazeneca_gnn_mtl_mdck_er_2025::all_identity_clean",
+      "pass": true,
+      "evidence": 0.630074060741152
+    },
+    {
+      "check": "anchor_bacc::astrazeneca_gnn_mtl_mdck_er_2025::v0_4_accepted_mask",
+      "pass": true,
+      "evidence": 0.7936453201970444
+    },
+    {
+      "check": "anchor_rho::astrazeneca_gnn_mtl_mdck_er_2025::v0_4_accepted_mask",
+      "pass": true,
+      "evidence": 0.6795855782961355
+    },
+    {
+      "check": "anchor_bacc::astrazeneca_gnn_mtl_mdck_er_2025::native_margin_matched_453",
+      "pass": true,
+      "evidence": 0.9016936240037504
+    },
+    {
+      "check": "anchor_rho::astrazeneca_gnn_mtl_mdck_er_2025::native_margin_matched_453",
+      "pass": true,
+      "evidence": 0.6840758051078396
+    },
+    {
+      "check": "anchor_bacc::astrazeneca_gnn_mtl_nih_mdck_er_2025::all_identity_clean",
+      "pass": true,
+      "evidence": 0.6985987227295676
+    },
+    {
+      "check": "anchor_rho::astrazeneca_gnn_mtl_nih_mdck_er_2025::all_identity_clean",
+      "pass": true,
+      "evidence": 0.6354660049601422
+    },
+    {
+      "check": "anchor_bacc::deeppk_pgp_substrate_2026_08_05::all_identity_clean",
+      "pass": true,
+      "evidence": 0.5775609626473688
+    },
+    {
+      "check": "anchor_rho::deeppk_pgp_substrate_2026_08_05::all_identity_clean",
+      "pass": true,
+      "evidence": 0.4253455367004469
+    },
+    {
+      "check": "anchor_bacc::deeppk_pgp_substrate_2026_08_05::v0_4_accepted_mask",
+      "pass": true,
+      "evidence": 0.6275172413793103
+    },
+    {
+      "check": "anchor_rho::deeppk_pgp_substrate_2026_08_05::v0_4_accepted_mask",
+      "pass": true,
+      "evidence": 0.5438421331356644
+    },
+    {
+      "check": "anchor_bacc::deeppk_pgp_substrate_2026_08_05::native_margin_matched_453",
+      "pass": true,
+      "evidence": 0.52914009598317
+    },
+    {
+      "check": "anchor_rho::deeppk_pgp_substrate_2026_08_05::native_margin_matched_453",
+      "pass": true,
+      "evidence": 0.1097546507594567
+    },
+    {
+      "check": "anchor_bacc::admet_ai_v2_pgp_broccatelli_inhibition::all_identity_clean",
+      "pass": true,
+      "evidence": 0.5439955593741789
+    },
+    {
+      "check": "anchor_rho::admet_ai_v2_pgp_broccatelli_inhibition::all_identity_clean",
+      "pass": true,
+      "evidence": 0.1064122590166591
+    },
+    {
+      "check": "deeppk_threshold_asymmetry",
+      "pass": true,
+      "evidence": {
+        "sensitivity": 0.2078602620087336,
+        "specificity": 0.947261663286004
+      }
+    },
+    {
+      "check": "deeppk_clean_result_stable",
+      "pass": true,
+      "evidence": [
+        0.5772875312101549,
+        0.5775609626473688
+      ]
+    },
+    {
+      "check": "coverage_rows",
+      "pass": true,
+      "evidence": 35
+    },
+    {
+      "check": "coverage_model_set",
+      "pass": true,
+      "evidence": [
+        "admet_ai_v2_pgp_broccatelli_inhibition",
+        "astrazeneca_gnn_mtl_mdck_er_2025",
+        "astrazeneca_gnn_mtl_nih_mdck_er_2025",
+        "deeppk_pgp_substrate_2026_08_05",
+        "internal_v0_4_primary_score"
+      ]
+    },
+    {
+      "check": "bootstrap_rows",
+      "pass": true,
+      "evidence": 40000
+    },
+    {
+      "check": "bootstrap_replicates",
+      "pass": true,
+      "evidence": "2000"
+    },
+    {
+      "check": "bootstrap_model_set",
+      "pass": true,
+      "evidence": [
+        "admet_ai_v2_pgp_broccatelli_inhibition",
+        "astrazeneca_gnn_mtl_mdck_er_2025",
+        "astrazeneca_gnn_mtl_nih_mdck_er_2025",
+        "deeppk_pgp_substrate_2026_08_05",
+        "internal_v0_4_primary_score"
+      ]
+    },
+    {
+      "check": "deeppk_mask_gain_positive",
+      "pass": true,
+      "evidence": {
+        "comparator_id": "deeppk_pgp_substrate_2026_08_05",
+        "display_name": "Deep-PK substrate",
+        "contrast": "v0_4_mask_minus_all",
+        "mean_difference": 0.0497621275226921,
+        "median_difference": 0.049809876278306,
+        "ci95_low": 0.0204157852862685,
+        "ci95_high": 0.0801459790348805,
+        "probability_difference_gt_zero": 0.999,
+        "n_bootstrap": 2000
+      }
+    },
+    {
+      "check": "deeppk_mask_beats_native_margin",
+      "pass": true,
+      "evidence": {
+        "comparator_id": "deeppk_pgp_substrate_2026_08_05",
+        "display_name": "Deep-PK substrate",
+        "contrast": "v0_4_mask_minus_native_margin",
+        "mean_difference": 0.0979411180396476,
+        "median_difference": 0.098203283061584,
+        "ci95_low": 0.0575920330650027,
+        "ci95_high": 0.1409491968905531,
+        "probability_difference_gt_zero": 1.0,
+        "n_bootstrap": 2000
+      }
+    },
+    {
+      "check": "az_mdck_mask_gain_positive",
+      "pass": true,
+      "evidence": {
+        "comparator_id": "astrazeneca_gnn_mtl_mdck_er_2025",
+        "display_name": "AZ MDCK ER",
+        "contrast": "v0_4_mask_minus_all",
+        "mean_difference": 0.0506335116456484,
+        "median_difference": 0.0507422498213429,
+        "ci95_low": 0.0142827896284154,
+        "ci95_high": 0.0856645976916193,
+        "probability_difference_gt_zero": 0.9975,
+        "n_bootstrap": 2000
+      }
+    },
+    {
+      "check": "az_native_margin_beats_mask",
+      "pass": true,
+      "evidence": {
+        "comparator_id": "astrazeneca_gnn_mtl_mdck_er_2025",
+        "display_name": "AZ MDCK ER",
+        "contrast": "v0_4_mask_minus_native_margin",
+        "mean_difference": -0.1081255583465314,
+        "median_difference": -0.107816706424335,
+        "ci95_low": -0.1543151308877026,
+        "ci95_high": -0.062138370217759,
+        "probability_difference_gt_zero": 0.0,
+        "n_bootstrap": 2000
+      }
+    },
+    {
+      "check": "contrast_rows",
+      "pass": true,
+      "evidence": 10
+    },
+    {
+      "check": "figure_manifest_rows",
+      "pass": true,
+      "evidence": 3
+    },
+    {
+      "check": "figure_exists::Figure6_public_predictor_rejection_benchmark_v1.png",
+      "pass": true,
+      "evidence": 215329
+    },
+    {
+      "check": "figure_hash::Figure6_public_predictor_rejection_benchmark_v1.png",
+      "pass": true,
+      "evidence": "fe8091871cc4be738dd6ccd2efeb1777195efad25ae2518bd85bfe9d109540a1"
+    },
+    {
+      "check": "figure_exists::Figure6_public_predictor_rejection_benchmark_v1.svg",
+      "pass": true,
+      "evidence": 176624
+    },
+    {
+      "check": "figure_hash::Figure6_public_predictor_rejection_benchmark_v1.svg",
+      "pass": true,
+      "evidence": "8fbd04774cac4d3f647d02faca88f6b4a907e69e9ecc78e1b0294dc053ac0c4e"
+    },
+    {
+      "check": "figure_exists::Figure6_public_predictor_rejection_benchmark_v1.pdf",
+      "pass": true,
+      "evidence": 44595
+    },
+    {
+      "check": "figure_hash::Figure6_public_predictor_rejection_benchmark_v1.pdf",
+      "pass": true,
+      "evidence": "ff6330ad74fcbf088c47dfc2976e491312897bc4a2febbf1df57274de4c7f4c4"
+    },
+    {
+      "check": "report_token::AZ MDCK ER",
+      "pass": true,
+      "evidence": "AZ MDCK ER"
+    },
+    {
+      "check": "report_token::0.902",
+      "pass": true,
+      "evidence": "0.902"
+    },
+    {
+      "check": "report_token::Deep-PK",
+      "pass": true,
+      "evidence": "Deep-PK"
+    },
+    {
+      "check": "report_token::0.628",
+      "pass": true,
+      "evidence": "0.628"
+    },
+    {
+      "check": "report_token::3/2,624",
+      "pass": true,
+      "evidence": "3/2,624"
+    },
+    {
+      "check": "report_token::P-gp inhibition",
+      "pass": true,
+      "evidence": "P-gp inhibition"
+    },
+    {
+      "check": "report_token::KeyError: ['BSEP']",
+      "pass": true,
+      "evidence": "KeyError: ['BSEP']"
+    },
+    {
+      "check": "report_token::事后比较",
+      "pass": true,
+      "evidence": "事后比较"
+    },
+    {
+      "check": "report_substantial",
+      "pass": true,
+      "evidence": 9015
+    }
+  ]
+}

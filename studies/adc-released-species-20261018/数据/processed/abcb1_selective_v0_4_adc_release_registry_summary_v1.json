@@ -1,0 +1,21 @@
+{
+  "model_version": "ABCB1_selective_screener_v0.4_dev",
+  "application_status": "scored_explicit_ADC_release_species_registry_not_validation",
+  "registry_path": "数据/processed/adc_release_species_registry_standardized_v1.csv",
+  "registry_sha256": "a0e71fd2ae3be27b6a7346750e1db91cce055e7a3da9f4db5a8ddc9c4e25dfb9",
+  "model_package_sha256": "c56fb6b8f6f8bf13472a1a2d433b05d4c6a35eb2490ba84ce9371395b8bbff8b",
+  "registry_rows": 10,
+  "explicit_structure_rows": 9,
+  "risk_call_counts": {
+    "abstain": 7,
+    "high_ABCB1_efflux_risk": 3
+  },
+  "abstention_reason_counts": {
+    "outside_both_reference_panels": 5,
+    "unresolved_structure": 1,
+    "outside_physicochemical_envelope": 2
+  },
+  "output": "数据/processed/abcb1_selective_v0_4_adc_release_registry_predictions_v1.csv",
+  "interpretation": "These calls demonstrate the intended ADC release-species interface and prioritize review or experiments. They are not accuracy estimates because the registry is not an ABCB1 truth set.",
+  "claim_boundary": "ABCB1 efflux-risk triage for a standardized free/released small-molecule structure; not intact-ADC transport, intracellular unbound exposure, resistance, efficacy, clinical DDI, or universal assay-independent substrate truth"
+}

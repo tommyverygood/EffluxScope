@@ -1,0 +1,38 @@
+{
+  "batch2_source_documents": 8,
+  "batch2_entity_rows": 9,
+  "batch2_standardization_ok": 9,
+  "batch2_identity_clean_a1_candidates": 2,
+  "batch2_identity_clean_a1_names": [
+    "Tenapanor",
+    "4-Aminopyridine"
+  ],
+  "batch2_tier_counts": {
+    "A2_quantitative_human_transfectant_no_parent": 1,
+    "B1_official_directional_call_numeric_range_only": 1,
+    "B1_official_directional_call_concentration_only": 1,
+    "B2_quantitative_Caco2_inhibitor_rescue": 1,
+    "B2_paired_Caco2_inhibitor_nonresponse": 1,
+    "A1_matched_parent_and_inhibitor_background_adjudication": 1,
+    "A2_quantitative_human_transfectant_inhibitor_nonresponse": 1,
+    "B2_quantitative_Caco2_inhibitor_nonresponse": 1,
+    "A1_matched_parent_multiconcentration_positive_control": 1
+  },
+  "regulatory_strict_pool_v2_rows": 16,
+  "regulatory_strict_pool_v2_class_counts": {
+    "1": 10,
+    "0": 6
+  },
+  "external_candidate_ledger_v2_rows": 94,
+  "external_candidate_ledger_v2_role_counts": {
+    "retrospective_assay_transfer_stress_only": 71,
+    "pre_scoring_strict_external_candidate": 16,
+    "regulatory_secondary_evidence_only": 7
+  },
+  "formal_external_shortfall_if_minimum_15_per_class": {
+    "positive": 5,
+    "negative": 9
+  },
+  "model_scoring_performed": false,
+  "formal_status": "evidence_tiered_candidate_collection_complete_pending_source_lineage_lock_and_scoring_protocol"
+}

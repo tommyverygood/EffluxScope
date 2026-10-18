@@ -1,0 +1,5 @@
+﻿key,observation_rows,er_min,er_max,crosses_weak_ER2,median_log2ER,score_agreement,independent_biological_replicate_status
+JQVBRWVUKDQFJQ-UHFFFAOYSA-N,2,2.38271605,3.3851851899999996,False,1.5059208974082114,True,not_reported_not_assumed
+NXAMBTBBWHMYHI-UHFFFAOYSA-N,2,18.77314815,52.999999999999986,False,4.979259575823339,True,not_reported_not_assumed
+PVNIINDFNOMXKR-UHFFFAOYSA-N,2,1.94392523,2.64102564,True,1.1800355183977962,True,not_reported_not_assumed
+ZBDKUHJVDDPOHR-UHFFFAOYSA-N,4,6.894736839999999,11.76923077,False,3.3622019146709734,True,not_reported_not_assumed

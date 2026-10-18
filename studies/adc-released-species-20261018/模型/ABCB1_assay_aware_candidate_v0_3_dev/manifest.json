@@ -1,0 +1,47 @@
+{
+  "created_utc": "2026-08-03T10:58:27.188102+00:00",
+  "model_version": "ABCB1_assay_aware_candidate_v0.3_dev",
+  "status": "single_source_internal_development_candidate_not_externally_validated",
+  "selected_internal_candidate": "morgan_plus_physchem_logistic",
+  "selected_C": 0.01,
+  "model_file": "ABCB1_assay_aware_candidate_v0_3_dev.joblib",
+  "model_sha256": "ebe6d1a8d5f06afc5c2d0b306dfd5266af56fd28fefd130147d20c5e015b907a",
+  "protocol_path": "数据/processed/abcb1_assay_aware_development_protocol_lock_v1.json",
+  "protocol_sha256": "a32f464054f02b4c60e2a2c16d18ddcdf69c695c920bb9232a3e22f26f95892f",
+  "development_panel_path": "数据/processed/soskuti_2024_mdr1_species_panel_v1.csv",
+  "development_panel_sha256": "9892cd2bb4be3ff0c834113c5ec7b8d9b7752bc69667782cd5980f19f2ac3bf7",
+  "primary_n": 63,
+  "primary_positive": 41,
+  "primary_negative": 22,
+  "sensitivity_n": 71,
+  "applicability_thresholds": {
+    "self_nearest_q10": 0.17399660825325045,
+    "self_nearest_q25": 0.1984848484848485,
+    "derivation": "direct-panel leave-one-out nearest-neighbor Tanimoto distribution"
+  },
+  "posthoc_audit_correction": {
+    "scope": "overlap and weak-label conflict metadata only",
+    "model_input_signature_unchanged": "964d50bb2502fda8adb32baa9050f7af2d1fdc4eb34c819eea61fa8dfd4ccfe6",
+    "modeling_rule_change": "none",
+    "performance_replay_result": "identical"
+  },
+  "package_artifacts": {
+    "predict_abcb1_assay_aware.py": "58b5f4ac019498c698ca8ac8e79d58a89ae020fbf1bb12b1a241e90636adb86c",
+    "test_smoke.py": "bf0327006a78a3383a2a84491030c73aa45cf0348a1c3f04f2186c135db288f3",
+    "MODEL_CARD.md": "28095382e9fc5363d7f7d04f9fddbe776a1bc2bd75b1ad844bd89bd3a2eabd29",
+    "README.md": "bf67cccc8ea69245141751523ba63f7633462656659a51402a0d71eb82864239"
+  },
+  "claim_boundary": "internal single-source matched-parental screening candidate; no externally validated universal ABCB1 substrate or ADC outcome claim",
+  "outputs": {
+    "classification_metric_summary": "数据/processed/abcb1_assay_aware_classification_metrics_v1.csv",
+    "classification_fold_metrics": "数据/processed/abcb1_assay_aware_classification_fold_metrics_v1.csv",
+    "classification_oof_details": "数据/processed/abcb1_assay_aware_classification_oof_details_v1.csv",
+    "classification_oof_aggregate": "数据/processed/abcb1_assay_aware_classification_oof_aggregate_v1.csv",
+    "pairwise_comparison": "数据/processed/abcb1_assay_aware_pairwise_comparison_v1.csv",
+    "continuous_metric_summary": "数据/processed/abcb1_assay_aware_continuous_metrics_v1.csv",
+    "continuous_fold_metrics": "数据/processed/abcb1_assay_aware_continuous_fold_metrics_v1.csv",
+    "continuous_oof_details": "数据/processed/abcb1_assay_aware_continuous_oof_details_v1.csv",
+    "continuous_oof_aggregate": "数据/processed/abcb1_assay_aware_continuous_oof_aggregate_v1.csv",
+    "candidate_predictions": "数据/processed/abcb1_assay_aware_candidate_predictions_v1.csv"
+  }
+}

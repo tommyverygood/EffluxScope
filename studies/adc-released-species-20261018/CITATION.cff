@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Please cite these reproducibility materials and the specific upstream data sources you use. This record does not assert that the accompanying manuscript has been published."
+type: software
+title: "EffluxScope ADC payload and released-species reproducibility materials"
+authors:
+  - family-names: Liu
+    given-names: Hongyan
+version: "adc-released-species-20261018"
+date-released: 2026-10-18
+repository-code: "https://github.com/tommyverygood/EffluxScope"
+url: "https://github.com/tommyverygood/EffluxScope/tree/adc-released-species-20261018/studies/adc-released-species-20261018"
+abstract: "Frozen computational and source-attributed materials for development-stage ABCB1 efflux-risk assessment of ADC payloads and released species. Includes chemical identity, scoring, abstention, representation diagnostics, matched-count general benchmarks, and chemical-support reporting safeguards. These materials do not establish ADC-specific predictive accuracy or complete-ADC efficacy. Source-specific data licenses are documented separately from the software license."
+keywords:
+  - antibody-drug conjugates
+  - ADC
+  - released species
+  - ABCB1
+  - P-glycoprotein
+  - selective prediction
+  - reproducibility

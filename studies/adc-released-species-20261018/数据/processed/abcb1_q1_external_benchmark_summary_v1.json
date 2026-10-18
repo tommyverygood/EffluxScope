@@ -1,0 +1,197 @@
+{
+  "run_date": "2026-08-03",
+  "protocol_lock_path": "${RELATED_PROJECT_ROOT}/数据/processed/abcb1_q1_external_benchmark_protocol_lock_v1.json",
+  "protocol_lock_sha256": "5c0dba850049f0eefab1016724b1d572bd34fa876f3aa4255d26e1da2b3831a2",
+  "benchmark_status": "historical_development_external_benchmark_pre_prediction_lock",
+  "frozen_model_sha256": "fbc92dfa99583386ba124141fed5e77c6ecf8a59850301a6533db3883b298ac3",
+  "direct_overlay_entities": 40,
+  "direct_evaluation_eligible_nonoverlap": 26,
+  "direct_explicit_call_entities": 24,
+  "direct_explicit_call_counts": {
+    "positive_like": 14,
+    "negative_like": 10
+  },
+  "direct_source_count": 8,
+  "direct_applicability_counts": {
+    "low_empirical_support": 7,
+    "within_empirical_support": 10,
+    "outside_empirical_support": 7
+  },
+  "direct_within_support_n": 10,
+  "direct_nonabstain_n": 17,
+  "direct_v0_1_MCC": {
+    "benchmark": "direct_human_ABCB1_source_calls",
+    "subset": "all_nonoverlap_explicit_calls",
+    "model": "frozen_ABCB1_v0_1",
+    "probability_field": "frozen_probability",
+    "metric": "mcc",
+    "value": 0.09759001,
+    "ci95_lower": -0.30550505,
+    "ci95_upper": 0.52915026,
+    "n": 24,
+    "n_negative": 10,
+    "n_positive": 14,
+    "tn": 3,
+    "fp": 7,
+    "fn": 3,
+    "tp": 11,
+    "threshold": 0.5,
+    "bootstrap_iterations": 2000,
+    "claim_boundary": "source-call directional diagnostic; not universal binary substrate truth"
+  },
+  "direct_v0_1_balanced_accuracy": {
+    "benchmark": "direct_human_ABCB1_source_calls",
+    "subset": "all_nonoverlap_explicit_calls",
+    "model": "frozen_ABCB1_v0_1",
+    "probability_field": "frozen_probability",
+    "metric": "balanced_accuracy",
+    "value": 0.54285714,
+    "ci95_lower": 0.37142857,
+    "ci95_upper": 0.72857143,
+    "n": 24,
+    "n_negative": 10,
+    "n_positive": 14,
+    "tn": 3,
+    "fp": 7,
+    "fn": 3,
+    "tp": 11,
+    "threshold": 0.5,
+    "bootstrap_iterations": 2000,
+    "claim_boundary": "source-call directional diagnostic; not universal binary substrate truth"
+  },
+  "direct_v0_1_ROC_AUC": {
+    "benchmark": "direct_human_ABCB1_source_calls",
+    "subset": "all_nonoverlap_explicit_calls",
+    "model": "frozen_ABCB1_v0_1",
+    "probability_field": "frozen_probability",
+    "metric": "roc_auc",
+    "value": 0.65714286,
+    "ci95_lower": 0.42857143,
+    "ci95_upper": 0.87142857,
+    "n": 24,
+    "n_negative": 10,
+    "n_positive": 14,
+    "tn": 3,
+    "fp": 7,
+    "fn": 3,
+    "tp": 11,
+    "threshold": 0.5,
+    "bootstrap_iterations": 2000,
+    "claim_boundary": "source-call directional diagnostic; not universal binary substrate truth"
+  },
+  "continuous_estimable_sources": 1,
+  "continuous_positive_direction_sources": 1,
+  "leave_one_source_out_min_balanced_accuracy": 0.375,
+  "paired_frozen_vs_one_nn": [
+    {
+      "comparison": "frozen_ABCB1_v0_1_minus_one_nearest_neighbor",
+      "metric": "mcc",
+      "frozen_value": 0.09759001,
+      "one_nn_value": 0.38737582,
+      "paired_difference": -0.28978581,
+      "ci95_lower": -0.76114597,
+      "ci95_upper": 0.20121715,
+      "n": 24,
+      "bootstrap_iterations": 2000,
+      "direction_note": "positive favors frozen",
+      "claim_boundary": "paired historical external diagnostic; no model selection or tuning on these results"
+    },
+    {
+      "comparison": "frozen_ABCB1_v0_1_minus_one_nearest_neighbor",
+      "metric": "balanced_accuracy",
+      "frozen_value": 0.54285714,
+      "one_nn_value": 0.67857143,
+      "paired_difference": -0.13571429,
+      "ci95_lower": -0.35017857,
+      "ci95_upper": 0.08571429,
+      "n": 24,
+      "bootstrap_iterations": 2000,
+      "direction_note": "positive favors frozen",
+      "claim_boundary": "paired historical external diagnostic; no model selection or tuning on these results"
+    },
+    {
+      "comparison": "frozen_ABCB1_v0_1_minus_one_nearest_neighbor",
+      "metric": "roc_auc",
+      "frozen_value": 0.65714286,
+      "one_nn_value": 0.67857143,
+      "paired_difference": -0.02142857,
+      "ci95_lower": -0.29285714,
+      "ci95_upper": 0.22142857,
+      "n": 24,
+      "bootstrap_iterations": 2000,
+      "direction_note": "positive favors frozen",
+      "claim_boundary": "paired historical external diagnostic; no model selection or tuning on these results"
+    },
+    {
+      "comparison": "frozen_ABCB1_v0_1_minus_one_nearest_neighbor",
+      "metric": "brier",
+      "frozen_value": 0.21812259,
+      "one_nn_value": 0.29166667,
+      "paired_difference": -0.07354407,
+      "ci95_lower": -0.23759426,
+      "ci95_upper": 0.08708765,
+      "n": 24,
+      "bootstrap_iterations": 2000,
+      "direction_note": "negative favors frozen because lower Brier is better",
+      "claim_boundary": "paired historical external diagnostic; no model selection or tuning on these results"
+    },
+    {
+      "comparison": "frozen_ABCB1_v0_1_minus_one_nearest_neighbor",
+      "metric": "mcnemar_exact_discordant_accuracy",
+      "frozen_value": 2,
+      "one_nn_value": 5,
+      "paired_difference": -3,
+      "ci95_lower": "",
+      "ci95_upper": "",
+      "n": 24,
+      "bootstrap_iterations": 0,
+      "direction_note": "two-sided_exact_p=0.45312500; counts are frozen-only-correct versus 1NN-only-correct",
+      "claim_boundary": "paired historical external diagnostic; no model selection or tuning on these results"
+    }
+  ],
+  "legacy_bikadi_rows": 410,
+  "legacy_bikadi_label_counts": {
+    "0": 40,
+    "1": 370
+  },
+  "q1_predictor_claim_gates": [
+    {
+      "gate": "direct_MCC_lower_95CI_gt_0",
+      "value": -0.30550505,
+      "rule": "> 0",
+      "status": "fail",
+      "interpretation": "directional source-call discrimination beyond chance correlation"
+    },
+    {
+      "gate": "direct_BAcc_lower_95CI_gt_0_5",
+      "value": 0.37142857,
+      "rule": "> 0.5",
+      "status": "fail",
+      "interpretation": "balanced accuracy lower bound exceeds chance"
+    },
+    {
+      "gate": "positive_continuous_direction_in_two_sources",
+      "value": 1,
+      "rule": ">= 2 independent sources with n>=3",
+      "status": "fail",
+      "interpretation": "continuous endpoint direction is not carried by one study"
+    },
+    {
+      "gate": "leave_one_source_out_min_BAcc_gt_0_5",
+      "value": 0.375,
+      "rule": "> 0.5",
+      "status": "fail",
+      "interpretation": "no single source determines the result"
+    },
+    {
+      "gate": "nonabstain_coverage_at_least_50pct",
+      "value": 0.70833333,
+      "rule": ">= 0.5",
+      "status": "pass",
+      "interpretation": "applicability rejection does not hide most explicit calls"
+    }
+  ],
+  "q1_predictor_claim_status": "fail",
+  "action": "do_not_tune_on_external_results; retain bounded screener and reserve later untouched temporal/prospective set",
+  "claim_boundary": "historical development external benchmark; not pristine prospective validation and no source-call label transfer to training"
+}

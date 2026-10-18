@@ -1,0 +1,28 @@
+﻿entity_name,source_id,reported_or_derived_label,net_er_or_status,adjudication,reason
+Antipyrine,SHEN2020_FREE_DRUG,0,0.984727,excluded_from_batch4_strict_negative,prior connectivity overlap: soskuti/q1/broccatelli
+Lamotrigine,SHEN2020_FREE_DRUG,0,1.085123,excluded_from_batch4_strict_negative,prior connectivity overlap: soskuti/broccatelli
+Propranolol,SHEN2020_FREE_DRUG,0,1.454970,excluded_from_batch4_strict_negative,prior connectivity overlap: soskuti/q1/broccatelli
+Carbamazepine,SHEN2020_FREE_DRUG,0,1.093041,excluded_from_batch4_strict_negative,prior connectivity overlap: soskuti/broccatelli
+Ofloxacin,SHEN2020_FREE_DRUG,0,1.304310,excluded_from_batch4_strict_negative,prior connectivity overlap: frozen443/soskuti/kelly
+Atenolol,SHEN2020_FREE_DRUG,0,0.184590,excluded_from_batch4_strict_negative,prior connectivity overlap: frozen443/soskuti/q1/broccatelli
+Cimetidine,SHEN2020_FREE_DRUG,0,0.682278,excluded_from_batch4_strict_negative,prior connectivity overlap: frozen443/soskuti/q1/broccatelli
+Citalopram,SHEN2020_FREE_DRUG,ambiguous,2.998165,excluded_from_batch4_strict_negative,raw MDR1 ER <2 but parent-corrected net ER >=2; also prior overlap
+Diltiazem,SHEN2020_FREE_DRUG,ambiguous,2.541176,excluded_from_batch4_strict_negative,raw MDR1 ER <2 but parent-corrected net ER >=2; also training overlap
+Quinidine,SHEN2020_FREE_DRUG,1,not needed,excluded_from_batch4_strict_negative,same-study ABCB1 positive control; not a negative candidate
+Fexofenadine,SHEN2020_FREE_DRUG,1,not needed,excluded_from_batch4_strict_negative,same-study ABCB1 substrate; not a negative candidate
+Digoxin,SHEN2020_FREE_DRUG,1,13.85,excluded_from_batch4_strict_negative,same-study ABCB1 positive control; not a negative candidate
+Sumatriptan,SHEN2020_FREE_DRUG,1,not needed,excluded_from_batch4_strict_negative,same-study ABCB1 substrate and prior external overlap
+Doxecitine,FDA_KYGEVVI,0_candidate,see primary source,secondary_transfectant_only,repeat assay did not expose a matched parent/mock comparator
+Doxribtimine,FDA_KYGEVVI,0_candidate,see primary source,secondary_transfectant_only,repeat assay did not expose a matched parent/mock comparator
+cPMP (fosdenopterin active moiety),FDA_FOSDENOPTERIN,0_candidate,see primary source,secondary_missing_competence,matched comparison exposed but same-batch positive-control/inhibitor competence not exposed
+Zuranolone,FDA_ZURANOLONE,0_candidate,see primary source,secondary_qualitative_numeric_incomplete,review narrative does not expose a complete interpretable matched-parent numeric endpoint
+Vanzacaftor,FDA_ALYFTREK,0_candidate,see primary source,secondary_qualitative_only,table reports P-gp substrate No without paired numeric assay
+Ceftolozane,FDA_CEFTOLOZANE,0_candidate,see primary source,secondary_caco2_only,locked rule excludes Caco-2-only substrate assessment
+Tazobactam,FDA_CEFTOLOZANE,0_candidate,see primary source,secondary_caco2_only,locked rule excludes Caco-2-only substrate assessment
+Avanafil,FDA_AVANAFIL,0_candidate,see primary source,secondary_missing_competence,single MDR1/wild-type net ER 1.8; same-batch competence not exposed
+Copper histidinate,FDA_COPPER_HISTIDINATE,0_candidate,see primary source,secondary_structure_domain_unresolved,paired assay is strong but the exact metal-complex structure is not representation-safe for the current model
+Secnidazole,FDA_CEFTOLOZANE,0_candidate,see primary source,excluded_prior_external_overlap,strict assay evidence exists but the structure was already used in Q1 external development
+Delta-9-THC,THC2021,0_candidate,see primary source,secondary_transfectant_only,Abcb1KO-MDCKII-MDR1 plus inhibitor but no matched mock/parent comparator
+11-OH-THC,THC2021,0_candidate,see primary source,secondary_transfectant_only,Abcb1KO-MDCKII-MDR1 plus inhibitor but no matched mock/parent comparator
+THC-COOH,THC2021,0_candidate,see primary source,secondary_transfectant_only,Abcb1KO-MDCKII-MDR1 plus inhibitor but no matched mock/parent comparator
+Vandetanib,FDA_VANDETANIB,0_candidate,1.13 | 1.06 | 0.99 | 0.75,secondary_missing_same_batch_competence,"KMN070 exposes matched-parent multiconcentration data, but the digoxin competence study is KMN096 rather than the same substrate batch"

@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "checks_n": 12,
+  "all_checks_passed": true,
+  "independent_statistics_method": "no-ties Spearman closed-form versus main average-rank Pearson; literal primary S5 Pgp arm readings",
+  "checks": [
+    {
+      "check": "Strict human-transfectant population exactly DM1 and cys-mcMMAF",
+      "passed": true
+    },
+    {
+      "check": "Source-context population adds only endogenous-Caco2 MMAE",
+      "passed": true
+    },
+    {
+      "check": "Each population has five strategies",
+      "passed": true
+    },
+    {
+      "check": "All strict equal-coverage strategies select zero",
+      "passed": true
+    },
+    {
+      "check": "All empty denominator metrics remain blank in CSV",
+      "passed": true
+    },
+    {
+      "check": "Source S5 arm matches independent literal primary-table readings",
+      "passed": true
+    },
+    {
+      "check": "Independent closed-form Spearman ER_no_inhibitor_author v01_frozen_score",
+      "passed": true
+    },
+    {
+      "check": "Independent closed-form Spearman ER_no_inhibitor_author v03_frozen_score",
+      "passed": true
+    },
+    {
+      "check": "Independent closed-form Spearman inhibitor_associated_ER_reduction_fraction v01_frozen_score",
+      "passed": true
+    },
+    {
+      "check": "Independent closed-form Spearman inhibitor_associated_ER_reduction_fraction v03_frozen_score",
+      "passed": true
+    },
+    {
+      "check": "Exactly 12 pairwise checks share three compounds",
+      "passed": true
+    },
+    {
+      "check": "MMAE uses 28 baseline and not 49",
+      "passed": true
+    }
+  ],
+  "primary_text_location_proof": {
+    "obi992_primary_supplement.txt": {
+      "page_1based_first_match": 8,
+      "sha256": "48ee84e5acfea2a2cd65c486598150aaeb18c1e24a4801042b232ab7c923f30c"
+    },
+    "belantamab_primary_text.txt": {
+      "page_1based_first_match": 33,
+      "sha256": "e5d043f757cb7188f5975d9c1a29a47817a91182547948be2abba0fed55d7ca5"
+    }
+  },
+  "no_model_fit_or_rescoring": true,
+  "scope": "numerical and protocol-layer verification, not independent biological validation"
+}

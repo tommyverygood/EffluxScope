@@ -1,0 +1,27 @@
+{
+  "completed_utc": "2026-10-09T05:54:34.058724+00:00",
+  "status": "completed_retrospective_frozen_score_benchmark",
+  "bootstrap_replicates": 2000,
+  "versions": [
+    "identity_audited_v2",
+    "historical_v1_sensitivity"
+  ],
+  "output_sha256": {
+    "README.md": "408ca9a8d5669ca96a46976d1c05f1f9b1ef6759b783529b66efce0f54cb4ab4",
+    "coverage_curves.pdf": "a39d799c9d7ffc9faa79cd2c9109d1ad8b1e4561e85847d7f52f875629598306",
+    "coverage_curves.png": "5319a5efcd20557220169b29a049901d83bf1ad7a7237600c5515dd068e21fa9",
+    "figure_manifest.json": "64347d9db4dda80af5f928169a162817ef85c6d175fbe03cab0f5dd2c1d28cdd",
+    "fixed_coverage_comparison.pdf": "fa64044eabcc6a5feef5c10bfd52f65b20f0ae7bb32d0e93da7899ab50c3f0c9",
+    "fixed_coverage_comparison.png": "b9e786e2fe64b83a2127f30ed2ec11529ebc4165a68bb939213376dfd1f358dc",
+    "input_audit.json": "dcc9d89b2b368f8c9bd9ed5a1ae9e84fe71baf92c004e9ebe20db35f52861200",
+    "metrics.csv": "b28b8472d27e5cd8afabbefbf6997a53105317f1871beec9fc875df6eaac238f",
+    "paired_contrasts.csv": "d68be70394f0821ff4e2dd95465e52683565993ed69e1eb9a86959e7f190e12f",
+    "plot_benchmark.py": "db13b5ae16a18f7bd021847406d8d78df4c61ddbe3e67b171bee75dc59cf20a0",
+    "protocol.json": "1c1a3033412887c7337198cdd2a08fef6a666b9fb5d0c0399e143c4d968099c7",
+    "run_benchmark.py": "825495306fe9fe681637ac04e59042279c3590d5095545cfa7595511b1b83717",
+    "selection_ledger.csv": "dc073be3100fb42027ea283f8d821b84ef5088c5c70143f77ac1d7f32d0951ce",
+    "unattainable_targets.csv": "f29684636539b46c7c268c6ba6b136449688c8da2e1fe68dfc88eb845ba7759e",
+    "实验报告.md": "293d27d8f0f2c6c668ee1584d8b9e3b72d471762d0f3e38b4da5ff4f90dc779f"
+  },
+  "figure_rendered_utc": "2026-10-09T05:55:03.483617+00:00"
+}

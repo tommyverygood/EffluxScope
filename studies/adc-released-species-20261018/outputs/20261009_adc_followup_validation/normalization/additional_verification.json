@@ -1,0 +1,9 @@
+{
+  "status": "pass",
+  "checks": {
+    "frozen_standardized_full_keys_match_saved_unique_predictions": true,
+    "source_formula_and_charge_unchanged_after_no_tautomer_cleanup": true,
+    "source_no_tautomer_full_keys_identical": true,
+    "all_frozen_input_hashes_still_match_manifest": true
+  }
+}

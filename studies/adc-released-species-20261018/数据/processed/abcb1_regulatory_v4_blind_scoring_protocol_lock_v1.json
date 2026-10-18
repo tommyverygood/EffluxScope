@@ -1,0 +1,138 @@
+{
+  "protocol_version": "ABCB1_REGULATORY_V4_BLIND_SCORING_LOCK_V1",
+  "locked_at": "2026-08-03",
+  "lock_status": "locked_after_label_and_identity_freeze_before_any_v4_model_scoring",
+  "objective": "Evaluate the already frozen ABCB1 v0.1 model once on the identity-clean strict regulatory/primary-study pool v4 without refit, calibration, threshold tuning, feature selection, applicability-domain modification, or post-result entity removal.",
+  "blindness_audit": {
+    "prediction_csv_files_scanned": 34,
+    "confirmed_prior_score_exposure_entities": 0,
+    "primary_blind_eligible_entities": 33,
+    "audit_csv": {
+      "path": "数据/processed/abcb1_regulatory_v4_prior_score_exposure_audit_v1.csv",
+      "sha256": "9fed209a884751fbab03d9fe02f41163c89a3b08689f6d30bcfc2263ffad1443"
+    },
+    "audit_summary": {
+      "path": "数据/processed/abcb1_regulatory_v4_prior_score_exposure_summary_v1.json",
+      "sha256": "4149cf4200420027c9a070cc61ffbae9d806d922bb508b164341d1948c61ac68"
+    },
+    "boundary": "The v4 entities have not appeared in prior prediction CSVs by exact InChIKey, connectivity block, or exact normalized name. This supports a pre-score blind evaluation of the frozen model, but it is not equivalent to a future multi-laboratory prospective study."
+  },
+  "frozen_model": {
+    "path": "模型/ABCB1_screener_v0_1/ABCB1_screener_v0_1.joblib",
+    "sha256": "fbc92dfa99583386ba124141fed5e77c6ecf8a59850301a6533db3883b298ac3",
+    "binary_threshold": 0.5,
+    "threshold_tuning_allowed": false,
+    "refit_allowed": false,
+    "recalibration_allowed": false,
+    "feature_or_model_selection_allowed": false,
+    "applicability_domain_change_allowed": false
+  },
+  "frozen_external_pool": {
+    "path": "数据/processed/abcb1_regulatory_strict_external_pool_v4.csv",
+    "sha256": "2286c888213ee893736b7784e8af9c337137250a461b90a96ed06b3e175333c6",
+    "n": 33,
+    "n_positive": 15,
+    "n_negative": 18,
+    "upstream_experiment_clusters": 20,
+    "exact_or_connectivity_duplicates": 0
+  },
+  "supporting_locks": [
+    {
+      "path": "数据/processed/abcb1_regulatory_expansion_batch4_negative_protocol_lock_v1.json",
+      "sha256": "93d6e7dce4f06f739969c01bd508cb11900378f0b5f0f60677c59c70c53bfe6d"
+    },
+    {
+      "path": "数据/processed/abcb1_regulatory_expansion_batch4_negative_source_lineage_v1.csv",
+      "sha256": "1c607f602c172201ea135abd074bb735033665dcec2555e70bafe24d015db80d"
+    },
+    {
+      "path": "数据/processed/abcb1_screener_v0_1_training_audit.csv",
+      "sha256": "54979f1037817d6a218d31301c59a1056b0123747f1aacbbf2e12ddc85c8d747"
+    },
+    {
+      "path": "数据/processed/abcb1_q1_external_benchmark_protocol_lock_v1.json",
+      "sha256": "5c0dba850049f0eefab1016724b1d572bd34fa876f3aa4255d26e1da2b3831a2",
+      "role": "historical gate definitions and comparators only; its scored entities are not pooled into the v4 primary metric"
+    }
+  ],
+  "primary_analysis": {
+    "population": "all 33 frozen strict-pool v4 entities",
+    "label_mapping": "directional_label 1=ABCB1 substrate, 0=ABCB1 non-substrate",
+    "prediction": "frozen calibrated probability and fixed threshold 0.5",
+    "primary_metrics": [
+      "MCC_at_fixed_0_5",
+      "balanced_accuracy_at_fixed_0_5"
+    ],
+    "secondary_metrics": [
+      "sensitivity",
+      "specificity",
+      "precision",
+      "negative_predictive_value",
+      "F1",
+      "ROC_AUC",
+      "average_precision",
+      "Brier_score",
+      "applicability_coverage"
+    ],
+    "post_result_exclusion_allowed": false
+  },
+  "comparators": [
+    "training_class_prior_probability",
+    "one_nearest_neighbor_Morgan_Tanimoto",
+    "five_nearest_neighbor_similarity_weighted_probability"
+  ],
+  "uncertainty": {
+    "entity_bootstrap": {
+      "iterations": 5000,
+      "seed": 202608031,
+      "sampling": "stratified with replacement within directional label",
+      "interval": "percentile_95pct"
+    },
+    "cluster_bootstrap": {
+      "iterations": 5000,
+      "seed": 202608032,
+      "sampling": "resample all upstream_experiment_cluster units with replacement and retain all entities in each sampled cluster; discard one-class replicates",
+      "interval": "percentile_95pct",
+      "reason": "multiple entities from the same paper or sponsor study are not treated as independent laboratories"
+    },
+    "paired_model_comparison": "entity-stratified paired bootstrap using the same resampled indices",
+    "leave_one_cluster_out": true
+  },
+  "applicability_analysis": {
+    "frozen_similarity_metric": "Morgan radius 2, 2048 bits, no chirality, Tanimoto",
+    "outside_rule": "maximum training similarity below frozen self-nearest q10",
+    "caution_rule": "frozen q10 to below q25",
+    "within_rule": "at least frozen q25",
+    "subsets": [
+      "all",
+      "within_or_caution_nonabstain",
+      "within_empirical_support",
+      "low_empirical_support",
+      "outside_empirical_support",
+      "max_training_tanimoto_below_0_5",
+      "max_training_tanimoto_at_least_0_5"
+    ],
+    "subset_results_are_secondary": true
+  },
+  "predeclared_claim_gates": {
+    "validated_binary_predictor_requires_all": [
+      "entity-bootstrap lower 95% CI for MCC > 0",
+      "entity-bootstrap lower 95% CI for balanced accuracy > 0.5",
+      "cluster-bootstrap lower 95% CI for MCC > 0",
+      "cluster-bootstrap lower 95% CI for balanced accuracy > 0.5",
+      "entity-bootstrap lower 95% CI for ROC AUC > 0.5",
+      "minimum leave-one-cluster-out balanced accuracy > 0.5 among estimable two-class subsets",
+      "nonabstain applicability coverage >= 0.5",
+      "no class has sensitivity or specificity below 0.5 at the fixed threshold"
+    ],
+    "failure_action": "Do not tune on v4. Retain v0.1 only as a bounded screening/boundary-audit tool and use the frozen errors to design an assay-aware v0.2 training strategy; reserve any later temporal or experimental set for another untouched evaluation."
+  },
+  "reporting_rules": [
+    "Report all 33 predictions regardless of correctness or applicability band.",
+    "Report entity-bootstrap and cluster-bootstrap intervals side by side.",
+    "Report full confusion matrix and every error with source, similarity, and applicability band.",
+    "Report the four reused multi-entity clusters explicitly and do not describe 33 entities as 33 independent studies.",
+    "Do not combine this ordinary-drug benchmark with ADC release-species rows as if they shared one endpoint.",
+    "Do not call the model an ADC-specific predictor unless a separate ADC release-species validation gate later passes."
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "time": "2026-10-09T07:57:10.594771+00:00",
+  "checks": [
+    {
+      "check": "protected inputs unchanged",
+      "pass": true
+    },
+    {
+      "check": "30 distinct observation IDs",
+      "pass": true
+    },
+    {
+      "check": "direct transport not pooled with functional or call",
+      "pass": true
+    },
+    {
+      "check": "all observations primary locator and source URL",
+      "pass": true
+    },
+    {
+      "check": "one molecular identity per 7 entity summary",
+      "pass": true
+    },
+    {
+      "check": "MMAF not assigned direct binary direction",
+      "pass": true
+    },
+    {
+      "check": "Foti remains exploratory and not gold",
+      "pass": true
+    },
+    {
+      "check": "no same-system paired transport claim",
+      "pass": true
+    },
+    {
+      "check": "only MMAE accepted among reviewed direct species",
+      "pass": true
+    },
+    {
+      "check": "renders and plot exist",
+      "pass": true
+    }
+  ],
+  "all_pass": true,
+  "file_sha256": {
+    "Foti_Figure8_visual_coordinate_review.csv": "2f88ae3be8ec5b3782a4319a4d56894c577ed907ed833d964a1b6be79b55a685",
+    "primary_observation_evidence_rows.csv": "3eff71c4b07cf3fdabd05cb70e501475edcc4cfb113579e817dedf3414ea0908",
+    "Foti_within_source_net_ER_visual_review.csv": "3146be0401bda0bad4fe852ee1ed7832cc753eb38a41d6faafa47566ec51895a",
+    "unique_entity_model_direction_crosscheck.csv": "26420ac156e5d6f4df54bf8112c81b2650ab67ff3b3337b08bfff902733e0d4d",
+    "validation_status.json": "7346d021511a18431d0e0e3306ef85836a6834a9208193a21b0db506e3f28bb3",
+    "Foti_old_vs_visual_review.csv": "57aab3517febfb13e44482d2a29da173f8dd4d0d4e9f92e41290d79d0f7cc921",
+    "释放物种外部运输核验.md": "757fa0c5eb02947374ff68c512d7c863a92da9067e2cd010a166ddc335d39e04",
+    "Roth_Table3_functional_recheck.csv": "209e58284e892d16a26c30f4cede566760bb00040cf8a34cf5a0ef696bcc0519",
+    "build_transport_validation.py": "9a1630f981e573b102d51439d44eb42aeea4df3cac518dc9c51bcf043dbcb131",
+    "build_stdout.json": "7346d021511a18431d0e0e3306ef85836a6834a9208193a21b0db506e3f28bb3",
+    "protocol_and_input_sha256.json": "4353984afc2a00d30eb5d8e1ec811a6da9e65d4a011db11ce118f5a1437a3518",
+    "source_extracts/Foti2015_pmc_current.html": "3ae15c238b96b53727e4e2b890363d87209c237606c292569a5b65c5082ee73e",
+    "source_extracts/PMDA_Kadcyla_local.txt": "560c945e71c39e82dcd6dff108106187712305eee7d4208c2704672543ddfcc6",
+    "source_extracts/Foti2015_BioC_no_result.html": "478f38e0765ee9c406831bb2fc27e8019ac5227c20c6b28ca0de582d8449354a",
+    "source_extracts/FDA_Elahere_local.txt": "c6dee76d1befd92ca1adca9acfef5003c90505c030a9f42e7b9aa60d2736ec96",
+    "source_extracts/PMDA_Padcev_local.txt": "c5f6a4c84a7ac1473f8d066d47effc0017f28be2cf0f07a9f9c94e5212e02815",
+    "source_extracts/PMDA_belantamab_local.txt": "e5d043f757cb7188f5975d9c1a29a47817a91182547948be2abba0fed55d7ca5",
+    "source_extracts/US7750116B1_local.txt": "e27639f264dd1af88384919fd645266a8c54bfa8b44fd341ceca5f0ba4bb1d78",
+    "source_extracts/Foti2015_fetch_receipts.json": "321ef109e0abb01a8ac04cca20285814d45e4b546b13dbaf9220eae38bed19fb",
+    "figures/Foti_visual_ER_review.pdf": "2f6ccde3a9b19bd0f99aa4851e312349454496b32cee07e542f9d842ea707336",
+    "figures/Foti_visual_ER_review.png": "85c290691310a9fc5230057073b142b50caa9058f42ffed0c8edbe84c893041d",
+    "figures/Patent_MMAF_p37.png": "4b25ebca211ccea25285fc6a20eb4591d2bb59df3b53f5db939bfd00a06afd3d",
+    "figures/FDA_DM4_SMeDM4_p77.png": "1bb938fa2e81d5f3044b4702382e96a12b0acb7f654f39f86c8be3f307198e75",
+    "figures/PMDA_cysmcMMAF_p33.png": "5b199dc60f7f895c878f4c9875e896a543b10111a04b47dc55d2337e406ebf89",
+    "figures/PMDA_DM1_p119.png": "dcfba053ed81b8675b6df3042d5519e1d5b59765ba82978f38cca5f6dcf8e8e2",
+    "figures/PMDA_MMAE_p76.png": "0d6eca9fa7f4e4a9ab9b9b3b4a55579097529fb51ae9aeab73c2fdaf1cf9281c",
+    "figures/PMDA_DM1_p120.png": "19674bcaf8a8bdd19a8c0e312a9ff279e48a59b1db6f981dfeeefc4167508703"
+  }
+}

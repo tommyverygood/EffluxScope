@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "completed_utc": "2026-10-12T09:38:53.070062+00:00",
+  "input_sha256": {
+    "outputs/20260810_soskuti_identity_double_review_v1/reanalysis/external/analysis/abcb1_quantity_biogen_analysis_rows_identity_audited_v2.csv": "9e650cbc3b72d6757994eb9c02b0f130729f5a327a1decb17df3f8c8e36f07e9",
+    "outputs/20261009_adc_followup_validation/asap_secondary/compound_aggregation_ledger.csv": "df1d6f1c86a0efa1b90bef43296098a40bfaa22867fd86bd3dde54b608711e47",
+    "outputs/20261009_adc_followup_validation/asap_secondary/repetition_audit/unique_compound_identity_and_aggregation.csv": "f77b20bf7d6439818b2340a15606de6ab63b062e5ceccc76447fe4541093cf08",
+    "数据/processed/abcb1_selective_v0_4_asap2025_posthoc_predictions_v1.csv": "ad881d5c403eccb16a5f1ec9089d400ff7f24574c64a20c134ca6f723fa1afd0",
+    "outputs/20261012_adc_completion/scoring/species_predictions.csv": "9c62f876b0e0549220d2bb5ddcdcbdda1c6b5f4eb56c3922eba1d33eb8ed5c4d",
+    "数据/processed/abcb1_screener_v0_1_training_audit.csv": "54979f1037817d6a218d31301c59a1056b0123747f1aacbbf2e12ddc85c8d747",
+    "数据/processed/soskuti_2024_mdr1_species_panel_identity_audited_v2.csv": "645ac3aee9b0f6dcc2b9390f9847dd9936c8533c37dcab570107e5190b30f56f",
+    "outputs/20261012_adc_scope_revision/feasibility/protocol.json": "7877f6734c9049722044b1d2211daf17dd4a48899ab18287ab08357c234af259",
+    "outputs/20261012_adc_scope_revision/feasibility/run_feasibility.py": "69dbe13713ff6f390b0a9dbcb5f441f15b67e8af141cc98662ecab4d3f23da15"
+  },
+  "runtime": {
+    "executable": "/tmp/effluxscope_20261012_env/bin/python",
+    "python": "3.12.14",
+    "rdkit": "2026.03.4"
+  },
+  "feature_rows": 2694,
+  "counts_by_source": {
+    "Biogen2624": 2624,
+    "ASAP56": 56,
+    "ADC14": 14
+  },
+  "no_model_prediction_refit_or_performance_computation": true,
+  "all_inputs_unchanged": true
+}

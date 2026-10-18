@@ -1,0 +1,35 @@
+{
+  "status": "completed_bounded_public_search",
+  "client_date": "2026-10-12",
+  "web_queries": 41,
+  "pubmed_queries": 4,
+  "strict_new_same_system_parent_release_ABCB1_numeric_pairs": 0,
+  "new_numeric_MDR1_source_entities": [
+    "MMAE",
+    "MMAD"
+  ],
+  "new_negative_conference_call_entities": [
+    "MMAF"
+  ],
+  "new_regulatory_conflict_entities": [
+    "cys-mcMMAF"
+  ],
+  "same_study_call_only_pair": [
+    "DM4",
+    "S-methyl-DM4"
+  ],
+  "gold_validation_claim": false,
+  "wet_lab": false,
+  "model_or_manuscript_mutated": false,
+  "observation_rows": 18,
+  "new_identity_ready_structures": [],
+  "limits": [
+    "MMAF conference no ER or exact tested material metadata",
+    "Maji lacks exposed row-level control and concentration; human transgene not proved",
+    "DM4 same sponsor study has call-only summary; same-system numeric gate unfilled",
+    "SLC46A3 pairs excluded from ABCB1 endpoint",
+    "Rock/Foti publisher full text access restrictions",
+    "single research agent; no independent blinded human extraction",
+    "PubMed narrow name search zeros do not imply absence; title phrase query4 mapped broadly and was not screened as a corpus"
+  ]
+}

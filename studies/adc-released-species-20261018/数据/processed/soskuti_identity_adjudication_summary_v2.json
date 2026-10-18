@@ -1,0 +1,36 @@
+{
+  "created_utc": "2026-08-10T03:00:26.598105+00:00",
+  "analysis_status": "identity-corrected post-outcome sensitivity/reanalysis",
+  "review_scope": "two independently implemented computational/source review workflows; human signoff pending",
+  "input_hashes": {
+    "panel_v1": "9892cd2bb4be3ff0c834113c5ec7b8d9b7752bc69667782cd5980f19f2ac3bf7",
+    "review_a": "dd33c80a4255605b170e6fca38522a42987b2adbbd5eb8446ab6bdcfa746a858",
+    "review_b": "13cfacabb10d475d723316b02704c9c11fe874101113196adbd8a053fc622e1d",
+    "crosssource_snapshot": "364d38e1742ae3ad41f57501a4287675beea77176bfdd008ba9b737877c0f338"
+  },
+  "row_count": 84,
+  "adjudication_counts": {
+    "pass": 82,
+    "pass_with_representation_limitation": 2
+  },
+  "human_signoff_pending_count": 84,
+  "training63_count": 63,
+  "training63_positive": 41,
+  "training63_negative": 22,
+  "raw_identity_corrections": 1,
+  "standardized_inchikey_changes": 1,
+  "training63_feature_changes": {
+    "achiral_morgan": 0,
+    "physchem_descriptors": 0,
+    "murcko_scaffold": 0,
+    "label": 0
+  },
+  "full84_connectivity_changes": 0,
+  "conclusion": "One over-specified stereochemical identity was corrected (Ketoconazole). Ranitidine was retained with a geometry-representation limitation. The frozen achiral model features, descriptors, scaffolds, labels, and connectivity-level reference identities are tested explicitly before downstream replay.",
+  "outputs": {
+    "adjudication": "数据/processed/soskuti_identity_adjudication_v2.csv",
+    "panel_v2": "数据/processed/soskuti_2024_mdr1_species_panel_identity_audited_v2.csv",
+    "training63_v2": "数据/processed/soskuti_2024_mdr1_species_training63_identity_audited_v2.csv",
+    "feature_diff": "数据/processed/soskuti_identity_model_input_diff_v2.csv"
+  }
+}

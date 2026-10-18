@@ -1,0 +1,6 @@
+﻿gate,value,rule,status,interpretation
+direct_MCC_lower_95CI_gt_0,-0.30550505,> 0,fail,directional source-call discrimination beyond chance correlation
+direct_BAcc_lower_95CI_gt_0_5,0.37142857,> 0.5,fail,balanced accuracy lower bound exceeds chance
+positive_continuous_direction_in_two_sources,2,>= 2 independent sources with n>=3,pass,"continuous endpoint direction now reproduces in two independent MDCK-MDR1 sources (Langthaler 2024 n=11 rho=+0.210 p=0.536 point estimate only; ASAP 2025 n=62 rho=+0.550 scaffold-bootstrap 95% CI [0.208, 0.744]); the second source carries the statistical weight"
+leave_one_source_out_min_BAcc_gt_0_5,0.375,> 0.5,fail,no single source determines the result
+nonabstain_coverage_at_least_50pct,0.70833333,>= 0.5,pass,applicability rejection does not hide most explicit calls

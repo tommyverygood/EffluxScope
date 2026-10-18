@@ -1,0 +1,66 @@
+{
+  "model_version": "ABCB1_selective_screener_v0.4_dev",
+  "diagnostic_status": "historical_posthoc_diagnostic_not_external_validation",
+  "rule_tuned_on_historical_external_outcomes": false,
+  "package_sha256": "c56fb6b8f6f8bf13472a1a2d433b05d4c6a35eb2490ba84ce9371395b8bbff8b",
+  "input_hashes": {
+    "数据/processed/abcb1_regulatory_v4_blind_predictions_v1.csv": "014f2277408775e50065f6aaac856aa9e7a85211869d2169800402f2a3a83482",
+    "数据/processed/abcb1_asap2025_sourceheldout_predictions_v1.csv": "100e11e56c319d7f1cb1a7d30b4938f38721a715920d647386131ae205cbe4c7",
+    "数据/processed/abcb1_asap_mdck_mdr1_observations_v1.csv": "130f4e6daffea2f8a4337ac2e31a67f992af64cc4d10c5ad351207a387c4f8f5",
+    "数据/processed/abcb1_conrad2024_matched_pair_entities_v1.csv": "dc2916372d681c766aa1ed18604fdf1e91b674c850ec98ba03e1bb207cb79846",
+    "数据/processed/abcb1_conrad2024_figure5_pairs_v1.csv": "1556ca8e99997d0f0e8de613ab7ba9068571c7181579b0d63ad6b5c39eda98c2"
+  },
+  "regulatory_v4": {
+    "n": 33,
+    "accepted_n": 13,
+    "abstain_n": 20,
+    "coverage": 0.3939393939393939,
+    "accepted_accuracy": 0.8461538461538461,
+    "high_n": 11,
+    "high_precision": 0.8181818181818182,
+    "low_n": 2,
+    "low_negative_predictive_value": 1.0
+  },
+  "asap_2025_weak_binary": {
+    "n": 62,
+    "accepted_n": 5,
+    "abstain_n": 57,
+    "coverage": 0.08064516129032258,
+    "accepted_accuracy": 1.0,
+    "high_n": 5,
+    "high_precision": 1.0,
+    "low_n": 0,
+    "low_negative_predictive_value": null
+  },
+  "asap_2025_continuous": {
+    "spearman_all_rows": 0.5501530144591816,
+    "spearman_accepted_rows": 0.6,
+    "accepted_rows_for_spearman": 5
+  },
+  "conrad_figure5": {
+    "identity_clean_pair_n": 11,
+    "pair_direction_correct_n": 6,
+    "pair_direction_accuracy": 0.5454545454545454
+  },
+  "abstention_reason_counts": {
+    "regulatory_v4": {
+      "outside_both_reference_panels": 5,
+      "probability_gray_zone": 16,
+      "primary_local_neighborhood_strongly_opposite": 1,
+      "outside_physicochemical_envelope": 1
+    },
+    "asap_2025": {
+      "outside_both_reference_panels": 24,
+      "probability_gray_zone": 41
+    }
+  },
+  "outputs": {
+    "regulatory_predictions": "数据/processed/abcb1_selective_v0_4_regulatory_v4_posthoc_predictions_v1.csv",
+    "asap_predictions": "数据/processed/abcb1_selective_v0_4_asap2025_posthoc_predictions_v1.csv",
+    "conrad_predictions": "数据/processed/abcb1_selective_v0_4_conrad_posthoc_predictions_v1.csv",
+    "conrad_pairs": "数据/processed/abcb1_selective_v0_4_conrad_pairwise_posthoc_v1.csv",
+    "metrics": "数据/processed/abcb1_selective_v0_4_posthoc_diagnostic_metrics_v1.csv"
+  },
+  "formal_interpretation": "The three-output implementation is operational and conservative. Historical diagnostics quantify behavior only; a future outcome-unseen source is still required before claiming external selective-classification validity.",
+  "claim_boundary": "ABCB1 efflux-risk triage for a standardized free/released small-molecule structure; not intact-ADC transport, intracellular unbound exposure, resistance, efficacy, clinical DDI, or universal assay-independent substrate truth"
+}

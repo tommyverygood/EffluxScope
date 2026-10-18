@@ -328,3 +328,7 @@ it; until then cite this repository and its commit.
 
 The reference panel's sources must be cited independently of this package —
 ChEMBL and Daood et al. 2025, both in `THIRD_PARTY_NOTICES.md`.
+
+## ADC payload and released-species study
+
+The ADC application assessment has a separate, self-contained [study export](studies/adc-released-species-20261018/README.md) with curated evidence, frozen model bundles, original analysis methods, data dictionaries and an offline verification entry point. It preserves the development-model and missing ADC-validation limits; it does not replace the endpoint-agnostic framework above.

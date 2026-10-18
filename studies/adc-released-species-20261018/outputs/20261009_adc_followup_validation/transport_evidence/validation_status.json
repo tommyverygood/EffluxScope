@@ -1,0 +1,38 @@
+{
+  "completed": "retrospective primary-observation/source-direction crosschecks",
+  "primary_observation_rows": 30,
+  "unique_entities_with_direction_or_context": 7,
+  "direct_entity_comparisons_including_exploratory_material_class": 4,
+  "direct_table_numeric_positive_entities": 3,
+  "direct_low_exploratory_entities": 1,
+  "raw_v0_1_and_v0_3_direct_directions_aligned": 3,
+  "raw_v0_1_and_v0_3_direct_directions_discordant": 1,
+  "discordant_entity": "Lys-MCC-DM1; high raw scores versus low Foti Figure8 transport under tested conditions",
+  "v0_4_direct_entities_accepted": 1,
+  "v0_4_direct_entities_abstained": 3,
+  "v0_4_accepted_direct_entity": "MMAE",
+  "call_only_positive_entities": 2,
+  "call_only_v0_4_abstained": 2,
+  "functional_direction_held_entities": 1,
+  "direct_same_system_parent_release_pairs": 0,
+  "new_wet_lab_experiments": 0,
+  "Foti_manual_points": 16,
+  "old_algorithm_within_visual_bounds": 16,
+  "Foti_gold_promoted": false,
+  "no_accuracy_estimate": "Small, heterogeneous, purposively selected retrospective evidence is not an independent ADC benchmark. Neither 3/4 alignment nor 1/1 accepted alignment is a validated accuracy estimate.",
+  "important_limits": [
+    "Foti original full text unavailable in live follow-up; stored primary figure re-read and DOI/title metadata checked.",
+    "No reciprocal Foti Papp values exist in this source figure; do not invent them.",
+    "Lys-MCC mixture and low permeability limit transporter interpretation.",
+    "Frozen preprocessing removes some stereochemistry and changes tautomer connectivity blocks in cys-mcMMAF and Lys-MCC-DM1.",
+    "Sources are independent observations but had already been curated before this follow-up; not new blind source-heldout validation."
+  ],
+  "missing_or_held": [
+    "Lys-PEG4Mal-DM1 exact machine identity",
+    "S-methyl-DM1 stereochemistry",
+    "isolated Lys-SPDB-DM4 transport",
+    "isolated cys-VC-MMAE transport",
+    "same-system parent versus released transport for all changed pairs"
+  ],
+  "protected_inputs_unchanged": true
+}

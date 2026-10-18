@@ -1,0 +1,107 @@
+{
+  "protocol_version": "ABCB1_PUBLIC_PREDICTOR_BENCHMARK_PROTOCOL_V1",
+  "protocol_date": "2026-08-05",
+  "timing": "locked_posthoc_after_biogen_outcomes_v0_4_external_results_and_preliminary_astrazeneca_spearman_correlations_were_observed_but_before_complete_comparator_and_rejection_metrics_were_analyzed",
+  "status": "frozen_posthoc_public_predictor_comparison",
+  "benchmark": {
+    "input": "数据/processed/abcb1_public_predictor_benchmark_input_v1.csv",
+    "input_sha256": "4b5c5fd332b2cfd9c119fc7fde575b7512f27fb1619c47e108464a80cbee01d4",
+    "n_identity_clean": 2624,
+    "continuous_endpoint": "Biogen/Fang 2023 log10 MDR1-MDCK efflux ratio",
+    "weak_binary_endpoint": "ER>=2",
+    "frozen_v0_4_accepted_n": 453,
+    "frozen_v0_4_coverage": 0.17263719512195122
+  },
+  "comparators": [
+    {
+      "comparator_id": "internal_v0_4_primary_score",
+      "role": "internal_reference_for_direct_comparison",
+      "endpoint": "heterogeneous weak ABCB1 substrate-risk score",
+      "score_column": "v0_4_primary_score",
+      "binary_threshold": 0.5,
+      "threshold_basis": "frozen weak-binary interface",
+      "primary_comparison_eligible": true
+    },
+    {
+      "comparator_id": "astrazeneca_gnn_mtl_mdck_er_2025",
+      "role": "primary_continuous_same_assay_family_comparator",
+      "endpoint": "human MDR1-transfected MDCK LogER",
+      "score_column": "pred_2",
+      "binary_threshold": 0.3010299956639812,
+      "threshold_basis": "log10(ER=2)",
+      "model_artifact": "数据/vendor/public_predictor_benchmark_v1/astrazeneca_gnn_mtl/model.pt",
+      "model_sha256": "c979bd0dab17a324e2c0c52c3da0bbe25d93415b7c6b49d62f0e01f6f2a487de",
+      "raw_predictions": "数据/processed/abcb1_public_predictor_astrazeneca_gnn_mtl_raw_v1.csv",
+      "raw_predictions_sha256": "8dbc4d1bd85e734f7e26ce79a035edd598fff5f88e589ff133ae4c2dda0ce599",
+      "software": "Chemprop 2.1.0; official Zenodo 10.5281/zenodo.16948542 checkpoint",
+      "training_overlap_status": "not_auditable_proprietary_astrazeneca_training_structures"
+    },
+    {
+      "comparator_id": "astrazeneca_gnn_mtl_nih_mdck_er_2025",
+      "role": "secondary_continuous_same_transporter_assay_comparator",
+      "endpoint": "human MDR1-transfected NIH-MDCK LogER",
+      "score_column": "pred_3",
+      "binary_threshold": 0.3010299956639812,
+      "threshold_basis": "log10(ER=2)",
+      "model_artifact": "数据/vendor/public_predictor_benchmark_v1/astrazeneca_gnn_mtl/model.pt",
+      "training_overlap_status": "not_auditable_proprietary_astrazeneca_training_structures"
+    },
+    {
+      "comparator_id": "deeppk_pgp_substrate_2026_08_05",
+      "role": "primary_public_weak_substrate_probability_comparator",
+      "endpoint": "P-glycoprotein substrate probability",
+      "score_column": "deeppk_pgp_substrate_probability",
+      "binary_threshold": 0.5,
+      "threshold_basis": "server classification threshold",
+      "software": "Deep-PK public API deployment retrieved 2026-08-05",
+      "training_overlap_status": "auditable_against_downloaded_train_validation_test_structures"
+    },
+    {
+      "comparator_id": "admet_ai_v2_pgp_broccatelli_inhibition",
+      "role": "endpoint_mismatch_negative_control_only",
+      "endpoint": "P-glycoprotein inhibition probability, not substrate probability",
+      "score_column": "Pgp_Broccatelli",
+      "binary_threshold": 0.5,
+      "threshold_basis": "package classification threshold",
+      "software": "ADMET-AI 2.0.1; Chemprop 2.3.1; Torch 2.13.0",
+      "raw_predictions": "数据/processed/abcb1_public_predictor_admet_ai_v2_raw_v1.csv",
+      "raw_predictions_sha256": "0d2f231c00b2593a1ad15ff873dc6c1fa09b27f37ef5fddb7df95e22491099d9",
+      "primary_comparison_eligible": false
+    },
+    {
+      "comparator_id": "admetlab_3_pgp_substrate",
+      "role": "planned_public_weak_substrate_probability_comparator",
+      "endpoint": "P-glycoprotein substrate probability",
+      "status": "temporarily_unavailable_server_side_failure",
+      "failure_observed": "Official API /api/single/admet returned HTTP 500 with KeyError: ['BSEP'] not in index on 2026-08-05; current batch endpoint documented as /api/admet returned 404.",
+      "retry_policy": "retain as pending and rerun when the official deployment is operational; do not substitute a different ADMETlab version without a new protocol amendment"
+    }
+  ],
+  "frozen_analyses": {
+    "populations": [
+      "all_identity_clean",
+      "v0_4_accepted_mask",
+      "v0_4_rejected_forced",
+      "predictor_native_margin_matched_to_453",
+      "deeppk_development_identity_clean_when_applicable"
+    ],
+    "coverage_grid": [0.05, 0.1, 0.17263719512195122, 0.25, 0.5, 0.75, 1.0],
+    "margin_definition": "absolute distance between the comparator score and its frozen binary threshold",
+    "binary_metrics": ["balanced_accuracy", "mcc", "sensitivity", "specificity", "ppv", "npv", "roc_auc", "average_precision"],
+    "continuous_metrics": ["spearman_rho"],
+    "uncertainty": "2000 bootstrap replicates clustered by frozen bootstrap_cluster; seed 20260805",
+    "primary_transfer_question": "Does the already-frozen v0.4 acceptance mask enrich reliability for independently generated comparator scores relative to their full-coverage result and their own matched score-margin subset?"
+  },
+  "leakage_policy": {
+    "exact_overlap": "compare the first connectivity block of standardized InChIKey",
+    "deeppk_development_overlap": "train and validation rows are development overlap; test overlap is reported separately",
+    "unknown_training_structures": "report not auditable and do not use clean/external language"
+  },
+  "claim_boundary": [
+    "This is a post-hoc comparator analysis because Biogen outcomes were already observed.",
+    "The frozen v0.4 mask is unchanged, but its apparent transfer gain is not prospective validation.",
+    "Endpoint-mismatched inhibition scores cannot be ranked as ABCB1 substrate predictors.",
+    "A strong AstraZeneca result is a public-model benchmark, not an independent result when proprietary training identities cannot be audited.",
+    "ADMETlab unavailability is reported as an operational missing result, not imputed."
+  ]
+}

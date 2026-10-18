@@ -1,0 +1,286 @@
+{
+  "validation_id": "ABCB1_PUBLIC_PREDICTOR_OOD_COMPARISON_VALIDATION_V1",
+  "status": "passed",
+  "n_checks": 54,
+  "all_passed": true,
+  "checks": [
+    {
+      "check": "input_hash::数据/processed/abcb1_ood_structural_assignments_v1.csv",
+      "passed": true,
+      "detail": "expected=3f6096aa89ecdf2db7e37a80204d5c630aa1cad695ecfc76adc1b649ea1ba0fe; observed=3f6096aa89ecdf2db7e37a80204d5c630aa1cad695ecfc76adc1b649ea1ba0fe"
+    },
+    {
+      "check": "input_hash::数据/processed/abcb1_ood_structure_assignment_lock_v1.json",
+      "passed": true,
+      "detail": "expected=b15878b3c38b576daf101d2a0257e45f98a4800a1adff023980590e513033238; observed=b15878b3c38b576daf101d2a0257e45f98a4800a1adff023980590e513033238"
+    },
+    {
+      "check": "input_hash::数据/processed/abcb1_public_predictor_predictions_long_v1.csv",
+      "passed": true,
+      "detail": "expected=1a54dd7fcc580f9f0dc8695c1644e0e798ef9cf738b5381a03760f835ce81793; observed=1a54dd7fcc580f9f0dc8695c1644e0e798ef9cf738b5381a03760f835ce81793"
+    },
+    {
+      "check": "input_hash::数据/processed/abcb1_public_predictor_benchmark_protocol_v1.json",
+      "passed": true,
+      "detail": "expected=2a364a1cf924ac2fa4ab2f15772ec88373bb384a048eab0638101fdbf3aed545; observed=2a364a1cf924ac2fa4ab2f15772ec88373bb384a048eab0638101fdbf3aed545"
+    },
+    {
+      "check": "input_hash::数据/processed/abcb1_public_predictor_benchmark_summary_v1.json",
+      "passed": true,
+      "detail": "expected=0e2a5b1350b4a78d1caf6d0d21a5058ea36df04835ccdf3ce66b61e7b56bb519; observed=0e2a5b1350b4a78d1caf6d0d21a5058ea36df04835ccdf3ce66b61e7b56bb519"
+    },
+    {
+      "check": "analysis_row_count",
+      "passed": true,
+      "detail": "n=10496"
+    },
+    {
+      "check": "analysis_key_unique",
+      "passed": true,
+      "detail": "comparator_id/external_row_id is unique"
+    },
+    {
+      "check": "model_set",
+      "passed": true,
+      "detail": "['admet_ai_v2_pgp_broccatelli_inhibition', 'astrazeneca_gnn_mtl_mdck_er_2025', 'astrazeneca_gnn_mtl_nih_mdck_er_2025', 'deeppk_pgp_substrate_2026_08_05']"
+    },
+    {
+      "check": "structure_identity_complete",
+      "passed": true,
+      "detail": "all InChIKey identities agree after external_row_id merge"
+    },
+    {
+      "check": "reference_scope_boundary",
+      "passed": true,
+      "detail": "public-model training-space OOD is never asserted"
+    },
+    {
+      "check": "threshold::astrazeneca_gnn_mtl_mdck_er_2025",
+      "passed": true,
+      "detail": "observed=[0.3010299956639812]; expected=0.3010299956639812"
+    },
+    {
+      "check": "threshold::astrazeneca_gnn_mtl_nih_mdck_er_2025",
+      "passed": true,
+      "detail": "observed=[0.3010299956639812]; expected=0.3010299956639812"
+    },
+    {
+      "check": "threshold::deeppk_pgp_substrate_2026_08_05",
+      "passed": true,
+      "detail": "observed=[0.5]; expected=0.5"
+    },
+    {
+      "check": "threshold::admet_ai_v2_pgp_broccatelli_inhibition",
+      "passed": true,
+      "detail": "observed=[0.5]; expected=0.5"
+    },
+    {
+      "check": "model_status_rows",
+      "passed": true,
+      "detail": "n=5"
+    },
+    {
+      "check": "admetlab_missing_not_imputed",
+      "passed": true,
+      "detail": "[{'comparator_id': 'admetlab_3_pgp_substrate', 'included_in_metrics': False, 'display_name': 'ADMETlab 3.0 P-gp substrate', 'endpoint': 'P-gp substrate probability', 'threshold': nan, 'score_direction': 'higher_expected_to_be_more_substrate_like', 'substrate_ranking_eligible': True, 'model_output_status': 'unavailable_no_predictions', 'training_overlap_status': 'not_evaluable', 'endpoint_limit': 'official server-side failure recorded on 2026-08-05; no output was imputed and no alternate ADMETlab version was substituted'}]"
+    },
+    {
+      "check": "admet_ai_endpoint_mismatch",
+      "passed": true,
+      "detail": "[{'comparator_id': 'admet_ai_v2_pgp_broccatelli_inhibition', 'included_in_metrics': True, 'display_name': 'ADMET-AI P-gp inhibition', 'endpoint': 'P-gp inhibition probability', 'threshold': 0.5, 'score_direction': 'higher_is_more_inhibitory', 'substrate_ranking_eligible': False, 'model_output_status': 'available_endpoint_mismatch_negative_control', 'training_overlap_status': 'not_ranked_due_to_endpoint_mismatch', 'endpoint_limit': 'inhibition is not substrate transport; excluded from substrate ranking'}]"
+    },
+    {
+      "check": "metric_row_count",
+      "passed": true,
+      "detail": "n=96"
+    },
+    {
+      "check": "metric_rows_per_model",
+      "passed": true,
+      "detail": "{'admet_ai_v2_pgp_broccatelli_inhibition': 24, 'astrazeneca_gnn_mtl_mdck_er_2025': 24, 'astrazeneca_gnn_mtl_nih_mdck_er_2025': 24, 'deeppk_pgp_substrate_2026_08_05': 24}"
+    },
+    {
+      "check": "no_outcome_based_selection",
+      "passed": true,
+      "detail": "all selection_uses_outcomes values are false"
+    },
+    {
+      "check": "full_coverage_counts",
+      "passed": true,
+      "detail": "full rows retain each complete stratum"
+    },
+    {
+      "check": "native_coverage_counts",
+      "passed": true,
+      "detail": "native selection uses the frozen 453/2624 rate with deterministic rounding"
+    },
+    {
+      "check": "stratum_count::external_d5_quintile::Q1_nearest",
+      "passed": true,
+      "detail": "n=525"
+    },
+    {
+      "check": "stratum_count::external_d5_quintile::Q2",
+      "passed": true,
+      "detail": "n=525"
+    },
+    {
+      "check": "stratum_count::external_d5_quintile::Q3",
+      "passed": true,
+      "detail": "n=524"
+    },
+    {
+      "check": "stratum_count::external_d5_quintile::Q4",
+      "passed": true,
+      "detail": "n=525"
+    },
+    {
+      "check": "stratum_count::external_d5_quintile::Q5_farthest",
+      "passed": true,
+      "detail": "n=525"
+    },
+    {
+      "check": "stratum_count::dual_ood::yes",
+      "passed": true,
+      "detail": "n=609"
+    },
+    {
+      "check": "stratum_count::dual_ood::no",
+      "passed": true,
+      "detail": "n=2015"
+    },
+    {
+      "check": "stratum_count::kmeans_ood20::yes",
+      "passed": true,
+      "detail": "n=544"
+    },
+    {
+      "check": "stratum_count::kmeans_ood20::no",
+      "passed": true,
+      "detail": "n=2080"
+    },
+    {
+      "check": "stratum_count::strict_lohi_ood::yes",
+      "passed": true,
+      "detail": "n=2581"
+    },
+    {
+      "check": "stratum_count::strict_lohi_ood::no",
+      "passed": true,
+      "detail": "n=43"
+    },
+    {
+      "check": "prior_anchor::astrazeneca_gnn_mtl_mdck_er_2025::balanced_accuracy",
+      "passed": true,
+      "detail": "current=0.7432627380119342; prior=0.7432627380119342"
+    },
+    {
+      "check": "prior_anchor::astrazeneca_gnn_mtl_mdck_er_2025::mcc",
+      "passed": true,
+      "detail": "current=0.4868187845515047; prior=0.4868187845515047"
+    },
+    {
+      "check": "prior_anchor::astrazeneca_gnn_mtl_mdck_er_2025::roc_auc",
+      "passed": true,
+      "detail": "current=0.8279647230071068; prior=0.8279647230071068"
+    },
+    {
+      "check": "prior_anchor::astrazeneca_gnn_mtl_mdck_er_2025::spearman_rho",
+      "passed": true,
+      "detail": "current=0.630074060741152; prior=0.630074060741152"
+    },
+    {
+      "check": "prior_anchor::astrazeneca_gnn_mtl_nih_mdck_er_2025::balanced_accuracy",
+      "passed": true,
+      "detail": "current=0.6985987227295676; prior=0.6985987227295676"
+    },
+    {
+      "check": "prior_anchor::astrazeneca_gnn_mtl_nih_mdck_er_2025::mcc",
+      "passed": true,
+      "detail": "current=0.4284978502899102; prior=0.4284978502899102"
+    },
+    {
+      "check": "prior_anchor::astrazeneca_gnn_mtl_nih_mdck_er_2025::roc_auc",
+      "passed": true,
+      "detail": "current=0.8151985142799779; prior=0.8151985142799779"
+    },
+    {
+      "check": "prior_anchor::astrazeneca_gnn_mtl_nih_mdck_er_2025::spearman_rho",
+      "passed": true,
+      "detail": "current=0.6354660049601422; prior=0.6354660049601422"
+    },
+    {
+      "check": "prior_anchor::deeppk_pgp_substrate_2026_08_05::balanced_accuracy",
+      "passed": true,
+      "detail": "current=0.5775609626473688; prior=0.5775609626473688"
+    },
+    {
+      "check": "prior_anchor::deeppk_pgp_substrate_2026_08_05::mcc",
+      "passed": true,
+      "detail": "current=0.2363733842094241; prior=0.2363733842094241"
+    },
+    {
+      "check": "prior_anchor::deeppk_pgp_substrate_2026_08_05::roc_auc",
+      "passed": true,
+      "detail": "current=0.7195219241137202; prior=0.7195219241137202"
+    },
+    {
+      "check": "prior_anchor::deeppk_pgp_substrate_2026_08_05::spearman_rho",
+      "passed": true,
+      "detail": "current=0.4253455367004469; prior=0.4253455367004469"
+    },
+    {
+      "check": "prior_anchor::admet_ai_v2_pgp_broccatelli_inhibition::balanced_accuracy",
+      "passed": true,
+      "detail": "current=0.5439955593741789; prior=0.5439955593741789"
+    },
+    {
+      "check": "prior_anchor::admet_ai_v2_pgp_broccatelli_inhibition::mcc",
+      "passed": true,
+      "detail": "current=0.0968583051039279; prior=0.0968583051039279"
+    },
+    {
+      "check": "prior_anchor::admet_ai_v2_pgp_broccatelli_inhibition::roc_auc",
+      "passed": true,
+      "detail": "current=0.5615826815592975; prior=0.5615826815592975"
+    },
+    {
+      "check": "prior_anchor::admet_ai_v2_pgp_broccatelli_inhibition::spearman_rho",
+      "passed": true,
+      "detail": "current=0.1064122590166591; prior=0.1064122590166591"
+    },
+    {
+      "check": "contrast_row_count",
+      "passed": true,
+      "detail": "n=32"
+    },
+    {
+      "check": "output_hash::数据/processed/abcb1_public_predictor_ood_analysis_rows_v1.csv",
+      "passed": true,
+      "detail": "expected=2e872972108499791ce206087b67f3d8cb2b0020491d08f61239cbb257420a18; observed=2e872972108499791ce206087b67f3d8cb2b0020491d08f61239cbb257420a18"
+    },
+    {
+      "check": "output_hash::数据/processed/abcb1_public_predictor_ood_model_status_v1.csv",
+      "passed": true,
+      "detail": "expected=88f10c5d86ffd142f6a68cf11d865adbbaaa7cb645384ae3397b77951966f2aa; observed=88f10c5d86ffd142f6a68cf11d865adbbaaa7cb645384ae3397b77951966f2aa"
+    },
+    {
+      "check": "output_hash::数据/processed/abcb1_public_predictor_ood_stratum_metrics_v1.csv",
+      "passed": true,
+      "detail": "expected=2c5ac567658c917336512a626b3c24e5fefe5ad1dda70b4593055c6cbc3f4aa3; observed=2c5ac567658c917336512a626b3c24e5fefe5ad1dda70b4593055c6cbc3f4aa3"
+    },
+    {
+      "check": "output_hash::数据/processed/abcb1_public_predictor_ood_contrasts_v1.csv",
+      "passed": true,
+      "detail": "expected=541db04931764ed91b5743bd5103c84b686e1cb11baa91e3f99755ef73c15212; observed=541db04931764ed91b5743bd5103c84b686e1cb11baa91e3f99755ef73c15212"
+    }
+  ],
+  "validated_outputs": {
+    "数据/processed/abcb1_public_predictor_ood_analysis_rows_v1.csv": "2e872972108499791ce206087b67f3d8cb2b0020491d08f61239cbb257420a18",
+    "数据/processed/abcb1_public_predictor_ood_model_status_v1.csv": "88f10c5d86ffd142f6a68cf11d865adbbaaa7cb645384ae3397b77951966f2aa",
+    "数据/processed/abcb1_public_predictor_ood_stratum_metrics_v1.csv": "2c5ac567658c917336512a626b3c24e5fefe5ad1dda70b4593055c6cbc3f4aa3",
+    "数据/processed/abcb1_public_predictor_ood_contrasts_v1.csv": "541db04931764ed91b5743bd5103c84b686e1cb11baa91e3f99755ef73c15212",
+    "数据/processed/abcb1_public_predictor_ood_comparison_summary_v1.json": "c96091df5e19695459619a66a368c64ca64411dfbcf65536a353215a1e19131f"
+  },
+  "boundary": "Validation confirms computational consistency only. It does not convert the retrospective project-reference distance audit into prospective or public-model-training-space OOD validation."
+}

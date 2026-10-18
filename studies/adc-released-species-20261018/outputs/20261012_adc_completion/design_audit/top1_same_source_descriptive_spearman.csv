@@ -1,0 +1,5 @@
+﻿source_table,n_unique,endpoint,score_channel,descriptive_spearman_rho,CI,P_value,accuracy,interpretation
+OBI992 Supplementary Table S5 P-gp arm,3,ER_no_inhibitor_author,v01_frozen_score,0.5,,,,"Descriptive order check only; n=3 purposive known compounds, no performance/causal claim."
+OBI992 Supplementary Table S5 P-gp arm,3,ER_no_inhibitor_author,v03_frozen_score,0.5,,,,"Descriptive order check only; n=3 purposive known compounds, no performance/causal claim."
+OBI992 Supplementary Table S5 P-gp arm,3,inhibitor_associated_ER_reduction_fraction,v01_frozen_score,1.0,,,,"Descriptive order check only; n=3 purposive known compounds, no performance/causal claim."
+OBI992 Supplementary Table S5 P-gp arm,3,inhibitor_associated_ER_reduction_fraction,v03_frozen_score,-0.5,,,,"Descriptive order check only; n=3 purposive known compounds, no performance/causal claim."

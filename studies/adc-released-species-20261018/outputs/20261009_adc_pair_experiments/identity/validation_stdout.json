@@ -1,0 +1,17 @@
+{
+  "accepted_cid": 89493732,
+  "accepted_inchikey": "AYWIIXDQRUFQGH-SIDGEOBYSA-N",
+  "formula": "C39H56ClN3O10S",
+  "checks_passed": [
+    "cid_query_equals_key_query",
+    "api_smiles_equals_sdf_key",
+    "accepted_inchikey_matches",
+    "accepted_formula_matches",
+    "single_sulfur_no_sulfur_sulfur_bond",
+    "all_8_atom_centers_defined",
+    "both_double_bonds_E",
+    "parent_core_stereo_conserved"
+  ],
+  "all_passed": true,
+  "output": "${PROJECT_ROOT}/outputs/20261009_adc_pair_experiments/identity/identity_checks.json"
+}

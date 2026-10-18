@@ -1,0 +1,21 @@
+﻿model,probability_field,subset,metric,value,ci95_lower,ci95_upper,n,n_scaffold_clusters,bootstrap_iterations,random_seed,bootstrap_samples_used,endpoint_role,frozen_threshold,band_counts
+frozen_ABCB1_v0_1,v0_1_calibrated_probability,estimable_efflux_ratio_rows,spearman_rho_vs_log2_efflux_ratio,0.55015301,0.20837074,0.74409192,62,29,2000,20260803,2000,primary,,
+frozen_ABCB1_v0_1,v0_1_calibrated_probability,estimable_efflux_ratio_rows,roc_auc_weak_er_ge_2,0.70094192,0.51188057,0.87665026,62,29,2000,20260803,2000,secondary,,
+frozen_ABCB1_v0_1,v0_1_calibrated_probability,estimable_efflux_ratio_rows,balanced_accuracy_at_frozen_threshold,0.65698587,,,62,29,2000,20260803,,secondary,0.5,
+frozen_ABCB1_v0_1,v0_1_calibrated_probability,estimable_efflux_ratio_rows,sensitivity_at_frozen_threshold,0.7755102,,,62,29,2000,20260803,,secondary,0.5,
+frozen_ABCB1_v0_1,v0_1_calibrated_probability,estimable_efflux_ratio_rows,specificity_at_frozen_threshold,0.53846154,,,62,29,2000,20260803,,secondary,0.5,
+frozen_ABCB1_v0_1,v0_1_calibrated_probability,estimable_efflux_ratio_rows,brier_score_weak_er_ge_2,0.18449191,,,62,29,2000,20260803,,secondary,,
+frozen_ABCB1_v0_1,v0_1_calibrated_probability,estimable_efflux_ratio_rows,nonabstain_coverage,0.61290323,,,62,29,2000,20260803,,secondary,,"{""low_empirical_support"": 31, ""outside_empirical_support"": 24, ""within_empirical_support"": 7}"
+frozen_ABCB1_v0_1,v0_1_calibrated_probability,estimable_efflux_ratio_rows,spearman_rho_within_band::low_empirical_support,0.43662398,,,31,29,2000,20260803,,secondary,,
+frozen_ABCB1_v0_1,v0_1_calibrated_probability,estimable_efflux_ratio_rows,spearman_rho_within_band::outside_empirical_support,0.45151579,,,24,29,2000,20260803,,secondary,,
+frozen_ABCB1_v0_1,v0_1_calibrated_probability,estimable_efflux_ratio_rows,spearman_rho_within_band::within_empirical_support,0.53571429,,,7,29,2000,20260803,,secondary,,
+frozen_ABCB1_assay_aware_v0_3_dev,v0_3_candidate_probability,estimable_efflux_ratio_rows,spearman_rho_vs_log2_efflux_ratio,0.56861486,0.13629651,0.75519321,62,29,2000,20260803,2000,primary,,
+frozen_ABCB1_assay_aware_v0_3_dev,v0_3_candidate_probability,estimable_efflux_ratio_rows,roc_auc_weak_er_ge_2,0.65698587,0.40535769,0.84210526,62,29,2000,20260803,2000,secondary,,
+frozen_ABCB1_assay_aware_v0_3_dev,v0_3_candidate_probability,estimable_efflux_ratio_rows,balanced_accuracy_at_frozen_threshold,0.60047096,,,62,29,2000,20260803,,secondary,0.5,
+frozen_ABCB1_assay_aware_v0_3_dev,v0_3_candidate_probability,estimable_efflux_ratio_rows,sensitivity_at_frozen_threshold,0.81632653,,,62,29,2000,20260803,,secondary,0.5,
+frozen_ABCB1_assay_aware_v0_3_dev,v0_3_candidate_probability,estimable_efflux_ratio_rows,specificity_at_frozen_threshold,0.38461538,,,62,29,2000,20260803,,secondary,0.5,
+frozen_ABCB1_assay_aware_v0_3_dev,v0_3_candidate_probability,estimable_efflux_ratio_rows,brier_score_weak_er_ge_2,0.22309782,,,62,29,2000,20260803,,secondary,,
+frozen_ABCB1_assay_aware_v0_3_dev,v0_3_candidate_probability,estimable_efflux_ratio_rows,nonabstain_coverage,0.51612903,,,62,29,2000,20260803,,secondary,,"{""low_direct_panel_empirical_support"": 10, ""outside_direct_panel_empirical_support"": 30, ""within_direct_panel_empirical_support"": 22}"
+frozen_ABCB1_assay_aware_v0_3_dev,v0_3_candidate_probability,estimable_efflux_ratio_rows,spearman_rho_within_band::low_direct_panel_empirical_support,0.76596099,,,10,29,2000,20260803,,secondary,,
+frozen_ABCB1_assay_aware_v0_3_dev,v0_3_candidate_probability,estimable_efflux_ratio_rows,spearman_rho_within_band::outside_direct_panel_empirical_support,0.44414779,,,30,29,2000,20260803,,secondary,,
+frozen_ABCB1_assay_aware_v0_3_dev,v0_3_candidate_probability,estimable_efflux_ratio_rows,spearman_rho_within_band::within_direct_panel_empirical_support,0.24180791,,,22,29,2000,20260803,,secondary,,
