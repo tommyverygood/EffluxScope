@@ -1,0 +1,220 @@
+{
+  "source_csv": "outputs/20261012_adc_completion/scoring/species_predictions.csv",
+  "source_sha256": "9c62f876b0e0549220d2bb5ddcdcbdda1c6b5f4eb56c3922eba1d33eb8ed5c4d",
+  "rdkit_version": "2026.03.4",
+  "matplotlib_version": "3.11.2",
+  "n_scored": 14,
+  "n_accepted_high": 5,
+  "n_abstained": 9,
+  "n_accepted_low": 0,
+  "source_identity_and_formula_checks_passed": 14,
+  "depictions_from": "source_smiles",
+  "chemical_arrows": 0,
+  "support_axis": "physchem_max_abs_robust_z",
+  "support_cutoff": 7,
+  "uncertainty_range": "bootstrap_probability_p10 to bootstrap_probability_p90; not confidence intervals",
+  "entities": [
+    {
+      "name": "MMAF",
+      "source_inchikey": "MFRNYXJJRJQHNW-DEMKXPNLSA-N",
+      "source_formula": "C39H65N5O8",
+      "sulfur_atoms": 0,
+      "primary_score": 0.66353626,
+      "direct_score": 0.83541007,
+      "p10": 0.57573342,
+      "p90": 0.92091648,
+      "robust_z_max": 5.33333333,
+      "decision": "abstain",
+      "reasons": [
+        "probability_gray_zone"
+      ]
+    },
+    {
+      "name": "cys-mcMMAF",
+      "source_inchikey": "BXTJCSYMGFJEID-XMTADJHZSA-N",
+      "source_formula": "C52H83N7O13S",
+      "sulfur_atoms": 1,
+      "primary_score": 0.8863831,
+      "direct_score": 0.94315078,
+      "p10": 0.82623199,
+      "p90": 0.98947491,
+      "robust_z_max": 8.66666667,
+      "decision": "abstain",
+      "reasons": [
+        "outside_physicochemical_envelope"
+      ]
+    },
+    {
+      "name": "DM1",
+      "source_inchikey": "ANZJBCHSOXCCRQ-FKUXLPTCSA-N",
+      "source_formula": "C35H48ClN3O10S",
+      "sulfur_atoms": 1,
+      "primary_score": 0.91272913,
+      "direct_score": 0.76323753,
+      "p10": 0.88590138,
+      "p90": 0.97779131,
+      "robust_z_max": 3.0,
+      "decision": "abstain",
+      "reasons": [
+        "outside_both_reference_panels"
+      ]
+    },
+    {
+      "name": "Lys-MCC-DM1",
+      "source_inchikey": "UBRZDBDIKWWPEN-YCPOLOASSA-N",
+      "source_formula": "C53H75ClN6O15S",
+      "sulfur_atoms": 1,
+      "primary_score": 0.97493187,
+      "direct_score": 0.92902831,
+      "p10": 0.95664651,
+      "p90": 0.99791457,
+      "robust_z_max": 6.0,
+      "decision": "abstain",
+      "reasons": [
+        "outside_both_reference_panels"
+      ]
+    },
+    {
+      "name": "DM4",
+      "source_inchikey": "JFCFGYGEYRIEBE-YVLHJLIDSA-N",
+      "source_formula": "C38H54ClN3O10S",
+      "sulfur_atoms": 1,
+      "primary_score": 0.93987251,
+      "direct_score": 0.78808628,
+      "p10": 0.90370202,
+      "p90": 0.98315413,
+      "robust_z_max": 3.0,
+      "decision": "abstain",
+      "reasons": [
+        "outside_both_reference_panels"
+      ]
+    },
+    {
+      "name": "S-methyl-DM4",
+      "source_inchikey": "AYWIIXDQRUFQGH-SIDGEOBYSA-N",
+      "source_formula": "C39H56ClN3O10S",
+      "sulfur_atoms": 1,
+      "primary_score": 0.94406737,
+      "direct_score": 0.79583093,
+      "p10": 0.91461212,
+      "p90": 0.98411852,
+      "robust_z_max": 3.0,
+      "decision": "abstain",
+      "reasons": [
+        "outside_both_reference_panels"
+      ]
+    },
+    {
+      "name": "Lys-SPDB-DM4",
+      "source_inchikey": "VUAUZOXSQKWNNO-NBSRGMMNSA-N",
+      "source_formula": "C48H72ClN5O13S2",
+      "sulfur_atoms": 2,
+      "primary_score": 0.95134713,
+      "direct_score": 0.91781727,
+      "p10": 0.92572328,
+      "p90": 0.99531483,
+      "robust_z_max": 5.0,
+      "decision": "abstain",
+      "reasons": [
+        "outside_both_reference_panels"
+      ]
+    },
+    {
+      "name": "MMAE",
+      "source_inchikey": "DASWEROEPLKSEI-UIJRFTGLSA-N",
+      "source_formula": "C39H67N5O7",
+      "sulfur_atoms": 0,
+      "primary_score": 0.84183654,
+      "direct_score": 0.82219302,
+      "p10": 0.75378191,
+      "p90": 0.94879626,
+      "robust_z_max": 5.0,
+      "decision": "high_ABCB1_efflux_risk",
+      "reasons": []
+    },
+    {
+      "name": "cys-VC-MMAE",
+      "source_inchikey": "ZTRDRWJUUWOHKG-QOMYBZJDSA-N",
+      "source_formula": "C71H112N12O17S",
+      "sulfur_atoms": 1,
+      "primary_score": 0.96199154,
+      "direct_score": 0.98425298,
+      "p10": 0.92467381,
+      "p90": 0.99939614,
+      "robust_z_max": 12.33333333,
+      "decision": "abstain",
+      "reasons": [
+        "outside_both_reference_panels",
+        "outside_physicochemical_envelope"
+      ]
+    },
+    {
+      "name": "DXd",
+      "source_inchikey": "PLXLYXLUCNZSAA-QLXKLKPCSA-N",
+      "source_formula": "C26H24FN3O6",
+      "sulfur_atoms": 0,
+      "primary_score": 0.82798237,
+      "direct_score": 0.63007071,
+      "p10": 0.75718509,
+      "p90": 0.91460285,
+      "robust_z_max": 2.0,
+      "decision": "high_ABCB1_efflux_risk",
+      "reasons": []
+    },
+    {
+      "name": "SN-38",
+      "source_inchikey": "FJHBVJOVLFPMQE-QFIPXVFZSA-N",
+      "source_formula": "C22H20N2O5",
+      "sulfur_atoms": 0,
+      "primary_score": 0.85405089,
+      "direct_score": 0.52876615,
+      "p10": 0.77717599,
+      "p90": 0.91175548,
+      "robust_z_max": 1.0,
+      "decision": "high_ABCB1_efflux_risk",
+      "reasons": []
+    },
+    {
+      "name": "Exatecan",
+      "source_inchikey": "ZVYVPGLRVWUPMP-FYSMJZIKSA-N",
+      "source_formula": "C24H22FN3O4",
+      "sulfur_atoms": 0,
+      "primary_score": 0.78437219,
+      "direct_score": 0.56161609,
+      "p10": 0.68315248,
+      "p90": 0.8782027,
+      "robust_z_max": 1.33333333,
+      "decision": "high_ABCB1_efflux_risk",
+      "reasons": []
+    },
+    {
+      "name": "SG3199",
+      "source_inchikey": "YMTZZJOPSATRTO-GOTSBHOMSA-N",
+      "source_formula": "C33H36N4O6",
+      "sulfur_atoms": 0,
+      "primary_score": 0.79329676,
+      "direct_score": 0.69571261,
+      "p10": 0.74101645,
+      "p90": 0.91794643,
+      "robust_z_max": 1.66666667,
+      "decision": "high_ABCB1_efflux_risk",
+      "reasons": []
+    },
+    {
+      "name": "N-acetyl-gamma-calicheamicin dimethylhydrazide",
+      "source_inchikey": "URAOPNXILLDXAL-KJEDTADQSA-N",
+      "source_formula": "C61H84IN5O23S3",
+      "sulfur_atoms": 3,
+      "primary_score": 0.98533944,
+      "direct_score": 0.97410642,
+      "p10": 0.97211965,
+      "p90": 0.99916916,
+      "robust_z_max": 11.5,
+      "decision": "abstain",
+      "reasons": [
+        "outside_both_reference_panels",
+        "outside_physicochemical_envelope"
+      ]
+    }
+  ]
+}

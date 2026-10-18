@@ -1,0 +1,133 @@
+{
+  "package": "EffluxScope figure revision addendum",
+  "version": "20261018",
+  "created_date": "2026-10-18",
+  "status": "prepared and verified locally; upload not performed by packaging agent",
+  "base_release_tag": "adc-released-species-20261018",
+  "base_zip_sha256": "19fd294d893345af41edb08a1a8b86b9b9a4bfe7a859e50d52c44998be26938f",
+  "reproducibility_scope": "public-archive redraw of Figures 3/4/5; Figure4 bootstrap reconstruction requires unredistributed per-molecule upstream inputs",
+  "payload_files": [
+    {
+      "path": "LICENSE",
+      "sha256": "057a601e518479ed3eff5d430e677c9b279296498f23e649e5ee8c219efa5457",
+      "bytes": 1080
+    },
+    {
+      "path": "README.md",
+      "sha256": "6019d8a3fb96264b3489e032fb22f2086f9e6cd1c9ee9111fadc70e2ed072c51",
+      "bytes": 6830
+    },
+    {
+      "path": "overlay/handoff/fig4_data.json",
+      "sha256": "e4b8db02ab6545755f64ba82a29d95083da55d8495d7b6e55e7089d7819ccffd",
+      "bytes": 106317
+    },
+    {
+      "path": "overlay/论文主稿/figures_src/make_figure3.py",
+      "sha256": "c27209e72e995e1d295972449c15301500c2689f4c5ce37c5da0a4b83e7f3300",
+      "bytes": 23208
+    },
+    {
+      "path": "overlay/论文主稿/figures_src/make_figure4.py",
+      "sha256": "d4d918b1e8ea2c72a026e26324bd59e479fc7099aa934d67817f61de4a7d15ed",
+      "bytes": 17577
+    },
+    {
+      "path": "overlay/论文主稿/figures_src/make_figure5.py",
+      "sha256": "5e40f844243f4e0a913d52627bf55f1237e1d362e28920b9b6e67a9e9a8cf31d",
+      "bytes": 14487
+    },
+    {
+      "path": "overlay/论文主稿/figures_src/palette.json",
+      "sha256": "54e12721cab483b2414de96415807b3147176bc484923ee0e6cd57d7060775eb",
+      "bytes": 1033
+    },
+    {
+      "path": "overlay/论文主稿/figures_src/palette.py",
+      "sha256": "679225215597f51333b8ea289a50d109b15f13917f5d1bfd9307184e3a82d3f5",
+      "bytes": 8733
+    },
+    {
+      "path": "overlay/论文主稿/figures_src/rebuild_figure4_data.py",
+      "sha256": "2f893a790f0bab9f76ad2746bf0636bd13548ad5ad7f4cea0a3015fae7e1fec2",
+      "bytes": 11541
+    },
+    {
+      "path": "overlay/论文主稿/latex_jcim/tools/jcim_fig34_style.py",
+      "sha256": "2a05f0537c4dac3ad338e20cdf5281e6704e51646b0f42871f5478aac34a4706",
+      "bytes": 3369
+    },
+    {
+      "path": "overlay/论文主稿/latex_jcim/tools/make_figure3_jcim.py",
+      "sha256": "c8af8cb18dff452821b58ca906514beacc48a56604effb24f05a73a20efeb0c7",
+      "bytes": 23081
+    },
+    {
+      "path": "overlay/论文主稿/latex_jcim/tools/make_figure4_jcim.py",
+      "sha256": "fe69dbc8029e1d0de1addaca87ab79610cadef914f3a1744beb5b78515f35425",
+      "bytes": 397
+    },
+    {
+      "path": "previews/Figure3_validation_gates.pdf",
+      "sha256": "84bbaae944f1dfecae36808aef4783e3509320f70b1a587c34a97e2410eb2e5f",
+      "bytes": 54778
+    },
+    {
+      "path": "previews/Figure4_error_distance.pdf",
+      "sha256": "6a28bbe353b7eafff015289bfa54c05fd56f7c3197ba86d9a0baf089a354a9d3",
+      "bytes": 48961
+    },
+    {
+      "path": "previews/Figure5_adc_triage.pdf",
+      "sha256": "751214b15fa050db5fc393e5e6c4c5ac1fd0eb6c8acdcab58791de3488180cb1",
+      "bytes": 127228
+    },
+    {
+      "path": "requirements-plotting.txt",
+      "sha256": "1e46c2c4ca48d8464d42e9575ee3cd649ccea53c735b96d2777cbac0b3bbaf50",
+      "bytes": 212
+    },
+    {
+      "path": "verification/figure3_redraw.log",
+      "sha256": "90b90d19d57c1e2c92fb92bd017b032613fbded22fa222d7673f396e680ac9a6",
+      "bytes": 144
+    },
+    {
+      "path": "verification/figure4_plot_points.csv",
+      "sha256": "c42395025b24b81dbefc11fbe0603e4acb07e709bc458b070d1e1a9b55c18c18",
+      "bytes": 37460
+    },
+    {
+      "path": "verification/figure4_point_checks.json",
+      "sha256": "d94fa5d27a4079bb7a210d96fd057df92036de3e3b00472ba70e473615a2eb7b",
+      "bytes": 3981
+    },
+    {
+      "path": "verification/figure4_redraw.log",
+      "sha256": "252d262a1e60ae1aa5e4fd6f91ff1aac38ddcea297a3d713708946dd5f900558",
+      "bytes": 117
+    },
+    {
+      "path": "verification/figure5_identity_checks.json",
+      "sha256": "fd1269dbafcae1def835670ab1d363ed3fe57a3b407b04b88a4af44051ad6952",
+      "bytes": 6251
+    },
+    {
+      "path": "verification/figure5_redraw.log",
+      "sha256": "470cc8f196f836ba7ceff84ec556f33b0f6a27973fa962bbf0bc453c7ff7c358",
+      "bytes": 614
+    },
+    {
+      "path": "verification/input_provenance.json",
+      "sha256": "b751983db2c30aa4ad9f2fed4a6b64913f949782cbb268975794fd3841f82aa3",
+      "bytes": 2079
+    },
+    {
+      "path": "verification/redraw_receipt.json",
+      "sha256": "e4ff21374bc15dc775976b8bc81a98a91387767691bddcb5e0ab6bf1cd3c96a8",
+      "bytes": 2835
+    }
+  ],
+  "payload_file_count": 24,
+  "excluded": "manuscript sources/full PDF; personal author files; font binaries; third-party per-molecule predictor CSVs; validation workspace; historical Figure5 data and removed structures"
+}

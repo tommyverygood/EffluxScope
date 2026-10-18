@@ -1,0 +1,37 @@
+{
+  "figure4": {
+    "analysis_date": "2026-10-18",
+    "source": "数据/processed/abcb1_public_predictor_predictions_long_v1.csv",
+    "source_sha256": "1a54dd7fcc580f9f0dc8695c1644e0e798ef9cf738b5381a03760f835ce81793",
+    "benchmark_input_sha256": "4b5c5fd332b2cfd9c119fc7fde575b7512f27fb1619c47e108464a80cbee01d4",
+    "generator": "论文主稿/figures_src/rebuild_figure4_data.py",
+    "generator_sha256": "2f893a790f0bab9f76ad2746bf0636bd13548ad5ad7f4cea0a3015fae7e1fec2",
+    "bootstrap": {
+      "unit": "exact Murcko scaffold group; acyclic fallback to connectivity block",
+      "column": "bootstrap_cluster",
+      "clusters": 2312,
+      "acyclic_fallback_entities": 1,
+      "replicates": 2000,
+      "seed": 20261018,
+      "ci": "2.5 and 97.5 percentile",
+      "sampling": "full-set clusters with replacement; same draw for all models and both fixed bands",
+      "single_class_handling": "exclude that BAcc replicate",
+      "conditional_on_fixed_posthoc_band": true,
+      "historical_interval_provenance": "unavailable; old intervals replaced, not reproduced"
+    },
+    "fixed_band": "absolute measured log10(ER/2) <= 0.49; descriptive, outcome-aware, not a deployment rule",
+    "smoothing": "full-width 0.15 measured units or 0.05 score units; closed centered windows; measured-scale grid -1.20:0.02:1.60 with n >= 25; score grid -0.5:0.008:0.5 with n >= 20",
+    "old_point_estimates": "all historical MAE, measured coverage, absolute-score coverage and BAcc points verified at atol 1e-14 in the 2026-10-18 cleanup audit",
+    "changed_panel": "score axis changed from absolute to signed margin so asymmetric 0.35/0.70 window is shown correctly"
+  },
+  "figure5": {
+    "source": "outputs/20261012_adc_completion/scoring/species_predictions.csv",
+    "sha256": "9c62f876b0e0549220d2bb5ddcdcbdda1c6b5f4eb56c3922eba1d33eb8ed5c4d",
+    "included_in_base_archive": true
+  },
+  "figure3": {
+    "plot_data": "handoff/fig3_data.json",
+    "sha256": "10ceb28afc7f81a4e5e4d75bf40aa4623931a6d92ba92d12f720e3422da1e166",
+    "included_in_base_archive": true
+  }
+}

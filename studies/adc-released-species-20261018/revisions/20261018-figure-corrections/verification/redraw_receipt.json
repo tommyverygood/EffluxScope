@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "scope": "Redraw from new copy of original public archive plus overlay; no model scoring/training and no Figure4 bootstrap recomputation",
+  "base_archive": "EffluxScope_ADC_reproducibility_20261018.zip",
+  "base_sha256": "19fd294d893345af41edb08a1a8b86b9b9a4bfe7a859e50d52c44998be26938f",
+  "base_file_count": 507,
+  "base_crc_passed": true,
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.5.1",
+    "pandas": "2.2.3",
+    "matplotlib": "3.11.2",
+    "Pillow": "11.3.0",
+    "rdkit": "2026.03.4",
+    "platform": "macOS",
+    "font_note": "Installed system fonts; not packaged"
+  },
+  "commands": [
+    "python 论文主稿/latex_jcim/tools/make_figure3_jcim.py",
+    "python 论文主稿/latex_jcim/tools/make_figure4_jcim.py",
+    "python 论文主稿/figures_src/make_figure5.py"
+  ],
+  "figures": [
+    {
+      "figure": "Figure3_validation_gates",
+      "exit_code": 0,
+      "pdf_pages": 1,
+      "text_equals_current_figure": true,
+      "pixels_equal_current_at_72dpi": true,
+      "redrawn_pdf_sha256": "84bbaae944f1dfecae36808aef4783e3509320f70b1a587c34a97e2410eb2e5f",
+      "current_pdf_sha256": "111967b7bc466839a95effc5fa2f47cba2edf243a70bf8f05579deee39665428",
+      "pdf_dimensions_points": [
+        0.0,
+        0.0,
+        565.335205078125,
+        458.41241455078125
+      ],
+      "epsilon_note": "PDF metadata timestamps can differ; text and rendered pixels are compared"
+    },
+    {
+      "figure": "Figure4_error_distance",
+      "exit_code": 0,
+      "pdf_pages": 1,
+      "text_equals_current_figure": true,
+      "pixels_equal_current_at_72dpi": true,
+      "redrawn_pdf_sha256": "6a28bbe353b7eafff015289bfa54c05fd56f7c3197ba86d9a0baf089a354a9d3",
+      "current_pdf_sha256": "096a8c3a7dfc89a8be7d0e8ff0a4e2c45ec8172106a4edda69d6b4a1232b0db7",
+      "pdf_dimensions_points": [
+        0.0,
+        0.0,
+        579.8292846679688,
+        374.0679931640625
+      ],
+      "epsilon_note": "PDF metadata timestamps can differ; text and rendered pixels are compared"
+    },
+    {
+      "figure": "Figure5_adc_triage",
+      "exit_code": 0,
+      "pdf_pages": 1,
+      "text_equals_current_figure": true,
+      "pixels_equal_current_at_72dpi": true,
+      "redrawn_pdf_sha256": "751214b15fa050db5fc393e5e6c4c5ac1fd0eb6c8acdcab58791de3488180cb1",
+      "current_pdf_sha256": "8c298570f9144cd6908e59766179ddf7b706cc43d5911adfbca01606a9316efc",
+      "pdf_dimensions_points": [
+        0.0,
+        0.0,
+        452.2956237792969,
+        441.58880615234375
+      ],
+      "epsilon_note": "PDF metadata timestamps can differ; text and rendered pixels are compared"
+    }
+  ],
+  "unredistributed_Figure4_inputs_absent": true,
+  "figure4_mode": "aggregate checks only; source per-molecule inputs and bootstrap not rerun",
+  "figure5_epimer_marker_present_in_generated_table": true
+}

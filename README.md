@@ -332,3 +332,7 @@ ChEMBL and Daood et al. 2025, both in `THIRD_PARTY_NOTICES.md`.
 ## ADC payload and released-species study
 
 The ADC application assessment has a separate, self-contained [study export](studies/adc-released-species-20261018/README.md) with curated evidence, frozen model bundles, original analysis methods, data dictionaries and an offline verification entry point. It preserves the development-model and missing ADC-validation limits; it does not replace the endpoint-agnostic framework above.
+
+## Figure corrections (18 October 2026)
+
+The ADC study has a [versioned figure-revision addendum](studies/adc-released-species-20261018/revisions/20261018-figure-corrections/README.md) with corrected plotted identities, score-axis semantics, and documented Figure 4 uncertainty calculations. The original study tag remains unchanged. The addendum supports redrawing Figures 3–5 from public plotting data; full Figure 4 interval recomputation requires the documented upstream per-molecule inputs.

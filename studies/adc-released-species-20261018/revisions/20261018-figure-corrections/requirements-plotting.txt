@@ -1,0 +1,7 @@
+# Versions used for the public-archive redraw receipt; Python 3.12.14.
+# Ghostscript is an external executable, not a pip requirement.
+numpy==2.5.1
+pandas==2.2.3
+matplotlib==3.11.2
+Pillow==11.3.0
+rdkit==2026.3.4

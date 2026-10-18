@@ -1,0 +1,16 @@
+{
+  "source_csv": "outputs/20261012_adc_completion/scoring/species_predictions.csv",
+  "source_sha256": "9c62f876b0e0549220d2bb5ddcdcbdda1c6b5f4eb56c3922eba1d33eb8ed5c4d",
+  "rdkit_version": "2026.03.4",
+  "matplotlib_version": "3.11.2",
+  "n_scored": 14,
+  "n_accepted_high": 5,
+  "n_abstained": 9,
+  "n_accepted_low": 0,
+  "source_identity_and_formula_checks_passed": 14,
+  "depictions_from": "source_smiles",
+  "chemical_arrows": 0,
+  "support_axis": "physchem_max_abs_robust_z",
+  "support_cutoff": 7,
+  "uncertainty_range": "bootstrap_probability_p10 to bootstrap_probability_p90; not confidence intervals"
+}

@@ -1,0 +1,148 @@
+{
+  "status": "PASS",
+  "old_handoff_sha256": "b700e62e3457a69cdda2bab10e06295b00de5ab699f126c9e581981ce1883338",
+  "new_handoff_sha256": "e4b8db02ab6545755f64ba82a29d95083da55d8495d7b6e55e7089d7819ccffd",
+  "point_rows": 482,
+  "n_entities": 2624,
+  "n_clusters": 2312,
+  "new_coverage_delta": {
+    "n_in": 1349,
+    "n_out": 1275,
+    "pos_in": 0.2994810971089696,
+    "pos_out": 0.5811764705882353,
+    "acc_in": 0.15122312824314307,
+    "acc_out": 0.1952941176470588,
+    "acc_diff": -0.04407098940391574,
+    "acc_lo": -0.0742511782727669,
+    "acc_hi": -0.013685523854519778,
+    "er_lo": 0.6471873138592565,
+    "er_hi": 6.180590865027181,
+    "n_clusters": 2312
+  },
+  "bootstrap": {
+    "unit": "exact Murcko scaffold group; acyclic fallback to connectivity block",
+    "column": "bootstrap_cluster",
+    "clusters": 2312,
+    "acyclic_fallback_entities": 1,
+    "replicates": 2000,
+    "seed": 20261018,
+    "ci": "2.5 and 97.5 percentile",
+    "sampling": "full-set clusters with replacement; same draw for all models and both fixed bands",
+    "single_class_handling": "exclude that BAcc replicate",
+    "conditional_on_fixed_posthoc_band": true,
+    "historical_interval_provenance": "unavailable; old intervals replaced, not reproduced"
+  },
+  "bacc": {
+    "astrazeneca_gnn_mtl_mdck_er_2025|in": {
+      "n": 1349,
+      "n_pos": 404,
+      "n_neg": 945,
+      "tp": 229,
+      "tn": 670,
+      "bacc": 0.6379131960815129,
+      "lo": 0.610508468451991,
+      "hi": 0.6664474149183766,
+      "valid_draws": 2000
+    },
+    "astrazeneca_gnn_mtl_mdck_er_2025|out": {
+      "n": 1275,
+      "n_pos": 741,
+      "n_neg": 534,
+      "tp": 582,
+      "tn": 481,
+      "bacc": 0.8430870824424934,
+      "lo": 0.821995505321068,
+      "hi": 0.8635061422665301,
+      "valid_draws": 2000
+    },
+    "astrazeneca_gnn_mtl_nih_mdck_er_2025|in": {
+      "n": 1349,
+      "n_pos": 404,
+      "n_neg": 945,
+      "tp": 348,
+      "tn": 329,
+      "bacc": 0.6047671433810048,
+      "lo": 0.5816179717813914,
+      "hi": 0.6289512283567713,
+      "valid_draws": 2000
+    },
+    "astrazeneca_gnn_mtl_nih_mdck_er_2025|out": {
+      "n": 1275,
+      "n_pos": 741,
+      "n_neg": 534,
+      "tp": 706,
+      "tn": 376,
+      "bacc": 0.828443190950583,
+      "lo": 0.8069958320445406,
+      "hi": 0.8505577242704456,
+      "valid_draws": 2000
+    },
+    "internal_v0_4_primary_score|in": {
+      "n": 1349,
+      "n_pos": 404,
+      "n_neg": 945,
+      "tp": 274,
+      "tn": 396,
+      "bacc": 0.5486327204148986,
+      "lo": 0.5194102418526091,
+      "hi": 0.5757751677598572,
+      "valid_draws": 2000
+    },
+    "internal_v0_4_primary_score|out": {
+      "n": 1275,
+      "n_pos": 741,
+      "n_neg": 534,
+      "tp": 551,
+      "tn": 259,
+      "bacc": 0.6143042350907519,
+      "lo": 0.5868913852258382,
+      "hi": 0.6427100686159675,
+      "valid_draws": 2000
+    },
+    "deeppk_pgp_substrate_2026_08_05|in": {
+      "n": 1349,
+      "n_pos": 404,
+      "n_neg": 945,
+      "tp": 53,
+      "tn": 885,
+      "bacc": 0.5338480276599089,
+      "lo": 0.5155887161170757,
+      "hi": 0.5525698379381527,
+      "valid_draws": 2000
+    },
+    "deeppk_pgp_substrate_2026_08_05|out": {
+      "n": 1275,
+      "n_pos": 741,
+      "n_neg": 534,
+      "tp": 185,
+      "tn": 516,
+      "bacc": 0.6079773764575657,
+      "lo": 0.589417866835887,
+      "hi": 0.6257010236251682,
+      "valid_draws": 2000
+    },
+    "admet_ai_v2_pgp_broccatelli_inhibition|in": {
+      "n": 1349,
+      "n_pos": 404,
+      "n_neg": 945,
+      "tp": 126,
+      "tn": 713,
+      "bacc": 0.5331892713080831,
+      "lo": 0.5043541737993407,
+      "hi": 0.5604904320244036,
+      "valid_draws": 2000
+    },
+    "admet_ai_v2_pgp_broccatelli_inhibition|out": {
+      "n": 1275,
+      "n_pos": 741,
+      "n_neg": 534,
+      "tp": 255,
+      "tn": 404,
+      "bacc": 0.5503419308859876,
+      "lo": 0.5236994870270841,
+      "hi": 0.5768294419633961,
+      "valid_draws": 2000
+    }
+  },
+  "signed_score_points": 97
+}
