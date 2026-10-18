@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "scope": "layout-only redraw; numerical data unchanged",
+  "base_archive_sha256": "19fd294d893345af41edb08a1a8b86b9b9a4bfe7a859e50d52c44998be26938f",
+  "first_addendum_sha256": "4f53ee9d1e6e3b17d43c48b822761fe99e2da5042df01925fe4987fc3042eac2",
+  "input_sha256": {
+    "handoff/fig3_data.json": "10ceb28afc7f81a4e5e4d75bf40aa4623931a6d92ba92d12f720e3422da1e166",
+    "数据/processed/abcb1_asap2025_sourceheldout_postscoring_addendum_v1.json": "de9c53e4f91d5d4ffdd039b283636b2107dfde9348f83ed3c3a967da4e49fb4c",
+    "数据/processed/abcb1_regulatory_v4_blind_summary_v1.json": "518b26078210562d57f70d83398fe12c4a15fdaa6e1ac4d9ad8b885b331b3c7d",
+    "数据/processed/abcb1_public_predictor_metrics_v1.csv": "42fc5133f34ed84573b0cbefffdae65492c67d459562eca615b6c186f0f62af3"
+  },
+  "all_public_inputs_identical_to_base_release": true,
+  "current_workspace_comparison": {
+    "handoff/fig3_data.json": {
+      "bytes_identical": true,
+      "local_sha256": "10ceb28afc7f81a4e5e4d75bf40aa4623931a6d92ba92d12f720e3422da1e166"
+    },
+    "数据/processed/abcb1_asap2025_sourceheldout_postscoring_addendum_v1.json": {
+      "bytes_identical": true,
+      "local_sha256": "de9c53e4f91d5d4ffdd039b283636b2107dfde9348f83ed3c3a967da4e49fb4c"
+    },
+    "数据/processed/abcb1_regulatory_v4_blind_summary_v1.json": {
+      "bytes_identical": false,
+      "local_sha256": "e5ec35bc903f1e219db7b230dd2601cf8bfc8b1f46af392d3576aae6d9b6156a",
+      "scientific_content_identical": true,
+      "different_metadata_keys": [
+        "protocol_lock_path"
+      ],
+      "reason": "Original public archive redacted an absolute local metadata path; scientific values unchanged"
+    },
+    "数据/processed/abcb1_public_predictor_metrics_v1.csv": {
+      "bytes_identical": true,
+      "local_sha256": "42fc5133f34ed84573b0cbefffdae65492c67d459562eca615b6c186f0f62af3"
+    }
+  },
+  "command": "python 论文主稿/latex_jcim/tools/make_figure3_jcim.py",
+  "exit_code": 0,
+  "guard_checks": "a: 2 gates; d: 8 gate statuses and 5 metrics; c: 5 full-coverage comparator metrics",
+  "script_sha256": "feb9408d61b5c15acf5af9b341198139a7d2e662726aa14a847b7fa88f738375",
+  "current_figure_sha256": "cdffc25654ceecfe7ed58a81a9ae3f75bcea99385800e0834bdcd60ddf01c977",
+  "redrawn_pdf_sha256": "ba279bc87f4b031eefc1cfc14203ef7da85b8350931e76e6c35034e1af50dc51",
+  "pdf_pages": 1,
+  "text_and_72dpi_pixels_equal_current": true,
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.5.1",
+    "matplotlib": "3.11.2",
+    "platform": "macOS"
+  },
+  "training_scoring_or_bootstrap_rerun": false,
+  "manuscript_included": false
+}
