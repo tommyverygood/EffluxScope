@@ -1,0 +1,121 @@
+{
+  "status": "PASS",
+  "verified_utc": "2026-10-20T09:32:52.041552+00:00",
+  "scope": "Figure 2 redraw from anonymously downloaded public core and previous two addenda plus Figure 1/2 staging overlay",
+  "no_current_project_asset_modified": true,
+  "no_model_training": true,
+  "no_bootstrap_recomputed": true,
+  "no_tsne_recomputed": true,
+  "no_new_external_per_molecule_outputs": true,
+  "downloads": [
+    {
+      "tag": "adc-released-species-20261018",
+      "asset": "EffluxScope_ADC_reproducibility_20261018.zip",
+      "url": "https://github.com/tommyverygood/EffluxScope/releases/download/adc-released-species-20261018/EffluxScope_ADC_reproducibility_20261018.zip",
+      "http": 200,
+      "bytes": 9763936,
+      "sha256": "19fd294d893345af41edb08a1a8b86b9b9a4bfe7a859e50d52c44998be26938f",
+      "anonymous_download": true
+    },
+    {
+      "tag": "adc-figure-corrections-20261018",
+      "asset": "EffluxScope_figures_revision_20261018.zip",
+      "url": "https://github.com/tommyverygood/EffluxScope/releases/download/adc-figure-corrections-20261018/EffluxScope_figures_revision_20261018.zip",
+      "http": 200,
+      "bytes": 306314,
+      "sha256": "4f53ee9d1e6e3b17d43c48b822761fe99e2da5042df01925fe4987fc3042eac2",
+      "anonymous_download": true
+    },
+    {
+      "tag": "adc-figure3-layout-20261018",
+      "asset": "EffluxScope_Figure3_layout_20261018.zip",
+      "url": "https://github.com/tommyverygood/EffluxScope/releases/download/adc-figure3-layout-20261018/EffluxScope_Figure3_layout_20261018.zip",
+      "http": 200,
+      "bytes": 63390,
+      "sha256": "788c042c2b2bd7fb84a001a418139a033deb44fcb42f65dd08eb299f00d11887",
+      "anonymous_download": true
+    }
+  ],
+  "command": "python 论文主稿/latex_jcim/tools/make_figure2_jcim.py",
+  "exit_code": 0,
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.5.1",
+    "pandas": "2.2.3",
+    "matplotlib": "3.11.2",
+    "pillow": "11.3.0",
+    "ghostscript": "available via PATH",
+    "figure2_font": "Arial"
+  },
+  "input_checks": [
+    {
+      "path": "handoff/fig2_ref_xy.npy",
+      "sha256": "323246827d7e5ec485190c2b58f0892e319775a957f32bc412fd252e93a47091",
+      "identical_to_local_maintained_input": true,
+      "origin": "new reference-coordinate overlay"
+    },
+    {
+      "path": "handoff/fig2_emb.csv",
+      "sha256": "a265d33d0c55405b36ac0280721f8078633c84ff624f3e6ed06bff4f9079d8ef",
+      "identical_to_local_maintained_input": true,
+      "origin": "anonymous public core archive"
+    },
+    {
+      "path": "handoff/fig2_perf.csv",
+      "sha256": "fcd0d4dec9b097532d4dabea821d557c1ce1ddca1ab4f2b36ffbb5c39e388a1b",
+      "identical_to_local_maintained_input": true,
+      "origin": "anonymous public core archive"
+    },
+    {
+      "path": "handoff/fig2_leak.json",
+      "sha256": "6876ce87b135296dfa3c0d62991ffe9635ab82e2dd94e02575f3342e62088d01",
+      "identical_to_local_maintained_input": true,
+      "origin": "anonymous public core archive"
+    },
+    {
+      "path": "handoff/fig2_hist.json",
+      "sha256": "0f472b40f712cb6cb12c9abba1aed19709299a325ac03903d2c52807015563ce",
+      "identical_to_local_maintained_input": true,
+      "origin": "anonymous public core archive"
+    },
+    {
+      "path": "handoff/fig2_ci.json",
+      "sha256": "631e13177efdbfabd6802d332f9c7ec5c1f4ffbdd9260663a892fab856774d83",
+      "identical_to_local_maintained_input": true,
+      "origin": "anonymous public core archive"
+    },
+    {
+      "path": "数据/processed/abcb1_public_predictor_metrics_v1.csv",
+      "sha256": "42fc5133f34ed84573b0cbefffdae65492c67d459562eca615b6c186f0f62af3",
+      "identical_to_local_maintained_input": true,
+      "origin": "anonymous public core archive"
+    }
+  ],
+  "frozen_metric_crosscheck": "five models x two full-set metrics, absolute delta < 1e-6; script guard passed",
+  "page_text_exact": true,
+  "canonical_pdf_sha256": "efda8337beede251c63d4fbb28dedb87dcb91b4b04f173a45b6130f8069f4aa4",
+  "redraw_pdf_sha256": "cbfe50e5feebc710b4e199ba1a91900fc323b975db976ebe6972f03198772a8e",
+  "render_comparison": {
+    "same_dimensions": true,
+    "canonical_pixels": [
+      1122,
+      809
+    ],
+    "redraw_pixels": [
+      1122,
+      809
+    ],
+    "render_dpi": 144,
+    "pixels_exact": true,
+    "different_channel_values": 0,
+    "canonical_pixel_sha256": "b0c23d0564c9fe39a7965e5c02881000a6b16fc94d97f0daf5502bc27307600b",
+    "redraw_pixel_sha256": "b0c23d0564c9fe39a7965e5c02881000a6b16fc94d97f0daf5502bc27307600b"
+  },
+  "missing_figure1_scatter_keys": [
+    "astrazeneca_gnn_mtl_mdck_er_2025|Q1",
+    "astrazeneca_gnn_mtl_mdck_er_2025|Q3",
+    "astrazeneca_gnn_mtl_mdck_er_2025|Q5"
+  ],
+  "figure1_complete_public_redraw_supported": false,
+  "figure4_full_public_interval_recompute_supported": false
+}

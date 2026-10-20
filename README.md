@@ -336,3 +336,7 @@ The ADC application assessment has a separate, self-contained [study export](stu
 ## Figure corrections (18 October 2026)
 
 The ADC study has a [versioned figure-revision addendum](studies/adc-released-species-20261018/revisions/20261018-figure-corrections/README.md) with corrected plotted identities, score-axis semantics, and documented Figure 4 uncertainty calculations. The original study tag remains unchanged. The addendum supports redrawing Figures 3–5 from public plotting data; full Figure 4 interval recomputation requires the documented upstream per-molecule inputs.
+
+## Source audit and plotting-source completion (20 October 2026)
+
+The [source-audit addendum](studies/adc-released-species-20261018/revisions/20261020-source-audit/README.md) supersedes Figure 3b with the 12-compound identity-audited Roth GI50-resistance diagnostic and supplies the missing Figure 1/2 plotting sources and Figure 2 reference coordinates. It provides verified public-input redraws for Figures 2 and 3 and a 12-row numerical reproduction. Full Figure 1 redraw and Figure 4 interval recomputation retain the explicitly documented upstream-input limits.

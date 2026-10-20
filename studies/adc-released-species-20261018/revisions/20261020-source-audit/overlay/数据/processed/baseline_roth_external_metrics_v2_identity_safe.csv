@@ -1,0 +1,7 @@
+﻿transporter_gene,model_name,n_compounds,excluded_identity_ambiguous_compounds,spearman_probability_vs_continuous_rr,spearman_p_value,outside_similarity_support_count,low_similarity_support_count,binary_threshold_used,interpretation
+ABCB1,dummy_prior,12,Deruxtecan (Roth Table 3),,,4,5,no,identity_safe_directional_association_only_small_external_panel
+ABCB1,physchem_logistic,12,Deruxtecan (Roth Table 3),-0.350263,0.264344,4,5,no,identity_safe_directional_association_only_small_external_panel
+ABCB1,morgan_logistic,12,Deruxtecan (Roth Table 3),-0.570929,0.052524,4,5,no,identity_safe_directional_association_only_small_external_panel
+ABCG2,dummy_prior,12,Deruxtecan (Roth Table 3),,,3,2,no,identity_safe_directional_association_only_small_external_panel
+ABCG2,physchem_logistic,12,Deruxtecan (Roth Table 3),-0.402803,0.194202,3,2,no,identity_safe_directional_association_only_small_external_panel
+ABCG2,morgan_logistic,12,Deruxtecan (Roth Table 3),-0.231174,0.469733,3,2,no,identity_safe_directional_association_only_small_external_panel

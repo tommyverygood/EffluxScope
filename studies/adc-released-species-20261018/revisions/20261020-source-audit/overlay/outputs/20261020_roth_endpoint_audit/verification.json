@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "n": 12,
+  "spearman_rho": -0.5709290716957522,
+  "two_sided_asymptotic_p_value": 0.05252355548220434,
+  "csv_sha256": "fd675432f5143c957773e2efc7b9c21deb06ce2044da3930bbe7e06ebf5ed09a",
+  "python_version": "3.11.4",
+  "scipy_version": "1.17.1",
+  "method": "scipy.stats.spearmanr; average ranks for ties; two-sided asymptotic p value",
+  "exclusion": "Unresolved source-specific Deruxtecan identity; no score reassignment",
+  "endpoint": "GI50 resistance ratio, not direct monolayer transport ER",
+  "model_rerun": false,
+  "new_model_fit": false,
+  "ADC_classification_validation": false,
+  "scope": "Numerical reproduction of an existing retrospective diagnostic; no bootstrap interval or new biological validation"
+}

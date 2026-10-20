@@ -1,0 +1,76 @@
+{
+  "scope": "Figure 3 corrected Roth identity-safe summary and endpoint labels, with other top-level panels unchanged",
+  "files": [
+    {
+      "path": "handoff/fig3_data.json",
+      "bytes": 15419,
+      "sha256": "6f72693c2a2dba3582d0e27bed323844072cb895917bdaedc12e6d6a1e1ecf1a",
+      "copy_exact": true
+    },
+    {
+      "path": "论文主稿/latex_jcim/tools/make_figure3_jcim.py",
+      "bytes": 23749,
+      "sha256": "49fc5b63c45d606cffdd81257e6f1fbe10166159d44a25d0b820f5fe71550103",
+      "copy_exact": true
+    },
+    {
+      "path": "数据/processed/baseline_roth_external_metrics_v2_identity_safe.csv",
+      "bytes": 1050,
+      "sha256": "043998923e953dc71b3ed1f3f1ea2bc9fe2000789f3cbab9d808fcf3a6365611",
+      "copy_exact": true
+    }
+  ],
+  "only_changed_handoff_top_level_key": "b",
+  "unchanged_public_panels": {
+    "a": {
+      "objects_equal": true,
+      "canonical_before_sha256": "b4021902d316d86c8f65facbf8ff93647f4e99f8aa74bd0f3c13ee050d42ae54",
+      "canonical_after_sha256": "b4021902d316d86c8f65facbf8ff93647f4e99f8aa74bd0f3c13ee050d42ae54"
+    },
+    "c": {
+      "objects_equal": true,
+      "canonical_before_sha256": "2fb3f63cb63d2a2644fd0391786c250b3495e6df876f2c8cd5ff50120ed7299f",
+      "canonical_after_sha256": "2fb3f63cb63d2a2644fd0391786c250b3495e6df876f2c8cd5ff50120ed7299f"
+    },
+    "d": {
+      "objects_equal": true,
+      "canonical_before_sha256": "b9f52a4f7a14da0807dbb894ff2e8489447cc300de88e524827ce527c6432651",
+      "canonical_after_sha256": "b9f52a4f7a14da0807dbb894ff2e8489447cc300de88e524827ce527c6432651"
+    },
+    "d2": {
+      "objects_equal": true,
+      "canonical_before_sha256": "1ebaa6f1fa6b3d21c701d8e15cd0e8e60c6e39a41a1d5e16b781ed27f5f6723c",
+      "canonical_after_sha256": "1ebaa6f1fa6b3d21c701d8e15cd0e8e60c6e39a41a1d5e16b781ed27f5f6723c"
+    }
+  },
+  "new_aggregate_table_rows": 6,
+  "new_individual_external_predictor_outputs": false,
+  "old_public_roth": {
+    "label": "Roth 2026 panel",
+    "year": 2026,
+    "n": 13,
+    "rho": -0.519945,
+    "p": 0.068557,
+    "lo": null,
+    "hi": null,
+    "obj": "Morgan baseline (not the frozen screener)",
+    "status": "not supported",
+    "note": "identity-audited re-run excludes Deruxtecan: n=12, rho=-0.571, p=0.053"
+  },
+  "new_roth": {
+    "label": "Roth 2026 panel",
+    "year": 2026,
+    "n": 12,
+    "rho": -0.570929,
+    "p": 0.052524,
+    "lo": null,
+    "hi": null,
+    "obj": "Morgan baseline (not the frozen screener)",
+    "status": "not supported",
+    "note": "Retrospective identity audit excludes unresolved Deruxtecan material; GI50 resistance ratio is not direct transport efflux ratio. No bootstrap interval; not a replication of the frozen screener.",
+    "endpoint": "GI50 resistance ratio",
+    "analysis": "retrospective identity audit",
+    "excluded_identity_ambiguous_compounds": "Deruxtecan (Roth Table 3)"
+  },
+  "protected_local_figure3_sha256": "1abda4b07bffbcc90a2641d080ab61f740d16a62cb8dddee6c60009199ffeb38"
+}

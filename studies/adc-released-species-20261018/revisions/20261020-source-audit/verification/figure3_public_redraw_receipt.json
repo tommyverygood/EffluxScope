@@ -1,0 +1,161 @@
+{
+  "status": "PASS",
+  "verified_utc": "2026-10-20T09:36:52.604157+00:00",
+  "scope": "Figure 3 redraw in isolated public-only sandbox plus corrected Figure 3 handoff, drawing script and six-row authors aggregate table",
+  "downloads": [
+    {
+      "tag": "adc-released-species-20261018",
+      "asset": "EffluxScope_ADC_reproducibility_20261018.zip",
+      "url": "https://github.com/tommyverygood/EffluxScope/releases/download/adc-released-species-20261018/EffluxScope_ADC_reproducibility_20261018.zip",
+      "http": 200,
+      "bytes": 9763936,
+      "sha256": "19fd294d893345af41edb08a1a8b86b9b9a4bfe7a859e50d52c44998be26938f",
+      "anonymous_download": true
+    },
+    {
+      "tag": "adc-figure-corrections-20261018",
+      "asset": "EffluxScope_figures_revision_20261018.zip",
+      "url": "https://github.com/tommyverygood/EffluxScope/releases/download/adc-figure-corrections-20261018/EffluxScope_figures_revision_20261018.zip",
+      "http": 200,
+      "bytes": 306314,
+      "sha256": "4f53ee9d1e6e3b17d43c48b822761fe99e2da5042df01925fe4987fc3042eac2",
+      "anonymous_download": true
+    },
+    {
+      "tag": "adc-figure3-layout-20261018",
+      "asset": "EffluxScope_Figure3_layout_20261018.zip",
+      "url": "https://github.com/tommyverygood/EffluxScope/releases/download/adc-figure3-layout-20261018/EffluxScope_Figure3_layout_20261018.zip",
+      "http": 200,
+      "bytes": 63390,
+      "sha256": "788c042c2b2bd7fb84a001a418139a033deb44fcb42f65dd08eb299f00d11887",
+      "anonymous_download": true
+    }
+  ],
+  "command": "python 论文主稿/latex_jcim/tools/make_figure3_jcim.py",
+  "exit_code": 0,
+  "no_current_project_asset_modified": true,
+  "no_model_training": true,
+  "no_bootstrap_recomputed": true,
+  "no_new_external_per_molecule_outputs": true,
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.5.1",
+    "pandas": "2.2.3",
+    "matplotlib": "3.11.2",
+    "pillow": "11.3.0",
+    "ghostscript": "10.06.0"
+  },
+  "input_checks": [
+    {
+      "path": "handoff/fig3_data.json",
+      "sha256": "6f72693c2a2dba3582d0e27bed323844072cb895917bdaedc12e6d6a1e1ecf1a",
+      "identical_to_local_maintained_input": true,
+      "origin": "new Figure 3 overlay",
+      "scientific_content_identical": true
+    },
+    {
+      "path": "数据/processed/baseline_roth_external_metrics_v2_identity_safe.csv",
+      "sha256": "043998923e953dc71b3ed1f3f1ea2bc9fe2000789f3cbab9d808fcf3a6365611",
+      "identical_to_local_maintained_input": true,
+      "origin": "new Figure 3 overlay",
+      "scientific_content_identical": true
+    },
+    {
+      "path": "数据/processed/abcb1_asap2025_sourceheldout_postscoring_addendum_v1.json",
+      "sha256": "de9c53e4f91d5d4ffdd039b283636b2107dfde9348f83ed3c3a967da4e49fb4c",
+      "identical_to_local_maintained_input": true,
+      "origin": "anonymous public core archive",
+      "scientific_content_identical": true
+    },
+    {
+      "path": "数据/processed/abcb1_regulatory_v4_blind_summary_v1.json",
+      "sha256": "518b26078210562d57f70d83398fe12c4a15fdaa6e1ac4d9ad8b885b331b3c7d",
+      "identical_to_local_maintained_input": false,
+      "origin": "anonymous public core archive",
+      "scientific_content_identical": true,
+      "differing_metadata_keys": [
+        "protocol_lock_path"
+      ],
+      "difference_explanation": "Public core normalized the historical protocol-lock host path, as recorded in EXPORT_PROVENANCE.json; all other JSON values including all plotted/guard-consumed metrics and gates are identical.",
+      "local_source_sha256": "e5ec35bc903f1e219db7b230dd2601cf8bfc8b1f46af392d3576aae6d9b6156a",
+      "public_normalization_already_recorded_in_core_export": true
+    },
+    {
+      "path": "数据/processed/abcb1_public_predictor_metrics_v1.csv",
+      "sha256": "42fc5133f34ed84573b0cbefffdae65492c67d459562eca615b6c186f0f62af3",
+      "identical_to_local_maintained_input": true,
+      "origin": "anonymous public core archive",
+      "scientific_content_identical": true
+    }
+  ],
+  "guard_status": {
+    "status": "PASS",
+    "source": "isolated public archive plus staging overlay",
+    "current_errors": [],
+    "old_public_hand_off_rejected": [
+      "b.Roth.n: 13 vs 12",
+      "b.Roth.rho: -0.519945 vs -0.570929",
+      "b.Roth.p: 0.068557 vs 0.052524",
+      "b.Roth.endpoint: must identify GI50 resistance ratio, not direct transport ER",
+      "b.Roth.identity: exclusion must match the identity-audited source"
+    ],
+    "original_public_panels_object_equal": {
+      "a": true,
+      "c": true,
+      "d": true,
+      "d2": true
+    }
+  },
+  "public_unchanged_handoff_panels": {
+    "a": {
+      "objects_equal": true,
+      "canonical_before_sha256": "b4021902d316d86c8f65facbf8ff93647f4e99f8aa74bd0f3c13ee050d42ae54",
+      "canonical_after_sha256": "b4021902d316d86c8f65facbf8ff93647f4e99f8aa74bd0f3c13ee050d42ae54"
+    },
+    "c": {
+      "objects_equal": true,
+      "canonical_before_sha256": "2fb3f63cb63d2a2644fd0391786c250b3495e6df876f2c8cd5ff50120ed7299f",
+      "canonical_after_sha256": "2fb3f63cb63d2a2644fd0391786c250b3495e6df876f2c8cd5ff50120ed7299f"
+    },
+    "d": {
+      "objects_equal": true,
+      "canonical_before_sha256": "b9f52a4f7a14da0807dbb894ff2e8489447cc300de88e524827ce527c6432651",
+      "canonical_after_sha256": "b9f52a4f7a14da0807dbb894ff2e8489447cc300de88e524827ce527c6432651"
+    },
+    "d2": {
+      "objects_equal": true,
+      "canonical_before_sha256": "1ebaa6f1fa6b3d21c701d8e15cd0e8e60c6e39a41a1d5e16b781ed27f5f6723c",
+      "canonical_after_sha256": "1ebaa6f1fa6b3d21c701d8e15cd0e8e60c6e39a41a1d5e16b781ed27f5f6723c"
+    }
+  },
+  "only_changed_handoff_top_level_key": "b",
+  "page_text_exact": true,
+  "canonical_pdf_sha256": "1abda4b07bffbcc90a2641d080ab61f740d16a62cb8dddee6c60009199ffeb38",
+  "redraw_pdf_sha256": "aceb512b8725faf09d215bd82441f16cb5d757f3e36ce08822b4b47ebed6ef29",
+  "render_comparison": {
+    "render_dpi": 144,
+    "same_dimensions": true,
+    "canonical_pixels": [
+      1210,
+      1119
+    ],
+    "redraw_pixels": [
+      1210,
+      1119
+    ],
+    "pixels_exact": true,
+    "different_channel_values": 0,
+    "canonical_pixel_sha256": "9b84817a99abac963cf1708169678a2339290d0ac9d70bfa0fbf1e64df7f4d0d",
+    "redraw_pixel_sha256": "9b84817a99abac963cf1708169678a2339290d0ac9d70bfa0fbf1e64df7f4d0d"
+  },
+  "roth_display": {
+    "n": 12,
+    "rho": -0.570929,
+    "p": 0.052524,
+    "endpoint": "GI50 resistance ratio",
+    "analysis": "retrospective identity audit",
+    "excluded_identity_ambiguous_compounds": "Deruxtecan (Roth Table 3)",
+    "model": "Morgan logistic baseline; not the frozen EffluxScope screener"
+  },
+  "pass_basis": "Exact PDF page text and 144-dpi pixels; all scientific inputs identical. One known public-export metadata-only host-path normalization is preserved, not overwritten."
+}

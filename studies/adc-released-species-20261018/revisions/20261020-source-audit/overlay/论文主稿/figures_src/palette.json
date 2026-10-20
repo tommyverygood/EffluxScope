@@ -1,0 +1,86 @@
+{
+ "source": "用户提供的配色卡（2026-08-17），按图中标注的 RGB/HEX 原样录入，已交叉校验",
+ "palette": [
+  {
+   "name": "purple",
+   "rgb": [
+    127,
+    105,
+    193
+   ],
+   "hex": "#7F69C1"
+  },
+  {
+   "name": "red",
+   "rgb": [
+    220,
+    38,
+    38
+   ],
+   "hex": "#DC2626"
+  },
+  {
+   "name": "blue",
+   "rgb": [
+    43,
+    108,
+    226
+   ],
+   "hex": "#2B6CE2"
+  },
+  {
+   "name": "green",
+   "rgb": [
+    76,
+    175,
+    80
+   ],
+   "hex": "#4CAF50"
+  },
+  {
+   "name": "amber",
+   "rgb": [
+    249,
+    183,
+    28
+   ],
+   "hex": "#F9B71C"
+  },
+  {
+   "name": "teal",
+   "rgb": [
+    17,
+    184,
+    197
+   ],
+   "hex": "#11B8C5"
+  },
+  {
+   "name": "grey",
+   "rgb": [
+    135,
+    135,
+    135
+   ],
+   "hex": "#878787"
+  }
+ ],
+ "order": [
+  "purple",
+  "red",
+  "blue",
+  "green",
+  "amber",
+  "teal",
+  "grey"
+ ],
+ "hex_by_name": {
+  "purple": "#7F69C1",
+  "red": "#DC2626",
+  "blue": "#2B6CE2",
+  "green": "#4CAF50",
+  "amber": "#F9B71C",
+  "teal": "#11B8C5",
+  "grey": "#878787"
+ }
+}

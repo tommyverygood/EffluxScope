@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "source": "isolated public archive plus staging overlay",
+  "current_errors": [],
+  "old_public_hand_off_rejected": [
+    "b.Roth.n: 13 vs 12",
+    "b.Roth.rho: -0.519945 vs -0.570929",
+    "b.Roth.p: 0.068557 vs 0.052524",
+    "b.Roth.endpoint: must identify GI50 resistance ratio, not direct transport ER",
+    "b.Roth.identity: exclusion must match the identity-audited source"
+  ],
+  "original_public_panels_object_equal": {
+    "a": true,
+    "c": true,
+    "d": true,
+    "d2": true
+  }
+}

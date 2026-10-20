@@ -1,0 +1,79 @@
+{
+  "status": "STAGED_NOT_PUBLISHED",
+  "scope": "Figure 1/2 component only; parent may add Figure 3 correction before final package manifest",
+  "file_count": 13,
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1080,
+      "sha256": "057a601e518479ed3eff5d430e677c9b279296498f23e649e5ee8c219efa5457"
+    },
+    {
+      "path": "README_FIGURES12.md",
+      "bytes": 7236,
+      "sha256": "ff4f583dff0409cbe2bba49aa722d2bd4969904c8b94619a02be338a721d7424"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES_FIGURES12.md",
+      "bytes": 1710,
+      "sha256": "d1a3397a0a31f1be8dd84079ba29defe862bd000016de2fa5873788bf2f3dfd4"
+    },
+    {
+      "path": "overlay/handoff/fig2_ref_xy.npy",
+      "bytes": 3672,
+      "sha256": "323246827d7e5ec485190c2b58f0892e319775a957f32bc412fd252e93a47091"
+    },
+    {
+      "path": "overlay/论文主稿/figures_src/make_figure1_v2.py",
+      "bytes": 11600,
+      "sha256": "5071f3daa726d725412b5a599cbab3be820bfb9e70a694f53beadb6077868ba8"
+    },
+    {
+      "path": "overlay/论文主稿/figures_src/palette.json",
+      "bytes": 1033,
+      "sha256": "54e12721cab483b2414de96415807b3147176bc484923ee0e6cd57d7060775eb"
+    },
+    {
+      "path": "overlay/论文主稿/figures_src/palette.py",
+      "bytes": 8733,
+      "sha256": "679225215597f51333b8ea289a50d109b15f13917f5d1bfd9307184e3a82d3f5"
+    },
+    {
+      "path": "overlay/论文主稿/latex_jcim/tools/make_figure1_jcim.py",
+      "bytes": 2309,
+      "sha256": "e3a2e49b5eec5a6ab45e3b7488dd24406e4ffa8afdd3336f2f71768da3a6b52b"
+    },
+    {
+      "path": "overlay/论文主稿/latex_jcim/tools/make_figure2_jcim.py",
+      "bytes": 15521,
+      "sha256": "b0bec52136718b0d8886abbd8432d9d8f04046c9d9ef7484f7cdd1c1a8e961f1"
+    },
+    {
+      "path": "requirements-figures12.txt",
+      "bytes": 143,
+      "sha256": "d6f489b5c170ea4c21175c7aaaa165e4160909b8aa1bc7244ca39bc1ef3bda84"
+    },
+    {
+      "path": "verification/figure2_public_redraw.log",
+      "bytes": 324,
+      "sha256": "07a76bae4d1e75872b6703cf1b8110a062128397d378894a625c7b77ece056ff"
+    },
+    {
+      "path": "verification/figure2_public_redraw_receipt.json",
+      "bytes": 4759,
+      "sha256": "40b0aeeca12a0e12233b116ac800f7884c08dc07ac1c0282de7b3e6f21c1131d"
+    },
+    {
+      "path": "verification/figures12_source_provenance.json",
+      "bytes": 1749,
+      "sha256": "4ddb839626018e2bf936c8d544e011aa0a137a0e06e95b6c92e1b7e609fc8203"
+    }
+  ],
+  "third_party_per_molecule_prediction_files": [],
+  "full_manuscript_files": [],
+  "only_new_numeric_array": "overlay/handoff/fig2_ref_xy.npy",
+  "new_array_shape": [
+    443,
+    2
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "current_data_passed": true,
+  "old_13row_transport_mislabel_rejected": [
+    "b.Roth.n: 13 vs 12",
+    "b.Roth.rho: -0.519945 vs -0.570929",
+    "b.Roth.p: 0.068557 vs 0.052524",
+    "b.Roth.endpoint: must identify GI50 resistance ratio, not direct transport ER"
+  ],
+  "unchanged_other_panels": true
+}

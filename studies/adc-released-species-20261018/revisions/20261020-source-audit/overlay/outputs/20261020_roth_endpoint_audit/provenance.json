@@ -1,0 +1,23 @@
+{
+  "source_article_url": "https://www.oaepublish.com/articles/cdr.2025.151",
+  "source_doi": "10.20517/cdr.2025.151",
+  "source_table": "Table 3; ABCB1 MDR19/pcDNA resistance ratio",
+  "source_license": "CC-BY-4.0",
+  "license_checked_date": "2026-10-20",
+  "license_location": "Article-specific Copyright section",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_copyright": "The Author(s) 2026",
+  "derived_code_and_in_house_score_license": "MIT",
+  "local_input_relative_path": "\u6570\u636e/processed/baseline_roth_external_predictions_v2_identity_audited.csv",
+  "local_input_sha256": "8092e0b053916d2f9cf31a6bb0bdec5188977a98f9bb97fed099761ef1651c96",
+  "selection": [
+    "transporter_gene=ABCB1",
+    "model_name=morgan_logistic",
+    "identity_safe_external_metric_include=yes"
+  ],
+  "excluded_material": "Deruxtecan",
+  "exclusion_reason": "unresolved_C26_DXd_vs_C52_linker_payload",
+  "data_changes": "12-row selection, column reduction/renaming; source RR values and frozen score values unchanged",
+  "third_party_prediction_outputs_included": false,
+  "article_full_text_included": false
+}
