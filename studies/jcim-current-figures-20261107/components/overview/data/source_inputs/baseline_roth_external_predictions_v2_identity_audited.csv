@@ -1,0 +1,13 @@
+assay_record_id,compound_id,paper_compound_name,transporter_gene,model_name,resistance_ratio,predicted_probability,identity_safe_external_metric_include,source_doi,source_url
+ROTH_T3_01_ABCB1,ADC_PAYLOAD_008,DM1,ABCB1,morgan_logistic,52.0,0.87806249,yes,10.20517/cdr.2025.151,https://pmc.ncbi.nlm.nih.gov/articles/PMC12883344/
+ROTH_T3_02_ABCB1,ADC_PAYLOAD_009,DM4,ABCB1,morgan_logistic,96.0,0.94331202,yes,10.20517/cdr.2025.151,https://pmc.ncbi.nlm.nih.gov/articles/PMC12883344/
+ROTH_T3_03_ABCB1,ADC_PAYLOAD_017,MMAE,ABCB1,morgan_logistic,400.0,0.72918119,yes,10.20517/cdr.2025.151,https://pmc.ncbi.nlm.nih.gov/articles/PMC12883344/
+ROTH_T3_04_ABCB1,ADC_PAYLOAD_018,MMAF,ABCB1,morgan_logistic,2.0,0.62910311,yes,10.20517/cdr.2025.151,https://pmc.ncbi.nlm.nih.gov/articles/PMC12883344/
+ROTH_T3_05_ABCB1,ADC_PAYLOAD_005,Calicheamicin γ1,ABCB1,morgan_logistic,71.0,0.37447068,yes,10.20517/cdr.2025.151,https://pmc.ncbi.nlm.nih.gov/articles/PMC12883344/
+ROTH_T3_06_ABCB1,ADC_PAYLOAD_028,Exatecan,ABCB1,morgan_logistic,2.4,0.44560115,yes,10.20517/cdr.2025.151,https://pmc.ncbi.nlm.nih.gov/articles/PMC12883344/
+ROTH_T3_08_ABCB1,ADC_PAYLOAD_021,Nemorubicin,ABCB1,morgan_logistic,2.0,0.97099376,yes,10.20517/cdr.2025.151,https://pmc.ncbi.nlm.nih.gov/articles/PMC12883344/
+ROTH_T3_09_ABCB1,ADC_PAYLOAD_023,PNU-159682,ABCB1,morgan_logistic,1.2,0.91704701,yes,10.20517/cdr.2025.151,https://pmc.ncbi.nlm.nih.gov/articles/PMC12883344/
+ROTH_T3_10_ABCB1,ADC_PAYLOAD_030,SJG136,ABCB1,morgan_logistic,170.0,0.23299016,yes,10.20517/cdr.2025.151,https://pmc.ncbi.nlm.nih.gov/articles/PMC12883344/
+ROTH_T3_11_ABCB1,ADC_PAYLOAD_022,SGD-1882,ABCB1,morgan_logistic,130.0,0.37079611,yes,10.20517/cdr.2025.151,https://pmc.ncbi.nlm.nih.gov/articles/PMC12883344/
+ROTH_T3_12_ABCB1,ADC_PAYLOAD_031,SG2057,ABCB1,morgan_logistic,230.0,0.20472845,yes,10.20517/cdr.2025.151,https://pmc.ncbi.nlm.nih.gov/articles/PMC12883344/
+ROTH_T3_13_ABCB1,ADC_PAYLOAD_032,SG3199,ABCB1,morgan_logistic,120.0,0.14117598,yes,10.20517/cdr.2025.151,https://pmc.ncbi.nlm.nih.gov/articles/PMC12883344/

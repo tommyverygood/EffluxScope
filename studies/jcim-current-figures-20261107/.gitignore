@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+verification/
+components/overview/outputs/
+components/endpoint/论文主稿/latex_jcim/figures/
+components/results/论文主稿/latex_jcim/figures/
+components/results/toc/toc_graphic/

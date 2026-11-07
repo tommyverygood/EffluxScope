@@ -1,0 +1,63 @@
+{
+  "current_figure_number": 3,
+  "historical_name": "Figure1_endpoint_shift",
+  "model_provider": "Ivers Ohlsson et al.",
+  "model_doi": "10.5281/zenodo.16948542",
+  "model_license": "Apache-2.0",
+  "source_dataset": "https://github.com/molecularinformatics/Computational-ADME",
+  "source_dataset_license": "MIT",
+  "prediction_provenance": "Author-computed locally with released GNN-MTL checkpoint, not external web-service outputs",
+  "records": [
+    {
+      "path": "论文主稿/latex_jcim/tools/make_figure1_jcim.py",
+      "sha256": "e3a2e49b5eec5a6ab45e3b7488dd24406e4ffa8afdd3336f2f71768da3a6b52b",
+      "operation": "byte-identical"
+    },
+    {
+      "path": "论文主稿/figures_src/make_figure1_v2.py",
+      "sha256": "b65ff0e0c29a77f530bef15f86e51cd9b3feb57f4c32fe4054f5f9298d2f7f6c",
+      "operation": "byte-identical"
+    },
+    {
+      "path": "论文主稿/figures_src/palette.py",
+      "sha256": "0b180b928fdebf506e0ff044f876435c4a7e02b522ad6ee55d33b844c9f45ad5",
+      "operation": "byte-identical"
+    },
+    {
+      "path": "论文主稿/figures_src/palette.json",
+      "sha256": "41d881881ef913946063d1e9d43878efb4f31081830241e6c30d74bb8069c017",
+      "operation": "byte-identical"
+    },
+    {
+      "path": "handoff/fig1ab.json",
+      "sha256": "6f1d6a1a9d2dd9d7db7babdc7eab4813332090769839858e0f503d71f28e7e1c",
+      "operation": "byte-identical"
+    },
+    {
+      "path": "handoff/fig1ab_grid.json",
+      "sha256": "71c791a9acc7427f55c15644c1ef1bef8fe67ddd7750819b5ac8884f27d19c5e",
+      "operation": "byte-identical"
+    },
+    {
+      "path": "handoff/fig1new_stats.json",
+      "sha256": "935dbfb26aaf3fe5ae00ad4a4370f271c612ad9fcbd8c98541e394b95586963e",
+      "operation": "byte-identical"
+    },
+    {
+      "path": "handoff/fig1_permband.json",
+      "sha256": "228cfa0ac4c1b7fcb5772e4d725385d99437f2e1de7997b37878f68efe4f4f48",
+      "operation": "byte-identical"
+    },
+    {
+      "path": "数据/processed/abcb1_public_predictor_metrics_v1.csv",
+      "sha256": "42fc5133f34ed84573b0cbefffdae65492c67d459562eca615b6c186f0f62af3",
+      "operation": "byte-identical"
+    },
+    {
+      "path": "data/author_computed_az_predictions.csv",
+      "sha256": "1bf05a0d4f82d7be744355cf942b09e4d50826a15d45f2bd98ba519c0b904f03",
+      "operation": "exact field projection; two locally computed AZ endpoints, 5248 rows",
+      "upstream_sha256": "1a54dd7fcc580f9f0dc8695c1644e0e798ef9cf738b5381a03760f835ce81793"
+    }
+  ]
+}

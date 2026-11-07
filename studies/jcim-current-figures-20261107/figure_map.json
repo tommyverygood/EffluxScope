@@ -1,0 +1,44 @@
+[
+  {
+    "reference": "reference_figures/Figure1_background.pdf",
+    "generated": "components/overview/outputs/Figure_background.pdf",
+    "historical_name": "Figure_background.pdf",
+    "sha256": "5cc2517eceadccb29f0096901f4a2f708ff59bc11167f1f02822e634b12e12eb"
+  },
+  {
+    "reference": "reference_figures/Figure2_overview.pdf",
+    "generated": "components/overview/outputs/Figure_overview.pdf",
+    "historical_name": "Figure_overview.pdf",
+    "sha256": "33c49d42599989b119261049019125d6fc24983c2c4bc8ea73085df6ba2febfd"
+  },
+  {
+    "reference": "reference_figures/Figure3_endpoint.pdf",
+    "generated": "components/endpoint/\u8bba\u6587\u4e3b\u7a3f/latex_jcim/figures/Figure1_endpoint_shift.pdf",
+    "historical_name": "Figure1_endpoint_shift.pdf",
+    "sha256": "c399ddbe4e165a8967f94caaf138f7fd0c9ad288ade658f94c01b2b4270f2a6f"
+  },
+  {
+    "reference": "reference_figures/Figure4_sources.pdf",
+    "generated": "components/results/\u8bba\u6587\u4e3b\u7a3f/latex_jcim/figures/Figure3_validation_gates.pdf",
+    "historical_name": "Figure3_validation_gates.pdf",
+    "sha256": "ddfc4984128d718d2ba95688b36f1597f7d80d78207cc38f7b133fce1d9d1a95"
+  },
+  {
+    "reference": "reference_figures/Figure5_structure.pdf",
+    "generated": "components/results/\u8bba\u6587\u4e3b\u7a3f/latex_jcim/figures/Figure2_split_separation.pdf",
+    "historical_name": "Figure2_split_separation.pdf",
+    "sha256": "82a715538e79ee0f1eed649b4db27219ff5230402972a13352b1b56856274bb8"
+  },
+  {
+    "reference": "reference_figures/Figure6_errors.pdf",
+    "generated": "components/results/\u8bba\u6587\u4e3b\u7a3f/latex_jcim/figures/Figure4_error_distance.pdf",
+    "historical_name": "Figure4_error_distance.pdf",
+    "sha256": "5284cf07b62c8e0373e78157e862034917db95e91a06326a0f64909887c979cf"
+  },
+  {
+    "reference": "reference_figures/TOC.pdf",
+    "generated": "components/results/toc/toc_graphic/TOC_graphic_wheel.pdf",
+    "historical_name": "TOC_graphic_wheel.pdf",
+    "sha256": "519670dae3521ce998ef5f951b4e9b07534ee23a1508c058fbd369269101dc21"
+  }
+]

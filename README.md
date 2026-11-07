@@ -1,5 +1,12 @@
 # EffluxScope
 
+## Current manuscript figures (7 November 2026)
+
+The [current figure release](https://github.com/tommyverygood/EffluxScope/releases/tag/jcim-figures-20261107) and [self-contained source directory](studies/jcim-current-figures-20261107/README.md) reproduce the six main figures and TOC for *ABCB1 efflux prediction at matched coverage and across experimental sources*. It supplies the latest plotting scripts, frozen inputs, locally computed open-model comparator predictions and a clean-directory verifier. All seven graphics match the approved references by text, geometry and 150 dpi pixels. Figure 6 intervals are recomputed from fixed-scaffold sufficient statistics (2,000 draws; 100 checked fields exactly match); this does not regenerate historical third-party service scores or rerun every analysis.
+
+Use that release for current artwork and figure numbering. The October studies and framework descriptions below remain historical/versioned resources. No model was refitted by this update.
+
+
 A computational framework for evaluating ABCB1 efflux predictors under
 chemical-space shift.
 
