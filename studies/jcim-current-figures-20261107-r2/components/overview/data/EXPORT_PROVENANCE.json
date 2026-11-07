@@ -1,0 +1,155 @@
+{
+  "date": "2026-11-07",
+  "scope": "Current manuscript Figures 1 and 2; no refitting; own model predictions and published source facts only.",
+  "files": [
+    {
+      "source": "论文主稿/latex_jcim/figures/assets/Figure_background_approved.png",
+      "source_sha256": "363938ab087e5f8bb818bb66c22a4c01ebcac674fea56d83cf58da1537d914be",
+      "export": "assets/Figure_background_approved.png",
+      "export_sha256": "363938ab087e5f8bb818bb66c22a4c01ebcac674fea56d83cf58da1537d914be",
+      "operation": "byte-identical copy"
+    },
+    {
+      "source": "论文主稿/latex_jcim/data_for_figures/overview/frozen_inputs/biogen_frozen_scores_membership_2d.csv",
+      "source_sha256": "6674b281da9f183fb90b1d92448cfc04ac3d01e788c85a4144d4c8da27584ed0",
+      "export": "data/frozen_inputs/biogen_frozen_scores_membership_2d.csv",
+      "export_sha256": "6674b281da9f183fb90b1d92448cfc04ac3d01e788c85a4144d4c8da27584ed0",
+      "operation": "byte-identical copy"
+    },
+    {
+      "source": "论文主稿/latex_jcim/data_for_figures/overview/frozen_inputs/features/frozen_logistic_weights_all_2056.csv",
+      "source_sha256": "cfd14baa603f5804d15da21aea50685499d5e7aeee52d9420fe9b99a5c424c12",
+      "export": "data/frozen_inputs/features/frozen_logistic_weights_all_2056.csv",
+      "export_sha256": "cfd14baa603f5804d15da21aea50685499d5e7aeee52d9420fe9b99a5c424c12",
+      "operation": "byte-identical copy"
+    },
+    {
+      "source": "论文主稿/latex_jcim/data_for_figures/metrics.csv",
+      "source_sha256": "b28b8472d27e5cd8afabbefbf6997a53105317f1871beec9fc875df6eaac238f",
+      "export": "data/metrics.csv",
+      "export_sha256": "b28b8472d27e5cd8afabbefbf6997a53105317f1871beec9fc875df6eaac238f",
+      "operation": "byte-identical copy"
+    },
+    {
+      "source": "论文主稿/latex_jcim/data_for_figures/crossed_metrics.csv",
+      "source_sha256": "05dcb97184c1cbc7b388e106992c2ac24937909b547cc7579641af463138dede",
+      "export": "data/crossed_metrics.csv",
+      "export_sha256": "05dcb97184c1cbc7b388e106992c2ac24937909b547cc7579641af463138dede",
+      "operation": "byte-identical copy"
+    },
+    {
+      "source": "论文主稿/latex_jcim/tools/palette.py",
+      "source_sha256": "0b180b928fdebf506e0ff044f876435c4a7e02b522ad6ee55d33b844c9f45ad5",
+      "export": "scripts/palette.py",
+      "export_sha256": "0b180b928fdebf506e0ff044f876435c4a7e02b522ad6ee55d33b844c9f45ad5",
+      "operation": "byte-identical copy"
+    },
+    {
+      "source": "论文主稿/latex_jcim/tools/palette.json",
+      "source_sha256": "41d881881ef913946063d1e9d43878efb4f31081830241e6c30d74bb8069c017",
+      "export": "scripts/palette.json",
+      "export_sha256": "41d881881ef913946063d1e9d43878efb4f31081830241e6c30d74bb8069c017",
+      "operation": "byte-identical copy"
+    },
+    {
+      "source": "数据/scripts/abcb1_screener_core_v0_1.py",
+      "source_sha256": "d97c1ee11973ea729ea4dcd62932560e4d60e1ac1cfdfa86ac08798c4bcf2267",
+      "export": "scripts/abcb1_screener_core_v0_1.py",
+      "export_sha256": "d97c1ee11973ea729ea4dcd62932560e4d60e1ac1cfdfa86ac08798c4bcf2267",
+      "operation": "byte-identical copy"
+    },
+    {
+      "source": "论文主稿/latex_jcim/data_for_figures/overview/frozen_inputs/features/frozen_model_parameters.json",
+      "source_sha256": "0056b088b9a5dadd4ae37db2564c4cfd5028b3cbad555bf5d65d7fe7840ae184",
+      "export": "data/frozen_inputs/features/frozen_model_parameters.json",
+      "export_sha256": "d6b706a28e1d11f16b821abbb8f2f9f48564add6b8e905853f60363c359f3a9d",
+      "operation": "replaced private machine prefix of model_bundle with project-relative path; all numerical fields unchanged"
+    },
+    {
+      "source": "outputs/20260810_soskuti_identity_double_review_v1/reanalysis/external/predictions/abcb1_quantity_biogen_v0_4_identity_audited_v2_predictions.csv",
+      "source_sha256": "37601ab5356310864278c235826bf5e6085a621ada672d090cca5f0250f3c884",
+      "export": "data/source_inputs/traced_biogen_molecule.csv",
+      "export_sha256": "7a146f71f9301f5ec3e0e0f1833473cb4de93158f34aea29dc2db3f424f9fb5d",
+      "operation": "exact string-valued field/row subset, preserving source order",
+      "fields": [
+        "external_row_id",
+        "standardized_isomeric_smiles"
+      ],
+      "export_rows": 1
+    },
+    {
+      "source": "数据/processed/abcb1_asap2025_sourceheldout_predictions_v1.csv",
+      "source_sha256": "100e11e56c319d7f1cb1a7d30b4938f38721a715920d647386131ae205cbe4c7",
+      "export": "data/source_inputs/abcb1_asap2025_sourceheldout_predictions_v1.csv",
+      "export_sha256": "7315c30595f1650216f97ba621c5169468109ab18f87aab08f0426482a6f7400",
+      "operation": "exact string-valued field/row subset, preserving source order",
+      "fields": [
+        "observation_id",
+        "molecule_chembl_id",
+        "standardized_inchikey",
+        "log2_efflux_ratio",
+        "v0_1_calibrated_probability",
+        "v0_3_candidate_probability"
+      ],
+      "export_rows": 62
+    },
+    {
+      "source": "数据/processed/abcb1_q1_direct_external_entity_predictions_v1.csv",
+      "source_sha256": "f32ac09e2dd4aa413944ef7a8f1bbfee651d391a3247aed77e47ff948519a78b",
+      "export": "data/source_inputs/abcb1_q1_direct_external_entity_predictions_v1.csv",
+      "export_sha256": "28bde5d8417a8a426da7f077956fcbd029e342bac1fcf444e78c8f659302b08a",
+      "operation": "exact string-valued field/row subset, preserving source order",
+      "fields": [
+        "benchmark_entity_id",
+        "entity_name",
+        "source_id",
+        "source_url",
+        "model_evaluation_eligible",
+        "frozen_probability",
+        "continuous_endpoint_median"
+      ],
+      "export_rows": 11
+    },
+    {
+      "source": "数据/processed/baseline_roth_external_predictions_v2_identity_audited.csv",
+      "source_sha256": "8092e0b053916d2f9cf31a6bb0bdec5188977a98f9bb97fed099761ef1651c96",
+      "export": "data/source_inputs/baseline_roth_external_predictions_v2_identity_audited.csv",
+      "export_sha256": "0e088fb02036a1f09706a4b5ab1b0ba037e7070b26fe0cbb1353b44abdc5bc49",
+      "operation": "exact string-valued field/row subset, preserving source order",
+      "fields": [
+        "assay_record_id",
+        "compound_id",
+        "paper_compound_name",
+        "transporter_gene",
+        "model_name",
+        "resistance_ratio",
+        "predicted_probability",
+        "identity_safe_external_metric_include",
+        "source_doi",
+        "source_url"
+      ],
+      "export_rows": 12
+    },
+    {
+      "source": "handoff/fig3_data.json",
+      "source_sha256": "6f72693c2a2dba3582d0e27bed323844072cb895917bdaedc12e6d6a1e1ecf1a",
+      "export": "data/source_inputs/regulatory_counts.json",
+      "export_sha256": "f5d6fead2d4222e9c497e5bd2a85156e66dbd48e68f37bab40d7793b671c25fe",
+      "operation": "exact regulatory panel d fields tp,fn,fp,tn,n,bacc"
+    },
+    {
+      "source": "论文主稿/latex_jcim/tools/make_figure_overview.py",
+      "source_sha256": "888fbc05e3c6b9e019e90d2f5d47c14a5d01d2e90a72da6f8162fdb94c93cdda",
+      "export": "scripts/make_figure_overview.py",
+      "export_sha256": "7efcba79d63fca995ff876dd4b7aefbd8a460f1de03a5f8c722b4cc5a638f92c",
+      "operation": "portable input/output paths and current figure number; all plotting/numeric code unchanged; old path-sensitive provenance comparison replaced by component verification"
+    },
+    {
+      "source": "论文主稿/latex_jcim/tools/make_figure_background.py",
+      "source_sha256": "65e0252c18442c4c3ecffc9bac5283aea667eb8000ded44c2345ca2db916cc13",
+      "export": "scripts/make_figure_background.py",
+      "export_sha256": "5fc89ac4b547d832f16d9b7252d2b1d05e7eeee9be8fe9769acec8a14a4cf984",
+      "operation": "portable asset/output paths; unchanged image and heading rendering"
+    }
+  ]
+}

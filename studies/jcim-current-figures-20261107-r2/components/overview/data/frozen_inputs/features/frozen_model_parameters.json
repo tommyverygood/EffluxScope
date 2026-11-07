@@ -1,0 +1,62 @@
+{
+  "model_bundle": "模型/ABCB1_screener_v0_1/ABCB1_screener_v0_1.joblib",
+  "model_sha256": "fbc92dfa99583386ba124141fed5e77c6ecf8a59850301a6533db3883b298ac3",
+  "model_name": "ABCB1_screener_v0.1",
+  "estimator": "LogisticRegression(C=0.1, class_weight='balanced', max_iter=5000,\n                   random_state=20260803, solver='liblinear')",
+  "feature_dimension": 2056,
+  "fingerprint_dimension": 2048,
+  "descriptor_dimension": 8,
+  "class_order": [
+    0,
+    1
+  ],
+  "logistic_intercept": -0.05576686702279478,
+  "calibrator_alpha": 0.9756858773634159,
+  "calibrator_beta": 0.36698872731012755,
+  "raw_probability_formula": "p_raw = sigmoid(intercept + sum_{j=0}^{2055}(x_j * w_j))",
+  "calibrated_probability_formula": "p_cal = sigmoid(alpha * logit(clip(p_raw, 1e-6, 1-1e-6)) + beta)",
+  "calibration_scope": "Original frozen v0.1 internal OOF calibration; not target-source recalibration.",
+  "descriptor_scaler_mean": [
+    432.3766098702802,
+    3.5466402031602726,
+    84.45934537246055,
+    1.744920993227991,
+    5.460496613995486,
+    5.878103837471783,
+    0.02708803611738149,
+    30.988713318284425
+  ],
+  "descriptor_scaler_scale": [
+    159.335032927155,
+    1.7166260473234038,
+    50.60319526823142,
+    1.7457953824718284,
+    2.8578270371283887,
+    4.71475700865033,
+    0.16233999635544138,
+    11.384015522011484
+  ],
+  "descriptor_order": [
+    "MolWt",
+    "MolLogP",
+    "TPSA",
+    "NumHDonors",
+    "NumHAcceptors",
+    "NumRotatableBonds",
+    "FormalCharge",
+    "HeavyAtomCount"
+  ],
+  "descriptor_units_before_scaling": [
+    "g mol^-1",
+    "unitless",
+    "angstrom^2",
+    "count",
+    "count",
+    "count",
+    "charge",
+    "count"
+  ],
+  "excerpt_warning": "The 128 displayed fingerprint bits and 8 descriptor weights are only an excerpt. Do not recompute or approximate model scores from this truncated matrix.",
+  "full_coefficients_file": "frozen_logistic_weights_all_2056.csv",
+  "selected_coefficients_file": "frozen_logistic_weights_selected_136.csv"
+}

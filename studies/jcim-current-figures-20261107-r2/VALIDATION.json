@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "release": "jcim-figures-20261107-r2",
+  "scope": "Frozen-input redraw of six main figures and TOC; Figure 6 interval recomputation from fixed scaffold sufficient statistics, not regeneration of service/model predictions.",
+  "python": "3.12.14",
+  "platform": "Darwin arm64",
+  "packages": {
+    "numpy": "2.5.1",
+    "pandas": "2.2.3",
+    "matplotlib": "3.11.2",
+    "Pillow": "12.3.0",
+    "rdkit": "2026.3.4",
+    "scipy": "1.18.0",
+    "joblib": "1.5.3",
+    "reportlab": "4.4.9",
+    "pypdf": "7.0.0"
+  },
+  "external_tools": {
+    "ghostscript": "10.06.0",
+    "poppler": "pdftoppm version 26.03.0"
+  },
+  "verified_supplied_files": 90,
+  "figures": [
+    {
+      "reference": "reference_figures/Figure1_background.pdf",
+      "generated": "components/overview/outputs/Figure_background.pdf",
+      "reference_sha256": "5cc2517eceadccb29f0096901f4a2f708ff59bc11167f1f02822e634b12e12eb",
+      "generated_sha256": "7c75175e158618c4bc8a026297e1702c58c444b318d0f25805a549f75c0ad3bd",
+      "page_geometry_equal": true,
+      "pdf_text_equal": true,
+      "pixels_equal_150dpi": true
+    },
+    {
+      "reference": "reference_figures/Figure2_overview.pdf",
+      "generated": "components/overview/outputs/Figure_overview.pdf",
+      "reference_sha256": "7e6b6f05a1e06e5de91ec591b9fea36a33f2a5492d087480c6522cdbc9159113",
+      "generated_sha256": "f70d9c8fcd19f128895aa1ae08d697d053466410b6058669b6a5f53c0f6417c0",
+      "page_geometry_equal": true,
+      "pdf_text_equal": true,
+      "pixels_equal_150dpi": true
+    },
+    {
+      "reference": "reference_figures/Figure3_endpoint.pdf",
+      "generated": "components/endpoint/\u8bba\u6587\u4e3b\u7a3f/latex_jcim/figures/Figure1_endpoint_shift.pdf",
+      "reference_sha256": "c399ddbe4e165a8967f94caaf138f7fd0c9ad288ade658f94c01b2b4270f2a6f",
+      "generated_sha256": "55e45c8466f7ce538950c5f88f869508d57407c2a255d7f02009d760b35a9eb5",
+      "page_geometry_equal": true,
+      "pdf_text_equal": true,
+      "pixels_equal_150dpi": true
+    },
+    {
+      "reference": "reference_figures/Figure4_sources.pdf",
+      "generated": "components/results/\u8bba\u6587\u4e3b\u7a3f/latex_jcim/figures/Figure3_validation_gates.pdf",
+      "reference_sha256": "ddfc4984128d718d2ba95688b36f1597f7d80d78207cc38f7b133fce1d9d1a95",
+      "generated_sha256": "cdd3538aa3dccce519c920a2fcd2f755b0cb347ab3a25ff9634523550232dcbc",
+      "page_geometry_equal": true,
+      "pdf_text_equal": true,
+      "pixels_equal_150dpi": true
+    },
+    {
+      "reference": "reference_figures/Figure5_structure.pdf",
+      "generated": "components/results/\u8bba\u6587\u4e3b\u7a3f/latex_jcim/figures/Figure2_split_separation.pdf",
+      "reference_sha256": "82a715538e79ee0f1eed649b4db27219ff5230402972a13352b1b56856274bb8",
+      "generated_sha256": "a268514b2661962e1012a4961bd5d3be83fbf7dbb199affeedf1c0d48b6bde55",
+      "page_geometry_equal": true,
+      "pdf_text_equal": true,
+      "pixels_equal_150dpi": true
+    },
+    {
+      "reference": "reference_figures/Figure6_errors.pdf",
+      "generated": "components/results/\u8bba\u6587\u4e3b\u7a3f/latex_jcim/figures/Figure4_error_distance.pdf",
+      "reference_sha256": "5284cf07b62c8e0373e78157e862034917db95e91a06326a0f64909887c979cf",
+      "generated_sha256": "dca13abba2d508fc010a8e7a4a79b2deff45c457106c0d6c4c4c8f06f0fdb7bf",
+      "page_geometry_equal": true,
+      "pdf_text_equal": true,
+      "pixels_equal_150dpi": true
+    },
+    {
+      "reference": "reference_figures/TOC.pdf",
+      "generated": "components/results/toc/toc_graphic/TOC_graphic_wheel.pdf",
+      "reference_sha256": "519670dae3521ce998ef5f951b4e9b07534ee23a1508c058fbd369269101dc21",
+      "generated_sha256": "be4b40b31ea5647e23cd1ff09714d3a5da403d4d569f2033b303c0959557364c",
+      "page_geometry_equal": true,
+      "pdf_text_equal": true,
+      "pixels_equal_150dpi": true
+    }
+  ],
+  "figure6_intervals": {
+    "status": "PASS",
+    "seed": 20261018,
+    "replicates": 2000,
+    "clusters": 2312,
+    "numeric_fields_checked": 100,
+    "max_absolute_error": 0.0
+  },
+  "interval_fields_match_plotted_data": 100,
+  "model_refitting": false,
+  "new_biological_validation": false,
+  "publication_note": "All executed source files, scientific inputs and reference graphics are unchanged after the clean extracted-archive verification. This validation record was added afterward and is included in the final SHA256 manifest."
+}

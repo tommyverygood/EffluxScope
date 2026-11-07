@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-07",
+  "current_figure": 6,
+  "historical_figure": 4,
+  "models": [
+    "astrazeneca_gnn_mtl_mdck_er_2025",
+    "astrazeneca_gnn_mtl_nih_mdck_er_2025",
+    "internal_v0_4_primary_score",
+    "deeppk_pgp_substrate_2026_08_05",
+    "admet_ai_v2_pgp_broccatelli_inhibition"
+  ],
+  "seed": 20261018,
+  "replicates": 2000,
+  "cluster_count": 2312,
+  "source_rows": 2624,
+  "inside_count": 1349,
+  "accepted_count": 453,
+  "fixed_band": "abs(log10(measured ER)-log10(2)) <= 0.49",
+  "cluster_order": "Order of numpy.unique over frozen bootstrap_cluster strings; matrix rows preserve this exact order. Only integer ordinal identifiers are exported.",
+  "counts": "Per fixed scaffold cluster and band: n, observed positive/negative, accepted count, and true-positive/true-negative counts for each frozen comparator.",
+  "source_files": [
+    {
+      "path": "数据/processed/abcb1_public_predictor_predictions_long_v1.csv",
+      "sha256": "1a54dd7fcc580f9f0dc8695c1644e0e798ef9cf738b5381a03760f835ce81793"
+    },
+    {
+      "path": "数据/processed/abcb1_public_predictor_benchmark_input_v1.csv",
+      "sha256": "4b5c5fd332b2cfd9c119fc7fde575b7512f27fb1619c47e108464a80cbee01d4"
+    },
+    {
+      "path": "handoff/fig4_data.json",
+      "sha256": "e4b8db02ab6545755f64ba82a29d95083da55d8495d7b6e55e7089d7819ccffd"
+    }
+  ],
+  "data_sha256": "745bad998d735f15d556b9c4d2e283bdf46ab111c1164d4899ca074ca5dbb0be",
+  "expected_sha256": "cf1f4523be773c47216502e3c33b594489ba37dfa74cb7dd33a8d69435187e4d",
+  "scope": "Recompute BAcc and accepted-fraction percentile intervals from frozen scaffold sufficient statistics. Does not regenerate model outputs, validate individual service scores, refit models, or rerun smoothing curves.",
+  "excluded_fields": [
+    "SMILES",
+    "InChIKey",
+    "external row identifier",
+    "original scaffold strings",
+    "per-molecule probabilities",
+    "Deep-PK service job identifiers"
+  ],
+  "small_groups": "Some scaffold groups are singleton groups. The matrix is aggregated analysis input, not a guarantee that no group-level binary outcome can be inferred.",
+  "derived_analysis_data_license": "CC-BY-4.0 for the authors' count matrix and schema; original upstream terms and attribution remain as identified in README.",
+  "original_generator_sha256": "2f893a790f0bab9f76ad2746bf0636bd13548ad5ad7f4cea0a3015fae7e1fec2"
+}

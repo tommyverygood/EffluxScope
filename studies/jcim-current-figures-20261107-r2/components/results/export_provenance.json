@@ -1,0 +1,156 @@
+{
+  "date": "2026-11-07",
+  "status": "PASS",
+  "changes": [
+    {
+      "path": "数据/processed/abcb1_regulatory_v4_blind_summary_v1.json",
+      "change": "Replaced personal absolute protocol_lock_path with project-relative path; no scientific fields changed."
+    },
+    {
+      "path": "论文主稿/latex_jcim/tools/make_figure4_jcim.py",
+      "change": "Corrected stale Figure 7 wrapper docstring to Figure 6; executable statements unchanged."
+    }
+  ],
+  "files": [
+    {
+      "path": "论文主稿/latex_jcim/tools/make_figure2_jcim.py",
+      "original_sha256": "d9e164be0d2fde58947468f1b95611ac47ac60b1767b4861fd378f64d8431364",
+      "export_sha256": "d9e164be0d2fde58947468f1b95611ac47ac60b1767b4861fd378f64d8431364",
+      "same_bytes": true
+    },
+    {
+      "path": "论文主稿/latex_jcim/tools/make_figure3_jcim.py",
+      "original_sha256": "e6dc2c52535776ba2be66cab7cd38c73c3fbc44c040946ff9f0fb88a71a7c882",
+      "export_sha256": "e6dc2c52535776ba2be66cab7cd38c73c3fbc44c040946ff9f0fb88a71a7c882",
+      "same_bytes": true
+    },
+    {
+      "path": "论文主稿/latex_jcim/tools/make_figure4_jcim.py",
+      "original_sha256": "69b2bb964e0ea26213c29a1018d0d3fd4aed9979ef305ab35961fa41a01631a2",
+      "export_sha256": "24e52bb9ca465568338fcf1ba44681359866eac8b7c91f7aa55943ff308ded02",
+      "same_bytes": false
+    },
+    {
+      "path": "论文主稿/latex_jcim/tools/jcim_fig34_style.py",
+      "original_sha256": "2a05f0537c4dac3ad338e20cdf5281e6704e51646b0f42871f5478aac34a4706",
+      "export_sha256": "2a05f0537c4dac3ad338e20cdf5281e6704e51646b0f42871f5478aac34a4706",
+      "same_bytes": true
+    },
+    {
+      "path": "论文主稿/latex_jcim/tools/palette.py",
+      "original_sha256": "0b180b928fdebf506e0ff044f876435c4a7e02b522ad6ee55d33b844c9f45ad5",
+      "export_sha256": "0b180b928fdebf506e0ff044f876435c4a7e02b522ad6ee55d33b844c9f45ad5",
+      "same_bytes": true
+    },
+    {
+      "path": "论文主稿/latex_jcim/tools/palette.json",
+      "original_sha256": "41d881881ef913946063d1e9d43878efb4f31081830241e6c30d74bb8069c017",
+      "export_sha256": "41d881881ef913946063d1e9d43878efb4f31081830241e6c30d74bb8069c017",
+      "same_bytes": true
+    },
+    {
+      "path": "论文主稿/figures_src/make_figure4.py",
+      "original_sha256": "93e8ee93abd6f5e7a120c0112f79c7569fdad487bdb1e33bff56b4a84e19f2b0",
+      "export_sha256": "93e8ee93abd6f5e7a120c0112f79c7569fdad487bdb1e33bff56b4a84e19f2b0",
+      "same_bytes": true
+    },
+    {
+      "path": "论文主稿/figures_src/palette.py",
+      "original_sha256": "0b180b928fdebf506e0ff044f876435c4a7e02b522ad6ee55d33b844c9f45ad5",
+      "export_sha256": "0b180b928fdebf506e0ff044f876435c4a7e02b522ad6ee55d33b844c9f45ad5",
+      "same_bytes": true
+    },
+    {
+      "path": "论文主稿/figures_src/palette.json",
+      "original_sha256": "41d881881ef913946063d1e9d43878efb4f31081830241e6c30d74bb8069c017",
+      "export_sha256": "41d881881ef913946063d1e9d43878efb4f31081830241e6c30d74bb8069c017",
+      "same_bytes": true
+    },
+    {
+      "path": "handoff/fig3_data.json",
+      "original_sha256": "6f72693c2a2dba3582d0e27bed323844072cb895917bdaedc12e6d6a1e1ecf1a",
+      "export_sha256": "6f72693c2a2dba3582d0e27bed323844072cb895917bdaedc12e6d6a1e1ecf1a",
+      "same_bytes": true
+    },
+    {
+      "path": "handoff/fig4_data.json",
+      "original_sha256": "e4b8db02ab6545755f64ba82a29d95083da55d8495d7b6e55e7089d7819ccffd",
+      "export_sha256": "e4b8db02ab6545755f64ba82a29d95083da55d8495d7b6e55e7089d7819ccffd",
+      "same_bytes": true
+    },
+    {
+      "path": "数据/processed/abcb1_asap2025_sourceheldout_postscoring_addendum_v1.json",
+      "original_sha256": "de9c53e4f91d5d4ffdd039b283636b2107dfde9348f83ed3c3a967da4e49fb4c",
+      "export_sha256": "de9c53e4f91d5d4ffdd039b283636b2107dfde9348f83ed3c3a967da4e49fb4c",
+      "same_bytes": true
+    },
+    {
+      "path": "数据/processed/baseline_roth_external_metrics_v2_identity_safe.csv",
+      "original_sha256": "043998923e953dc71b3ed1f3f1ea2bc9fe2000789f3cbab9d808fcf3a6365611",
+      "export_sha256": "043998923e953dc71b3ed1f3f1ea2bc9fe2000789f3cbab9d808fcf3a6365611",
+      "same_bytes": true
+    },
+    {
+      "path": "数据/processed/abcb1_regulatory_v4_blind_summary_v1.json",
+      "original_sha256": "e5ec35bc903f1e219db7b230dd2601cf8bfc8b1f46af392d3576aae6d9b6156a",
+      "export_sha256": "84cdc385d6fdd6a09cd0f8f9c73b5428ab253e94d131e82fc24c00287c111a04",
+      "same_bytes": false
+    },
+    {
+      "path": "数据/processed/abcb1_public_predictor_metrics_v1.csv",
+      "original_sha256": "42fc5133f34ed84573b0cbefffdae65492c67d459562eca615b6c186f0f62af3",
+      "export_sha256": "42fc5133f34ed84573b0cbefffdae65492c67d459562eca615b6c186f0f62af3",
+      "same_bytes": true
+    },
+    {
+      "path": "论文主稿/latex_jcim/data_for_figures/split_density/abcb1_public_predictor_metrics_v1.csv",
+      "original_sha256": "42fc5133f34ed84573b0cbefffdae65492c67d459562eca615b6c186f0f62af3",
+      "export_sha256": "42fc5133f34ed84573b0cbefffdae65492c67d459562eca615b6c186f0f62af3",
+      "same_bytes": true
+    },
+    {
+      "path": "论文主稿/latex_jcim/data_for_figures/split_density/fig2_ref_xy.npy",
+      "original_sha256": "323246827d7e5ec485190c2b58f0892e319775a957f32bc412fd252e93a47091",
+      "export_sha256": "323246827d7e5ec485190c2b58f0892e319775a957f32bc412fd252e93a47091",
+      "same_bytes": true
+    },
+    {
+      "path": "论文主稿/latex_jcim/data_for_figures/split_density/provenance.json",
+      "original_sha256": "a86e0dfd1fc26f205f766c84f5788fc56b7f05f4f795feddce15163e0a2b74a0",
+      "export_sha256": "a86e0dfd1fc26f205f766c84f5788fc56b7f05f4f795feddce15163e0a2b74a0",
+      "same_bytes": true
+    },
+    {
+      "path": "论文主稿/latex_jcim/data_for_figures/split_density/fig2_hist.json",
+      "original_sha256": "0f472b40f712cb6cb12c9abba1aed19709299a325ac03903d2c52807015563ce",
+      "export_sha256": "0f472b40f712cb6cb12c9abba1aed19709299a325ac03903d2c52807015563ce",
+      "same_bytes": true
+    },
+    {
+      "path": "论文主稿/latex_jcim/data_for_figures/split_density/fig2_leak.json",
+      "original_sha256": "6876ce87b135296dfa3c0d62991ffe9635ab82e2dd94e02575f3342e62088d01",
+      "export_sha256": "6876ce87b135296dfa3c0d62991ffe9635ab82e2dd94e02575f3342e62088d01",
+      "same_bytes": true
+    },
+    {
+      "path": "论文主稿/latex_jcim/data_for_figures/split_density/fig2_ci.json",
+      "original_sha256": "631e13177efdbfabd6802d332f9c7ec5c1f4ffbdd9260663a892fab856774d83",
+      "export_sha256": "631e13177efdbfabd6802d332f9c7ec5c1f4ffbdd9260663a892fab856774d83",
+      "same_bytes": true
+    },
+    {
+      "path": "论文主稿/latex_jcim/data_for_figures/split_density/fig2_perf.csv",
+      "original_sha256": "fcd0d4dec9b097532d4dabea821d557c1ce1ddca1ab4f2b36ffbb5c39e388a1b",
+      "export_sha256": "fcd0d4dec9b097532d4dabea821d557c1ce1ddca1ab4f2b36ffbb5c39e388a1b",
+      "same_bytes": true
+    },
+    {
+      "path": "论文主稿/latex_jcim/data_for_figures/split_density/fig2_emb.csv",
+      "original_sha256": "a265d33d0c55405b36ac0280721f8078633c84ff624f3e6ed06bff4f9079d8ef",
+      "export_sha256": "a265d33d0c55405b36ac0280721f8078633c84ff624f3e6ed06bff4f9079d8ef",
+      "same_bytes": true
+    }
+  ],
+  "verification": "verification/redraw_comparison.json",
+  "live_artwork_modified": false
+}

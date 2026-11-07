@@ -1,0 +1,12 @@
+benchmark_entity_id,entity_name,source_id,source_url,model_evaluation_eligible,frozen_probability,continuous_endpoint_median
+ABCB1_EXT_002,propranolol,SRC_B23_LANGTHALER2024_HUMAN_ABCB1_REFERENCE_PANEL,https://pmc.ncbi.nlm.nih.gov/articles/PMC10809502/,yes,0.35643886,0.8
+ABCB1_EXT_010,n-desmethylclozapine,SRC_B23_LANGTHALER2024_HUMAN_ABCB1_REFERENCE_PANEL,https://pmc.ncbi.nlm.nih.gov/articles/PMC10809502/,yes,0.54163332,2.1
+ABCB1_EXT_019,doxepin,SRC_B23_LANGTHALER2024_HUMAN_ABCB1_REFERENCE_PANEL,https://pmc.ncbi.nlm.nih.gov/articles/PMC10809502/,yes,0.8133852,1.1
+ABCB1_EXT_024,fluoxetine,SRC_B23_LANGTHALER2024_HUMAN_ABCB1_REFERENCE_PANEL,https://pmc.ncbi.nlm.nih.gov/articles/PMC10809502/,yes,0.54893265,1.0
+ABCB1_EXT_025,way-100635,SRC_B23_LANGTHALER2024_HUMAN_ABCB1_REFERENCE_PANEL,https://pmc.ncbi.nlm.nih.gov/articles/PMC10809502/,yes,0.65835121,1.3
+ABCB1_EXT_027,altanserin,SRC_B23_LANGTHALER2024_HUMAN_ABCB1_REFERENCE_PANEL,https://pmc.ncbi.nlm.nih.gov/articles/PMC10809502/,yes,0.55461619,1.1
+ABCB1_EXT_028,metoclopramide,SRC_B23_LANGTHALER2024_HUMAN_ABCB1_REFERENCE_PANEL,https://pmc.ncbi.nlm.nih.gov/articles/PMC10809502/,yes,0.57962417,2.0
+ABCB1_EXT_030,gabapentin,SRC_B23_LANGTHALER2024_HUMAN_ABCB1_REFERENCE_PANEL,https://pmc.ncbi.nlm.nih.gov/articles/PMC10809502/,yes,0.44921444,0.5
+ABCB1_EXT_034,antipyrine,SRC_B23_LANGTHALER2024_HUMAN_ABCB1_REFERENCE_PANEL,https://pmc.ncbi.nlm.nih.gov/articles/PMC10809502/,yes,0.22531446,1.2
+ABCB1_EXT_037,citalopram,SRC_B23_LANGTHALER2024_HUMAN_ABCB1_REFERENCE_PANEL,https://pmc.ncbi.nlm.nih.gov/articles/PMC10809502/,yes,0.76887294,1.7
+ABCB1_EXT_040,diphenhydramine,SRC_B23_LANGTHALER2024_HUMAN_ABCB1_REFERENCE_PANEL,https://pmc.ncbi.nlm.nih.gov/articles/PMC10809502/,yes,0.32605612,1.6
