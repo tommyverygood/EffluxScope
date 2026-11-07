@@ -1,0 +1,2 @@
+# Preserve the checksummed bytes of the standalone current-figure release.
+studies/jcim-current-figures-20261107/** -text
